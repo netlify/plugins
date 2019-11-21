@@ -1,0 +1,27 @@
+[
+  {
+  "name": "netlify-build-plugin-speedcurve",
+  "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+  "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve"
+  },
+  {
+    "name": "netlify-plugin-checklinks",
+    "description": "Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to.",
+    "repo": "https://github.com/munter/netlify-plugin-checklinks"
+  },
+  {
+    "name": "netlify-plugin-subfont",
+    "description": "Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance.",
+    "repo": "https://github.com/munter/netlify-plugin-subfont"
+  },
+  {
+    "name": "netlify-plugin-hashfiles",
+    "description": "Hashfiles sets you up with an optimal caching strategy for static sites, where static assets across pages are cached for as long as possible in the visitors browser and never have to be re-requested.",
+    "repo": "https://github.com/munter/netlify-plugin-hashfiles"
+  },
+  {
+    "name": "netlify-plugin-hours-plugin",
+    "description": "A Netlify build plugin that blocks deployment if it outside of deployment hours.",
+    "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin"
+  }
+]

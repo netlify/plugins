@@ -1,0 +1,23 @@
+{
+  "name": "plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "node scripts/docs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/plugins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netlify/plugins/issues"
+  },
+  "homepage": "https://github.com/netlify/plugins#readme",
+  "devDependencies": {
+    "markdown-magic": "^1.0.0"
+  }
+}
