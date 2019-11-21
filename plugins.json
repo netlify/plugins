@@ -28,5 +28,20 @@
     "name": "netlify-plugin-fetch-feeds",
     "description": "A Netlify plugin to source content from remote feeds including RSS and JSON",
     "repo": "https://github.com/philhawksworth/netlify-plugin-fetch-feeds"
+  },
+  {
+    "name": "netlify-plugin-yield-data-for-eleventy",
+    "description": "A Netlify plugin to expose data collected to in the Netlify build cache to place and structure that Eleventy can use",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-yield-data-for-eleventy"
+  },
+  {
+    "name": "netlify-plugin-image-optim",
+    "description": "Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats.",
+    "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim"
+  },
+  {
+    "name": "netlify-plugin-gatsby-cache",
+    "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
+    "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache#readme"
   }
 ]
