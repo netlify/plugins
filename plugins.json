@@ -23,5 +23,10 @@
     "name": "netlify-plugin-hours-plugin",
     "description": "A Netlify build plugin that blocks deployment if it outside of deployment hours.",
     "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin"
+  },
+  {
+    "name": "netlify-plugin-fetch-feeds",
+    "description": "A Netlify plugin to source content from remote feeds including RSS and JSON",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-fetch-feeds"
   }
 ]
