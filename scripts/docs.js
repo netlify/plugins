@@ -20,7 +20,8 @@ const config = {
     GENERATE_PLUGIN_TABLE: function(content, options) {
       const commandsFile = path.join(__dirname, '..', 'plugins.json')
       const plugins = JSON.parse(fs.readFileSync(commandsFile, 'utf8'))
-      let md = '| Plugin | Author |\n'
+      let md = `Plugin count: **${plugins.length}** 🎉\n\n`
+      md += `| Plugin | Author |\n`
       md += '|:---------------------------|:-----------:|\n'
 
       // Sort plugins alphabetically
