@@ -7,6 +7,7 @@ const path = require('path')
 const markdownMagic = require('markdown-magic')
 
 const commonPartRe = /(?:(?:^|-)netlify-plugin(?:-|$))|(?:(?:^|-)netlify(?:-|$))/
+// const pluginPrefix = /(?:(?:^|-)netlify-plugin(?:-|$))/
 
 const config = {
   transforms: {
@@ -22,14 +23,14 @@ const config = {
       let md = '| Plugin | Author |\n'
       md += '|:---------------------------|:-----------:|\n'
 
-      plugins.sort(function (a, b) {
+      // Sort plugins alphabetically
+      plugins.sort((a, b) => {
         const aName = a.name.toLowerCase()
         const bName = b.name.toLowerCase()
-        return aName.replace(commonPartRe, '').localeCompare(bName.replace(commonPartRe, '')) ||
-          aName.localeCompare(bName)
+        return aName.replace(commonPartRe, '').localeCompare(bName.replace(commonPartRe, '')) || aName.localeCompare(bName)
       }).forEach(function(data) {
         const userName = username(data.repo)
-        const profileURL = `http://github.com/${userName}`
+        const profileURL = `https://github.com/${userName}`
         const repoName = data.repo.split('.com/')[1]
         md += `| **[${formatPluginName(data.name)} - \`${data.name.toLowerCase()}\`](${data.repo})** <br/> `
         md += ` ${data.description} | `
@@ -45,8 +46,8 @@ function username(repo) {
     return null
   }
 
-  var o = url.parse(repo)
-  var path = o.path
+  const o = url.parse(repo)
+  let path = o.path
 
   if (path.length && path.charAt(0) === '/') {
     path = path.slice(1)
@@ -56,15 +57,18 @@ function username(repo) {
   return path
 }
 
-function formatPluginName (string) {
-  return toTitleCase(string.toLowerCase().replace(commonPartRe, '').replace(/-/g, ' '))
+function formatPluginName(string) {
+  return toTitleCase(string.toLowerCase()
+    .replace(commonPartRe, '')
+    .replace(/-/g, ' ')
+    .replace(/plugin$/g, '').trim()
+  )
 }
 
 function toTitleCase(str) {
   return str.replace(/\w\S*/g, function(txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  }
-  )
+  })
 }
 
 const markdownPath = path.join(__dirname, '..', 'README.md')

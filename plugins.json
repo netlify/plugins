@@ -20,7 +20,7 @@
     "repo": "https://github.com/munter/netlify-plugin-hashfiles"
   },
   {
-    "name": "netlify-plugin-hours-plugin",
+    "name": "netlify-deployment-hours-plugin",
     "description": "A Netlify build plugin that blocks deployment if it outside of deployment hours.",
     "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin"
   },
