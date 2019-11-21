@@ -32,7 +32,6 @@ const config = {
       }).forEach(function(data) {
         const userName = username(data.repo)
         const profileURL = `https://github.com/${userName}`
-        const repoName = data.repo.split('.com/')[1]
         md += `| **[${formatPluginName(data.name)} - \`${data.name.toLowerCase()}\`](${data.repo})** <br/> `
         md += ` ${data.description} | `
         md += `[${userName}](${profileURL}) |\n`
