@@ -1,7 +1,8 @@
 {
-  "name": "plugins",
+  "name": "netlify-plugins-directory",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Netlify Plugins directory",
   "main": "index.js",
   "scripts": {
     "docs": "node scripts/docs.js"
