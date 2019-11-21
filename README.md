@@ -21,3 +21,11 @@ To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+
+## Contributing
+
+1. To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+
+2. Then run `npm run docs` to regenerate the plugins table!
+
+3. Continue being super cool, awesome, & fun. 😎
