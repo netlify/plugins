@@ -43,5 +43,10 @@
     "name": "netlify-plugin-gatsby-cache",
     "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache#readme"
+  },
+  {
+    "name": "netlify-plugin-sitemap",
+    "description": "Automatically generate sitemaps on build",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap"
   }
 ]
