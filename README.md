@@ -1,4 +1,4 @@
-# Netlify Plugins
+# Netlify Plugins (Beta)
 
 Netlify plugins are a new way to extend the functionality of your build on Netlify.
 
