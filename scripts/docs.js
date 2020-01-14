@@ -68,11 +68,17 @@ function username(repo) {
 }
 
 function formatPluginName(string) {
-  return toTitleCase(string.toLowerCase()
+  const name = string.toLowerCase()
+  const isInternal = name.match(/^@netlify\/plugin/)
+
+  const cleanName = toTitleCase(name
     .replace(REGEX, '')
+    .replace(/^@netlify\/plugin/, '')
     .replace(/-/g, ' ')
-    .replace(/plugin$/g, '').trim()
+    .replace(/plugin$/g, '')
+    .trim()
   )
+  return (isInternal) ? `${cleanName} plugin` : cleanName
 }
 
 function toTitleCase(str) {

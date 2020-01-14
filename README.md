@@ -11,10 +11,11 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **9** 🎉
+Plugin count: **10** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
+| **[Sitemap plugin - `@netlify/plugin-sitemap`](https://github.com/netlify-labs/netlify-plugin-sitemap)** <br/>  Automatically generate a sitemap for your site on PostBuild in Netlify | [netlify-labs](https://github.com/netlify-labs) |
 | **[Build Plugin Speedcurve - `netlify-build-plugin-speedcurve`](https://github.com/tkadlec/netlify-build-plugin-speedcurve)** <br/>  After a successful build, tell SpeedCurve you've deployed and trigger a round of testing | [tkadlec](https://github.com/tkadlec) |
 | **[Checklinks - `netlify-plugin-checklinks`](https://github.com/munter/netlify-plugin-checklinks)** <br/>  Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to. | [munter](https://github.com/munter) |
 | **[Deployment Hours - `netlify-deployment-hours-plugin`](https://github.com/neverendingqs/netlify-deployment-hours-plugin)** <br/>  A Netlify build plugin that blocks deployment if it outside of deployment hours. | [neverendingqs](https://github.com/neverendingqs) |
