@@ -1,8 +1,8 @@
 [
   {
-  "name": "netlify-build-plugin-speedcurve",
-  "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
-  "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve"
+    "name": "netlify-build-plugin-speedcurve",
+    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+    "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve"
   },
   {
     "name": "netlify-plugin-checklinks",
@@ -48,5 +48,10 @@
     "name": "@netlify/plugin-sitemap",
     "description": "Automatically generate a sitemap for your site on PostBuild in Netlify",
     "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap"
+  },
+  {
+    "name": "netlify-plugin-ghost-markdown",
+    "description": "Generates posts and pages from a Ghost publication as markdown files, using the Ghost Content API.",
+    "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown"
   }
 ]
