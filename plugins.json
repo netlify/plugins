@@ -53,5 +53,10 @@
     "name": "netlify-plugin-ghost-markdown",
     "description": "Generates posts and pages from a Ghost publication as markdown files, using the Ghost Content API.",
     "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown"
+  },
+  {
+    "name": "netlify-plugin-debug-cache",
+    "description": "Debug & verify the contents of your Netlify build cache",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-debug-cache"
   }
 ]
