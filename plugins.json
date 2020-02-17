@@ -45,6 +45,11 @@
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache#readme"
   },
   {
+    "name": "netlify-plugin-cache-nextjs",
+    "description": "Cache the .next folder in Netlify builds",
+    "repo": "https://github.com/pizzafox/netlify-cache-nextjs#readme"
+  },
+  {
     "name": "@netlify/plugin-sitemap",
     "description": "Automatically generate a sitemap for your site on PostBuild in Netlify",
     "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap"
