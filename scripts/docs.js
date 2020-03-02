@@ -33,7 +33,7 @@ const mdConfig = {
       md += `| Plugin | Author |\n`
       md += '|:---------------------------|:-----------:|\n'
       PLUGINS.sort(sortPlugins).forEach((data) => {
-        const userName = username(data.repo)
+        const userName = data.author;
         const profileURL = `https://github.com/${userName}`
         md += `| **[${formatPluginName(data.name)} - \`${data.name.toLowerCase()}\`](${data.repo})** <br/> `
         md += ` ${data.description} | `
@@ -49,22 +49,6 @@ function sortPlugins(a, b) {
   const aName = a.name.toLowerCase()
   const bName = b.name.toLowerCase()
   return aName.replace(REGEX, '').localeCompare(bName.replace(REGEX, '')) || aName.localeCompare(bName)
-}
-
-function username(repo) {
-  if (!repo) {
-    return null
-  }
-
-  const o = url.parse(repo)
-  let path = o.path
-
-  if (path.length && path.charAt(0) === '/') {
-    path = path.slice(1)
-  }
-
-  path = path.split('/')[0]
-  return path
 }
 
 function formatPluginName(string) {
