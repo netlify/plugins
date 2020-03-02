@@ -1,5 +1,4 @@
 const fs = require('fs')
-const url = require('url')
 const path = require('path')
 const markdownMagic = require('markdown-magic')
 
@@ -19,7 +18,7 @@ const mdConfig = {
     GENERATE_PLUGIN_LIST: function(content, options) {
       let md = ''
       PLUGINS.sort(sortPlugins).forEach((data) => {
-        md += `- **[${formatPluginName(data.name)} - \`${data.name.toLowerCase()}\`](${data.repo})** ${data.description}\n`
+        md += `- **[${data.name} - \`${data.package.toLowerCase()}\`](${data.repo})** ${data.description}\n`
       })
       return md.replace(/^\s+|\s+$/g, '')
     },
@@ -33,11 +32,10 @@ const mdConfig = {
       md += `| Plugin | Author |\n`
       md += '|:---------------------------|:-----------:|\n'
       PLUGINS.sort(sortPlugins).forEach((data) => {
-        const userName = username(data.repo)
-        const profileURL = `https://github.com/${userName}`
-        md += `| **[${formatPluginName(data.name)} - \`${data.name.toLowerCase()}\`](${data.repo})** <br/> `
+        const profileURL = `https://github.com/${data.author}`
+        md += `| **[${data.name} - \`${data.package.toLowerCase()}\`](${data.repo})** <br/> `
         md += ` ${data.description} | `
-        md += `[${userName}](${profileURL}) |\n`
+        md += `[${data.author}](${profileURL}) |\n`
       })
       return md.replace(/^\s+|\s+$/g, '')
     }
@@ -49,42 +47,6 @@ function sortPlugins(a, b) {
   const aName = a.name.toLowerCase()
   const bName = b.name.toLowerCase()
   return aName.replace(REGEX, '').localeCompare(bName.replace(REGEX, '')) || aName.localeCompare(bName)
-}
-
-function username(repo) {
-  if (!repo) {
-    return null
-  }
-
-  const o = url.parse(repo)
-  let path = o.path
-
-  if (path.length && path.charAt(0) === '/') {
-    path = path.slice(1)
-  }
-
-  path = path.split('/')[0]
-  return path
-}
-
-function formatPluginName(string) {
-  const name = string.toLowerCase()
-  const isInternal = name.match(/^@netlify\/plugin/)
-
-  const cleanName = toTitleCase(name
-    .replace(REGEX, '')
-    .replace(/^@netlify\/plugin/, '')
-    .replace(/-/g, ' ')
-    .replace(/plugin$/g, '')
-    .trim()
-  )
-  return (isInternal) ? `${cleanName} plugin` : cleanName
-}
-
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function(txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  })
 }
 
 markdownMagic(MARKDOWN_PATH, mdConfig, () => {
