@@ -1,80 +1,93 @@
 [
   {
     "author": "tkadlec",
-    "name": "netlify-build-plugin-speedcurve",
     "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+    "name": "Build Plugin Speedcurve",
+    "package": "netlify-build-plugin-speedcurve",
     "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve"
   },
   {
     "author": "munter",
-    "name": "netlify-plugin-checklinks",
     "description": "Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to.",
+    "name": "Checklinks",
+    "package": "netlify-plugin-checklinks",
     "repo": "https://github.com/munter/netlify-plugin-checklinks"
   },
   {
     "author": "munter",
-    "name": "netlify-plugin-subfont",
     "description": "Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance.",
+    "name": "Subfont",
+    "package": "netlify-plugin-subfont",
     "repo": "https://github.com/munter/netlify-plugin-subfont"
   },
   {
     "author": "munter",
-    "name": "netlify-plugin-hashfiles",
     "description": "Hashfiles sets you up with an optimal caching strategy for static sites, where static assets across pages are cached for as long as possible in the visitors browser and never have to be re-requested.",
+    "name": "Hashfiles",
+    "package": "netlify-plugin-hashfiles",
     "repo": "https://github.com/munter/netlify-plugin-hashfiles"
   },
   {
     "author": "neverendingqs",
-    "name": "netlify-deployment-hours-plugin",
     "description": "A Netlify build plugin that blocks deployment if it outside of deployment hours.",
+    "name": "Deployment Hours",
+    "package": "netlify-deployment-hours-plugin",
     "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin"
   },
   {
     "author": "philhawksworth",
-    "name": "netlify-plugin-fetch-feeds",
     "description": "A Netlify plugin to source content from remote feeds including RSS and JSON",
+    "name": "Fetch Feeds",
+    "package": "netlify-plugin-fetch-feeds",
     "repo": "https://github.com/philhawksworth/netlify-plugin-fetch-feeds"
   },
   {
     "author": "philhawksworth",
-    "name": "netlify-plugin-yield-data-for-eleventy",
     "description": "A Netlify plugin to expose data collected to in the Netlify build cache to place and structure that Eleventy can use",
+    "name": "Yield Data For Eleventy",
+    "package": "netlify-plugin-yield-data-for-eleventy",
     "repo": "https://github.com/philhawksworth/netlify-plugin-yield-data-for-eleventy"
   },
   {
     "author": "chrisdwheatley",
-    "name": "netlify-plugin-image-optim",
     "description": "Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats.",
+    "name": "Image Optim",
+    "package": "netlify-plugin-image-optim",
     "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim"
   },
   {
     "author": "jlengstorf",
-    "name": "netlify-plugin-gatsby-cache",
     "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
+    "name": "Gatsby Cache",
+    "package": "netlify-plugin-gatsby-cache",
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache#readme"
   },
   {
     "author": "pizzafox",
-    "name": "netlify-plugin-cache-nextjs",
     "description": "Cache the .next folder in Netlify builds",
+    "name": "Cache Nextjs",
+    "package": "netlify-plugin-cache-nextjs",
     "repo": "https://github.com/pizzafox/netlify-cache-nextjs#readme"
   },
   {
     "author": "netlify-labs",
-    "name": "@netlify/plugin-sitemap",
     "description": "Automatically generate a sitemap for your site on PostBuild in Netlify",
+    "name": "Sitemap plugin",
+    "package": "@netlify/plugin-sitemap",
     "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap"
   },
   {
     "author": "daviddarnes",
-    "name": "netlify-plugin-ghost-markdown",
     "description": "Generates posts and pages from a Ghost publication as markdown files, using the Ghost Content API.",
+    "name": "Ghost Markdown",
+    "package": "netlify-plugin-ghost-markdown",
     "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown"
   },
   {
     "author": "netlify-labs",
-    "name": "netlify-plugin-debug-cache",
     "description": "Debug & verify the contents of your Netlify build cache",
+    "name": "Debug Cache",
+    "package": "netlify-plugin-debug-cache",
     "repo": "https://github.com/netlify-labs/netlify-plugin-debug-cache"
   }
 ]
