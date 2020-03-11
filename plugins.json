@@ -89,5 +89,12 @@
     "name": "Debug Cache",
     "package": "netlify-plugin-debug-cache",
     "repo": "https://github.com/netlify-labs/netlify-plugin-debug-cache"
-  }
+  },
+  {
+    "author": "sw-yx",
+    "description": "Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web!",
+    "name": "No More 404",
+    "package": "netlify-plugin-no-more-404",
+    "repo": "https://github.com/sw-yx/netlify-plugin-no-more-404"
+  },
 ]
