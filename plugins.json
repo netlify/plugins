@@ -96,5 +96,5 @@
     "name": "No More 404",
     "package": "netlify-plugin-no-more-404",
     "repo": "https://github.com/sw-yx/netlify-plugin-no-more-404"
-  },
+  }
 ]
