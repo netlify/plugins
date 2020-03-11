@@ -96,5 +96,19 @@
     "name": "No More 404",
     "package": "netlify-plugin-no-more-404",
     "repo": "https://github.com/sw-yx/netlify-plugin-no-more-404"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Netlify Build Plugin to partially obscure files (names and contents) in git repos! This enables you to partially open source your site, while still being able to work as normal on your local machine and in your Netlify builds.",
+    "name": "Encrypted Files",
+    "package": "netlify-plugin-encrypted-files",
+    "repo": "https://github.com/sw-yx/netlify-plugin-encrypted-files"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Generate a Search Index of your site you can query via JavaScript or a Netlify Function",
+    "name": "Search Index",
+    "package": "netlify-plugin-search-index",
+    "repo": "https://github.com/sw-yx/netlify-plugin-search-index"
   }
 ]
