@@ -11,7 +11,7 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **16** 🎉
+Plugin count: **17** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
@@ -27,6 +27,7 @@ Plugin count: **16** 🎉
 | **[Hashfiles - `netlify-plugin-hashfiles`](https://github.com/munter/netlify-plugin-hashfiles)** <br/>  Hashfiles sets you up with an optimal caching strategy for static sites, where static assets across pages are cached for as long as possible in the visitors browser and never have to be re-requested. | [munter](https://github.com/munter) |
 | **[Image Optim - `netlify-plugin-image-optim`](https://github.com/chrisdwheatley/netlify-plugin-image-optim)** <br/>  Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats. | [chrisdwheatley](https://github.com/chrisdwheatley) |
 | **[No More 404 - `netlify-plugin-no-more-404`](https://github.com/sw-yx/netlify-plugin-no-more-404)** <br/>  Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web! | [sw-yx](https://github.com/sw-yx) |
+| **[RSS - `netlify-plugin-rss`](https://github.com/sw-yx/netlify-plugin-rss)** <br/>  Generate an RSS feed from your static html files, agnostic of static site generator! | [sw-yx](https://github.com/sw-yx) |
 | **[Search Index - `netlify-plugin-search-index`](https://github.com/sw-yx/netlify-plugin-search-index)** <br/>  Generate a Search Index of your site you can query via JavaScript or a Netlify Function | [sw-yx](https://github.com/sw-yx) |
 | **[Sitemap plugin - `@netlify/plugin-sitemap`](https://github.com/netlify-labs/netlify-plugin-sitemap)** <br/>  Automatically generate a sitemap for your site on PostBuild in Netlify | [netlify-labs](https://github.com/netlify-labs) |
 | **[Subfont - `netlify-plugin-subfont`](https://github.com/munter/netlify-plugin-subfont)** <br/>  Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance. | [munter](https://github.com/munter) |
