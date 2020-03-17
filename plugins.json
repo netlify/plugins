@@ -60,14 +60,14 @@
     "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
     "name": "Gatsby Cache",
     "package": "netlify-plugin-gatsby-cache",
-    "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache#readme"
+    "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache"
   },
   {
     "author": "pizzafox",
     "description": "Cache the .next folder in Netlify builds",
     "name": "Cache Nextjs",
     "package": "netlify-plugin-cache-nextjs",
-    "repo": "https://github.com/pizzafox/netlify-cache-nextjs#readme"
+    "repo": "https://github.com/pizzafox/netlify-cache-nextjs"
   },
   {
     "author": "netlify-labs",
