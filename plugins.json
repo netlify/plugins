@@ -117,5 +117,12 @@
     "name": "RSS",
     "package": "netlify-plugin-rss",
     "repo": "https://github.com/sw-yx/netlify-plugin-rss"
+  },
+  {
+    "author": "bahmutov",
+    "description": "Runs Cypress end-to-end tests after Netlify builds the site",
+    "name": "Cypress",
+    "package": "netlify-plugin-cypress",
+    "repo": "https://github.com/cypress-io/netlify-plugin-cypress"
   }
 ]
