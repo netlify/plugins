@@ -119,6 +119,13 @@
     "repo": "https://github.com/sw-yx/netlify-plugin-rss"
   },
   {
+    "author": "sw-yx",
+    "description": "Build a more accessible web! Run your critical pages through pa11y and fail build if accessibility failures are found.",
+    "name": "A11y",
+    "package": "netlify-plugin-a11y",
+    "repo": "https://github.com/sw-yx/netlify-plugin-a11y"
+  },
+  {
     "author": "bahmutov",
     "description": "Runs Cypress end-to-end tests after Netlify builds the site",
     "name": "Cypress",
