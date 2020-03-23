@@ -64,8 +64,8 @@
   },
   {
     "author": "pizzafox",
-    "description": "Cache the .next folder in Netlify builds",
-    "name": "Cache Nextjs",
+    "description": "Cache the .next build folder between builds",
+    "name": "Cache Next.js",
     "package": "netlify-plugin-cache-nextjs",
     "repo": "https://github.com/pizzafox/netlify-cache-nextjs"
   },
