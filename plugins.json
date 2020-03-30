@@ -56,13 +56,6 @@
     "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim"
   },
   {
-    "author": "jlengstorf",
-    "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
-    "name": "Gatsby Cache",
-    "package": "netlify-plugin-gatsby-cache",
-    "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache"
-  },
-  {
     "author": "pizzafox",
     "description": "Cache the .next build folder between builds",
     "name": "Cache Next.js",
