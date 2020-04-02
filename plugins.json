@@ -29,7 +29,7 @@
   },
   {
     "author": "neverendingqs",
-    "description": "A Netlify build plugin that blocks deployment if it outside of deployment hours.",
+    "description": "A Netlify build plugin that blocks deployment if it is outside of deployment hours.",
     "name": "Deployment Hours",
     "package": "netlify-deployment-hours-plugin",
     "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin"
