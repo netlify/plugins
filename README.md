@@ -11,7 +11,7 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **20** 🎉
+Plugin count: **21** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
@@ -34,6 +34,7 @@ Plugin count: **20** 🎉
 | **[Search Index - `netlify-plugin-search-index`](https://github.com/sw-yx/netlify-plugin-search-index)** <br/>  Generate a Search Index of your site you can query via JavaScript or a Netlify Function | [sw-yx](https://github.com/sw-yx) |
 | **[Sitemap plugin - `@netlify/plugin-sitemap`](https://github.com/netlify-labs/netlify-plugin-sitemap)** <br/>  Automatically generate a sitemap for your site on PostBuild in Netlify | [netlify-labs](https://github.com/netlify-labs) |
 | **[Subfont - `netlify-plugin-subfont`](https://github.com/munter/netlify-plugin-subfont)** <br/>  Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance. | [munter](https://github.com/munter) |
+| **[SVG optimizer - `@netlify/plugin-svgoptimizer`](https://github.com/netlify-labs/netlify-plugin-svgoptimizer)** <br/>  Optimize SVG assets | [sdras](https://github.com/sdras) |
 | **[Yield Data For Eleventy - `netlify-plugin-yield-data-for-eleventy`](https://github.com/philhawksworth/netlify-plugin-yield-data-for-eleventy)** <br/>  A Netlify plugin to expose data collected to in the Netlify build cache to place and structure that Eleventy can use | [philhawksworth](https://github.com/philhawksworth) |
 <!-- AUTO-GENERATED-CONTENT:END -->
 

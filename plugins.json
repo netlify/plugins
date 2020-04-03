@@ -138,5 +138,12 @@
     "name": "Prisma Provider",
     "package": "netlify-plugin-prisma-provider",
     "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider"
+  },
+  {
+    "author": "sdras",
+    "description": "Optimize SVG assets",
+    "name": "SVG optimizer",
+    "package": "@netlify/plugin-svgoptimizer",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-svgoptimizer"
   }
 ]
