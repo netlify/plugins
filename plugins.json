@@ -131,5 +131,12 @@
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress"
+  },
+  {
+    "author": "cannikin",
+    "description": "Replaces the database provider in Prisma's schema.prisma at build time",
+    "name": "Prisma Provider",
+    "package": "netlify-plugin-prisma-provider",
+    "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider"
   }
 ]
