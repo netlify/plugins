@@ -117,5 +117,12 @@
     "name": "Prisma Provider",
     "package": "netlify-plugin-prisma-provider",
     "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider"
+  },
+  {
+    "author": "cball",
+    "description": "Replaces ENV vars with ENV vars that are prefixed/suffixed with the context or branch name",
+    "name": "Env",
+    "package": "netlify-plugin-env",
+    "repo": "https://github.com/cball/netlify-plugin-env"
   }
 ]
