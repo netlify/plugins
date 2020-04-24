@@ -11,7 +11,7 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **17** 🎉
+Plugin count: **18** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
@@ -19,6 +19,7 @@ Plugin count: **17** 🎉
 | **[Build Plugin Speedcurve - `netlify-build-plugin-speedcurve`](https://github.com/tkadlec/netlify-build-plugin-speedcurve)** <br/>  After a successful build, tell SpeedCurve you've deployed and trigger a round of testing | [tkadlec](https://github.com/tkadlec) |
 | **[Cache Next.js - `netlify-plugin-cache-nextjs`](https://github.com/pizzafox/netlify-cache-nextjs)** <br/>  Cache the .next build folder between builds | [pizzafox](https://github.com/pizzafox) |
 | **[Checklinks - `netlify-plugin-checklinks`](https://github.com/munter/netlify-plugin-checklinks)** <br/>  Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to. | [munter](https://github.com/munter) |
+| **[Contextual ENV - `netlify-plugin-contextual-env`](https://github.com/cball/netlify-plugin-contextual-env)** <br/>  Replaces ENV vars with ENV vars that are prefixed/suffixed with the context or branch name | [cball](https://github.com/cball) |
 | **[Cypress - `netlify-plugin-cypress`](https://github.com/cypress-io/netlify-plugin-cypress)** <br/>  Runs Cypress end-to-end tests after Netlify builds the site | [bahmutov](https://github.com/bahmutov) |
 | **[Debug Cache - `netlify-plugin-debug-cache`](https://github.com/netlify-labs/netlify-plugin-debug-cache)** <br/>  Debug & verify the contents of your Netlify build cache | [netlify-labs](https://github.com/netlify-labs) |
 | **[Deployment Hours - `netlify-deployment-hours-plugin`](https://github.com/neverendingqs/netlify-deployment-hours-plugin)** <br/>  A Netlify build plugin that blocks deployment if it is outside of deployment hours. | [neverendingqs](https://github.com/neverendingqs) |
