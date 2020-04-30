@@ -8,7 +8,7 @@ For more information see the [@Netlify/build](https://github.com/netlify/build) 
 
 Below are plugins created by some awesome people! ❤️
 
-To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+To add a plugin, add informations to the [plugins.json file](plugins.json).
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
 Plugin count: **18** 🎉
@@ -35,11 +35,11 @@ Plugin count: **18** 🎉
 | **[Subfont - `netlify-plugin-subfont`](https://github.com/munter/netlify-plugin-subfont)** <br/>  Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance. | [munter](https://github.com/munter) |
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+To add a plugin, add informations to the [plugins.json file](plugins.json).
 
 ## Contributing
 
-1. To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+1. To add a plugin, add informations to the [plugins.json file](plugins.json).
 
 2. Then run `npm run docs` to regenerate the plugins table!
 
