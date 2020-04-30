@@ -124,5 +124,12 @@
     "name": "Contextual ENV",
     "package": "netlify-plugin-contextual-env",
     "repo": "https://github.com/cball/netlify-plugin-contextual-env"
+  },
+  {
+    "author": "chrisdwheatley",
+    "description": "Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats.",
+    "name": "Image Optim",
+    "package": "netlify-plugin-image-optim",
+    "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim"
   }
 ]

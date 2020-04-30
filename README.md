@@ -11,7 +11,7 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file](plugins.json).
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **18** 🎉
+Plugin count: **19** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
@@ -26,6 +26,7 @@ Plugin count: **18** 🎉
 | **[Gatsby Cache - `netlify-plugin-gatsby-cache`](https://github.com/jlengstorf/netlify-plugin-gatsby-cache)** <br/>  Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️ | [jlengstorf](https://github.com/jlengstorf) |
 | **[Ghost Markdown - `netlify-plugin-ghost-markdown`](https://github.com/daviddarnes/netlify-plugin-ghost-markdown)** <br/>  Generates posts and pages from a Ghost publication as markdown files, using the Ghost Content API. | [daviddarnes](https://github.com/daviddarnes) |
 | **[Hashfiles - `netlify-plugin-hashfiles`](https://github.com/munter/netlify-plugin-hashfiles)** <br/>  Hashfiles sets you up with an optimal caching strategy for static sites, where static assets across pages are cached for as long as possible in the visitors browser and never have to be re-requested. | [munter](https://github.com/munter) |
+| **[Image Optim - `netlify-plugin-image-optim`](https://github.com/chrisdwheatley/netlify-plugin-image-optim)** <br/>  Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats. | [chrisdwheatley](https://github.com/chrisdwheatley) |
 | **[Next.js Cache - `netlify-plugin-cache-nextjs`](https://github.com/pizzafox/netlify-cache-nextjs)** <br/>  Cache the .next build folder between builds | [pizzafox](https://github.com/pizzafox) |
 | **[No More 404 - `netlify-plugin-no-more-404`](https://github.com/sw-yx/netlify-plugin-no-more-404)** <br/>  Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web! | [sw-yx](https://github.com/sw-yx) |
 | **[Prisma Provider - `netlify-plugin-prisma-provider`](https://github.com/redwoodjs/netlify-plugin-prisma-provider)** <br/>  Replaces the database provider in Prisma's schema.prisma at build time | [cannikin](https://github.com/cannikin) |
