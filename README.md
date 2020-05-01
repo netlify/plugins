@@ -11,13 +11,14 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **18** 🎉
+Plugin count: **19** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
 | **[A11y - `netlify-plugin-a11y`](https://github.com/sw-yx/netlify-plugin-a11y)** <br/>  Build a more accessible web! Run your critical pages through pa11y and fail build if accessibility failures are found. | [sw-yx](https://github.com/sw-yx) |
 | **[Build Plugin Speedcurve - `netlify-build-plugin-speedcurve`](https://github.com/tkadlec/netlify-build-plugin-speedcurve)** <br/>  After a successful build, tell SpeedCurve you've deployed and trigger a round of testing | [tkadlec](https://github.com/tkadlec) |
 | **[Checklinks - `netlify-plugin-checklinks`](https://github.com/munter/netlify-plugin-checklinks)** <br/>  Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to. | [munter](https://github.com/munter) |
+| **[Chromium - `netlify-plugin-chromium`](https://github.com/soofka/netlify-plugin-chromium)** <br/>  Installs Chromium (installs NPM Chromium package and sets environment variable to location of binaries); useful for other tools requiring Chromium to run, e.g. Ligthouse CI. | [soofka](https://github.com/soofka) |
 | **[Contextual ENV - `netlify-plugin-contextual-env`](https://github.com/cball/netlify-plugin-contextual-env)** <br/>  Replaces ENV vars with ENV vars that are prefixed/suffixed with the context or branch name | [cball](https://github.com/cball) |
 | **[Cypress - `netlify-plugin-cypress`](https://github.com/cypress-io/netlify-plugin-cypress)** <br/>  Runs Cypress end-to-end tests after Netlify builds the site | [bahmutov](https://github.com/bahmutov) |
 | **[Debug Cache - `netlify-plugin-debug-cache`](https://github.com/netlify-labs/netlify-plugin-debug-cache)** <br/>  Debug & verify the contents of your Netlify build cache | [netlify-labs](https://github.com/netlify-labs) |

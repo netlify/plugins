@@ -124,5 +124,12 @@
     "name": "Contextual ENV",
     "package": "netlify-plugin-contextual-env",
     "repo": "https://github.com/cball/netlify-plugin-contextual-env"
+  },
+  {
+    "author": "soofka",
+    "description": "Installs Chromium (installs NPM Chromium package and sets environment variable to location of binaries); useful for other tools requiring Chromium to run, e.g. Ligthouse CI.",
+    "name": "Chromium",
+    "package": "netlify-plugin-chromium",
+    "repo": "https://github.com/soofka/netlify-plugin-chromium"
   }
 ]
