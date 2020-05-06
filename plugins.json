@@ -131,5 +131,12 @@
     "name": "Chromium",
     "package": "netlify-plugin-chromium",
     "repo": "https://github.com/soofka/netlify-plugin-chromium"
+  },
+  {
+    "author": "Tom-Bonnike",
+    "description": "Improve your site’s performance by inlining some of your assets/sources, reducing the number of HTTP requests your users need to make.",
+    "name": "Inline source",
+    "package": "netlify-plugin-inline-source",
+    "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-source"
   }
 ]
