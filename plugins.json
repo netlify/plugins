@@ -154,10 +154,18 @@
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
     "version": "1.0.3"
   },
+  {
     "author": "tzmanics",
-    "description": "🔌A Netlify build plugin to check your project for misspellings of important, brand-related words ☑️.",
+    "description": "🔌A Netlify Build Plugin to check your project for misspellings of important, brand-related words ☑️.",
     "name": "Brand Guardian",
     "package": "netlify-plugin-brand-guardian",
     "repo": "https://github.com/tzmanics/netlify-plugin-brand-guardian"
+  },
+  {
+    "author": "tzmanics",
+    "description": "🔌A Netlify Build Plugin to show you how to use Netlify Build Plugins",
+    "name": "Plugin To All Events",
+    "package": "netlify-plugin-to-all-events",
+    "repo": "https://github.com/tzmanics/netlify-plugin-to-all-events"
   }
 ]
