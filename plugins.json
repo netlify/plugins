@@ -140,6 +140,13 @@
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-source"
   },
   {
+    "author": "Tom-Bonnike",
+    "description": "Automatically extract and inline the critical CSS of your pages in order to render content to the user as fast as possible.",
+    "name": "Inline critical CSS",
+    "package": "netlify-plugin-inline-critical-css",
+    "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
+    "version": "1.0.3"
+  },
     "author": "tzmanics",
     "description": "🔌A Netlify build plugin to check your project for misspellings of important, brand-related words ☑️.",
     "name": "Brand Guardian",
