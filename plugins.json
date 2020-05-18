@@ -77,6 +77,27 @@
     "repo": "https://github.com/netlify-labs/netlify-plugin-debug-cache"
   },
   {
+    "author": "shortdiv",
+    "description": "Streamline local build development by grabbing environment variables from the UI to use locally",
+    "name": "netlify-plugin-get-env-vars",
+    "package": "netlify-plugin-get-env-vars",
+    "repo": "https://github.com/shortdiv/netlify-plugin-get-env-vars"
+  },
+  {
+    "author": "shortdiv",
+    "description": "Prerenders a SPA into separate pages. Useful for letting Netlify identify forms in a SPA",
+    "name": "netlify-plugin-prerender-spa",
+    "package": "netlify-plugin-prerender-spa",
+    "repo": "https://github.com/shortdiv/netlify-plugin-prerender-spa"
+  },
+  {
+    "author": "shortdiv",
+    "description": "Predictively prefetch assets. Given given a user's current route, it guesses where a user will go next. Uses GA",
+    "name": "netlify-plugin-predictive-prefetch",
+    "package": "netlify-plugin-predictive-prefetch",
+    "repo": "https://github.com/shortdiv/netlify-plugin-predictive-prefetch"
+  },
+  {
     "author": "sw-yx",
     "description": "Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web!",
     "name": "No More 404",
