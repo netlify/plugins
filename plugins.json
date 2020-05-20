@@ -90,7 +90,7 @@
   {
     "author": "shortdiv",
     "description": "Streamline local build development by grabbing environment variables from the UI to use locally",
-    "name": "netlify-plugin-get-env-vars",
+    "name": "Get Environment Variables",
     "package": "netlify-plugin-get-env-vars",
     "repo": "https://github.com/shortdiv/netlify-plugin-get-env-vars",
     "version": "1.0.0"
@@ -98,7 +98,7 @@
   {
     "author": "shortdiv",
     "description": "Prerenders a SPA into separate pages. Useful for letting Netlify identify forms in a SPA",
-    "name": "netlify-plugin-prerender-spa",
+    "name": "Prerender SPA",
     "package": "netlify-plugin-prerender-spa",
     "repo": "https://github.com/shortdiv/netlify-plugin-prerender-spa",
     "version": "1.0.1"
