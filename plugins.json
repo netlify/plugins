@@ -206,5 +206,29 @@
     "package": "netlify-plugin-to-all-events",
     "repo": "https://github.com/tzmanics/netlify-plugin-to-all-events",
     "version": "1.3.1"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A plugin to add HTML minification as a post-processing optimisation in Netlify",
+    "name": "Minify HTML",
+    "package": "netlify-plugin-minify-html",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-minify-html",
+    "version": "0.2.2"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A Netlify plugin to fetch and cache content from remote feeds including RSS and JSON",
+    "name": "Fetch Feeds",
+    "package": "netlify-plugin-fetch-feeds",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-fetch-feeds",
+    "version": "0.2.3"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A Netlify plugin to fetch and cache recent Instagram data and images",
+    "name": "Fetch Feeds",
+    "package": "netlify-plugin-add-instagram",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-add-instagram",
+    "version": "0.2.2"
   }
 ]
