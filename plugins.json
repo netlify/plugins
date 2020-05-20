@@ -230,5 +230,13 @@
     "package": "netlify-plugin-add-instagram",
     "repo": "https://github.com/philhawksworth/netlify-plugin-add-instagram",
     "version": "0.2.2"
+  },
+  {
+    "author": "getsentry",
+    "description": "The Sentry Netlify build plugin automatically notifies Sentry of new releases being deployed to your site",
+    "name": "Sentry Build Plugin",
+    "package": "sentry-netlify-build-plugin",
+    "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
+    "version": "1.0.0"
   }
 ]
