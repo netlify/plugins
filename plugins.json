@@ -226,7 +226,7 @@
   {
     "author": "philhawksworth",
     "description": "A Netlify plugin to fetch and cache recent Instagram data and images",
-    "name": "Fetch Feeds",
+    "name": "Add Instagram",
     "package": "netlify-plugin-add-instagram",
     "repo": "https://github.com/philhawksworth/netlify-plugin-add-instagram",
     "version": "0.2.2"
