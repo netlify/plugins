@@ -189,7 +189,7 @@
     "name": "Inline critical CSS",
     "package": "netlify-plugin-inline-critical-css",
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   {
     "author": "tzmanics",
