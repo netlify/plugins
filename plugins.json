@@ -241,7 +241,7 @@
   },
   {
     "author": "AshikNesin",
-    "description": "A Netlify build plugin to send push notice on build success or error via Pushover.net",
+    "description": "Send real time notification to your devices on build success/error via Pushover.net",
     "name": "Pushover Notification",
     "package": "netlify-plugin-pushover",
     "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
