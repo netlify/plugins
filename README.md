@@ -11,12 +11,13 @@ Below are plugins created by some awesome people! ❤️
 To add a plugin, add informations to the [plugins.json file]('./plugins.json').
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
-Plugin count: **30** 🎉
+Plugin count: **31** 🎉
 
 | Plugin | Author |
 |:---------------------------|:-----------:|
 | **[A11y - `netlify-plugin-a11y`](https://github.com/sw-yx/netlify-plugin-a11y)** <br/>  Build a more accessible web! Run your critical pages through pa11y and fail build if accessibility failures are found. | [sw-yx](https://github.com/sw-yx) |
 | **[Add Instagram - `netlify-plugin-add-instagram`](https://github.com/philhawksworth/netlify-plugin-add-instagram)** <br/>  A Netlify plugin to fetch and cache recent Instagram data and images | [philhawksworth](https://github.com/philhawksworth) |
+| **[Algolia Search Index - `netlify-plugin-algolia-index`](https://github.com/lukeocodes/netlify-plugin-algolia-index)** <br/>  Generate an Algolia friendly Search Index of your site | [lukeocodes](https://github.com/lukeocodes) |
 | **[Brand Guardian - `netlify-plugin-brand-guardian`](https://github.com/tzmanics/netlify-plugin-brand-guardian)** <br/>  🔌A Netlify Build Plugin to check your project for misspellings of important, brand-related words ☑️. | [tzmanics](https://github.com/tzmanics) |
 | **[Build Plugin Speedcurve - `netlify-build-plugin-speedcurve`](https://github.com/tkadlec/netlify-build-plugin-speedcurve)** <br/>  After a successful build, tell SpeedCurve you've deployed and trigger a round of testing | [tkadlec](https://github.com/tkadlec) |
 | **[Checklinks - `netlify-plugin-checklinks`](https://github.com/munter/netlify-plugin-checklinks)** <br/>  Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to. | [munter](https://github.com/munter) |
