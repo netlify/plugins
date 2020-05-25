@@ -8,7 +8,7 @@ For more information see the [@Netlify/build](https://github.com/netlify/build) 
 
 Below are plugins created by some awesome people! ❤️
 
-To add a plugin, add informations to the [plugins.json file]('./plugins.json').
+To add a plugin, add informations to the [plugins.json file](./plugins.json).
 
 <!-- AUTO-GENERATED-CONTENT:START (GENERATE_PLUGIN_TABLE)-->
 Plugin count: **30** 🎉
