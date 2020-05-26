@@ -5,7 +5,7 @@
     "name": "Build Plugin Speedcurve",
     "package": "netlify-build-plugin-speedcurve",
     "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve",
-    "version": "1.0.4"
+    "version": "1.0.5"
   },
   {
     "author": "munter",
@@ -13,7 +13,7 @@
     "name": "Checklinks",
     "package": "netlify-plugin-checklinks",
     "repo": "https://github.com/munter/netlify-plugin-checklinks",
-    "version": "4.1.0"
+    "version": "4.1.1"
   },
   {
     "author": "munter",
@@ -21,7 +21,7 @@
     "name": "Subfont",
     "package": "netlify-plugin-subfont",
     "repo": "https://github.com/munter/netlify-plugin-subfont",
-    "version": "4.1.0"
+    "version": "5.0.2"
   },
   {
     "author": "munter",
@@ -29,7 +29,7 @@
     "name": "Hashfiles",
     "package": "netlify-plugin-hashfiles",
     "repo": "https://github.com/munter/netlify-plugin-hashfiles",
-    "version": "4.0.1"
+    "version": "4.0.2"
   },
   {
     "author": "neverendingqs",
@@ -37,7 +37,7 @@
     "name": "Deployment Hours",
     "package": "netlify-deployment-hours-plugin",
     "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin",
-    "version": "0.0.9"
+    "version": "0.0.10"
   },
   {
     "author": "jlengstorf",
@@ -109,7 +109,7 @@
     "name": "No More 404",
     "package": "netlify-plugin-no-more-404",
     "repo": "https://github.com/sw-yx/netlify-plugin-no-more-404",
-    "version": "0.0.14"
+    "version": "0.0.15"
   },
   {
     "author": "sw-yx",
@@ -125,7 +125,7 @@
     "name": "Search Index",
     "package": "netlify-plugin-search-index",
     "repo": "https://github.com/sw-yx/netlify-plugin-search-index",
-    "version": "0.1.2"
+    "version": "0.1.4"
   },
   {
     "author": "sw-yx",
@@ -133,7 +133,7 @@
     "name": "RSS",
     "package": "netlify-plugin-rss",
     "repo": "https://github.com/sw-yx/netlify-plugin-rss",
-    "version": "0.0.6"
+    "version": "0.0.7"
   },
   {
     "author": "sw-yx",
@@ -141,7 +141,7 @@
     "name": "A11y",
     "package": "netlify-plugin-a11y",
     "repo": "https://github.com/sw-yx/netlify-plugin-a11y",
-    "version": "0.0.10"
+    "version": "0.0.11"
   },
   {
     "author": "bahmutov",
@@ -149,7 +149,7 @@
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
-    "version": "1.3.7"
+    "version": "1.3.9"
   },
   {
     "author": "cannikin",
