@@ -136,7 +136,7 @@
     "name": "RSS",
     "package": "netlify-plugin-rss",
     "repo": "https://github.com/sw-yx/netlify-plugin-rss",
-    "version": "0.0.7"
+    "version": "0.0.8"
   },
   {
     "author": "sw-yx",
