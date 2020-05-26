@@ -4,7 +4,8 @@
     "description": "Cancel a build early if you donʼt have enough build minutes.",
     "name": "Out of Minutes",
     "package": "netlify-plugin-out-of-minutes",
-    "repo": "https://github.com/williamjacksn/netlify-plugin-out-of-minutes"
+    "repo": "https://github.com/williamjacksn/netlify-plugin-out-of-minutes",
+    "version": "1.1.0"
   },
   {
     "author": "tkadlec",
