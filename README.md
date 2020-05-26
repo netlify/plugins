@@ -4,8 +4,14 @@
 
 ## Contributing
 
-If you've written a plugin you'd like to add to the Netlify plugins directory, visit the [contributor guide](./docs/CONTRIBUTING.md) for detailed instructions.
+The Netlify plugins directory is filled with plugins created by Netlify staff and members of the community like you. You can contribute to the directory in the following ways:
+
+- [Add a plugin](./docs/CONTRIBUTING.md#add-a-plugin) you've written to the plugins directory.
+- [Update a plugin](./docs/CONTRIBUTING.md#update-a-plugin) you maintain that's already in the directory.
+- [Request directory deactivation](./docs/CONTRIBUTING.md#request-deactivation) for a plugin which is not being maintained.
+
+Visit the repository [contributor guide](./docs/CONTRIBUTING.md) for details.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](./docs/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@github.com.
+This project and everyone participating in it is governed by a [code of conduct](./docs/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@netlify.com.
