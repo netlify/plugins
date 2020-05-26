@@ -69,7 +69,7 @@
     "name": "Sitemap plugin",
     "package": "@netlify/plugin-sitemap",
     "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap",
-    "version": "0.3.3"
+    "version": "0.3.4"
   },
   {
     "author": "daviddarnes",
