@@ -136,7 +136,8 @@
     "name": "RSS",
     "package": "netlify-plugin-rss",
     "repo": "https://github.com/sw-yx/netlify-plugin-rss",
-    "version": "0.0.8"
+    "version": "0.0.8",
+    "status": "DEACTIVATED"
   },
   {
     "author": "sw-yx",
@@ -201,7 +202,8 @@
     "name": "Brand Guardian",
     "package": "netlify-plugin-brand-guardian",
     "repo": "https://github.com/tzmanics/netlify-plugin-brand-guardian",
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "status": "DEACTIVATED"
   },
   {
     "author": "tzmanics",
@@ -234,7 +236,8 @@
     "name": "Add Instagram",
     "package": "netlify-plugin-add-instagram",
     "repo": "https://github.com/philhawksworth/netlify-plugin-add-instagram",
-    "version": "0.2.2"
+    "version": "0.2.2",
+    "status": "DEACTIVATED"
   },
   {
     "author": "getsentry",
