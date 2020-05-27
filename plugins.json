@@ -128,7 +128,7 @@
     "name": "Search Index",
     "package": "netlify-plugin-search-index",
     "repo": "https://github.com/sw-yx/netlify-plugin-search-index",
-    "version": "0.1.4"
+    "version": "0.1.5"
   },
   {
     "author": "sw-yx",
