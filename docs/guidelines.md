@@ -13,12 +13,13 @@ Plugins with required `inputs` cannot be installed via the Netlify UI. Wherever 
 Every plugin in the Netlify plugins directory includes a link to the plugin README. This file should include:
 - A description of what the plugin does and why that might be useful.
 - Any required environment variables.
-- Instructions for installing via `netlify.toml` configuration file, including any optional `inputs`.
+- Sample code for declaring the plugin in the `netlify.toml` configuration file.
+- Details regarding any optional environment variables or `inputs`.
 - Ideally, a link to a demo site with [public deploy logs](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings) and a [Deploy to Netlify button](https://docs.netlify.com/site-deploys/create-deploys/#deploy-to-netlify-button), so users can find out how the plugin works before installing.
 
 ## Follow best practices for plugin code and metadata.
 
-Consistency across plugins makes plugins easier to find, easier to debug, and easier to review for inclusion in the Netlify plugins directory. This [issue comment](https://github.com/netlify/build/issues/1068#issuecomment-605276244) describes common pitfalls to avoid.
+Consistency across plugins makes plugins easier to find, easier to debug, and easier to review for inclusion in the Netlify plugins directory. Review the docs for [creating](https://docs.netlify.app/configure-builds/build-plugins/create-plugins) and [sharing](https://docs.netlify.app/configure-builds/build-plugins/share-plugins) plugins to learn about recommended practices. This [issue comment](https://github.com/netlify/build/issues/1068#issuecomment-605276244) describes some common pitfalls to avoid.
 
 ## Test the plugin.
 
