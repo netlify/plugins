@@ -45,7 +45,7 @@
     "name": "Gatsby Cache",
     "package": "netlify-plugin-gatsby-cache",
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache",
-    "version": "0.2.1"
+    "version": "0.3.0"
   },
   {
     "author": "jlengstorf",
