@@ -1,5 +1,13 @@
 [
   {
+    "author": "lukeocodes",
+    "description": "Generate an Algolia friendly Search Index of your site",
+    "name": "Algolia Search Index",
+    "package": "netlify-plugin-algolia-index",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
+    "version": "0.2.2"
+  },
+  {
     "author": "tkadlec",
     "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
     "name": "Build Plugin Speedcurve",
