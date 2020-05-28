@@ -277,6 +277,6 @@
     "name": "AMP Server-Side Rendering",
     "package": "netlify-plugin-amp-server-side-rendering",
     "repo": "https://github.com/martinbean/netlify-plugin-amp-server-side-rendering",
-    "version": "1.0.1"
+    "version": "1.0.2"
   }
 ]
