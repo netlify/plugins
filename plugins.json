@@ -1,5 +1,13 @@
 [
   {
+    "author": "lukeocodes",
+    "description": "Generate an Algolia friendly Search Index of your site",
+    "name": "Algolia Search Index",
+    "package": "netlify-plugin-algolia-index",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
+    "version": "0.2.2"
+  },
+  {
     "author": "tkadlec",
     "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
     "name": "Build Plugin Speedcurve",
@@ -194,7 +202,7 @@
     "name": "Inline critical CSS",
     "package": "netlify-plugin-inline-critical-css",
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
-    "version": "1.0.4"
+    "version": "1.1.0"
   },
   {
     "author": "tzmanics",
@@ -262,6 +270,14 @@
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
     "version": "1.0.8"
+  },
+  {
+    "author": "martinbean",
+    "description": "A Netlify plugin to server-side render your AMP pages",
+    "name": "AMP Server-Side Rendering",
+    "package": "netlify-plugin-amp-server-side-rendering",
+    "repo": "https://github.com/martinbean/netlify-plugin-amp-server-side-rendering",
+    "version": "1.0.2"
   },
   {
     "author": "chrisdwheatley",
