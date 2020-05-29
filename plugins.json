@@ -13,7 +13,7 @@
     "name": "Opensearch File Automation",
     "package": "netlify-plugin-opensearch",
     "repo": "https://github.com/lukeocodes/netlify-plugin-opensearch",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   {
     "author": "tkadlec",
