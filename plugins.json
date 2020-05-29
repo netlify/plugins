@@ -286,5 +286,13 @@
     "package": "netlify-plugin-image-optim",
     "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim",
     "version": "0.3.0"
+  },
+  {
+    "author": "borisschapira",
+    "description": "After a successful build, creates an event into your Dareboost monitoring and launch some analyses.",
+    "name": "Dareboost",
+    "package": "netlify-build-plugin-dareboost",
+    "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
+    "version": "1.1.1"
   }
 ]
