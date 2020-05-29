@@ -5,6 +5,9 @@ Thanks for contributing the the Netlify plugins directory!
 - [ ] Adding a plugin
 - [ ] Updating a plugin
 
+When updating a plugin, please fill the following link with the plugin name, old version and new version:
+https://diff.intrinsic.com/netlify-plugin-example/1.0.0/2.0.0
+
 **Have you completed the following?**
 
 - [ ] Read and followed the [plugin author guidelines](/docs/guidelines.md).
