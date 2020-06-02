@@ -1,5 +1,6 @@
 [
-  {"author": "chrism2671",
+  {
+    "author": "chrism2671",
    "description": "Clear Cloudflare cache when build completes",
    "name": "Cloudflare cache purge on build complete.",
    "package": "netlify-purge-cloudflare-on-deploy",
