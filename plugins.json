@@ -294,5 +294,13 @@
     "package": "netlify-build-plugin-dareboost",
     "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
     "version": "1.2.0"
+  },
+  {
+    "author": "cdeleeuwe",
+    "description": "Persist Hugo resources folder between Netlify builds for huge build speed improvements!",
+    "name": "Hugo Cache Resources",
+    "package": "netlify-plugin-hugo-cache-resources",
+    "repo": "https://github.com/cdeleeuwe/netlify-plugin-hugo-cache-resources",
+    "version": "0.1.4"
   }
 ]
