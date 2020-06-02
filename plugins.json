@@ -1,4 +1,11 @@
 [
+  {"author": "chrism2671",
+   "description": "Clear Cloudflare cache when build completes",
+   "name": "Cloudflare cache purge on build complete.",
+   "package": "netlify-purge-cloudflare-on-deploy",
+   "repo": "https://github.com/chrism2671/netlify-purge-cloudflare-on-deploy",
+   "version": "1.0.1"
+  },
   {
     "author": "lukeocodes",
     "description": "Generate an Algolia friendly Search Index of your site",
