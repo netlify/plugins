@@ -12,7 +12,7 @@ Example link: https://diff.intrinsic.com/@netlify/plugin-sitemap/0.3.3/0.3.4
 
 **Have you completed the following?**
 
-- [ ] Read and followed the [plugin author guidelines](/docs/guidelines.md).
+- [ ] Read and followed the [plugin author guidelines](https://github.com/netlify/plugins/blob/master/docs/guidelines.md).
 - [ ] Included all [required fields](https://github.com/netlify/plugins/blob/master/docs/CONTRIBUTING.md#required-fields) in your entry.
 - [ ] Tested the plugin [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin), using the plugin version stated in your entry.
 
