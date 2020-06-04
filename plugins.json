@@ -302,5 +302,13 @@
     "package": "netlify-plugin-hugo-cache-resources",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-hugo-cache-resources",
     "version": "0.1.4"
+  },
+  {
+    "author": "cdeleeuwe",
+    "description": "Automatically submit your sitemap to Google and Bing after every production build!",
+    "name": "Submit Sitemap",
+    "package": "netlify-plugin-submit-sitemap",
+    "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
+    "version": "0.1.0"
   }
 ]
