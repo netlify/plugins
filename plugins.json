@@ -309,6 +309,6 @@
     "name": "Submit Sitemap",
     "package": "netlify-plugin-submit-sitemap",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
-    "version": "0.1.2"
+    "version": "0.1.3"
   }
 ]
