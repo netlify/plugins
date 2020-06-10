@@ -297,11 +297,11 @@
   },
   {
     "author": "borisschapira",
-    "description": "After a successful build, creates an event into your Dareboost monitoring and launch some analyses.",
+    "description": "After a successful build, create an event in your Dareboost monitoring. If you have subscribed to API credits, you can automatically launch analyses.",
     "name": "Dareboost",
     "package": "netlify-build-plugin-dareboost",
     "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
-    "version": "1.2.0"
+    "version": "1.2.1"
   },
   {
     "author": "cdeleeuwe",
