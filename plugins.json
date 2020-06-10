@@ -318,5 +318,13 @@
     "package": "netlify-plugin-submit-sitemap",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
     "version": "0.1.4"
+  },
+  {
+    "author": "jakejarvis",
+    "description": "Generic cache plugin for saving and restoring files and/or folders of your choosing between Netlify builds",
+    "name": "Custom Cache",
+    "package": "netlify-plugin-cache",
+    "repo": "https://github.com/jakejarvis/netlify-plugin-cache",
+    "version": "1.0.2"
   }
 ]
