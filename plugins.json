@@ -304,6 +304,14 @@
     "version": "1.2.0"
   },
   {
+    "author": "bencao",
+    "description": "Inline process.env.X in netlify functions with netlify build time environment variables.",
+    "name": "Inline Build Time Environment Variables into Netlify Functions",
+    "package": "netlify-plugin-inline-functions-env",
+    "repo": "https://github.com/bencao/netlify-plugin-inline-functions-env",
+    "version": "1.0.3"
+  },
+  {
     "author": "cdeleeuwe",
     "description": "Persist Hugo resources folder between Netlify builds for huge build speed improvements!",
     "name": "Hugo Cache Resources",
