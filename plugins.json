@@ -309,7 +309,7 @@
     "name": "Inline Build Time Environment Variables into Netlify Functions",
     "package": "netlify-plugin-inline-functions-env",
     "repo": "https://github.com/bencao/netlify-plugin-inline-functions-env",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   {
     "author": "cdeleeuwe",
