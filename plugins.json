@@ -193,8 +193,7 @@
     "name": "Chromium",
     "package": "netlify-plugin-chromium",
     "repo": "https://github.com/soofka/netlify-plugin-chromium",
-    "version": "1.1.1",
-    "status": "DEACTIVATED"
+    "version": "1.1.4"
   },
   {
     "author": "Tom-Bonnike",
