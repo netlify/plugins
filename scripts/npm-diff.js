@@ -69,33 +69,64 @@ const getNewPluginsUrls = async (diffs) => {
 const ADDED_HEADER = '#### Added Packages';
 const UPDATED_HEADER = '#### Updated Packages';
 
+const fetchJson = async (url, options, errorPrefix) => {
+  const response = await fetch(url, options);
+  const json = await response.json();
+  if (!response.ok) {
+    throw new Error(`${errorPrefix}: ${json.message}`);
+  }
+  return json;
+};
+
 const addOrUpdatePrComment = async (comment) => {
   const { GITHUB_TOKEN: token, GITHUB_COMMENTS_URL: commentsUrl } = process.env;
+  if (!token || !commentsUrl) {
+    console.warn('Missing GITHUB_TOKEN or GITHUB_COMMENTS_URL envs');
+    console.log('PR comment:', comment);
+    return;
+  }
+
   const headers = {
     Authorization: `token ${token}`,
     'Content-Type': 'application/json',
   };
   try {
-    const comments = await fetch(commentsUrl, { headers }).then((r) => r.json());
+    const comments = await fetchJson(commentsUrl, { headers }, 'Failed fetching comments');
     const existingComment = comments.find((c) => c.body.includes(ADDED_HEADER) || c.body.includes(UPDATED_HEADER));
     if (existingComment) {
       console.log(`Updating comment '${comment}'`);
-      await fetch(existingComment.url, {
-        headers,
-        method: 'PATCH',
-        body: JSON.stringify({ body: comment }),
-      });
+      await fetchJson(
+        existingComment.url,
+        {
+          headers,
+          method: 'PATCH',
+          body: JSON.stringify({ body: comment }),
+        },
+        'Failed updating comment',
+      );
     } else {
       console.log(`Creating comment '${comment}'`);
-      await fetch(commentsUrl, { headers, method: 'POST', body: JSON.stringify({ body: comment }) });
+      await fetchJson(
+        commentsUrl,
+        {
+          headers,
+          method: 'POST',
+          body: JSON.stringify({ body: comment }),
+        },
+        'Failed creating comment',
+      );
     }
   } catch (e) {
-    console.log(`Failed adding comment to PR`, e.message);
+    console.log(e.message);
   }
 };
 
 const diff = async () => {
   const { GITHUB_BASE_SHA: baseSha, GITHUB_HEAD_SHA: headSha } = process.env;
+  if (!baseSha || !headSha) {
+    console.warn('Missing GITHUB_BASE_SHA or GITHUB_HEAD_SHA envs');
+    return;
+  }
 
   const [basePlugins, headPlugins] = await Promise.all([gitShowPlugins(baseSha), gitShowPlugins(headSha)]);
   if (basePlugins && headPlugins) {
