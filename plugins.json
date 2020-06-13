@@ -193,8 +193,7 @@
     "name": "Chromium",
     "package": "netlify-plugin-chromium",
     "repo": "https://github.com/soofka/netlify-plugin-chromium",
-    "version": "1.1.1",
-    "status": "DEACTIVATED"
+    "version": "1.1.4"
   },
   {
     "author": "Tom-Bonnike",
@@ -304,6 +303,14 @@
     "version": "1.2.1"
   },
   {
+    "author": "bencao",
+    "description": "Inline process.env.X in netlify functions with netlify build time environment variables.",
+    "name": "Inline Build Time Environment Variables into Netlify Functions",
+    "package": "netlify-plugin-inline-functions-env",
+    "repo": "https://github.com/bencao/netlify-plugin-inline-functions-env",
+    "version": "1.0.4"
+  },
+  {
     "author": "cdeleeuwe",
     "description": "Persist Hugo resources folder between Netlify builds for huge build speed improvements!",
     "name": "Hugo Cache Resources",
@@ -325,7 +332,7 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "1.0.1"
+    "version": "1.1.0"
   },
   {
     "author": "netlify-plugin-html-validate",
