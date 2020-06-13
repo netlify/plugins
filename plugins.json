@@ -333,6 +333,6 @@
     "name": "HTML Validate",
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
-    "version": "0.1.0"
+    "version": "0.1.1"
   }
 ]
