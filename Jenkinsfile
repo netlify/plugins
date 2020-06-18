@@ -10,7 +10,7 @@ pipeline {
     stage("Docker push to registry") {
       steps {
         withCredentials([file(credentialsId: 'google-container-registry-push', variable: 'GCLOUD_SECRET_FILE')]) {
-          sh "script/docker-build.sh $GCLOUD_SECRET_FILE ${env.GIT_COMMIT} ${env.BRANCH_NAME}"
+          sh "scripts/docker-build.sh $GCLOUD_SECRET_FILE ${env.GIT_COMMIT} ${env.BRANCH_NAME}"
         }
       }
     }
