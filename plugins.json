@@ -332,7 +332,7 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "1.2.0"
+    "version": "1.2.1"
   },
   {
     "author": "netlify-plugin-html-validate",
