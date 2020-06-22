@@ -64,6 +64,14 @@
     "version": "0.3.0"
   },
   {
+    "author": "edm00se",
+    "description": "Persist the Gridsome cache between Netlify builds for huge speed improvements! ⚡️",
+    "name": "Gridsome Cache",
+    "package": "netlify-plugin-gridsome-cache",
+    "repo": "https://github.com/edm00se/netlify-plugin-gridsome-cache",
+    "version": "1.0.2"
+  },
+  {
     "author": "jlengstorf",
     "description": "Require visual changes on production to be manually approved before going live!",
     "name": "Visual Diff (Applitools)",
