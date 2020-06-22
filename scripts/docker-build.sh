@@ -7,8 +7,8 @@ GCLOUD_FILE="$1"
 GIT_COMMIT="$2"
 BRANCH_NAME="$3"
 
-BRANCH_TAG="gcr.io/netlify-services/github-netlify-build-image-plugins:${BRANCH_NAME//\//-}"
-COMMIT_TAG="gcr.io/netlify-services/github-netlify-build-image-plugins:$GIT_COMMIT"
+BRANCH_TAG="gcr.io/netlify-services/github-netlify-plugins:${BRANCH_NAME//\//-}"
+COMMIT_TAG="gcr.io/netlify-services/github-netlify-plugins:$GIT_COMMIT"
 
 docker build -t "${BRANCH_TAG}" .
 docker tag ${BRANCH_TAG} ${COMMIT_TAG}
