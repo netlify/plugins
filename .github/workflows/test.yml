@@ -1,4 +1,4 @@
-name: NPM Diff
+name: Test
 
 on: [pull_request]
 
@@ -9,12 +9,10 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [13.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -34,10 +32,3 @@ jobs:
         run: yarn lint
       - name: run format check
         run: yarn format:ci
-      - name: run npm diff
-        run: yarn npm-diff
-        env:
-          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          GITHUB_COMMENTS_URL: ${{ github.event.pull_request.comments_url }}
-          GITHUB_TOKEN: ${{ secrets.NETLIBOT }}
