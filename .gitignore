@@ -109,3 +109,5 @@ Temporary Items
 .apdisk
 
 .vscode
+# Local Netlify folder
+.netlify
