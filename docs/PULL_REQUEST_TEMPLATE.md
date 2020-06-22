@@ -1,4 +1,4 @@
-Thanks for contributing the the Netlify plugins directory!
+Thanks for contributing the Netlify plugins directory!
 
 **Are you adding a plugin or updating one?**
 
