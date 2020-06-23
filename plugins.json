@@ -9,11 +9,11 @@
   },
   {
     "author": "lukeocodes",
-    "description": "Generate an Algolia friendly Search Index of your site",
+    "description": "Generate and export a search index direct to Algolia",
     "name": "Algolia Search Index",
     "package": "netlify-plugin-algolia-index",
     "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
-    "version": "0.3.0"
+    "version": "1.0.2"
   },
   {
     "author": "tkadlec",
