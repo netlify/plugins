@@ -5,7 +5,7 @@
     "name": "Algolia Search Index",
     "package": "netlify-plugin-algolia-index",
     "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   {
     "author": "tkadlec",
