@@ -9,11 +9,19 @@
   },
   {
     "author": "lukeocodes",
-    "description": "Generate and export a search index direct to Algolia",
-    "name": "Algolia Search Index",
+    "description": "Netlify plugin to build an Algolia compatible search index to import manually",
+    "name": "Algolia Search Index Generator",
     "package": "netlify-plugin-algolia-index",
     "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
-    "version": "1.0.2"
+    "version": "2.0.2"
+  },
+  {
+    "author": "lukeocodes",
+    "description": "Netlify plugin to build a search index and export to Algolia automatically",
+    "name": "Algolia Export",
+    "package": "netlify-plugin-algolia-export",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-export",
+    "version": "1.0.1"
   },
   {
     "author": "tkadlec",
