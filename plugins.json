@@ -349,5 +349,13 @@
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
     "version": "0.1.1"
+  },
+  {
+    "author": "krotovic",
+    "description": "Netlify Build plugin that reads environment variables from .env file",
+    "name": "Dotenv",
+    "package": "netlify-plugin-dotenv",
+    "repo": "https://github.com/krotovic/netlify-plugin-dotenv",
+    "version": "1.0.0"
   }
 ]
