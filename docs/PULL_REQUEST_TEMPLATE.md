@@ -5,11 +5,6 @@ Thanks for contributing the Netlify plugins directory!
 - [ ] Adding a plugin
 - [ ] Updating a plugin
 
-**Plugin version diff**
-
-If updating a previously added package, create a diff at [diff.intrinsic.com](https://diff.intrinsic.com) and provide a link to the diff here.
-Example link: https://diff.intrinsic.com/@netlify/plugin-sitemap/0.3.3/0.3.4
-
 **Have you completed the following?**
 
 - [ ] Read and followed the [plugin author guidelines](https://github.com/netlify/plugins/blob/master/docs/guidelines.md).
