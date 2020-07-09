@@ -146,6 +146,14 @@
     "version": "0.0.5",
     "status": "DEACTIVATED"
   },
+    {
+    "author": "Blair Anderson",
+    "description": "Password Protection for Static Files",
+    "name": "Netlify Plugin Password Protection",
+    "package": "netlify-plugin-password-protection",
+    "repo": "https://github.com/blairanderson/netlify-plugin-password-protection",
+    "version": "3.0.2"
+  },
   {
     "author": "sw-yx",
     "description": "Generate a Search Index of your site you can query via JavaScript or a Netlify Function",
