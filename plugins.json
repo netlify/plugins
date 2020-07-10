@@ -349,5 +349,13 @@
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
     "version": "0.1.1"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "Automatically discover your Netlify Forms and fetch their submissions to use as data in your build.",
+    "name": "Form Submissions",
+    "package": "netlify-plugin-form-submissions",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-form-submissions",
+    "version": "0.1.3"
   }
 ]
