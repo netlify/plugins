@@ -357,5 +357,5 @@
     "package": "netlify-build-plugin-perfbeacon",
     "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
     "version": "1.0.2"
-  },
+  }
 ]
