@@ -349,5 +349,13 @@
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
     "version": "0.1.1"
+  },
+   {
+    "author": "rozenmd",
+    "description": "Tell PerfBeacon to measure page speed after a successful build",
+    "name": "Build Plugin PerfBeacon",
+    "package": "netlify-build-plugin-perfbeacon",
+    "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
+    "version": "1.0.3"
   }
 ]
