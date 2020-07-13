@@ -340,7 +340,7 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "1.2.2"
+    "version": "1.3.1"
   },
   {
     "author": "oliverroick",
@@ -350,7 +350,7 @@
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
     "version": "0.1.1"
   },
-   {
+  {
     "author": "rozenmd",
     "description": "Tell PerfBeacon to measure page speed after a successful build",
     "name": "Build Plugin PerfBeacon",
