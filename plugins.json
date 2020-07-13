@@ -356,6 +356,6 @@
     "name": "Build Plugin PerfBeacon",
     "package": "netlify-build-plugin-perfbeacon",
     "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
-    "version": "1.0.2"
+    "version": "1.0.3"
   }
 ]
