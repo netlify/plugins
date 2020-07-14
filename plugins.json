@@ -328,11 +328,11 @@
   },
   {
     "author": "cdeleeuwe",
-    "description": "Automatically submit your sitemap to Google and Bing after every production build!",
+    "description": "Automatically submit your sitemap to Google, Bing, and Yandex after every production build!",
     "name": "Submit Sitemap",
     "package": "netlify-plugin-submit-sitemap",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   {
     "author": "netlify-labs",
