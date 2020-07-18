@@ -357,5 +357,13 @@
     "package": "netlify-build-plugin-perfbeacon",
     "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
     "version": "1.0.3"
+  },
+  {
+    "author": "nikduvall",
+    "description": "Clear Cloudflare cache when build completes using API Token Authentication (more secure than global API Key)",
+    "name": "Cloudflare Cache Purge using API Token Authentication",
+    "package": "netlify-purge-cloudflare-cache",
+    "repo": "https://github.com/nikduvall/netlify-purge-cloudflare-cache",
+    "version": "1.0.1"
   }
 ]
