@@ -69,7 +69,7 @@
     "name": "Gridsome Cache",
     "package": "netlify-plugin-gridsome-cache",
     "repo": "https://github.com/edm00se/netlify-plugin-gridsome-cache",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   {
     "author": "jlengstorf",
