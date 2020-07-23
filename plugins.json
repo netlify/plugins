@@ -357,5 +357,13 @@
     "package": "netlify-build-plugin-perfbeacon",
     "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
     "version": "1.0.3"
+  },
+  {
+    "author": "rayriffy",
+    "description": "Netlify plugin that allows you to deploy dynamic NextJS path statically",
+    "name": "Next Dynamic Routes",
+    "package": "netlify-plugin-next-dynamic",
+    "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
+    "version": "1.0.6"
   }
 ]
