@@ -364,6 +364,6 @@
     "name": "Next Dynamic Routes",
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
-    "version": "1.0.8"
+    "version": "1.0.9"
   }
 ]
