@@ -197,7 +197,7 @@
   },
   {
     "author": "soofka",
-    "description": "Installs Chromium (installs NPM Chromium package and sets environment variable to location of binaries); useful for other tools requiring Chromium to run, e.g. Ligthouse CI.",
+    "description": "Installs Chromium (installs NPM Chromium package and sets environment variable to location of binaries); useful for other tools requiring Chromium to run, e.g. Lighthouse CI.",
     "name": "Chromium",
     "package": "netlify-plugin-chromium",
     "repo": "https://github.com/soofka/netlify-plugin-chromium",
