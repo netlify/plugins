@@ -365,5 +365,13 @@
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
     "version": "1.0.9"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "Fetch data for each list found in a public Trello board, and stash it as JSON ready for a build",
+    "name": "Trello Lists",
+    "package": "netlify-plugin-trello-lists",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-trello-lists",
+    "version": "0.1.0"
   }
 ]
