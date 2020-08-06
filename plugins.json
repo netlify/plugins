@@ -365,5 +365,13 @@
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
     "version": "1.0.9"
+  },
+  {
+    "author": "tcmacdonald",
+    "description": "Generate _redirects with environment variables and context support",
+    "name": "ENV Redirects",
+    "package": "netlify-plugin-redirects",
+    "repo": "https://github.com/ample/netlify-plugin-redirects",
+    "version": "1.2.0"
   }
 ]
