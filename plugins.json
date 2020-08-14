@@ -365,5 +365,13 @@
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
     "version": "1.0.9"
+  },
+  {
+    "author": "manister",
+    "description": "Netlify plugin that implements lazy-loading of images as a build step",
+    "name": "Lazy Load Images",
+    "package": "netlify-plugin-lazy-load-images",
+    "repo": "https://github.com/manister/netlify-plugin-lazy-load-images",
+    "version": "0.3.4"
   }
 ]
