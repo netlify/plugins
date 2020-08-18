@@ -365,5 +365,13 @@
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
     "version": "1.0.9"
+  },
+  {
+    "author": "tcmacdonald",
+    "description": "Netlify plugin to replace ENV variables in publish directory",
+    "name": "Replace",
+    "package": "netlify-plugin-replace",
+    "repo": "https://github.com/ample/netlify-plugin-replace",
+    "version": "1.0.0"
   }
 ]
