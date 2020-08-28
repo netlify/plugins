@@ -367,11 +367,11 @@
     "version": "1.0.9"
   },
   {
-    "author": "tcmacdonald",
-    "description": "Netlify plugin to replace ENV variables in publish directory",
+    "author": "ample",
+    "description": "Replace ENV variables in your publish directory",
     "name": "Replace",
     "package": "netlify-plugin-replace",
     "repo": "https://github.com/ample/netlify-plugin-replace",
-    "version": "1.1.2"
+    "version": "1.1.3"
   }
 ]
