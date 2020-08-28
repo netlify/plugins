@@ -372,6 +372,6 @@
     "name": "Replace",
     "package": "netlify-plugin-replace",
     "repo": "https://github.com/ample/netlify-plugin-replace",
-    "version": "1.0.0"
+    "version": "1.1.1"
   }
 ]
