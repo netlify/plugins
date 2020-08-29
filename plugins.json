@@ -370,7 +370,7 @@
     "author": "ample",
     "description": "Replace ENV variables in your publish directory",
     "name": "Replace",
-    "package": "netlify-plugin-replace",
+    "package": "@helloample/netlify-plugin-replace",
     "repo": "https://github.com/ample/netlify-plugin-replace",
     "version": "1.1.3"
   }
