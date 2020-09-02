@@ -376,7 +376,7 @@
   },
   {
     "author": "mattzeunert",
-    "description": "Run tests on DebugBear to see how your deployments affect page performance and Lighthouse scores.",
+    "description": "Run tests on DebugBear to see how your deployments affect page performance and Lighthouse scores",
     "name": "DebugBear Web Performance",
     "package": "netlify-build-plugin-debugbear",
     "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
