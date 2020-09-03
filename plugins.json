@@ -284,7 +284,7 @@
     "name": "Is Website Vulnerable",
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
-    "version": "1.0.8"
+    "version": "1.0.9"
   },
   {
     "author": "martinbean",
