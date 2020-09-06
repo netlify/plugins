@@ -380,6 +380,6 @@
     "name": "DebugBear Web Performance",
     "package": "netlify-build-plugin-debugbear",
     "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
-    "version": "1.0.4"
+    "version": "1.0.6"
   }
 ]
