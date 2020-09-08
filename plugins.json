@@ -5,7 +5,7 @@
     "name": "Cloudflare Cache Purge",
     "package": "netlify-purge-cloudflare-on-deploy",
     "repo": "https://github.com/chrism2671/netlify-purge-cloudflare-on-deploy",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   {
     "author": "lukeocodes",
