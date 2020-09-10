@@ -280,11 +280,11 @@
   },
   {
     "author": "erezrokah",
-    "description": "A Netlify plugin to check if a Website uses vulnerable JavaScript libraries",
+    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries",
     "name": "Is Website Vulnerable",
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
-    "version": "1.0.9"
+    "version": "1.0.10"
   },
   {
     "author": "martinbean",
