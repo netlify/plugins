@@ -340,7 +340,7 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "1.4.1"
+    "version": "1.4.2"
   },
   {
     "author": "oliverroick",
