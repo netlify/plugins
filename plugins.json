@@ -381,5 +381,13 @@
     "package": "netlify-build-plugin-debugbear",
     "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
     "version": "1.0.6"
+  },
+  {
+    "author": "lirantal",
+    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries",
+    "name": "netlify-plugin-snyk",
+    "package": "netlify-plugin-snyk",
+    "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
+    "version": "1.1.1"
   }
 ]
