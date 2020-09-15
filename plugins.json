@@ -385,7 +385,7 @@
   {
     "author": "lirantal",
     "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries",
-    "name": "netlify-plugin-snyk",
+    "name": "Snyk Security Plugin",
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
     "version": "1.1.2"
