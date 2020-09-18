@@ -21,7 +21,7 @@
     "name": "Build Plugin Speedcurve",
     "package": "netlify-build-plugin-speedcurve",
     "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve",
-    "version": "1.0.5"
+    "version": "2.0.0"
   },
   {
     "author": "munter",
