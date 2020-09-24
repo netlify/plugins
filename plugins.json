@@ -389,5 +389,13 @@
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
     "version": "1.1.2"
+  },
+  {
+    "author": "Quarva",
+    "description": "Activate different redirects based on the deploy context.",
+    "name": "Contextual Redirects",
+    "package": "@quarva/netlify-plugin-contextual-redirects",
+    "repo": "https://github.com/quarva/netlify-plugin-contextual-redirects",
+    "version": "1.0.0"
   }
 ]
