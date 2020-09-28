@@ -243,7 +243,7 @@
     "name": "Minify HTML",
     "package": "netlify-plugin-minify-html",
     "repo": "https://github.com/philhawksworth/netlify-plugin-minify-html",
-    "version": "0.2.3"
+    "version": "0.3.0"
   },
   {
     "author": "philhawksworth",
