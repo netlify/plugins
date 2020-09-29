@@ -388,6 +388,6 @@
     "name": "Snyk Security Plugin",
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
-    "version": "1.1.2"
+    "version": "1.2.0"
   }
 ]
