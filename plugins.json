@@ -276,7 +276,7 @@
     "name": "Pushover Notification",
     "package": "netlify-plugin-pushover",
     "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
-    "version": "0.0.5"
+    "version": "0.0.6"
   },
   {
     "author": "erezrokah",
