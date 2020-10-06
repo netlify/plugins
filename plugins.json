@@ -397,6 +397,6 @@
     "name": "Algolia Crawler",
     "package": "@algolia/netlify-plugin-crawler",
     "repo": "https://github.com/@algolia/netlify-plugin-crawler",
-    "version": "0.0.12"
+    "version": "0.0.13"
   }
 ]
