@@ -390,5 +390,13 @@
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
     "version": "1.2.0"
+  },
+  {
+    "author": "algolia",
+    "description": "Automatically crawls your site and generates an Algolia Search index",
+    "name": "Algolia Crawler",
+    "package": "@algolia/netlify-plugin-crawler",
+    "repo": "https://github.com/@algolia/netlify-plugin-crawler",
+    "version": "0.0.12"
   }
 ]
