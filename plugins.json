@@ -396,7 +396,7 @@
     "description": "Automatically crawls your site and generates an Algolia Search index",
     "name": "Algolia Crawler",
     "package": "@algolia/netlify-plugin-crawler",
-    "repo": "https://github.com/@algolia/netlify-plugin-crawler",
+    "repo": "https://github.com/algolia/algoliasearch-netlify",
     "version": "0.0.13"
   }
 ]
