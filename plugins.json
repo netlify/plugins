@@ -13,7 +13,8 @@
     "name": "Algolia Search Index",
     "package": "netlify-plugin-algolia-index",
     "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
-    "version": "0.3.0"
+    "version": "0.3.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "tkadlec",
