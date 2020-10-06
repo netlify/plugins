@@ -23,13 +23,10 @@ The following fields are required for all plugins included in the `plugins.json`
 
 ## Update a plugin
 
-You can submit a PR to update the entry for a plugin that you maintain. If you update the plugin `version`, please be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting. 
+You can submit a PR to update the entry for a plugin that you maintain. If you update the plugin `version`, please be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting.
 
 ## Request deactivation
 
 As described in the [plugin author guidelines](/docs/guidelines.md#be-prepared-to-provide-support), authors of plugins listed in the Netlify plugins directory are expected to respond to issues submitted on the plugin repository within one week of submission. If they do not, a user may request that the plugin be removed from the directory by [submitting an issue](/issues/new) in this repository.
 
 Netlify will try to reach the plugin author(s), and if that fails, we will add a status of `DEACTIVATED` to the plugin entry in the [`plugins.json` file](/plugins.json). Plugins marked `DEACTIVATED` are excluded from the plugins directory in the Netlify UI.
-
-
-

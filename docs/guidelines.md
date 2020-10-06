@@ -11,6 +11,7 @@ Plugins with required `inputs` cannot be installed via the Netlify UI. Wherever 
 ## Provide a README.
 
 Every plugin in the Netlify plugins directory includes a link to the plugin README. This file should include:
+
 - A description of what the plugin does and why that might be useful.
 - Any required environment variables.
 - Sample code for declaring the plugin in the `netlify.toml` configuration file.
@@ -31,7 +32,7 @@ All plugin source code must be public and generally human-readable. Plugin users
 
 ## Understand required agreements.
 
-When you publish a plugin to the npm Public Registry, you agree to npm's [Open Source Terms](https://www.npmjs.com/policies/open-source-terms). When you use a plugin on Netlify, you agree to Netlify's [Terms of Use Agreement](https://www.netlify.com/legal/terms-of-use/). When you make that plugin available to other Netlify users, you agree to interact with those users in accordance with the [Netlify Community Code of Conduct](https://community-docs.netlify.com/code-of-conduct.html). 
+When you publish a plugin to the npm Public Registry, you agree to npm's [Open Source Terms](https://www.npmjs.com/policies/open-source-terms). When you use a plugin on Netlify, you agree to Netlify's [Terms of Use Agreement](https://www.netlify.com/legal/terms-of-use/). When you make that plugin available to other Netlify users, you agree to interact with those users in accordance with the [Netlify Community Code of Conduct](https://community-docs.netlify.com/code-of-conduct.html).
 
 In general, this means that you agree to be kind, to be honest, and to not do anything illegal, but you should read these documents to know exactly what they mean in detail.
 
