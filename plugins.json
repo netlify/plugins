@@ -255,6 +255,14 @@
     "version": "0.3.0"
   },
   {
+    "author": "pagewatch",
+    "description": "Check your site for layout errors, spelling mistakes, broken links and performance issues on every build.",
+    "name": "PageWatch Audit",
+    "package": "netlify-plugin-pagewatch",
+    "repo": "https://github.com/pagewatchdev/netlify-plugin-pagewatch",
+    "version": "1.0.3"
+  },
+  {
     "author": "philhawksworth",
     "description": "A Netlify plugin to fetch and cache content from remote feeds including RSS and JSON",
     "name": "Fetch Feeds",
