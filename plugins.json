@@ -260,7 +260,7 @@
     "name": "PageWatch Audit",
     "package": "netlify-plugin-pagewatch",
     "repo": "https://github.com/pagewatchdev/netlify-plugin-pagewatch",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   {
     "author": "philhawksworth",
