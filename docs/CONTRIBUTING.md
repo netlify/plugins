@@ -8,7 +8,7 @@ The [Netlify plugins directory](https://app.netlify.com/plugins) is filled with 
 
 ## Add a plugin
 
-If you've written a plugin that you'd like to add to the Netlify plugins directory, first read and follow the [plugin author guidelines](/docs/guidelines.md). Then you can submit a pull request adding your plugin to the [`plugins.json` file](/plugins.json) with the required fields.
+If you've written a plugin that you'd like to add to the Netlify plugins directory, first read and follow the [plugin author guidelines](/docs/guidelines.md). Then you can submit a pull request adding your plugin to the [`plugins.json` file](/site/plugins.json) with the required fields.
 
 ### Required fields
 
@@ -29,7 +29,7 @@ You can submit a PR to update the entry for a plugin that you maintain. If you u
 
 As described in the [plugin author guidelines](/docs/guidelines.md#be-prepared-to-provide-support), authors of plugins listed in the Netlify plugins directory are expected to respond to issues submitted on the plugin repository within one week of submission. If they do not, a user may request that the plugin be removed from the directory by [submitting an issue](/issues/new) in this repository.
 
-Netlify will try to reach the plugin author(s), and if that fails, we will add a status of `DEACTIVATED` to the plugin entry in the [`plugins.json` file](/plugins.json). Plugins marked `DEACTIVATED` are excluded from the plugins directory in the Netlify UI.
+Netlify will try to reach the plugin author(s), and if that fails, we will add a status of `DEACTIVATED` to the plugin entry in the [`plugins.json` file](/site/plugins.json). Plugins marked `DEACTIVATED` are excluded from the plugins directory in the Netlify UI.
 
 ## Releasing
 

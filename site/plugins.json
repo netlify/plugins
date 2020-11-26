@@ -1,0 +1,426 @@
+[
+  {
+    "author": "nimbella",
+    "description": "Extend Netlify Sites with support for portable and stateful serverless functions using Nimbella Cloud",
+    "name": "Nimbella",
+    "package": "netlify-plugin-nimbella",
+    "repo": "https://github.com/nimbella/netlify-plugin-nimbella",
+    "version": "1.8.0"
+  },
+  {
+    "author": "chrism2671",
+    "description": "Clear Cloudflare cache when build completes",
+    "name": "Cloudflare Cache Purge",
+    "package": "netlify-purge-cloudflare-on-deploy",
+    "repo": "https://github.com/chrism2671/netlify-purge-cloudflare-on-deploy",
+    "version": "1.2.0"
+  },
+  {
+    "author": "lukeocodes",
+    "description": "Generate an Algolia friendly Search Index of your site",
+    "name": "Algolia Search Index",
+    "package": "netlify-plugin-algolia-index",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
+    "version": "0.3.0",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "tkadlec",
+    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+    "name": "Build Plugin Speedcurve",
+    "package": "netlify-build-plugin-speedcurve",
+    "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve",
+    "version": "2.0.0"
+  },
+  {
+    "author": "munter",
+    "description": "Checklinks helps you keep all your asset references correct and avoid embarrassing broken links to your internal pages, or even to external pages you link out to.",
+    "name": "Checklinks",
+    "package": "netlify-plugin-checklinks",
+    "repo": "https://github.com/munter/netlify-plugin-checklinks",
+    "version": "4.1.1"
+  },
+  {
+    "author": "munter",
+    "description": "Subfont post-processes your web page to analyse you usage of web fonts, then reworks your webpage to use an optimal font loading strategy for the best performance.",
+    "name": "Subfont",
+    "package": "netlify-plugin-subfont",
+    "repo": "https://github.com/munter/netlify-plugin-subfont",
+    "version": "5.0.3"
+  },
+  {
+    "author": "munter",
+    "description": "Hashfiles sets you up with an optimal caching strategy for static sites, where static assets across pages are cached for as long as possible in the visitors browser and never have to be re-requested.",
+    "name": "Hashfiles",
+    "package": "netlify-plugin-hashfiles",
+    "repo": "https://github.com/munter/netlify-plugin-hashfiles",
+    "version": "4.0.2"
+  },
+  {
+    "author": "neverendingqs",
+    "description": "A Netlify build plugin that blocks deployment if it is outside of deployment hours.",
+    "name": "Deployment Hours",
+    "package": "netlify-deployment-hours-plugin",
+    "repo": "https://github.com/neverendingqs/netlify-deployment-hours-plugin",
+    "version": "0.0.10"
+  },
+  {
+    "author": "jlengstorf",
+    "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
+    "name": "Gatsby Cache",
+    "package": "netlify-plugin-gatsby-cache",
+    "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache",
+    "version": "0.3.0"
+  },
+  {
+    "author": "edm00se",
+    "description": "Persist the Gridsome cache between Netlify builds for huge speed improvements! ⚡️",
+    "name": "Gridsome Cache",
+    "package": "netlify-plugin-gridsome-cache",
+    "repo": "https://github.com/edm00se/netlify-plugin-gridsome-cache",
+    "version": "1.0.3"
+  },
+  {
+    "author": "jlengstorf",
+    "description": "Require visual changes on production to be manually approved before going live!",
+    "name": "Visual Diff (Applitools)",
+    "package": "netlify-plugin-visual-diff",
+    "repo": "https://github.com/jlengstorf/netlify-plugin-visual-diff",
+    "version": "1.2.0"
+  },
+  {
+    "author": "pizzafox",
+    "description": "Cache the .next build folder between builds",
+    "name": "Next.js Cache",
+    "package": "netlify-plugin-cache-nextjs",
+    "repo": "https://github.com/pizzafox/netlify-cache-nextjs",
+    "version": "1.4.0"
+  },
+  {
+    "author": "netlify-labs",
+    "description": "Automatically generate a sitemap for your site on PostBuild in Netlify",
+    "name": "Sitemap plugin",
+    "package": "@netlify/plugin-sitemap",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap",
+    "version": "0.5.1"
+  },
+  {
+    "author": "daviddarnes",
+    "description": "Generates posts and pages from a Ghost publication as markdown files, using the Ghost Content API.",
+    "name": "Ghost Markdown",
+    "package": "netlify-plugin-ghost-markdown",
+    "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown",
+    "version": "2.1.0"
+  },
+  {
+    "author": "netlify-labs",
+    "description": "Debug & verify the contents of your Netlify build cache",
+    "name": "Debug Cache",
+    "package": "netlify-plugin-debug-cache",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-debug-cache",
+    "version": "1.0.3"
+  },
+  {
+    "author": "shortdiv",
+    "description": "Streamline local build development by grabbing environment variables from the UI to use locally",
+    "name": "Get Environment Variables",
+    "package": "netlify-plugin-get-env-vars",
+    "repo": "https://github.com/shortdiv/netlify-plugin-get-env-vars",
+    "version": "1.0.0",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "shortdiv",
+    "description": "Prerenders a SPA into separate pages. Useful for letting Netlify identify forms in a SPA",
+    "name": "Prerender SPA",
+    "package": "netlify-plugin-prerender-spa",
+    "repo": "https://github.com/shortdiv/netlify-plugin-prerender-spa",
+    "version": "1.0.1",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web!",
+    "name": "No More 404",
+    "package": "netlify-plugin-no-more-404",
+    "repo": "https://github.com/sw-yx/netlify-plugin-no-more-404",
+    "version": "0.0.15"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Netlify Build Plugin to partially obscure files (names and contents) in git repos! This enables you to partially open source your site, while still being able to work as normal on your local machine and in your Netlify builds.",
+    "name": "Encrypted Files",
+    "package": "netlify-plugin-encrypted-files",
+    "repo": "https://github.com/sw-yx/netlify-plugin-encrypted-files",
+    "version": "0.0.5",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Generate a Search Index of your site you can query via JavaScript or a Netlify Function",
+    "name": "Search Index",
+    "package": "netlify-plugin-search-index",
+    "repo": "https://github.com/sw-yx/netlify-plugin-search-index",
+    "version": "0.1.5"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Generate an RSS feed from your static html files, agnostic of static site generator!",
+    "name": "RSS",
+    "package": "netlify-plugin-rss",
+    "repo": "https://github.com/sw-yx/netlify-plugin-rss",
+    "version": "0.0.8",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "sw-yx",
+    "description": "Build a more accessible web! Run your critical pages through pa11y and fail build if accessibility failures are found.",
+    "name": "A11y",
+    "package": "netlify-plugin-a11y",
+    "repo": "https://github.com/sw-yx/netlify-plugin-a11y",
+    "version": "0.0.12"
+  },
+  {
+    "author": "bahmutov",
+    "description": "Runs Cypress end-to-end tests after Netlify builds the site",
+    "name": "Cypress",
+    "package": "netlify-plugin-cypress",
+    "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
+    "version": "1.3.11"
+  },
+  {
+    "author": "cannikin",
+    "description": "Replaces the database provider in Prisma's schema.prisma at build time",
+    "name": "Prisma Provider",
+    "package": "netlify-plugin-prisma-provider",
+    "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider",
+    "version": "0.3.0"
+  },
+  {
+    "author": "cball",
+    "description": "Replaces ENV vars with ENV vars that are prefixed/suffixed with the context or branch name",
+    "name": "Contextual ENV",
+    "package": "netlify-plugin-contextual-env",
+    "repo": "https://github.com/cball/netlify-plugin-contextual-env",
+    "version": "0.3.0"
+  },
+  {
+    "author": "soofka",
+    "description": "Installs Chromium (installs NPM Chromium package and sets environment variable to location of binaries); useful for other tools requiring Chromium to run, e.g. Lighthouse CI.",
+    "name": "Chromium",
+    "package": "netlify-plugin-chromium",
+    "repo": "https://github.com/soofka/netlify-plugin-chromium",
+    "version": "1.1.4"
+  },
+  {
+    "author": "Tom-Bonnike",
+    "description": "Improve your site’s performance by inlining some of your assets/sources, reducing the number of HTTP requests your users need to make.",
+    "name": "Inline source",
+    "package": "netlify-plugin-inline-source",
+    "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-source",
+    "version": "1.0.4"
+  },
+  {
+    "author": "Tom-Bonnike",
+    "description": "Automatically extract and inline the critical CSS of your pages in order to render content to the user as fast as possible.",
+    "name": "Inline critical CSS",
+    "package": "netlify-plugin-inline-critical-css",
+    "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
+    "version": "1.1.3"
+  },
+  {
+    "author": "tzmanics",
+    "description": "🔌A Netlify Build Plugin to check your project for misspellings of important, brand-related words ☑️.",
+    "name": "Brand Guardian",
+    "package": "netlify-plugin-brand-guardian",
+    "repo": "https://github.com/tzmanics/netlify-plugin-brand-guardian",
+    "version": "1.0.1",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "tzmanics",
+    "description": "🔌A Netlify Build Plugin to show you how to use Netlify Build Plugins",
+    "name": "Plugin To All Events",
+    "package": "netlify-plugin-to-all-events",
+    "repo": "https://github.com/tzmanics/netlify-plugin-to-all-events",
+    "version": "1.3.1",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A plugin to add HTML minification as a post-processing optimisation in Netlify",
+    "name": "Minify HTML",
+    "package": "netlify-plugin-minify-html",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-minify-html",
+    "version": "0.3.0"
+  },
+  {
+    "author": "pagewatch",
+    "description": "Check your site for layout errors, spelling mistakes, broken links and performance issues on every build.",
+    "name": "PageWatch Audit",
+    "package": "netlify-plugin-pagewatch",
+    "repo": "https://github.com/pagewatchdev/netlify-plugin-pagewatch",
+    "version": "1.0.4"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A Netlify plugin to fetch and cache content from remote feeds including RSS and JSON",
+    "name": "Fetch Feeds",
+    "package": "netlify-plugin-fetch-feeds",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-fetch-feeds",
+    "version": "0.2.3"
+  },
+  {
+    "author": "philhawksworth",
+    "description": "A Netlify plugin to fetch and cache recent Instagram data and images",
+    "name": "Add Instagram",
+    "package": "netlify-plugin-add-instagram",
+    "repo": "https://github.com/philhawksworth/netlify-plugin-add-instagram",
+    "version": "0.2.2",
+    "status": "DEACTIVATED"
+  },
+  {
+    "author": "getsentry",
+    "description": "The Sentry Netlify build plugin automatically notifies Sentry of new releases being deployed to your site",
+    "name": "Sentry Build Plugin",
+    "package": "@sentry/netlify-build-plugin",
+    "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
+    "version": "1.0.4"
+  },
+  {
+    "author": "AshikNesin",
+    "description": "Send real time notification to your devices on build success/error via Pushover.net",
+    "name": "Pushover Notification",
+    "package": "netlify-plugin-pushover",
+    "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
+    "version": "0.0.6"
+  },
+  {
+    "author": "erezrokah",
+    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries",
+    "name": "Is Website Vulnerable",
+    "package": "netlify-plugin-is-website-vulnerable",
+    "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
+    "version": "1.0.10"
+  },
+  {
+    "author": "martinbean",
+    "description": "A Netlify plugin to server-side render your AMP pages",
+    "name": "AMP Server-Side Rendering",
+    "package": "netlify-plugin-amp-server-side-rendering",
+    "repo": "https://github.com/martinbean/netlify-plugin-amp-server-side-rendering",
+    "version": "1.0.2"
+  },
+  {
+    "author": "chrisdwheatley",
+    "description": "Optimize images as part of your Netlify build process. Optimizes PNG, JPEG, GIF and SVG file formats.",
+    "name": "Image Optim",
+    "package": "netlify-plugin-image-optim",
+    "repo": "https://github.com/chrisdwheatley/netlify-plugin-image-optim",
+    "version": "0.4.0"
+  },
+  {
+    "author": "borisschapira",
+    "description": "After a successful build, create an event in your Dareboost monitoring. If you have subscribed to API credits, you can automatically launch analyses.",
+    "name": "Dareboost",
+    "package": "netlify-build-plugin-dareboost",
+    "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
+    "version": "1.2.1"
+  },
+  {
+    "author": "bencao",
+    "description": "Inline process.env.VARIABLE in netlify functions with netlify build time environment variables.",
+    "name": "Inline Build Time Environment Variables into Netlify Functions",
+    "package": "netlify-plugin-inline-functions-env",
+    "repo": "https://github.com/bencao/netlify-plugin-inline-functions-env",
+    "version": "1.0.8"
+  },
+  {
+    "author": "cdeleeuwe",
+    "description": "Persist Hugo resources folder between Netlify builds for huge build speed improvements!",
+    "name": "Hugo Cache Resources",
+    "package": "netlify-plugin-hugo-cache-resources",
+    "repo": "https://github.com/cdeleeuwe/netlify-plugin-hugo-cache-resources",
+    "version": "0.1.6"
+  },
+  {
+    "author": "cdeleeuwe",
+    "description": "Automatically submit your sitemap to Google, Bing, and Yandex after every production build!",
+    "name": "Submit Sitemap",
+    "package": "netlify-plugin-submit-sitemap",
+    "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
+    "version": "0.2.3"
+  },
+  {
+    "author": "netlify-labs",
+    "description": "Automatically run a Lighthouse audit on your site after every build",
+    "name": "Lighthouse",
+    "package": "@netlify/plugin-lighthouse",
+    "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
+    "version": "1.4.2"
+  },
+  {
+    "author": "oliverroick",
+    "description": "Validate HTML generated by your build",
+    "name": "HTML Validate",
+    "package": "netlify-plugin-html-validate",
+    "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
+    "version": "0.1.1"
+  },
+  {
+    "author": "rozenmd",
+    "description": "Tell PerfBeacon to measure page speed after a successful build",
+    "name": "Build Plugin PerfBeacon",
+    "package": "netlify-build-plugin-perfbeacon",
+    "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
+    "version": "1.0.3"
+  },
+  {
+    "author": "rayriffy",
+    "description": "Netlify plugin that allows you to deploy dynamic NextJS path statically",
+    "name": "Next Dynamic Routes",
+    "package": "netlify-plugin-next-dynamic",
+    "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
+    "version": "1.0.9"
+  },
+  {
+    "author": "ample",
+    "description": "Replace ENV variables in your publish directory",
+    "name": "Replace",
+    "package": "@helloample/netlify-plugin-replace",
+    "repo": "https://github.com/ample/netlify-plugin-replace",
+    "version": "1.1.4"
+  },
+  {
+    "author": "mattzeunert",
+    "description": "Run tests on DebugBear to see how your deployments affect page performance and Lighthouse scores",
+    "name": "DebugBear Web Performance",
+    "package": "netlify-build-plugin-debugbear",
+    "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
+    "version": "1.0.6"
+  },
+  {
+    "author": "lirantal",
+    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries",
+    "name": "Snyk Security Plugin",
+    "package": "netlify-plugin-snyk",
+    "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
+    "version": "1.2.0"
+  },
+  {
+    "author": "algolia",
+    "description": "Automatically crawls your site and generates an Algolia Search index",
+    "name": "Algolia Crawler",
+    "package": "@algolia/netlify-plugin-crawler",
+    "repo": "https://github.com/algolia/algoliasearch-netlify",
+    "version": "0.0.21"
+  },
+  {
+    "author": "netlify",
+    "description": "Build and deploy Next.js applications with Server-Side Rendering on Netlify. See README for configuration details.",
+    "name": "Next on Netlify",
+    "package": "@netlify/plugin-nextjs",
+    "repo": "https://github.com/netlify/netlify-plugin-nextjs",
+    "version": "1.0.2"
+  }
+]

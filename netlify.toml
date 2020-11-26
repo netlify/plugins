@@ -1,9 +1,3 @@
 [build]
-  command = "echo 'no op'"
   publish = "site"
-  functions = "./functions"
-
-  [build.environment]
-    YARN_FLAGS = "--frozen-lockfile"
-    YARN_VERSION = "1.22.4"
-    NODE_VERSION = "12"
+  functions = "functions"
