@@ -23,7 +23,7 @@ const fetchText = async (url, options, errorPrefix) => {
 
 const getBaseFile = async ({ baseRepoUrl, baseSha }) => {
   const baseFile = await fetchText(
-    `${baseRepoUrl}/contents/plugins.json?ref=${baseSha}`,
+    `${baseRepoUrl}/contents/site/plugins.json?ref=${baseSha}`,
     {
       headers: { Accept: 'application/vnd.github.VERSION.raw' },
     },

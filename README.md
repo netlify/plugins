@@ -1,6 +1,6 @@
 # Netlify Build Plugins
 
-[Build Plugins](https://docs.netlify.com/configure-builds/build-plugins) are a new way to extend the functionality of your build on Netlify. The [`plugins.json` file](./plugins.json) in this repository is used to generate the [Netlify plugins directory](https://app.netlify.com/plugins). Plugins in this directory can be installed directly through the Netlify UI.
+[Build Plugins](https://docs.netlify.com/configure-builds/build-plugins) are a new way to extend the functionality of your build on Netlify. The [`plugins.json` file](./site/plugins.json) in this repository is used to generate the [Netlify plugins directory](https://app.netlify.com/plugins). Plugins in this directory can be installed directly through the Netlify UI.
 
 ## Contributing
 
