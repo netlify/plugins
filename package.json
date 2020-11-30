@@ -1,8 +1,10 @@
 {
-  "name": "netlify-plugins",
+  "name": "@netlify/plugins-list",
   "private": true,
   "version": "1.0.0",
-  "description": "Netlify plugins",
+  "description": "List of Netlify plugins",
+  "main": "site/plugins.json",
+  "files": [],
   "scripts": {
     "lint": "eslint 'functions/**/*.js'",
     "format": "prettier --write 'functions/**/*.js'",
