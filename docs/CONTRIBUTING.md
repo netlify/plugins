@@ -33,4 +33,7 @@ Netlify will try to reach the plugin author(s), and if that fails, we will add a
 
 ## Releasing
 
-See the [documentation in the buildbot](https://github.com/netlify/buildbot/blob/master/docs/overview.md#build-plugins).
+```
+$ npm version major|minor|patch
+$ npm publish
+```
