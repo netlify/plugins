@@ -1,6 +1,5 @@
 {
   "name": "@netlify/plugins-list",
-  "private": true,
   "version": "1.0.0",
   "description": "List of Netlify plugins",
   "main": "site/plugins.json",
