@@ -126,8 +126,15 @@
     "name": "Get Environment Variables",
     "package": "netlify-plugin-get-env-vars",
     "repo": "https://github.com/shortdiv/netlify-plugin-get-env-vars",
-    "version": "1.0.0",
-    "status": "DEACTIVATED"
+    "version": "1.0.0"
+  },
+  {
+    "author": "shortdiv",
+    "description": "Predictively prefetch assets. Given given a user's current route, it guesses where a user will go next. Uses GA",
+    "name": "Predictive Prefetch",
+    "package": "netlify-plugin-predictive-prefetch",
+    "repo": "https://github.com/shortdiv/netlify-plugin-predictive-prefetch",
+    "version": "1.0.1"
   },
   {
     "author": "shortdiv",
@@ -135,8 +142,7 @@
     "name": "Prerender SPA",
     "package": "netlify-plugin-prerender-spa",
     "repo": "https://github.com/shortdiv/netlify-plugin-prerender-spa",
-    "version": "1.0.1",
-    "status": "DEACTIVATED"
+    "version": "1.0.1"
   },
   {
     "author": "sw-yx",
