@@ -25,6 +25,14 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "lukeocodes",
+    "description": "Automatically generate opensearch search.xml file postBuild on Netlify deploy",
+    "name": "Opensearch File Automation",
+    "package": "netlify-plugin-opensearch",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-opensearch",
+    "version": "1.0.2"
+  },
+  {
     "author": "tkadlec",
     "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
     "name": "Build Plugin Speedcurve",
