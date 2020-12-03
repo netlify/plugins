@@ -330,10 +330,10 @@
   {
     "author": "bencao",
     "description": "Inline process.env.VARIABLE in netlify functions with netlify build time environment variables.",
-    "name": "Inline Build Time Environment Variables into Netlify Functions",
+    "name": "Inline build time environment variables into netlify functions so they become available at runtime",
     "package": "netlify-plugin-inline-functions-env",
     "repo": "https://github.com/bencao/netlify-plugin-inline-functions-env",
-    "version": "1.0.8"
+    "version": "1.0.9"
   },
   {
     "author": "cdeleeuwe",
