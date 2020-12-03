@@ -25,6 +25,14 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "lukeocodes",
+    "description": "Netlify plugin to build a search index and export to Algolia automatically",
+    "name": "Algolia Export",
+    "package": "netlify-plugin-algolia-export",
+    "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-export",
+    "version": "1.0.2"
+  },
+  {
     "author": "tkadlec",
     "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
     "name": "Build Plugin Speedcurve",
