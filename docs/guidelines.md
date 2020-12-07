@@ -19,7 +19,7 @@ Every plugin in the Netlify plugins directory includes a link to the plugin READ
     - Point to the [plugins directory](https://app.netlify.com/plugins) in the Netlify UI.
 - File-based installation instructions. Visit our [Next.js Build Plugin README](https://github.com/netlify/netlify-plugin-nextjs/blob/main/README.md) for an example.
     - Include sample code for declaring the plugin in the `netlify.toml` configuration file.
-    - Include a step instructing developers to use npm, yarn or another Node.js package manager to add the plugin to `devDependencies` in the base directory's `package.json`.
+    - Include a step instructing developers to use npm, yarn, or another Node.js package manager to add the plugin to `devDependencies` in the base directory's `package.json`.
 - Any required environment variables.
 - Details regarding any optional environment variables or `inputs`.
 - Ideally, a link to a demo site with [public deploy logs](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings) and a [Deploy to Netlify button](https://docs.netlify.com/site-deploys/create-deploys/#deploy-to-netlify-button), so users can find out how the plugin works before installing.
