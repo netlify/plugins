@@ -14,10 +14,9 @@ Every plugin in the Netlify plugins directory includes a link to the plugin READ
 
 - A description of what the plugin does and why that might be useful.
 - UI-based installation instructions. 
+  > **Note:** You can include UI-based installation instructions in a separate, follow-up pull request. The PR will be merged when your plugin is approved for inclusion in the plugins directory.
     - Include a direct installation link using the format `https://app.netlify.com/plugins/{plugin-package-name}/install`.
     - Point to the [plugins directory](https://app.netlify.com/plugins) in the Netlify UI.
-
-  > **Note:** You can include UI-based installation instructions in a separate, follow-up pull request. The PR will be merged when your plugin is approved for inclusion in the plugins directory.
 - File-based installation instructions. Visit our [Next.js Build Plugin README](https://github.com/netlify/netlify-plugin-nextjs/blob/main/README.md) for an example.
     - Include sample code for declaring the plugin in the `netlify.toml` configuration file.
     - Include a step instructing developers to use npm, yarn or another Node.js package manager to add the plugin to  `devDependencies` in the base directory's `package.json`.
