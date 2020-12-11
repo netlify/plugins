@@ -33,7 +33,7 @@ Netlify will try to reach the plugin author(s), and if that fails, we will add a
 
 ## Releasing
 
-Plugins are available to users as soon as the build of the Netlify site hosting `site/plugins.json` has completed. That build is triggered automatically each time a pull request is merged.
+Plugins are available to users as soon as the build of the Netlify site hosting `site/plugins.json` has completed. That build is triggered automatically each time a pull request is merged, and typically takes less than a minute.
 
 We still publish the list of plugins to npm to use it as a fallback in case that Netlify site is down. This is done with the following commands.
 
