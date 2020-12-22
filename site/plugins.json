@@ -417,7 +417,7 @@
   },
   {
     "author": "netlify",
-    "description": "Build and deploy Next.js applications with Server-Side Rendering on Netlify. See README for configuration details.",
+    "description": "Build and deploy Next.js applications with server-side rendering. No extra configuration required.",
     "name": "Next on Netlify",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
