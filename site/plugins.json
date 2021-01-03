@@ -422,5 +422,13 @@
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
     "version": "1.0.3"
+  },
+  {
+    "author": "racoonx2p",
+    "description": "Send an email from Gmail after successful/failed Netlify build.",
+    "name": "Gmail Plugin",
+    "package": "netlify-plugin-gmail",
+    "repo": "https://github.com/racoonx2p/netlify-plugin-gmail",
+    "version": "1.0.2"
   }
 ]
