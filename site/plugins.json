@@ -81,11 +81,11 @@
     "version": "1.0.3"
   },
   {
-    "author": "jlengstorf",
+    "author": "applitools",
     "description": "Require visual changes on production to be manually approved before going live!",
     "name": "Visual Diff (Applitools)",
     "package": "netlify-plugin-visual-diff",
-    "repo": "https://github.com/jlengstorf/netlify-plugin-visual-diff",
+    "repo": "https://github.com/applitools/netlify-plugin-visual-diff",
     "version": "1.2.0"
   },
   {
