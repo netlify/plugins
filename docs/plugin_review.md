@@ -41,6 +41,7 @@ This is a non-exhaustive list of common pitfalls
 - [ ] The functionality must not be already provided by Netlify or another well-maintained plugin.
 - [ ] The code [must be open source](guidelines.md#keep-it-open).
 - [ ] Breaking changes are not allowed at the moment.
+- [ ] The plugin should work [without any configuration](guidelines.md#provide-a-zero-config-default). Exceptions can be made when there is no way around it, such as for an API token. In that case, environment variables should be used instead of `inputs`.
 
 ### Documentation
 
@@ -59,7 +60,7 @@ This is a non-exhaustive list of common pitfalls
 ### Inputs
 
 - [ ] Inputs should have a [`name` and a `description`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#inputs).
-- [ ] Every input (including environment variable) [should have a default value](guidelines.md#provide-a-zero-config-default). If an input cannot be optional (for example, an API token), an environment variable should be used for it.
+- [ ] Every optional input (including environment variable) [should have a default value](guidelines.md#provide-a-zero-config-default).
 
 ### Events
 
