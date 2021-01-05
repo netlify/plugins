@@ -12,6 +12,10 @@ The Netlify plugins directory is filled with plugins created by Netlify staff an
 
 Visit the repository [contributor guide](./docs/CONTRIBUTING.md) for details.
 
+## Plugin review
+
+If you're reviewing someone else's plugin, please check the following [document](docs/plugin_review.md).
+
 ## Code of Conduct
 
 This project and everyone participating in it is governed by a [code of conduct](./docs/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@netlify.com.
