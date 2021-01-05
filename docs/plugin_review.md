@@ -94,6 +94,6 @@ This is a non-exhaustive list of common pitfalls
 ## Control flow
 
 - [ ] Asynchronous code should use `async`/`await`.
-- [ ] Plugin methods [should not end until all their asynchronous code has completed](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#asynchronous-code). Also, asychronous should propagate to the upper scopes. When mixing callbacks, events and promises, it is common to miss this. Using promise-friendly libraries and `utils.promisify()` are common solutions.
+- [ ] Plugin methods [should not end until all their asynchronous code has completed](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#asynchronous-code). Also, asychronous should propagate to the upper scopes. When mixing callbacks, events and promises, it is common to miss this. Using promise-friendly libraries and `util.promisify()` are common solutions.
 - [ ] `process.exit()` should not be used.
 - [ ] While a top-level function [is allowed in the plugin main file](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#dynamic-events), it should only be used when absolutely necessary.
