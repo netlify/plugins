@@ -22,7 +22,7 @@ The reviewer should submit a new issue on the plugin's repository for each revie
 The plugin author has the best knowledge of their plugin's code and purpose.
 Any review comment should be worded as a friendly recommendation open for feedback from the plugin author.
 
-The reviewer does give feedback on code styling nor programming patterns, unless they introduce a bug or a big performance penalty.
+The reviewer should not give feedback on code styling nor programming patterns, unless they introduce a bug or a big performance penalty.
 
 ## User documentation
 
