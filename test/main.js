@@ -12,7 +12,7 @@ const ENUMS = {
 };
 
 plugins.forEach((plugin) => {
-  const { package: packageName, repo, version } = plugin;
+  const { package: packageName, repo, version, name } = plugin;
 
   Object.entries(plugin).forEach(([attribute, value]) => {
     test(`Plugin attribute "${attribute}" should have a proper shape: ${packageName}`, (t) => {
@@ -38,5 +38,9 @@ plugins.forEach((plugin) => {
 
   test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
     await t.notThrowsAsync(got(repo));
+  });
+
+  test(`Plugin name should not include 'plugin': ${packageName}`, (t) => {
+    t.false(typeof name === 'string' && name.toLowerCase().includes('plugin'));
   });
 });
