@@ -422,5 +422,13 @@
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
     "version": "1.0.8"
+  },
+  {
+    "author": "Anish-Roy",
+    "description": "JavaScript Obfuscator for your sites hosted on netlify, which provide protection for your source code.",
+    "name": "JS Obfuscator",
+    "package": "netlify-plugin-js-obfuscator",
+    "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
+    "version": "1.0.3"
   }
 ]
