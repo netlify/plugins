@@ -34,7 +34,8 @@
     "husky": "^4.2.5",
     "node-fetch": "^2.6.1",
     "pacote": "^11.1.13",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "upper-case-first": "^2.0.2"
   },
   "dependencies": {},
   "engines": {

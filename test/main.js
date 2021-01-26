@@ -1,6 +1,7 @@
 const test = require('ava');
 const got = require('got');
 const { manifest } = require('pacote');
+const { upperCaseFirst } = require('upper-case-first');
 
 const plugins = require('../site/plugins.json');
 
@@ -42,5 +43,9 @@ plugins.forEach((plugin) => {
 
   test(`Plugin name should not include 'plugin': ${packageName}`, (t) => {
     t.false(typeof name === 'string' && name.toLowerCase().includes('plugin'));
+  });
+
+  test(`Plugin name should start with an uppercase letter: ${packageName}`, (t) => {
+    t.true(typeof name === 'string' && name === upperCaseFirst(name));
   });
 });
