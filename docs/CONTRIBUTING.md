@@ -16,7 +16,7 @@ The following fields are required for all plugins included in the `plugins.json`
 
 - `author` - the plugin author's name
 - `description` - plugin description
-- `name` - a human-readable version of the plugin title, for display purposes
+- `name` - a human-readable [sentence cased](https://en.wikipedia.org/wiki/Letter_case#Sentence_case) version of the plugin title, for display purposes
 - `package` - the name of the published npm package
 - `repo` - the complete URL to the source repository for the plugin, on GitHub, GitLab, or Bitbucket. All source code must be public, and the repository must allow public issue submissions.
 - `version` - the exact version Netlify will use for all UI-installed instances of the plugin. To update the plugin version later, submit a new pull request to update this field.
