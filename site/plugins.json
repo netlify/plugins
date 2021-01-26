@@ -425,10 +425,10 @@
   },
   {
     "author": "Anish-Roy",
-    "description": "JavaScript Obfuscator for your sites hosted on netlify, which provide protection for your source code.",
-    "name": "JS Obfuscator",
+    "description": "JavaScript Obfuscator for your js files, which provide protection for your source code.",
+    "name": "JavaScript Obfuscator",
     "package": "netlify-plugin-js-obfuscator",
     "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
-    "version": "1.0.3"
+    "version": "1.0.5"
   }
 ]
