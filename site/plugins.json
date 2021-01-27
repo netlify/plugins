@@ -421,6 +421,6 @@
     "name": "Next on Netlify",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "1.0.8"
+    "version": "1.1.0"
   }
 ]
