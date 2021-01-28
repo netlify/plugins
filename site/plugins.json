@@ -429,6 +429,6 @@
     "name": "Javascript obfuscator",
     "package": "netlify-plugin-js-obfuscator",
     "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
-    "version": "1.0.15"
+    "version": "1.0.19"
   }
 ]
