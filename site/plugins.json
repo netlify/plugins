@@ -438,5 +438,13 @@
     "package": "netlify-plugin-gmail",
     "repo": "https://github.com/racoonx2p/netlify-plugin-gmail",
     "version": "1.1.0"
+  },
+  {
+    "author": "mesomorphic",
+    "description": "Persist the Jekyll cache between Netlify builds",
+    "name": "Jekyll Cache",
+    "package": "netlify-plugin-jekyll-cache",
+    "repo": "https://github.com/Mesomorphic/netlify-plugin-jekyll-cache",
+    "version": "1.0.0"
   }
 ]
