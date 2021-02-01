@@ -430,5 +430,13 @@
     "package": "netlify-plugin-js-obfuscator",
     "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
     "version": "1.0.20"
+  },
+  {
+    "author": "racoonx2p",
+    "description": "Send an email from Gmail after successful/failed Netlify build.",
+    "name": "Gmail",
+    "package": "netlify-plugin-gmail",
+    "repo": "https://github.com/racoonx2p/netlify-plugin-gmail",
+    "version": "1.1.0"
   }
 ]
