@@ -425,7 +425,7 @@
   },
   {
     "author": "Anish-Roy",
-    "description": "An obfuscator for your js source code.",
+    "description": "An obfuscator for your JavaScript source code.",
     "name": "JavaScript obfuscator",
     "package": "netlify-plugin-js-obfuscator",
     "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
