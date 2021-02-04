@@ -425,8 +425,8 @@
   },
   {
     "author": "Anish-Roy",
-    "description": "JavaScript Obfuscator for your js files, which provide protection for your source code.",
-    "name": "Javascript obfuscator",
+    "description": "An obfuscator for your js source code.",
+    "name": "JavaScript obfuscator",
     "package": "netlify-plugin-js-obfuscator",
     "repo": "https://github.com/iamanishroy/netlify-plugin-js-obfuscator",
     "version": "1.0.20"
@@ -442,7 +442,7 @@
   {
     "author": "mesomorphic",
     "description": "Persist the Jekyll cache between Netlify builds",
-    "name": "Jekyll Cache",
+    "name": "Jekyll cache",
     "package": "netlify-plugin-jekyll-cache",
     "repo": "https://github.com/Mesomorphic/netlify-plugin-jekyll-cache",
     "version": "1.0.0"
