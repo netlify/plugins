@@ -1,11 +1,11 @@
 [
   {
     "author": "nimbella",
-    "description": "Extend Netlify Sites with support for portable and stateful serverless functions using Nimbella Cloud",
+    "description": "Nimbella plugin to extend Netlify Sites with stateful and portable serverless APIs.",
     "name": "Nimbella",
     "package": "netlify-plugin-nimbella",
     "repo": "https://github.com/nimbella/netlify-plugin-nimbella",
-    "version": "1.8.0"
+    "version": "2.1.0"
   },
   {
     "author": "chrism2671",
