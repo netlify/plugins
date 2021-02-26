@@ -446,5 +446,13 @@
     "package": "netlify-plugin-jekyll-cache",
     "repo": "https://github.com/Mesomorphic/netlify-plugin-jekyll-cache",
     "version": "1.0.0"
+  },
+  {
+    "author": "CodeFoodPixels",
+    "description": "Automatically discover any webmentions and send them after every production build",
+    "name": "Webmentions",
+    "package": "netlify-plugin-webmentions",
+    "repo": "https://github.com/CodeFoodPixels/netlify-plugin-webmentions",
+    "version": "1.0.1"
   }
 ]
