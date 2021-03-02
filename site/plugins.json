@@ -357,7 +357,7 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "1.4.2"
+    "version": "1.4.3"
   },
   {
     "author": "oliverroick",
