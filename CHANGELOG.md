@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://www.github.com/netlify/plugins/compare/v2.3.0...v2.4.0) (2021-03-05)
+
+
+### Features
+
+* support Next <10.0.6 users with Essential Next.js plugin ([dceaa10](https://www.github.com/netlify/plugins/commit/dceaa10973fe9e288f685dc2a9304dd80ede5ec6))
+
 ## [2.3.0](https://www.github.com/netlify/plugins/compare/v2.2.0...v2.3.0) (2021-03-04)
 
 
