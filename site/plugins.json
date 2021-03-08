@@ -186,7 +186,7 @@
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
-    "version": "1.9.2"
+    "version": "2.1.0"
   },
   {
     "author": "cannikin",
