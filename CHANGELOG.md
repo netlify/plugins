@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.2](https://www.github.com/netlify/plugins/compare/v2.4.1...v2.4.2) (2021-03-16)
+
+
+### Bug Fixes
+
+* update Next.js plugin compatibility to 1.1.2 ([851ff18](https://www.github.com/netlify/plugins/commit/851ff18ea5240c9b53eafbab7a9594777552c75a))
+
 ### [2.4.1](https://www.github.com/netlify/plugins/compare/v2.4.0...v2.4.1) (2021-03-12)
 
 
