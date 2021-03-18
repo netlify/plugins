@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.3](https://www.github.com/netlify/plugins/compare/v2.4.2...v2.4.3) (2021-03-18)
+
+
+### Bug Fixes
+
+* upgrade Essential Next.js to `1.1.3` ([9535255](https://www.github.com/netlify/plugins/commit/953525594976c6b206a3545b4bd06cc9eb64cb59))
+
 ### [2.4.2](https://www.github.com/netlify/plugins/compare/v2.4.1...v2.4.2) (2021-03-16)
 
 
