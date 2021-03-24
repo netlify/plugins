@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://www.github.com/netlify/plugins/compare/v2.4.3...v2.5.0) (2021-03-24)
+
+
+### Features
+
+* **sitemap:** bump sitemap plugin to 0.8.0 ([95a4e6f](https://www.github.com/netlify/plugins/commit/95a4e6f1fece1d3e2d1309a956358e5fc314b528))
+
 ### [2.4.3](https://www.github.com/netlify/plugins/compare/v2.4.2...v2.4.3) (2021-03-18)
 
 
