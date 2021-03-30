@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.5.1](https://www.github.com/netlify/plugins/compare/v2.5.0...v2.5.1) (2021-03-30)
+
+
+### Bug Fixes
+
+* **plugin-sitemap:** update to version 0.8.1 ([#265](https://www.github.com/netlify/plugins/issues/265)) ([d7dc0a4](https://www.github.com/netlify/plugins/commit/d7dc0a4379ec2c51049f725c7dc5414ca861a35b))
+
 ## [2.5.0](https://www.github.com/netlify/plugins/compare/v2.4.3...v2.5.0) (2021-03-24)
 
 
