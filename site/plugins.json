@@ -102,7 +102,7 @@
     "name": "Sitemap",
     "package": "@netlify/plugin-sitemap",
     "repo": "https://github.com/netlify-labs/netlify-plugin-sitemap",
-    "version": "0.8.0"
+    "version": "0.8.1"
   },
   {
     "author": "daviddarnes",
