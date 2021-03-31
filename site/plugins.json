@@ -473,6 +473,6 @@
     "name": "QA Wolf",
     "package": "netlify-plugin-qawolf",
     "repo": "https://github.com/qawolf/netlify-plugin-qawolf",
-    "version": "1.0.2"
+    "version": "1.0.3"
   }
 ]
