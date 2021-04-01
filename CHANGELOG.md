@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://www.github.com/netlify/plugins/compare/v2.5.1...v2.6.0) (2021-04-01)
+
+
+### Features
+
+* add QA Wolf plugin ([#267](https://www.github.com/netlify/plugins/issues/267)) ([5f0c797](https://www.github.com/netlify/plugins/commit/5f0c797c22c97298432a8a8b095b5767ec77d70e))
+
 ### [2.5.1](https://www.github.com/netlify/plugins/compare/v2.5.0...v2.5.1) (2021-03-30)
 
 
