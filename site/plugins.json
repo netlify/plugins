@@ -466,5 +466,13 @@
     "package": "netlify-plugin-webmentions",
     "repo": "https://github.com/CodeFoodPixels/netlify-plugin-webmentions",
     "version": "1.1.0"
+  },
+  {
+    "author": "flaurida",
+    "description": "Run QA Wolf end-to-end tests on Netlify deployments 🐺",
+    "name": "QA Wolf",
+    "package": "netlify-plugin-qawolf",
+    "repo": "https://github.com/qawolf/netlify-plugin-qawolf",
+    "version": "1.0.3"
   }
 ]
