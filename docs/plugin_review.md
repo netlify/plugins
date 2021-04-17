@@ -89,8 +89,8 @@ This is a non-exhaustive list of common pitfalls
 
 ## Utilities
 
-- [ ] The [`cache` utility](https://github.com/netlify/build/blob/master/packages/cache-utils/README.md) should be used to cache files.
-- [ ] The [`git` utility](https://github.com/netlify/build/blob/master/packages/git-utils/README.md) should be used for git-related logic.
+- [ ] The [`cache` utility](https://github.com/netlify/build/blob/main/packages/cache-utils/README.md) should be used to cache files.
+- [ ] The [`git` utility](https://github.com/netlify/build/blob/main/packages/git-utils/README.md) should be used for git-related logic.
 
 ## Control flow
 

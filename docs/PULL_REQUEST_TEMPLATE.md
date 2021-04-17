@@ -7,8 +7,8 @@ Thanks for contributing the Netlify plugins directory!
 
 **Have you completed the following?**
 
-- [ ] Read and followed the [plugin author guidelines](https://github.com/netlify/plugins/blob/master/docs/guidelines.md).
-- [ ] Included all [required fields](https://github.com/netlify/plugins/blob/master/docs/CONTRIBUTING.md#required-fields) in your entry.
+- [ ] Read and followed the [plugin author guidelines](https://github.com/netlify/plugins/blob/main/docs/guidelines.md).
+- [ ] Included all [required fields](https://github.com/netlify/plugins/blob/main/docs/CONTRIBUTING.md#required-fields) in your entry.
 - [ ] Tested the plugin [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin), using the plugin version stated in your entry.
 
 **Test plan**
