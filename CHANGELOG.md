@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://www.github.com/netlify/plugins/compare/v2.6.0...v2.7.0) (2021-04-19)
+
+
+### Features
+
+* **qa-wolf:** force latest package release [#276](https://www.github.com/netlify/plugins/issues/276) ([#278](https://www.github.com/netlify/plugins/issues/278)) ([7865521](https://www.github.com/netlify/plugins/commit/786552118e1ba40f8feb5aaf485f56b97a75a180))
+
 ## [2.6.0](https://www.github.com/netlify/plugins/compare/v2.5.1...v2.6.0) (2021-04-01)
 
 
