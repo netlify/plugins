@@ -14,7 +14,7 @@ Visit the repository [contributor guide](./docs/CONTRIBUTING.md) for details.
 
 ## Plugin review
 
-If you're reviewing someone else's plugin, please check the following [document](docs/plugin_review.md).
+If you're reviewing someone else's plugin, please check the following [document](docs/plugin_review.md). 
 
 ## Code of Conduct
 
