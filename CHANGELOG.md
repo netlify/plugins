@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://www.github.com/netlify/plugins/compare/v2.7.0...v2.8.0) (2021-04-22)
+
+
+### Features
+
+* **plugin-lighthouse:** update to version 2.1.0 ([#282](https://www.github.com/netlify/plugins/issues/282)) ([9bc0290](https://www.github.com/netlify/plugins/commit/9bc0290d89fa3435dc8e7e492f002ce2640f95fc))
+
 ## [2.7.0](https://www.github.com/netlify/plugins/compare/v2.6.0...v2.7.0) (2021-04-19)
 
 
