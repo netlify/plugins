@@ -474,5 +474,13 @@
     "package": "netlify-plugin-qawolf",
     "repo": "https://github.com/qawolf/netlify-plugin-qawolf",
     "version": "1.1.0"
+  },
+  {
+    "author": "Ghost Inspector",
+    "description": "Run Ghost Inspector automated browser tests on your Netlify deploys",
+    "name": "Ghost Inspector",
+    "package": "netlify-plugin-ghost-inspector",
+    "repo": "https://github.com/ghost-inspector/netlify-plugin",
+    "version": "1.0.0"
   }
 ]
