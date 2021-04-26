@@ -1,14 +1,21 @@
-const { URL } = require('url');
+import { URL, fileURLToPath } from 'url';
+import fs from 'fs';
+import { dirname } from 'path';
 
-const test = require('ava');
-const got = require('got');
-const { manifest } = require('pacote');
-const { upperCaseFirst } = require('upper-case-first');
-const isPlainObj = require('is-plain-obj');
-const { valid: validVersion, validRange, lt: ltVersion } = require('semver');
-const normalizeNodeVersion = require('normalize-node-version');
+import test from 'ava';
+import got from 'got';
+import pacote from 'pacote';
+import { upperCaseFirst } from 'upper-case-first';
+import isPlainObj from 'is-plain-obj';
+import semver from 'semver';
+import normalizeNodeVersion from 'normalize-node-version';
 
-const plugins = require('../site/plugins.json');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const { manifest } = pacote;
+const { valid: validVersion, validRange, lt: ltVersion } = semver;
+
+const plugins = JSON.parse(fs.readFileSync(`${__dirname}/../site/plugins.json`));
 
 const STRING_ATTRIBUTES = ['author', 'description', 'name', 'package', 'repo', 'status', 'version'];
 const OPTIONAL_ATTRIBUTES = ['status', 'compatibility'];
