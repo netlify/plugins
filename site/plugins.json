@@ -481,6 +481,6 @@
     "name": "Ghost Inspector",
     "package": "netlify-plugin-ghost-inspector",
     "repo": "https://github.com/ghost-inspector/netlify-plugin",
-    "version": "1.0.0"
+    "version": "1.0.1"
   }
 ]
