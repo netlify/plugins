@@ -1,6 +1,6 @@
 {
   "name": "@netlify/plugins-list",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "description": "List of Netlify plugins",
   "main": "site/plugins.json",
   "files": [],

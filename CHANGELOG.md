@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.0](https://www.github.com/netlify/plugins/compare/v2.8.0...v2.9.0) (2021-05-03)
+
+
+### Features
+
+* add Ghost Inspector Netlify plugin ([#284](https://www.github.com/netlify/plugins/issues/284)) ([d561334](https://www.github.com/netlify/plugins/commit/d561334eeb9fb3636bd1225d9cd6be7470c7013a))
+
 ## [2.8.0](https://www.github.com/netlify/plugins/compare/v2.7.0...v2.8.0) (2021-04-22)
 
 
