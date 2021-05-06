@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.0](https://www.github.com/netlify/plugins/compare/v2.9.0...v2.10.0) (2021-05-06)
+
+
+### Features
+
+* allow `compatibility` entries without conditions ([ba79029](https://www.github.com/netlify/plugins/commit/ba7902957d996d44d7c4062d6f378b1449990ec7))
+
 ## [2.9.0](https://www.github.com/netlify/plugins/compare/v2.8.0...v2.9.0) (2021-05-03)
 
 
