@@ -9,7 +9,7 @@
     "lint": "eslint 'functions/**/*.js'",
     "format": "prettier --write 'functions/**/*.js'",
     "format:ci": "prettier --check 'functions/**/*.js'",
-    "test": "ava"
+    "test": "ava --node-arguments=--experimental-json-modules"
   },
   "husky": {
     "hooks": {
