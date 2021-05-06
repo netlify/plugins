@@ -19,8 +19,7 @@ const ENUMS = {
   status: ['DEACTIVATED', undefined],
 };
 
-const COMPATIBILITY_CONDITIONS = ['nodeVersion', 'siteDependencies'];
-const COMPATIBILITY_ATTRIBUTES = ['version', 'migrationGuide', ...COMPATIBILITY_CONDITIONS];
+const COMPATIBILITY_ATTRIBUTES = ['version', 'migrationGuide', 'nodeVersion', 'siteDependencies'];
 
 plugins.forEach((plugin) => {
   const { package: packageName, repo, version, name, compatibility } = plugin;
@@ -91,10 +90,6 @@ plugins.forEach((plugin) => {
       test(`Plugin compatibility[${index}].${compatFieldKey} is a known attribute: ${packageName}`, (t) => {
         t.true(COMPATIBILITY_ATTRIBUTES.includes(compatFieldKey));
       });
-    });
-
-    test(`Plugin compatibility[${index}] defines at least one condition: ${packageName}`, (t) => {
-      t.true(COMPATIBILITY_CONDITIONS.some((conditionKey) => compatField[conditionKey] !== undefined));
     });
 
     test(`Plugin compatibility[${index}].version is valid: ${packageName}`, async (t) => {
