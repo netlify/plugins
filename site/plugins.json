@@ -486,7 +486,7 @@
   {
     "author": "bharathvaj-ganesan",
     "description": "The Airbrake Netlify build plugin automatically notifies Airbrake of new releases being deployed to your site",
-    "name": "Airbrake Netlify build plugin",
+    "name": "Airbrake",
     "package": "@bharathvaj/netlify-plugin-airbrake",
     "repo": "https://github.com/bharathvaj-ganesan/netlify-plugin-airbrake",
     "version": "1.0.2"
