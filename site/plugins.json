@@ -489,6 +489,6 @@
     "name": "Stepzen",
     "package": "netlify-plugin-stepzen",
     "repo": "https://github.com/steprz/netlify-plugin-stepzen",
-    "version": "1.0.0"
+    "version": "1.0.1"
   }
 ]
