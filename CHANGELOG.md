@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.11.1](https://www.github.com/netlify/plugins/compare/v2.11.0...v2.11.1) (2021-05-11)
+
+
+### Bug Fixes
+
+* Fix Camel case. Stepzen --> StepZen ([596fbf5](https://www.github.com/netlify/plugins/commit/596fbf53750b9d0257e6d1e9639781b4c7abba8c))
+
 ## [2.11.0](https://www.github.com/netlify/plugins/compare/v2.10.0...v2.11.0) (2021-05-11)
 
 
