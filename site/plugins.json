@@ -371,7 +371,12 @@
     "name": "HTML validate",
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
-    "version": "0.1.1"
+    "version": "1.0.0",
+    "compatibility": [
+      {
+        "version": "0.1.1"
+      }
+    ]
   },
   {
     "author": "rozenmd",
