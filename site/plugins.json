@@ -482,5 +482,13 @@
     "package": "netlify-plugin-ghost-inspector",
     "repo": "https://github.com/ghost-inspector/netlify-plugin",
     "version": "1.0.1"
+  },
+  {
+    "author": "Stepzen <team@stepzen.com>",
+    "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build",
+    "name": "Stepzen",
+    "package": "netlify-plugin-stepzen",
+    "repo": "https://github.com/steprz/netlify-plugin-stepzen",
+    "version": "1.0.1"
   }
 ]
