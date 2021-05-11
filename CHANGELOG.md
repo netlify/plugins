@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.11.0](https://www.github.com/netlify/plugins/compare/v2.10.0...v2.11.0) (2021-05-11)
+
+
+### Features
+
+* improve `compatibility` field validation ([02d1aa8](https://www.github.com/netlify/plugins/commit/02d1aa84ab435c4d16700f930d6a373f3d38f466))
+* Introducing the netlify stepzen plugin ([dd24503](https://www.github.com/netlify/plugins/commit/dd24503961e0878d24a9e6b110ff6c79c6a363f7))
+
+
+### Bug Fixes
+
+* remove the use of markdown in the description ([b9e74dd](https://www.github.com/netlify/plugins/commit/b9e74dd33810b370a660047a5fc17b0656577f4f))
+
 ## [2.10.0](https://www.github.com/netlify/plugins/compare/v2.9.0...v2.10.0) (2021-05-06)
 
 
