@@ -431,9 +431,7 @@
     "compatibility": [
       {
         "version": "1.1.5",
-        "siteDependencies": {
-          "next": "<10.0.6"
-        }
+        "siteDependencies": { "next": "<10.0.6" }
       }
     ]
   },
