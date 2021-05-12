@@ -374,7 +374,8 @@
     "version": "1.0.0",
     "compatibility": [
       {
-        "version": "0.1.1"
+        "version": "0.1.1",
+        "migrationGuide": "https://gitlab.com/html-validate/html-validate/-/blob/master/CHANGELOG.md#-breaking-changes"
       }
     ]
   },
