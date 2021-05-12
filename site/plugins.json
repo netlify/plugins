@@ -375,7 +375,7 @@
     "compatibility": [
       {
         "version": "0.1.1",
-        "migrationGuide": "https://gitlab.com/html-validate/html-validate/-/blob/master/CHANGELOG.md#-breaking-changes"
+        "migrationGuide": "https://github.com/oliverroick/netlify-plugin-html-validate/releases/tag/v1.0.0"
       }
     ]
   },
