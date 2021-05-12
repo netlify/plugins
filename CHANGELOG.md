@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.11.2](https://www.github.com/netlify/plugins/compare/v2.11.1...v2.11.2) (2021-05-12)
+
+
+### Reverts
+
+* style formatting ([631d42f](https://www.github.com/netlify/plugins/commit/631d42f6717209ced56a0b0707667be1428fac86))
+
 ### [2.11.1](https://www.github.com/netlify/plugins/compare/v2.11.0...v2.11.1) (2021-05-11)
 
 
