@@ -360,6 +360,9 @@
     "version": "2.1.0",
     "compatibility": [
       {
+        "version": "2.1.0"
+      },
+      {
         "version": "1.4.3",
         "nodeVersion": "<12.13.0"
       }
@@ -374,8 +377,11 @@
     "version": "1.0.0",
     "compatibility": [
       {
-        "version": "0.1.1",
+        "version": "1.0.0",
         "migrationGuide": "https://github.com/oliverroick/netlify-plugin-html-validate/releases/tag/v1.0.0"
+      },
+      {
+        "version": "0.1.1"
       }
     ]
   },
@@ -435,6 +441,9 @@
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
     "version": "3.2.2",
     "compatibility": [
+      {
+        "version": "3.2.2"
+      },
       {
         "version": "1.1.5",
         "siteDependencies": { "next": "<10.0.6" }
