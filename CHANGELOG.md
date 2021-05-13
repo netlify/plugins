@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.0](https://www.github.com/netlify/plugins/compare/v2.11.2...v2.12.0) (2021-05-13)
+
+
+### Features
+
+* enforce that the first field in `compatibility` is the same as `version` ([0016591](https://www.github.com/netlify/plugins/commit/00165917ae088ecc368ec712f6baa10953e7a585))
+
 ### [2.11.2](https://www.github.com/netlify/plugins/compare/v2.11.1...v2.11.2) (2021-05-12)
 
 
