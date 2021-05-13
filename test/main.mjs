@@ -127,7 +127,12 @@ plugins.forEach((plugin) => {
 
       t.is(typeof version, 'string');
       t.not(validVersion(version), null);
-      t.true(ltVersion(compatVersion, version));
+
+      if (index === 0) {
+        t.is(compatVersion, version);
+      } else {
+        t.true(ltVersion(compatVersion, version));
+      }
 
       await t.notThrowsAsync(manifest(`${packageName}@${compatVersion}`));
     });
