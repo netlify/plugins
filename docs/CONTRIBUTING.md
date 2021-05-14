@@ -19,11 +19,65 @@ The following fields are required for all plugins included in the `plugins.json`
 - `name` - a human-readable [sentence cased](https://en.wikipedia.org/wiki/Letter_case#Sentence_case) version of the plugin title, for display purposes
 - `package` - the name of the published npm package
 - `repo` - the complete URL to the source repository for the plugin, on GitHub, GitLab, or Bitbucket. All source code must be public, and the repository must allow public issue submissions.
-- `version` - the exact version Netlify will use for all UI-installed instances of the plugin. To update the plugin version later, submit a new pull request to update this field.
+- `version` - the [latest version](#versioning) of the plugin.
 
 ## Update a plugin
 
-You can submit a PR to update the entry for a plugin that you maintain. If you update the plugin `version`, please be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting.
+You can submit a PR to update the entry for a plugin that you maintain.
+
+### Versioning
+
+The latest version of the plugin must be specified in the `version` field. When updating it, please be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting.
+
+The `version` and `compatibility` fields are used to select the version of plugins installed from the [Netlify plugins directory](https://docs.netlify.com/configure-builds/build-plugins/#ui-installation). This does not apply to plugins installed in the [site's `package.json`](https://docs.netlify.com/configure-builds/build-plugins/#file-based-installation).
+
+### Major releases
+
+If a plugin has several major releases, the latest version of each major release must be specified in a `compatibility` array. The major releases must be sorted from most to least recent. The first `compatibility` item's `version` must be the same as the top-level `version` field.
+
+```json
+"version": "1.3.0"
+"compatibility": [
+  { "version": "1.3.0" },
+  { "version": "0.3.0" },
+  { "version": "0.2.0" }
+]
+```
+
+A `migrationGuide` URL pointing to a migration guide, a GitHub release or a list of breaking changes can be specified. This URL will be shown to users to encourage them to upgrade.
+
+```json
+"version": "1.0.0"
+"compatibility": [
+  {
+    "version": "1.0.0",
+    "migrationGuide": "https://github.com/oliverroick/netlify-plugin-html-validate/releases/tag/v1.0.0"
+  },
+  { "version": "0.1.1" }
+]
+```
+
+When a new major release drops support for a specific Node.js version range, a `nodeVersion` field must be added to previous major releases.
+
+```json
+"version": "1.3.0"
+"compatibility": [
+  { "version": "1.3.0" },
+  { "version": "0.3.0", "nodeVersion": "<12.0.0" },
+  { "version": "0.2.0", "nodeVersion": "<10.0.0" }
+]
+```
+
+A `siteDependencies` field must be added when dropping support for a specific version range of a Node module used by the plugin but installed in the site's `package.json` (not the plugin's `package.json`).
+
+```json
+"version": "1.3.0"
+"compatibility": [
+  { "version": "1.3.0" },
+  { "version": "0.3.0", "siteDependencies": { "next": "<11.0.0" } },
+  { "version": "0.2.0", "siteDependencies": { "next": "<10.0.6" } }
+]
+```
 
 ## Request deactivation
 
