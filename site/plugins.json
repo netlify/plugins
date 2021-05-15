@@ -520,6 +520,6 @@
     "name": "Cecil cache",
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
-    "version": "0.2.4"
+    "version": "0.2.5"
   }
 ]
