@@ -513,5 +513,13 @@
     "package": "@bharathvaj/netlify-plugin-airbrake",
     "repo": "https://github.com/bharathvaj-ganesan/netlify-plugin-airbrake",
     "version": "1.0.2"
+  },
+  {
+    "author": "Arnaud Ligny",
+    "description": "Persist the Cecil cache between Netlify builds.",
+    "name": "Cecil cache",
+    "package": "netlify-plugin-cecil-cache",
+    "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
+    "version": "0.2.5"
   }
 ]
