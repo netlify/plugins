@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.13.0](https://www.github.com/netlify/plugins/compare/v2.12.0...v2.13.0) (2021-05-15)
+
+
+### Features
+
+* add Cecil cache ([7e59601](https://www.github.com/netlify/plugins/commit/7e596015b584980dc6327279054468f1d0d2947d))
+
+
+### Bug Fixes
+
+* Cecil cache package version ([b980e68](https://www.github.com/netlify/plugins/commit/b980e6832ce909bdb29f80fcd84d9260f2c379e5))
+* Cecil cache package version ([7b324e5](https://www.github.com/netlify/plugins/commit/7b324e5753a3d28e947c8783367652ea9b3a2039))
+
 ## [2.12.0](https://www.github.com/netlify/plugins/compare/v2.11.2...v2.12.0) (2021-05-13)
 
 
