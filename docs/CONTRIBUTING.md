@@ -57,7 +57,7 @@ As a way to encourage plugin users to upgrade, you can include a `migrationGuide
 ]
 ```
 
-When a new major release drops support for a specific Node.js version range, a `nodeVersion` field must be added to previous major releases.
+When a new major release drops support for a specific Node.js version range, you must add a `nodeVersion` field for previous major releases.
 
 ```json
 "version": "1.3.0"
