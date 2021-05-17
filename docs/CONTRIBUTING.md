@@ -68,7 +68,7 @@ When a new major release drops support for a specific Node.js version range, a `
 ]
 ```
 
-A `siteDependencies` field must be added when dropping support for a specific version range of a Node module used by the plugin but installed in the site's `package.json` (not the plugin's `package.json`).
+When a new major release drops support for a specific version range of a Node.js module used by the plugin but installed in the site's `package.json` (not the plugin's `package.json`), you must add a `siteDependencies` field.
 
 ```json
 "version": "1.3.0"
