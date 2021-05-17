@@ -44,7 +44,7 @@ If a plugin has several major releases, the latest version of each major release
 ]
 ```
 
-A `migrationGuide` URL pointing to a migration guide, a GitHub release or a list of breaking changes can be specified. This URL will be shown to users to encourage them to upgrade.
+As a way to encourage plugin users to upgrade, you can include a `migrationGuide` URL that refers plugin users to a migration guide, GitHub release, or a list of breaking changes.
 
 ```json
 "version": "1.0.0"
