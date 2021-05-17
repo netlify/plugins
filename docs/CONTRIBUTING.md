@@ -33,7 +33,7 @@ When a user installs a plugin from the  [Netlify plugins directory](https://docs
 
 ### Major releases
 
-If a plugin has several major releases, the latest version of each major release must be specified in a `compatibility` array. The major releases must be sorted from most to least recent. The first `compatibility` item's `version` must be the same as the top-level `version` field.
+If a plugin has several major releases, you must specify the latest version of each major release in a `compatibility` array with major releases sorted from most recent to least recent. The first `compatibility` item's `version` should be the same as the top-level `version` field.
 
 ```json
 "version": "1.3.0"
