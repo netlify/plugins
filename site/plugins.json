@@ -46,7 +46,7 @@
     "name": "Subfont",
     "package": "netlify-plugin-subfont",
     "repo": "https://github.com/munter/netlify-plugin-subfont",
-    "version": "5.0.3"
+    "version": "6.0.0"
   },
   {
     "author": "munter",
