@@ -27,7 +27,7 @@ You can submit a PR to update the entry for a plugin that you maintain.
 
 ### Versioning
 
-The latest version of the plugin must be specified in the `version` field. When updating it, please be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting.
+The latest version of a Build Plugin must be specified in the `version` field in `plugins.json`. When updating a plugin, be sure to test the new version [locally](https://docs.netlify.com/cli/get-started/#run-builds-locally) and [on Netlify](https://docs.netlify.com/configure-builds/build-plugins/#install-a-plugin) before submitting.
 
 The `version` and `compatibility` fields are used to select the version of plugins installed from the [Netlify plugins directory](https://docs.netlify.com/configure-builds/build-plugins/#ui-installation). This does not apply to plugins installed in the [site's `package.json`](https://docs.netlify.com/configure-builds/build-plugins/#file-based-installation).
 
