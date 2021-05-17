@@ -40,8 +40,14 @@ This is a non-exhaustive list of common pitfalls
 - [ ] The plugin's purpose must be in the best interest of Netlify and its users.
 - [ ] The functionality must not be already provided by Netlify or another well-maintained plugin.
 - [ ] The code [must be open source](guidelines.md#keep-it-open).
-- [ ] Breaking changes are not allowed at the moment.
 - [ ] The plugin should work [without any configuration](guidelines.md#provide-a-zero-config-default). Exceptions can be made when there is no way around it, such as for an API token. In that case, environment variables should be used instead of `inputs`.
+
+### Versioning
+
+- [ ] Breaking changes require a new major release number.
+- [ ] Each major release must be specified in the [`compatibility` array](CONTRIBUTING.md#major-releases).
+- [ ] When dropping a Node.js version, the [`nodeVersion` field should be added to previous major releases](CONTRIBUTING.md#major-releases).
+- [ ] When dropping a site dependency's version, the [`siteDependencies` field should be added to previous major releases](CONTRIBUTING.md#major-releases).
 
 ### Documentation
 
