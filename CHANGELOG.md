@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.0](https://www.github.com/netlify/plugins/compare/v2.13.0...v2.14.0) (2021-05-19)
+
+
+### Features
+
+* update Cypress E2E plugin ([#237](https://www.github.com/netlify/plugins/issues/237)) ([2e7e8d6](https://www.github.com/netlify/plugins/commit/2e7e8d6e290eefc1796cd9b0e32cfb57d8376810))
+
 ## [2.13.0](https://www.github.com/netlify/plugins/compare/v2.12.0...v2.13.0) (2021-05-15)
 
 
