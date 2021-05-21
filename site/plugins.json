@@ -350,7 +350,7 @@
     "name": "Hugo cache resources",
     "package": "netlify-plugin-hugo-cache-resources",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-hugo-cache-resources",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   {
     "author": "cdeleeuwe",
