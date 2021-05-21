@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.14.2](https://www.github.com/netlify/plugins/compare/v2.14.1...v2.14.2) (2021-05-21)
+
+
+### Bug Fixes
+
+* Update version netlify-plugin-stepzen ([729bf09](https://www.github.com/netlify/plugins/commit/729bf09f7781befef9238cb8a5ccbd1ba587ec7c))
+
 ### [2.14.1](https://www.github.com/netlify/plugins/compare/v2.14.0...v2.14.1) (2021-05-21)
 
 
