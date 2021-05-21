@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.14.1](https://www.github.com/netlify/plugins/compare/v2.14.0...v2.14.1) (2021-05-21)
+
+
+### Bug Fixes
+
+* **plugin-hugo-cache-resources:** log the actual cached file count ([#331](https://www.github.com/netlify/plugins/issues/331)) ([3dacb50](https://www.github.com/netlify/plugins/commit/3dacb506f9b26b6bd737b3271e61d0da0ba14370))
+
 ## [2.14.0](https://www.github.com/netlify/plugins/compare/v2.13.0...v2.14.0) (2021-05-19)
 
 
