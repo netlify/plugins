@@ -302,7 +302,7 @@
     "name": "Pushover notification",
     "package": "netlify-plugin-pushover",
     "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
-    "version": "0.0.6"
+    "version": "0.1.1"
   },
   {
     "author": "erezrokah",
