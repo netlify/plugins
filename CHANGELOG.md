@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.15.0](https://www.github.com/netlify/plugins/compare/v2.14.2...v2.15.0) (2021-06-07)
+
+
+### Features
+
+* Bump netlify-plugin-pushover version for enhancements ([f670bd7](https://www.github.com/netlify/plugins/commit/f670bd77114f6cd8bf1b372238ec39fd881b1543))
+
 ### [2.14.2](https://www.github.com/netlify/plugins/compare/v2.14.1...v2.14.2) (2021-05-21)
 
 
