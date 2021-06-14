@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.15.1](https://www.github.com/netlify/plugins/compare/v2.15.0...v2.15.1) (2021-06-14)
+
+
+### Bug Fixes
+
+* **plugin-lighthouse:** update to version 2.1.2 ([#352](https://www.github.com/netlify/plugins/issues/352)) ([f4b2900](https://www.github.com/netlify/plugins/commit/f4b29006afc6c40f3b962b16a7c09e2fb3568827))
+
 ## [2.15.0](https://www.github.com/netlify/plugins/compare/v2.14.2...v2.15.0) (2021-06-07)
 
 
