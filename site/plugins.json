@@ -460,6 +460,14 @@
     ]
   },
   {
+    "author": "netlify",
+    "description": "Build and deploy Gatsby applications seemlessly. No extra configuration required.",
+    "name": "Essential Gatsby",
+    "package": "@netlify/plugin-gatsby",
+    "repo": "https://github.com/netlify/netlify-plugin-gatsby",
+    "version": "1.0.0"
+  },
+  {
     "author": "Anish-Roy",
     "description": "An obfuscator for your JavaScript source code.",
     "name": "JavaScript obfuscator",
