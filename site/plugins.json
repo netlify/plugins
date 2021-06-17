@@ -465,7 +465,7 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "1.0.1"
+    "version": "1.0.3"
   },
   {
     "author": "Anish-Roy",
