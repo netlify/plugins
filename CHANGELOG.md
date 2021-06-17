@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.0](https://www.github.com/netlify/plugins/compare/v2.15.1...v2.16.0) (2021-06-17)
+
+
+### Features
+
+* **qawolf:** bump qawolf to 1.2.0 ([#357](https://www.github.com/netlify/plugins/issues/357)) ([3dc0644](https://www.github.com/netlify/plugins/commit/3dc064476d73f723b46308482bed35052d05bc90))
+
 ### [2.15.1](https://www.github.com/netlify/plugins/compare/v2.15.0...v2.15.1) (2021-06-14)
 
 
