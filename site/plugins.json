@@ -86,7 +86,16 @@
     "name": "Visual diff (Applitools)",
     "package": "netlify-plugin-visual-diff",
     "repo": "https://github.com/applitools/netlify-plugin-visual-diff",
-    "version": "1.2.0"
+    "version": "1.5.0",
+    "compatibility": [
+      {
+        "version": "1.5.0"
+      },
+      {
+        "version": "1.4.0",
+        "nodeVersion": "<12.0.0"
+      }
+    ]
   },
   {
     "author": "pizzafox",
