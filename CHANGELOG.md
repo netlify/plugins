@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.17.0](https://www.github.com/netlify/plugins/compare/v2.16.0...v2.17.0) (2021-06-22)
+
+
+### Features
+
+* update netlify-plugin-visual-diff to 1.3.0 and 2.0.0 ([#359](https://www.github.com/netlify/plugins/issues/359)) ([bdd8c5a](https://www.github.com/netlify/plugins/commit/bdd8c5a63e81a52c295e941c850bff31d7b5fa71))
+
 ## [2.16.0](https://www.github.com/netlify/plugins/compare/v2.15.1...v2.16.0) (2021-06-17)
 
 
