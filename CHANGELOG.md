@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.0](https://www.github.com/netlify/plugins/compare/v2.17.0...v2.18.0) (2021-06-22)
+
+
+### Features
+
+* **plugin-gatsby:** add Essential Gatsby plugin ([#356](https://www.github.com/netlify/plugins/issues/356)) ([32b66f9](https://www.github.com/netlify/plugins/commit/32b66f95ee9de86492fefe7c14aac253cedd4f58))
+
 ## [2.17.0](https://www.github.com/netlify/plugins/compare/v2.16.0...v2.17.0) (2021-06-22)
 
 
