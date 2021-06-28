@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.18.1](https://www.github.com/netlify/plugins/compare/v2.18.0...v2.18.1) (2021-06-28)
+
+
+### Miscellaneous Chores
+
+* release 2.18.1 ([ba6ef0e](https://www.github.com/netlify/plugins/commit/ba6ef0e6b43786e63e840dd5006524eaad3d5dde))
+
 ## [2.18.0](https://www.github.com/netlify/plugins/compare/v2.17.0...v2.18.0) (2021-06-22)
 
 
