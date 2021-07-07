@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.19.0](https://www.github.com/netlify/plugins/compare/v2.18.1...v2.19.0) (2021-07-07)
+
+
+### Features
+
+* update @netlify/plugin-nextjs to 3.6.2 ([#378](https://www.github.com/netlify/plugins/issues/378)) ([ea25e11](https://www.github.com/netlify/plugins/commit/ea25e11f69b076826edff263ddb203241f61a1fa))
+
 ### [2.18.1](https://www.github.com/netlify/plugins/compare/v2.18.0...v2.18.1) (2021-06-28)
 
 
