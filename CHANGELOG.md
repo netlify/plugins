@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.19.1](https://www.github.com/netlify/plugins/compare/v2.19.0...v2.19.1) (2021-07-08)
+
+
+### Bug Fixes
+
+* update next plugin to 3.6.3 ([#380](https://www.github.com/netlify/plugins/issues/380)) ([f9deba6](https://www.github.com/netlify/plugins/commit/f9deba6144f5505475380e6f6fa5472ff573bf86))
+
 ## [2.19.0](https://www.github.com/netlify/plugins/compare/v2.18.1...v2.19.0) (2021-07-07)
 
 
