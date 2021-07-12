@@ -547,5 +547,13 @@
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
     "version": "0.2.5"
+  },
+  {
+    "author": "Etch",
+    "description": "Run audit-ci on build to catch security vulnerabilities.",
+    "name": "NPM Audit CI",
+    "package": "netlify-plugin-npm-audit",
+    "repo": "https://github.com/etchteam/netlify-npm-audit",
+    "version": "1.0.0"
   }
 ]
