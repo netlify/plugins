@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.19.2](https://www.github.com/netlify/plugins/compare/v2.19.1...v2.19.2) (2021-07-14)
+
+
+### Bug Fixes
+
+* upgrade Next plugin to 3.7.0 ([#383](https://www.github.com/netlify/plugins/issues/383)) ([5bf2259](https://www.github.com/netlify/plugins/commit/5bf22591a0ee7af6cdf8e8cfc2f78f19648f6c82))
+
 ### [2.19.1](https://www.github.com/netlify/plugins/compare/v2.19.0...v2.19.1) (2021-07-08)
 
 
