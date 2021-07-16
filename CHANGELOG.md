@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.19.3](https://www.github.com/netlify/plugins/compare/v2.19.2...v2.19.3) (2021-07-16)
+
+
+### Bug Fixes
+
+* upgrade Next.js plugin to 3.7.1 ([#385](https://www.github.com/netlify/plugins/issues/385)) ([0168d94](https://www.github.com/netlify/plugins/commit/0168d9403ce6fb00bd79f19879eefe0a873f96a0))
+
 ### [2.19.2](https://www.github.com/netlify/plugins/compare/v2.19.1...v2.19.2) (2021-07-14)
 
 
