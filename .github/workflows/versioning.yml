@@ -1,0 +1,21 @@
+name: versioning
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      # Updates the v* branch to reflect the content of the main branch
+      # This allows versioning `plugins.json`, providing consumers use the
+      # branch-specific deploy URL like
+      #   v*--netlify-plugins.netlify.app/plugins.json
+      - name: Update branch
+        run: |
+          git branch -C main v1
+          git push -u origin v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
