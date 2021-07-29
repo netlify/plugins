@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.21.0](https://www.github.com/netlify/plugins/compare/v2.20.0...v2.21.0) (2021-07-29)
+
+
+### Features
+
+* fix `plugins.json` versioning ([#394](https://www.github.com/netlify/plugins/issues/394)) ([085cb8a](https://www.github.com/netlify/plugins/commit/085cb8af66d40acf6502e1559567cbb62686d97e))
+
 ## [2.20.0](https://www.github.com/netlify/plugins/compare/v2.19.3...v2.20.0) (2021-07-29)
 
 
