@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       # Updates the v* branch to reflect the content of the main branch
       # This allows versioning `plugins.json`, providing consumers use the
       # branch-specific deploy URL like
