@@ -9,15 +9,20 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      # Updates the v* branch to reflect the content of the main branch
-      # This allows versioning `plugins.json`, providing consumers use the
-      # branch-specific deploy URL like
-      #   v*--netlify-plugins.netlify.app/plugins.json
+      # Updates the list-v* git tag to version `plugins.json`.
+      # Consumers must use the tag-specific deploy URL:
+      #   list-v*--netlify-plugins.netlify.app/plugins.json
+      # This versions the syntax of `plugins.json`, not its contents.
+      # The contents, i.e. the list of plugins, is versioned using the v*
+      # git tag instead, which also comes with GitHub and npm releases.
+      # For example:
+      #  - Changing a property name in `plugins.json` for all plugins
+      #    is a syntax breaking change (list-v* tag)
+      #  - Releasing a breaking change for a specific plugin in `plugins.json`
+      #    is a contents breaking change (v* tag + GitHub release + npm release)
       - name: Update branch
         run: |
-          git branch -C main v1
-          git push --force -u origin v1
+          git tag --force list-v1
+          git push --force --tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
