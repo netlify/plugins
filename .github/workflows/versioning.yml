@@ -18,6 +18,6 @@ jobs:
       - name: Update branch
         run: |
           git branch -C main v1
-          git push -u origin v1
+          git push --force -u origin v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
