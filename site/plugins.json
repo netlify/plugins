@@ -17,7 +17,7 @@
   },
   {
     "author": "lukeocodes",
-    "description": "Generate an Algolia friendly Search Index of your site",
+    "description": "Generate an Algolia friendly search index of your site",
     "name": "Algolia search index",
     "package": "netlify-plugin-algolia-index",
     "repo": "https://github.com/lukeocodes/netlify-plugin-algolia-index",
