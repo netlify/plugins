@@ -22,7 +22,7 @@ jobs:
       #    is a contents breaking change (v* tag + GitHub release + npm release)
       - name: Update branch
         run: |
-          git tag --force list-v1
+          git tag --force list-v2
           git push --force --tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
