@@ -4,7 +4,7 @@
 
 ## Contributing
 
-The Netlify plugins directory is filled with plugins created by Netlify staff and members of the community like you. You can contribute to the directory in the following ways:
+The Netlify Plugins directory is filled with plugins created by Netlify staff and members of the community like you. You can contribute to the directory in the following ways:
 
 - [Add a plugin](./docs/CONTRIBUTING.md#add-a-plugin) you've written to the plugins directory.
 - [Update a plugin](./docs/CONTRIBUTING.md#update-a-plugin) you maintain that's already in the directory.
