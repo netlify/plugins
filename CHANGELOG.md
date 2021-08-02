@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.0.1](https://www.github.com/netlify/plugins/compare/v3.0.0...v3.0.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* main entry point ([#409](https://www.github.com/netlify/plugins/issues/409)) ([4f8b4c1](https://www.github.com/netlify/plugins/commit/4f8b4c1a5e8650979d53b272fedb25d491a51532))
+
 ## [3.0.0](https://www.github.com/netlify/plugins/compare/v2.21.0...v3.0.0) (2021-08-02)
 
 
