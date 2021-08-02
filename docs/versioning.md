@@ -2,9 +2,9 @@
 
 ## Deploying `plugins.json`
 
-Each new commit pushed to the `main` branch is deployed to [https://list-v1--netlify-plugins.netlify.app/plugins.json](https://list-v1--netlify-plugins.netlify.app/plugins.json) thanks to [this repository's Netlify site](https://app.netlify.com/sites/netlify-plugins/deploys).
+Each new commit pushed to the `main` branch is deployed to [https://list-v2--netlify-plugins.netlify.app/plugins.json](https://list-v2--netlify-plugins.netlify.app/plugins.json) thanks to [this repository's Netlify site](https://app.netlify.com/sites/netlify-plugins/deploys).
 
-This is done in a branch deploy triggered by updating the `list-v1` git tag to reference each new commit on the `main` branch. This is performed automatically by a [GitHub action](/.github/workflows/versioning.yml).
+This is done in a branch deploy triggered by updating the `list-v2` git tag to reference each new commit on the `main` branch. This is performed automatically by a [GitHub action](/.github/workflows/versioning.yml).
 
 That URL is fetched by:
 
@@ -25,8 +25,7 @@ This section explains how the `plugins.json`'s syntax is versioned. This relates
 To introduce a breaking change to the syntax of `plugins.json`:
 
 - Update `plugins.json` with that breaking change.
-- Increment every reference of `list-v1` in this repository (including this file).
-- Make a new commit to `main`.
+- Increment every reference of `list-v2` in this repository (including this file).
 - Wait for the new versioned URL to be built and ensure it can be accessed and looks normal.
 - Update the URL in Netlify Build, CLI and App.
 
