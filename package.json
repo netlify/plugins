@@ -1,6 +1,6 @@
 {
   "name": "@netlify/plugins-list",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "List of Netlify plugins",
   "main": "index.js",
   "files": [
