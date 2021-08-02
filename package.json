@@ -2,8 +2,10 @@
   "name": "@netlify/plugins-list",
   "version": "3.0.0",
   "description": "List of Netlify plugins",
-  "main": "site/plugins.json",
-  "files": [],
+  "main": "index.js",
+  "files": [
+    "site/plugins.json"
+  ],
   "scripts": {
     "prepublishOnly": "npm ci && npm run lint && npm run format:ci && npm test",
     "lint": "eslint 'functions/**/*.js'",
