@@ -25,7 +25,8 @@ This section explains how the `plugins.json`'s syntax is versioned. This relates
 To introduce a breaking change to the syntax of `plugins.json`:
 
 - Update `plugins.json` with that breaking change.
-- Increment every reference of `list-v2` in this repository (including this file).
+- Increment every reference of `list-v2` in this repository, including this file and the `pluginsUrl` returned property.
+- Ensure the PR is marked with `!` so that `release-please` makes a major release of the `@netlify/plugins-list` npm package.
 - Wait for the new versioned URL to be built and ensure it can be accessed and looks normal.
 - Update the URL in Netlify Build, CLI and App.
 
