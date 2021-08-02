@@ -7,7 +7,7 @@ import { upperCaseFirst } from 'upper-case-first';
 import isPlainObj from 'is-plain-obj';
 import semver from 'semver';
 import normalizeNodeVersion from 'normalize-node-version';
-import plugins from '../site/plugins.json';
+import { pluginsList, pluginsUrl } from '../index.js';
 
 const { manifest } = pacote;
 const { valid: validVersion, validRange, lt: ltVersion, major, minor, patch, minVersion } = semver;
@@ -49,7 +49,7 @@ const getMajorVersion = function (version) {
   return `${majorVersion}.${minorVersion}.${patchVersion}`;
 };
 
-plugins.forEach((plugin) => {
+pluginsList.forEach((plugin) => {
   const { package: packageName, repo, version, name, compatibility } = plugin;
 
   Object.entries(plugin).forEach(([attribute, value]) => {
@@ -174,4 +174,8 @@ plugins.forEach((plugin) => {
       );
     });
   });
+});
+
+test('Plugins URL exists', (t) => {
+  t.true(pluginsUrl.startsWith('https://'));
 });
