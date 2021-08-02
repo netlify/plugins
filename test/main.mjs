@@ -19,7 +19,7 @@ const ENUMS = {
   status: ['DEACTIVATED', undefined],
 };
 
-const COMPATIBILITY_ATTRIBUTES = ['version', 'migrationGuide', 'nodeVersion', 'siteDependencies'];
+const COMPATIBILITY_ATTRIBUTES = ['version', 'migrationGuide', 'featureFlag', 'nodeVersion', 'siteDependencies'];
 
 // Compare two versions by their major versions.
 // Takes into account the special rules for `0.*.*` and `0.0.*` versions.
@@ -71,6 +71,7 @@ pluginsList.forEach((plugin) => {
   });
 
   test(`Plugin package should be published: ${packageName}`, async (t) => {
+    t.is(typeof version, 'string');
     t.not(validVersion(version), null);
     await t.notThrowsAsync(manifest(`${packageName}@${version}`));
   });
@@ -112,8 +113,13 @@ pluginsList.forEach((plugin) => {
     );
   });
 
+  test(`Plugin version is the same as the first non-feature-flagged compatibility version: ${packageName}`, (t) => {
+    const [{ version: compatVersion }] = compatibility.filter(({ featureFlag }) => featureFlag === undefined);
+    t.is(compatVersion, version);
+  });
+
   compatibility.forEach((compatField, index) => {
-    const { version: compatVersion, migrationGuide, nodeVersion, siteDependencies } = compatField;
+    const { version: compatVersion, migrationGuide, featureFlag, nodeVersion, siteDependencies } = compatField;
 
     Object.keys(compatField).forEach((compatFieldKey) => {
       test(`Plugin compatibility[${index}].${compatFieldKey} is a known attribute: ${packageName}`, (t) => {
@@ -124,16 +130,6 @@ pluginsList.forEach((plugin) => {
     test(`Plugin compatibility[${index}].version is valid: ${packageName}`, async (t) => {
       t.is(typeof compatVersion, 'string');
       t.not(validVersion(compatVersion), null);
-
-      t.is(typeof version, 'string');
-      t.not(validVersion(version), null);
-
-      if (index === 0) {
-        t.is(compatVersion, version);
-      } else {
-        t.true(ltVersion(compatVersion, version));
-      }
-
       await t.notThrowsAsync(manifest(`${packageName}@${compatVersion}`));
     });
 
@@ -146,6 +142,16 @@ pluginsList.forEach((plugin) => {
       t.is(typeof migrationGuide, 'string');
       t.notThrows(() => new URL(migrationGuide));
       await t.notThrowsAsync(got(migrationGuide));
+    });
+
+    test(`Plugin compatibility[${index}].featureFlag is valid: ${packageName}`, async (t) => {
+      if (featureFlag === undefined) {
+        t.pass();
+        return;
+      }
+
+      t.is(typeof featureFlag, 'string');
+      t.not(featureFlag, '');
     });
 
     test(`Plugin compatibility[${index}].nodeVersion is valid: ${packageName}`, async (t) => {
