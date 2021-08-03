@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.0](https://www.github.com/netlify/plugins/compare/v3.1.0...v3.2.0) (2021-08-03)
+
+
+### Features
+
+* add `featureFlag` property ([#411](https://www.github.com/netlify/plugins/issues/411)) ([0dc87ab](https://www.github.com/netlify/plugins/commit/0dc87ab7279ed99910ad6124a4f142f0ae7fe68a))
+
 ## [3.1.0](https://www.github.com/netlify/plugins/compare/v3.0.1...v3.1.0) (2021-08-03)
 
 
