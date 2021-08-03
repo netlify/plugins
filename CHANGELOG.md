@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://www.github.com/netlify/plugins/compare/v3.0.1...v3.1.0) (2021-08-03)
+
+
+### Features
+
+* update Next to 3.8.0 ([#412](https://www.github.com/netlify/plugins/issues/412)) ([282b9ce](https://www.github.com/netlify/plugins/commit/282b9ce96b126cac97c3c89102e7b2d81e83d917))
+
 ### [3.0.1](https://www.github.com/netlify/plugins/compare/v3.0.0...v3.0.1) (2021-08-02)
 
 
