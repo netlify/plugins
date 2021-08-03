@@ -66,7 +66,7 @@
   },
   {
     "author": "jlengstorf",
-    "description": "Persist the Gatsby cache between Netlify builds for huge build speed improvements! ⚡️",
+    "description": "This plugin is deprecated. Please install the Essential Gatsby plugin instead",
     "name": "Gatsby cache",
     "package": "netlify-plugin-gatsby-cache",
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache",
