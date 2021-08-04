@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.2.1](https://www.github.com/netlify/plugins/compare/v3.2.0...v3.2.1) (2021-08-04)
+
+
+### Bug Fixes
+
+* deprecate the old Gatsby cache plugin ([#415](https://www.github.com/netlify/plugins/issues/415)) ([ab6bd34](https://www.github.com/netlify/plugins/commit/ab6bd34108bb99354703fe411e4ece14ed620e4d))
+
 ## [3.2.0](https://www.github.com/netlify/plugins/compare/v3.1.0...v3.2.0) (2021-08-03)
 
 
