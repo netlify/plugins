@@ -460,6 +460,10 @@
     "version": "3.8.0",
     "compatibility": [
       {
+        "version": "3.9.0",
+        "featureFlag": "plugin_nextjs_example"
+      },
+      {
         "version": "3.8.0"
       },
       {
