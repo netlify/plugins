@@ -470,11 +470,19 @@
   },
   {
     "author": "netlify",
-    "description": "Build and deploy Gatsby applications seemlessly. No extra configuration required.",
+    "description": "Build and deploy Gatsby applications seamlessly. No extra configuration required.",
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
     "version": "1.0.3"
+  },
+  {
+    "author": "netlify",
+    "description": "Use Angular Universal on Netlify (in beta)",
+    "name": "Essential Angular Universal",
+    "package": "@netlify/plugin-angular-universal",
+    "repo": "https://github.com/netlify/netlify-plugin-angular-universal",
+    "version": "1.0.0"
   },
   {
     "author": "Anish-Roy",
