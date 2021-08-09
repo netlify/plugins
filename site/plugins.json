@@ -554,6 +554,6 @@
     "name": "Use Env in Runtime",
     "package": "netlify-plugin-use-env-in-runtime",
     "repo": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime",
-    "version": "1.1.0"
+    "version": "1.2.1"
   }
 ]
