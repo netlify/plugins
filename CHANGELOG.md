@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0](https://www.github.com/netlify/plugins/compare/v3.2.1...v3.3.0) (2021-08-09)
+
+
+### Features
+
+* add essential angular universal beta ([#418](https://www.github.com/netlify/plugins/issues/418)) ([eb01da2](https://www.github.com/netlify/plugins/commit/eb01da2b78e81cdfa906e56aa486cd2b7605a610))
+
 ### [3.2.1](https://www.github.com/netlify/plugins/compare/v3.2.0...v3.2.1) (2021-08-04)
 
 
