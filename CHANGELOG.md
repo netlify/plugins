@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.0](https://www.github.com/netlify/plugins/compare/v3.3.0...v3.4.0) (2021-08-23)
+
+
+### Features
+
+* remove "Essential" from name of Angular plugin ([#422](https://www.github.com/netlify/plugins/issues/422)) ([915fd39](https://www.github.com/netlify/plugins/commit/915fd39ab2e984286ac74162bf5311567f5f98b4))
+
 ## [3.3.0](https://www.github.com/netlify/plugins/compare/v3.2.1...v3.3.0) (2021-08-09)
 
 
