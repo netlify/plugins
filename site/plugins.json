@@ -479,7 +479,7 @@
   {
     "author": "netlify",
     "description": "Use Angular Universal on Netlify (in beta)",
-    "name": "Essential Angular Universal",
+    "name": "Angular Universal",
     "package": "@netlify/plugin-angular-universal",
     "repo": "https://github.com/netlify/netlify-plugin-angular-universal",
     "version": "1.0.0"
