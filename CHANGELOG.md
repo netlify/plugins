@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://www.github.com/netlify/plugins/compare/v3.4.0...v3.5.0) (2021-08-23)
+
+
+### Features
+
+* add `netlify-plugin-use-env-in-runtime` ([#403](https://www.github.com/netlify/plugins/issues/403)) ([5b9f1dd](https://www.github.com/netlify/plugins/commit/5b9f1dd2f4ea972554e2a0c3a42a30307fe5f9b4))
+
 ## [3.4.0](https://www.github.com/netlify/plugins/compare/v3.3.0...v3.4.0) (2021-08-23)
 
 
