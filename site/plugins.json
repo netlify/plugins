@@ -555,5 +555,13 @@
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
     "version": "0.2.5"
+  },
+  {
+    "author": "Ben Lmsc",
+    "description": "Make some environment variables available only at build time in the runtime of your application.",
+    "name": "Use Env in Runtime",
+    "package": "netlify-plugin-use-env-in-runtime",
+    "repo": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime",
+    "version": "1.2.1"
   }
 ]
