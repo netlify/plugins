@@ -80,7 +80,9 @@ This is a non-exhaustive list of common pitfalls
 - [ ] The [right constants](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#constants) must be used and be correctly spelled.
 - [ ] `constants.CONFIG_PATH`, `constants.FUNCTIONS_SRC` and `constants.EDGE_HANDLERS_SRC` can be `undefined` when not used by the site.
 - [ ] `constants.PUBLISH_DIR` and `constants.FUNCTIONS_DIST` are always defined, but their target might not exist yet. If used, they should be created by the plugin they do not exist.
-- [ ] [`netlifyConfig`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#netlifyconfig) should be used instead of manually loading the configuration file.
+- [ ] [`netlifyConfig`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#netlifyconfig) should be used instead of manually loading the configuration file. This includes `redirects`, `headers` and `edge_handlers`.
+- [ ] [`netlifyConfig.build.environment`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#netlifyconfig) should be used to modify environment variables, not `process.env`.
+- [ ] When modifying [`netlifyConfig`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#netlifyconfig), plugin authors should consider appending properties instead of overriding them. For example, redirects should be pushed to `netlifyConfig.redirects` instead of overriding that property.
 - [ ] [`packageJson`](https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#packagejson) should be used instead of manually loading the site's `package.json`.
 
 ## Error handling
