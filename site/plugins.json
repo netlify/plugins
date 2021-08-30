@@ -563,5 +563,13 @@
     "package": "netlify-plugin-use-env-in-runtime",
     "repo": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime",
     "version": "1.2.1"
+  },
+  {
+    "author": "Andy Richardson",
+    "description": "Persist immutable build assets across builds.",
+    "name": "TTL Cache",
+    "package": "netlify-plugin-ttl-cache",
+    "repo": "https://github.com/andyrichardson/netlify-plugin-ttl-cache",
+    "version": "1.0.2"
   }
 ]
