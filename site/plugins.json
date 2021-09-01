@@ -482,7 +482,7 @@
     "name": "Angular Universal",
     "package": "@netlify/plugin-angular-universal",
     "repo": "https://github.com/netlify/netlify-plugin-angular-universal",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   {
     "author": "Anish-Roy",
