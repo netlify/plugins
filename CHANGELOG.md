@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.6.0](https://www.github.com/netlify/plugins/compare/v3.5.0...v3.6.0) (2021-09-01)
+
+
+### Features
+
+* guidelines for proper `netlifyConfig` usage ([#433](https://www.github.com/netlify/plugins/issues/433)) ([083f3c1](https://www.github.com/netlify/plugins/commit/083f3c1c131a76a35c469bbf3aa278e2c30dc4b3))
+* update angular universal plugin to 1.0.1 ([#437](https://www.github.com/netlify/plugins/issues/437)) ([3b85614](https://www.github.com/netlify/plugins/commit/3b8561446aedc536fbd9d2ce7b81892c8fe349d5))
+* update essential next to 3.9.0 ([#431](https://www.github.com/netlify/plugins/issues/431)) ([938eb57](https://www.github.com/netlify/plugins/commit/938eb57d4f6d9db135d1e10bb449acb6cd0b1412))
+
 ## [3.5.0](https://www.github.com/netlify/plugins/compare/v3.4.0...v3.5.0) (2021-08-23)
 
 
