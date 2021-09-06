@@ -36,7 +36,7 @@
     "got": "^11.8.0",
     "husky": "^4.2.5",
     "is-plain-obj": "^4.0.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.0.0",
     "normalize-node-version": "^11.0.0",
     "pacote": "^11.1.13",
     "prettier": "^2.0.5",
