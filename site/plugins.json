@@ -533,12 +533,12 @@
     "version": "1.0.1"
   },
   {
-    "author": "StepZen <team@stepzen.com>",
+    "author": "StepZen <stepzen-team@stepzen.com>",
     "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build",
     "name": "StepZen",
     "package": "netlify-plugin-stepzen",
     "repo": "https://github.com/steprz/netlify-plugin-stepzen",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   {
     "author": "bharathvaj-ganesan",
