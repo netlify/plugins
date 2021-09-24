@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.6.1](https://www.github.com/netlify/plugins/compare/v3.6.0...v3.6.1) (2021-09-24)
+
+
+### Bug Fixes
+
+* corner case causing build internal error. ([#447](https://www.github.com/netlify/plugins/issues/447)) ([ba7a256](https://www.github.com/netlify/plugins/commit/ba7a2565357097da2b9de549a380fb2132720be8))
+
 ## [3.6.0](https://www.github.com/netlify/plugins/compare/v3.5.0...v3.6.0) (2021-09-01)
 
 
