@@ -1,48 +1,41 @@
-const crypto = require('crypto')
+const { createHmac } = require('crypto')
 const { env } = require('process')
 
-const signRequestBody = (secret, body) =>
-  `sha1=${crypto.createHmac('sha1', secret).update(body, 'utf-8').digest('hex')}`
-
-const validate = (event) => {
-  if (event.httpMethod !== 'POST') {
-    return {
-      error: {
-        message: "Expecting 'POST' request",
-      },
-    }
+// Validate Function event payload
+const validatePayload = (rawEvent) => {
+  const failedValidation = VALIDATIONS.find(({ test }) => test(rawEvent))
+  if (failedValidation === undefined) {
+    return
   }
-  const githubSecret = env.GITHUB_WEBHOOK_SECRET
-
-  if (typeof githubSecret !== 'string') {
-    return {
-      error: {
-        message: "Missing 'GITHUB_WEBHOOK_SECRET'",
-      },
-    }
-  }
-
-  const requiredHeaders = ['x-hub-signature', 'x-github-event', 'x-github-delivery']
-  const missing = requiredHeaders.filter((requiredHeader) => !event.headers[requiredHeader])
-  if (missing.length !== 0) {
-    return {
-      error: {
-        message: `Missing '${missing.join(', ')}'`,
-      },
-    }
-  }
-
-  const actualSignature = event.headers['x-hub-signature']
-  const expectedSignature = signRequestBody(githubSecret, event.body)
-  if (actualSignature !== expectedSignature) {
-    return {
-      error: {
-        message: "Incorrect 'X-Hub-Signature'",
-      },
-    }
-  }
-
-  return { error: false }
+  const { errorMessage } = failedValidation
+  return typeof errorMessage === 'function' ? errorMessage(rawEvent) : errorMessage
 }
 
-module.exports = { validate }
+const VALIDATIONS = [
+  {
+    test: ({ httpMethod }) => httpMethod === 'POST',
+    errorMessage: "Expecting 'POST' request",
+  },
+  {
+    test: ({ headers }) => REQUIRED_HEADERS.every((requiredHeader) => headers[requiredHeader]),
+    errorMessage({ headers }) {
+      const missingHeaders = REQUIRED_HEADERS.filter((requiredHeader) => !headers[requiredHeader]).join(', ')
+      return `Missing '${missingHeaders}'`
+    },
+  },
+  {
+    test: () => Boolean(env.GITHUB_WEBHOOK_SECRET),
+    errorMessage: "Missing 'GITHUB_WEBHOOK_SECRET'",
+  },
+  {
+    test({ headers, body }) {
+      const expectedSignature = createHmac('sha1', env.GITHUB_WEBHOOK_SECRET).update(body, 'utf-8').digest('hex')
+      return headers['x-hub-signature'] === `sha1=${expectedSignature}`
+    },
+    errorMessage: "Incorrect 'X-Hub-Signature'",
+  },
+]
+
+const REQUIRED_HEADERS = ['x-hub-signature', 'x-github-event', 'x-github-delivery']
+
+module.exports = { validatePayload }
