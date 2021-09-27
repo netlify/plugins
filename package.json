@@ -37,7 +37,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@netlify/eslint-config-node": "^3.2.8",
+    "@netlify/eslint-config-node": "^3.2.10",
     "ava": "^3.13.0",
     "diff": "^5.0.0",
     "got": "^11.8.0",
