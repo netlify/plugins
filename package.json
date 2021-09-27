@@ -7,15 +7,27 @@
     "site/plugins.json"
   ],
   "scripts": {
-    "prepublishOnly": "npm ci && npm run lint && npm run format:ci && npm test",
-    "lint": "eslint 'functions/**/*.js'",
-    "format": "prettier --write 'functions/**/*.js'",
-    "format:ci": "prettier --check 'functions/**/*.js'",
-    "test": "ava --node-arguments=--experimental-json-modules"
+    "prepublishOnly": "npm ci && npm test",
+    "test": "run-s format test:dev",
+    "format": "run-s format:check-fix:*",
+    "format:ci": "run-s format:check:*",
+    "format:check-fix:lint": "run-e format:check:lint format:fix:lint",
+    "format:check:lint": "cross-env-shell eslint $npm_package_config_eslint",
+    "format:fix:lint": "cross-env-shell eslint --fix $npm_package_config_eslint",
+    "format:check-fix:prettier": "run-e format:check:prettier format:fix:prettier",
+    "format:check:prettier": "cross-env-shell prettier --check $npm_package_config_prettier",
+    "format:fix:prettier": "cross-env-shell prettier --write $npm_package_config_prettier",
+    "test:dev": "ava",
+    "test:ci": "nyc -r lcovonly -r text -r json ava"
+  },
+  "config": {
+    "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{functions,test,.github}/**/*.{js,md,html}\" \"*.{js,md,html}\" \".*.{js,md,html}\"",
+    "prettier": "--ignore-path .gitignore --loglevel=warn \"{functions,test,.github}/**/*.{js,md,yml,json,html}\" \"*.{js,yml,json,html}\" \".*.{js,yml,json,html}\" \"!package-lock.json\""
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run format"
     }
   },
   "keywords": [
@@ -25,21 +37,16 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^13.0.0",
-    "@commitlint/config-conventional": "^13.0.0",
+    "@netlify/eslint-config-node": "^3.2.8",
     "ava": "^3.13.0",
-    "babel-eslint": "^10.1.0",
     "diff": "^5.0.0",
-    "eslint": "^7.1.0",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "got": "^11.8.0",
     "husky": "^4.2.5",
     "is-plain-obj": "^4.0.0",
     "node-fetch": "^2.6.1",
     "normalize-node-version": "^11.0.0",
+    "nyc": "^15.1.0",
     "pacote": "^11.1.13",
-    "prettier": "^2.0.5",
     "semver": "^7.0.0",
     "upper-case-first": "^2.0.2"
   },

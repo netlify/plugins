@@ -1,4 +1,4 @@
-name: Test
+name: Build
 on:
   # Ensure GitHub actions are not run twice for same commits
   push:
@@ -22,8 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Linting
-        run: npm run lint
-      - name: Formatting
         run: npm run format:ci
       - name: Tests
-        run: npm run test
+        run: npm run test:ci
