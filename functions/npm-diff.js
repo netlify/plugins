@@ -177,8 +177,9 @@ const diff = async ({ baseSha, baseRepoUrl, diffUrl, commentsUrl, token }) => {
   }
 }
 
-// eslint-disable-next-line max-statements
 const handler = async function (rawEvent) {
+  console.log(rawEvent)
+
   try {
     const { error } = validate(rawEvent)
     if (error) {
@@ -188,18 +189,24 @@ const handler = async function (rawEvent) {
         body: 'Not Found',
       }
     }
-    const event = JSON.parse(rawEvent.body)
-    console.log(JSON.stringify(event, null, 2))
-    if (['opened', 'synchronize', 'reopened'].includes(event.action)) {
-      const baseSha = event.pull_request.base.sha
-      const baseRepoUrl = event.pull_request.base.repo.url
-      const diffUrl = event.pull_request.diff_url
-      const commentsUrl = event.pull_request.comments_url
-      const token = env.GITHUB_TOKEN
-      await diff({ baseSha, baseRepoUrl, diffUrl, commentsUrl, token })
-    } else {
-      console.log(`Ignoring action ${event.action}`)
+
+    const {
+      action,
+      pull_request: {
+        base: {
+          sha: baseSha,
+          repo: { url: baseRepoUrl },
+        },
+        diff_url: diffUrl,
+        comments_url: commentsUrl,
+      },
+    } = JSON.parse(rawEvent.body)
+    if (!ALLOWED_ACTIONS.has(action)) {
+      console.log(`Ignoring action ${action}`)
+      return
     }
+
+    await diff({ baseSha, baseRepoUrl, diffUrl, commentsUrl, token: env.GITHUB_TOKEN })
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'success' }),
@@ -212,6 +219,8 @@ const handler = async function (rawEvent) {
     }
   }
 }
+
+const ALLOWED_ACTIONS = new Set(['opened', 'synchronize', 'reopened'])
 
 module.exports = { handler }
 /* eslint-enable max-lines, unicorn/filename-case */
