@@ -80,18 +80,17 @@ const getDiffs = (basePluginsDictionary, headPluginsDictionary) => {
   return diffs
 }
 
-const getNewPluginsUrls = async (diffs) => {
-  const diffUrls = await Promise.all(
-    diffs.map(async (diff) => {
-      if (diff.status === 'added') {
-        const manifest = await pacote.manifest(`${diff.package}@${diff.version}`)
-        return { ...diff, url: manifest.dist.tarball }
-      }
-      return diff
-    }),
-  )
+const getNewPluginsUrls = (diffs) => Promise.all(diffs.map(getDiffNewPluginsUrls))
 
-  return diffUrls
+const getDiffNewPluginsUrls = async function (diff) {
+  if (diff.status !== 'added') {
+    return diff
+  }
+
+  const {
+    dist: { tarball },
+  } = await pacote.manifest(`${diff.package}@${diff.version}`)
+  return { ...diff, url: tarball }
 }
 
 const ADDED_HEADER = '#### Added Packages'
