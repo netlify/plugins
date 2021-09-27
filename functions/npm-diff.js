@@ -7,8 +7,11 @@ const pacote = require('pacote')
 
 const { validate } = require('./utils/validate')
 
-const fetchJson = async (url, options, errorPrefix) => {
-  const response = await fetch(url, options)
+const fetchJson = async (url, errorPrefix, options) => {
+  const response = await fetch(url, {
+    ...options,
+    headers: { ...options.headers, 'Content-Type': 'application/json' },
+  })
   const json = await response.json()
   if (!response.ok) {
     throw new Error(`${errorPrefix}: ${json.message}`)
@@ -95,40 +98,27 @@ const getDiffNewPluginsUrls = async function (diff) {
 
 const addOrUpdatePrComment = async ({ comment, commentsUrl, token }) => {
   try {
-    const headers = {
-      'Content-Type': 'application/json',
-    }
-    const comments = await fetchJson(commentsUrl, { headers }, 'failed getting comments')
+    const comments = await fetchJson(commentsUrl, 'failed getting comments', {})
+
+    const headers = { Authorization: `token ${token}` }
+
     const existingComment = comments.find(hasHeader)
-    if (existingComment) {
-      console.log(`Updating comment to:\n${comment}`)
-      await fetchJson(
-        existingComment.url,
-        {
-          headers: {
-            ...headers,
-            Authorization: `token ${token}`,
-          },
-          method: 'PATCH',
-          body: JSON.stringify({ body: comment }),
-        },
-        'failed updating comment',
-      )
-    } else {
+    if (existingComment === undefined) {
       console.log(`Creating comment:\n${comment}`)
-      await fetchJson(
-        commentsUrl,
-        {
-          headers: {
-            ...headers,
-            Authorization: `token ${token}`,
-          },
-          method: 'POST',
-          body: JSON.stringify({ body: comment }),
-        },
-        'failed creating comment',
-      )
+      await fetchJson(commentsUrl, 'failed creating comment', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ body: comment }),
+      })
+      return
     }
+
+    console.log(`Updating comment to:\n${comment}`)
+    await fetchJson(existingComment.url, 'failed updating comment', {
+      method: 'PATCH',
+      headers,
+      body: JSON.stringify({ body: comment }),
+    })
   } catch (error) {
     console.log(`addOrUpdatePrComment`, error.message)
   }
