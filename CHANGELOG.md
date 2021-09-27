@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.6.2](https://www.github.com/netlify/plugins/compare/v3.6.1...v3.6.2) (2021-09-27)
+
+
+### Bug Fixes
+
+* deactivate `netlify-plugin-search-index` ([#452](https://www.github.com/netlify/plugins/issues/452)) ([ae8b0c3](https://www.github.com/netlify/plugins/commit/ae8b0c32c2bda4bd53d6eed673c769b91990946f))
+
 ### [3.6.1](https://www.github.com/netlify/plugins/compare/v3.6.0...v3.6.1) (2021-09-24)
 
 
