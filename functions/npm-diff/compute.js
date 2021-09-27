@@ -9,10 +9,7 @@ const computeDiffs = async function ({ baseSha, baseRepoUrl, diffUrl }) {
   const basePlugins = JSON.parse(baseFile)
   const headPlugins = JSON.parse(getDiffedFile(baseFile, diffText))
 
-  const basePluginsDictionary = toDictionary(basePlugins)
-  const headPluginsDictionary = toDictionary(headPlugins)
-
-  const diffs = getDiffs(basePluginsDictionary, headPluginsDictionary)
+  const diffs = getDiffs(basePlugins, headPlugins)
   return diffs
 }
 
@@ -38,30 +35,26 @@ const getDiffedFile = (baseFile, diffText) => {
   return diffed
 }
 
-const toDictionary = (plugins) =>
-  plugins.reduce((dictionary, plugin) => ({ ...dictionary, [`${plugin.author}-${plugin.package}`]: plugin }), {})
+// Retrieve list of difference between current plugins and new plugins
+const getDiffs = (basePlugins, headPlugins) =>
+  headPlugins.map((headPlugin) => getDiff(basePlugins, headPlugin)).filter(Boolean)
 
-const getDiffs = (basePluginsDictionary, headPluginsDictionary) =>
-  Object.entries(headPluginsDictionary).reduce((acc, [key, headPlugin]) => {
-    const basePlugin = basePluginsDictionary[key]
-    if (basePlugin && basePlugin.version !== headPlugin.version) {
-      // existing plugin
-      return [
-        ...acc,
-        {
-          package: headPlugin.package,
-          version: headPlugin.version,
-          url: `https://diff.intrinsic.com/${headPlugin.package}/${basePlugin.version}/${headPlugin.version}`,
-          status: 'updated',
-        },
-      ]
-    }
-    if (!basePlugin) {
-      // new plugin
-      return [...acc, { package: headPlugin.package, version: headPlugin.version, status: 'added' }]
-    }
-    // unchanged version
-    return acc
-  }, [])
+const getDiff = function (basePlugins, { package, version, author }) {
+  const basePlugin = basePlugins.find((plugin) => plugin.author === author && plugin.package === package)
+
+  // New plugin
+  if (basePlugin === undefined) {
+    return { package, version, status: 'added' }
+  }
+
+  // Existing plugin, same version
+  if (basePlugin.version === version) {
+    return
+  }
+
+  // Existing plugin, different version
+  const url = `https://diff.intrinsic.com/${package}/${basePlugin.version}/${version}`
+  return { package, version, url, status: 'updated' }
+}
 
 module.exports = { computeDiffs }
