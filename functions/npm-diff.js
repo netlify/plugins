@@ -93,16 +93,13 @@ const getDiffNewPluginsUrls = async function (diff) {
   return { ...diff, url: tarball }
 }
 
-const ADDED_HEADER = '#### Added Packages'
-const UPDATED_HEADER = '#### Updated Packages'
-
 const addOrUpdatePrComment = async ({ comment, commentsUrl, token }) => {
   try {
     const headers = {
       'Content-Type': 'application/json',
     }
     const comments = await fetchJson(commentsUrl, { headers }, 'failed getting comments')
-    const existingComment = comments.find(({ body }) => body.includes(ADDED_HEADER) || body.includes(UPDATED_HEADER))
+    const existingComment = comments.find(hasHeader)
     if (existingComment) {
       console.log(`Updating comment to:\n${comment}`)
       await fetchJson(
@@ -137,7 +134,10 @@ const addOrUpdatePrComment = async ({ comment, commentsUrl, token }) => {
   }
 }
 
-// eslint-disable-next-line complexity, max-statements
+const hasHeader = function ({ body }) {
+  return URL_TYPES.some(({ header }) => body.includes(header))
+}
+
 const diff = async ({ baseSha, baseRepoUrl, diffUrl, commentsUrl, token }) => {
   const [baseFile, diffText] = await Promise.all([getBaseFile({ baseSha, baseRepoUrl }), getDiffText({ diffUrl })])
 
@@ -148,32 +148,41 @@ const diff = async ({ baseSha, baseRepoUrl, diffUrl, commentsUrl, token }) => {
   const headPluginsDictionary = toDictionary(headPlugins)
 
   const diffs = getDiffs(basePluginsDictionary, headPluginsDictionary)
-  if (diffs.length <= 0) {
+  if (diffs.length === 0) {
     console.log('No changed plugins')
     return
   }
+
   const diffUrls = await getNewPluginsUrls(diffs)
+  diffUrls.sort(sortDiffUrls)
 
-  const sorted = [...diffUrls]
-  sorted.sort(({ package: packageA }, { package: packageB }) => packageA.localeCompare(packageB))
+  const comment = URL_TYPES.flatMap(({ attribute, header }) => listDiffUrls(diffUrls, attribute, header))
+    .filter(Boolean)
+    .join('\n\n')
 
-  const added = sorted.filter(({ status }) => status === 'added')
-  const updated = sorted.filter(({ status }) => status === 'updated')
-
-  let comment = ''
-  if (added.length !== 0) {
-    comment += `${ADDED_HEADER}\n\n${added.map(({ url }) => `- ${url}`).join('\n')}`
-  }
-  if (updated.length !== 0) {
-    if (comment) {
-      comment += '\n\n'
-    }
-    comment += `${UPDATED_HEADER}\n\n${updated.map(({ url }) => `- ${url}`).join('\n')}`
+  if (comment === '') {
+    return
   }
 
-  if (comment) {
-    await addOrUpdatePrComment({ comment, commentsUrl, token })
-  }
+  await addOrUpdatePrComment({ comment, commentsUrl, token })
+}
+
+const sortDiffUrls = function (diffUrlA, diffUrlB) {
+  return diffUrlA.package.localeCompare(diffUrlB.package)
+}
+
+const URL_TYPES = [
+  { attribute: 'added', header: '#### Added Packages' },
+  { attribute: 'updated', header: '#### Updated Packages' },
+]
+
+const listDiffUrls = function (diffUrls, status, header) {
+  const statusUrls = diffUrls.filter((sortedUrl) => sortedUrl.status === status)
+  return statusUrls.length === 0 ? [] : [header, statusUrls.map(serializeDiffUrl).join('\n')]
+}
+
+const serializeDiffUrl = function ({ url }) {
+  return `- ${url}`
 }
 
 // eslint-disable-next-line max-statements
