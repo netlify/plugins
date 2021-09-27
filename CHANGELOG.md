@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://www.github.com/netlify/plugins/compare/v3.6.2...v4.0.0) (2021-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node 8 (#456)
+
+### Miscellaneous Chores
+
+* drop Node 8 ([#456](https://www.github.com/netlify/plugins/issues/456)) ([a31ac1b](https://www.github.com/netlify/plugins/commit/a31ac1b09da4fb483d425ec82b49217525a52e32))
+
 ### [3.6.2](https://www.github.com/netlify/plugins/compare/v3.6.1...v3.6.2) (2021-09-27)
 
 
