@@ -1,7 +1,7 @@
 const { computeDiffs } = require('./compute')
 const { getNewPluginsUrls } = require('./new_urls')
 const { upsertComment } = require('./upsert_comment')
-const { validate } = require('./validate')
+const { validatePayload } = require('./validate')
 
 // Main function handler.
 // Add/update a comment on each PR adding/updating a plugin showing the code
@@ -10,9 +10,9 @@ const handler = async function (rawEvent) {
   console.log(rawEvent)
 
   try {
-    const { error } = validate(rawEvent)
-    if (error) {
-      console.warn('Validation error:', error.message)
+    const errorMessage = validatePayload(rawEvent)
+    if (errorMessage !== undefined) {
+      console.warn(`Validation error: ${errorMessage}`)
       return {
         statusCode: 404,
         body: 'Not Found',
