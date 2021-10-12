@@ -1,5 +1,12 @@
 # Changelog
 
+### [4.0.1](https://www.github.com/netlify/plugins/compare/v4.0.0...v4.0.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* update Next plugin to 3.9.2 ([#476](https://www.github.com/netlify/plugins/issues/476)) ([3edd191](https://www.github.com/netlify/plugins/commit/3edd191d469a610fbf222510a0d5d209b8079e35))
+
 ## [4.0.0](https://www.github.com/netlify/plugins/compare/v3.6.2...v4.0.0) (2021-09-27)
 
 
