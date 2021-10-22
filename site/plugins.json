@@ -564,5 +564,13 @@
     "package": "netlify-plugin-use-env-in-runtime",
     "repo": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime",
     "version": "1.2.1"
+  },
+  {
+    "author": "Fahad Allibdi",
+    "description": "skip not affected apps in a nx monorepo.",
+    "name": "Deploy only an affected apps",
+    "package": "netlify-plugin-nx-skip-build",
+    "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
+    "version": "0.0.2"
   }
 ]
