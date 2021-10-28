@@ -575,8 +575,8 @@
   },
   {
     "author": "Amar Parmar",
-    "description": "Adds the ability to send build events to a logging service",
-    "name": "Netlify Plugin Build Logger",
+    "description": "Send build events to a logging service",
+    "name": "Build Logger",
     "package": "netlify-plugin-build-logger",
     "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
     "version": "1.0.3"
