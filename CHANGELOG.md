@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://www.github.com/netlify/plugins/compare/v4.0.1...v4.1.0) (2021-10-29)
+
+
+### Features
+
+* add nx skip deploy plugin ([#481](https://www.github.com/netlify/plugins/issues/481)) ([8197120](https://www.github.com/netlify/plugins/commit/81971205e971173f36ce0bec87dc5a3e97e90a2f))
+
 ### [4.0.1](https://www.github.com/netlify/plugins/compare/v4.0.0...v4.0.1) (2021-10-12)
 
 
