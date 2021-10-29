@@ -568,7 +568,7 @@
   {
     "author": "Fahad Allibdi",
     "description": "Skip not affected apps in a nx monorepo",
-    "name": "Deploy only an affected apps",
+    "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
     "version": "0.0.4"
