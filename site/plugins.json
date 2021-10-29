@@ -571,6 +571,6 @@
     "name": "Deploy only an affected apps",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.2"
+    "version": "0.0.4"
   }
 ]
