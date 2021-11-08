@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.0](https://www.github.com/netlify/plugins/compare/v4.1.0...v4.2.0) (2021-11-08)
+
+
+### Features
+
+* add simple build logger plugin ([#486](https://www.github.com/netlify/plugins/issues/486)) ([ceb2b2d](https://www.github.com/netlify/plugins/commit/ceb2b2dec230e7dd7242e0b332c3f4c87b0c482a))
+
 ## [4.1.0](https://www.github.com/netlify/plugins/compare/v4.0.1...v4.1.0) (2021-10-29)
 
 
