@@ -573,5 +573,13 @@
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
     "version": "0.0.4"
+  },
+  {
+    "author": "Amar Parmar",
+    "description": "Send build events to a logging service",
+    "name": "Build Logger",
+    "package": "netlify-plugin-build-logger",
+    "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
+    "version": "1.0.3"
   }
 ]
