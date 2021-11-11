@@ -46,7 +46,7 @@
     "node-fetch": "^2.6.1",
     "normalize-node-version": "^11.0.0",
     "nyc": "^15.1.0",
-    "pacote": "^11.1.13",
+    "pacote": "^12.0.0",
     "semver": "^7.0.0",
     "upper-case-first": "^2.0.2"
   },
