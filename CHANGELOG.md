@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://www.github.com/netlify/plugins/compare/v4.2.0...v5.0.0) (2021-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node 10 (#502)
+
+### Miscellaneous Chores
+
+* drop support for Node 10 ([#502](https://www.github.com/netlify/plugins/issues/502)) ([681a642](https://www.github.com/netlify/plugins/commit/681a6428ad617ddb9de5b29b36667b88f28b2ad3))
+
 ## [4.2.0](https://www.github.com/netlify/plugins/compare/v4.1.0...v4.2.0) (2021-11-08)
 
 
