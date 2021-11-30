@@ -1,12 +1,12 @@
-const { computeDiffs } = require('./compute')
-const { getNewPluginsUrls } = require('./new_urls')
-const { upsertComment } = require('./upsert_comment')
-const { validatePayload } = require('./validate')
+import { computeDiffs } from './compute.js'
+import { getNewPluginsUrls } from './new_urls.js'
+import { upsertComment } from './upsert_comment.js'
+import { validatePayload } from './validate.js'
 
 // Main function handler.
 // Add/update a comment on each PR adding/updating a plugin showing the code
 // difference of the npm package.
-const handler = async function (rawEvent) {
+export const handler = async function (rawEvent) {
   console.log(rawEvent)
 
   try {
@@ -60,5 +60,3 @@ const performDiff = async function ({
   const diffUrls = await getNewPluginsUrls(diffs)
   await upsertComment(diffUrls, commentsUrl)
 }
-
-module.exports = { handler }

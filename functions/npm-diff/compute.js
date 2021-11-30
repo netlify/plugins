@@ -1,9 +1,9 @@
-const { applyPatch } = require('diff')
+import { applyPatch } from 'diff'
 
-const { fetchText } = require('./fetch')
+import { fetchText } from './fetch.js'
 
 // Retrieve list of plugins differences
-const computeDiffs = async function ({ baseSha, baseRepoUrl, diffUrl }) {
+export const computeDiffs = async function ({ baseSha, baseRepoUrl, diffUrl }) {
   const [baseFile, diffText] = await Promise.all([getBaseFile({ baseSha, baseRepoUrl }), getDiffText(diffUrl)])
 
   const basePlugins = JSON.parse(baseFile)
@@ -39,12 +39,12 @@ const getDiffedFile = (baseFile, diffText) => {
 const getDiffs = (basePlugins, headPlugins) =>
   headPlugins.map((headPlugin) => getDiff(basePlugins, headPlugin)).filter(Boolean)
 
-const getDiff = function (basePlugins, { package, version, author }) {
-  const basePlugin = basePlugins.find((plugin) => plugin.author === author && plugin.package === package)
+const getDiff = function (basePlugins, { package: packageName, version, author }) {
+  const basePlugin = basePlugins.find((plugin) => plugin.author === author && plugin.package === packageName)
 
   // New plugin
   if (basePlugin === undefined) {
-    return { package, version, status: 'added' }
+    return { package: packageName, version, status: 'added' }
   }
 
   // Existing plugin, same version
@@ -53,8 +53,6 @@ const getDiff = function (basePlugins, { package, version, author }) {
   }
 
   // Existing plugin, different version
-  const url = `https://diff.intrinsic.com/${package}/${basePlugin.version}/${version}`
-  return { package, version, url, status: 'updated' }
+  const url = `https://diff.intrinsic.com/${packageName}/${basePlugin.version}/${version}`
+  return { package: packageName, version, url, status: 'updated' }
 }
-
-module.exports = { computeDiffs }

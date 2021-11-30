@@ -2,7 +2,9 @@
   "name": "@netlify/plugins-list",
   "version": "5.0.0",
   "description": "List of Netlify plugins",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
+  "main": "./index.js",
   "files": [
     "site/plugins.json"
   ],
@@ -21,8 +23,8 @@
     "test:ci": "nyc -r lcovonly -r text -r json ava"
   },
   "config": {
-    "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{functions,test,.github}/**/*.{js,md,html}\" \"*.{js,md,html}\" \".*.{js,md,html}\"",
-    "prettier": "--ignore-path .gitignore --loglevel=warn \"{functions,test,.github}/**/*.{js,md,yml,json,html}\" \"*.{js,yml,json,html}\" \".*.{js,yml,json,html}\" \"!package-lock.json\""
+    "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{functions,test,.github}/**/*.{cjs,mjs,js,md,html}\" \"*.{cjs,mjs,js,md,html}\" \".*.{cjs,mjs,js,md,html}\"",
+    "prettier": "--ignore-path .gitignore --loglevel=warn \"{functions,test,.github}/**/*.{cjs,mjs,js,md,yml,json,html}\" \"*.{cjs,mjs,js,yml,json,html}\" \".*.{cjs,mjs,js,yml,json,html}\" \"!package-lock.json\""
   },
   "husky": {
     "hooks": {

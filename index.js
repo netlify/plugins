@@ -1,7 +1,11 @@
 'use strict'
 
-const pluginsList = require('./site/plugins.json')
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
 
-const pluginsUrl = 'https://list-v2--netlify-plugins.netlify.app/plugins.json'
+const PLUGINS_FILE = fileURLToPath(new URL('./site/plugins.json', import.meta.url))
 
-module.exports = { pluginsList, pluginsUrl }
+// TODO: replace with a JSON import once this is supported without any
+// experimental flag
+export const pluginsList = JSON.parse(readFileSync(PLUGINS_FILE))
+export const pluginsUrl = 'https://list-v2--netlify-plugins.netlify.app/plugins.json'
