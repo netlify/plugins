@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.0.0](https://www.github.com/netlify/plugins/compare/v5.0.0...v6.0.0) (2021-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* use pure ES modules (#506)
+
+### Miscellaneous Chores
+
+* use pure ES modules ([#506](https://www.github.com/netlify/plugins/issues/506)) ([663bc7e](https://www.github.com/netlify/plugins/commit/663bc7ef9e54f518e67e2284295090be715b20b0))
+
 ## [5.0.0](https://www.github.com/netlify/plugins/compare/v4.2.0...v5.0.0) (2021-11-24)
 
 
