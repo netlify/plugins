@@ -6,6 +6,7 @@
   "exports": "./index.js",
   "main": "./index.js",
   "files": [
+    "index.js",
     "site/plugins.json"
   ],
   "scripts": {
