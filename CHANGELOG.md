@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.0.1](https://www.github.com/netlify/plugins/compare/v6.0.0...v6.0.1) (2021-12-02)
+
+
+### Bug Fixes
+
+* main file is missing ([#509](https://www.github.com/netlify/plugins/issues/509)) ([ffc8b9b](https://www.github.com/netlify/plugins/commit/ffc8b9b44333963e0e87ddf77dce83104329b2ce))
+
 ## [6.0.0](https://www.github.com/netlify/plugins/compare/v5.0.0...v6.0.0) (2021-12-02)
 
 
