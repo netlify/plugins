@@ -1,7 +1,7 @@
-const { fetchJson } = require('./fetch')
+import { fetchJson } from './fetch.js'
 
 // Add or update a comment on the GitHub PR displaying the diff
-const upsertComment = async (diffUrls, commentsUrl) => {
+export const upsertComment = async (diffUrls, commentsUrl) => {
   const comment = getComment(diffUrls)
   if (comment === '') {
     return
@@ -52,5 +52,3 @@ const UPDATE_TYPES = [
   { status: 'added', header: '#### Added Packages' },
   { status: 'updated', header: '#### Updated Packages' },
 ]
-
-module.exports = { upsertComment }

@@ -1,8 +1,8 @@
-const { createHmac } = require('crypto')
-const { env } = require('process')
+import { createHmac } from 'crypto'
+import { env } from 'process'
 
 // Validate Function event payload
-const validatePayload = (rawEvent) => {
+export const validatePayload = (rawEvent) => {
   const failedValidation = VALIDATIONS.find(({ test }) => test(rawEvent))
   if (failedValidation === undefined) {
     return
@@ -37,5 +37,3 @@ const VALIDATIONS = [
 ]
 
 const REQUIRED_HEADERS = ['x-hub-signature', 'x-github-event', 'x-github-delivery']
-
-module.exports = { validatePayload }

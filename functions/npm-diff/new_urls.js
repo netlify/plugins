@@ -1,7 +1,7 @@
-const pacote = require('pacote')
+import pacote from 'pacote'
 
 // Add npm URLs to new plugins.
-const getNewPluginsUrls = (diffs) => Promise.all(diffs.map(getDiffNewPluginsUrls))
+export const getNewPluginsUrls = (diffs) => Promise.all(diffs.map(getDiffNewPluginsUrls))
 
 const getDiffNewPluginsUrls = async function (diff) {
   if (diff.status !== 'added') {
@@ -13,5 +13,3 @@ const getDiffNewPluginsUrls = async function (diff) {
   } = await pacote.manifest(`${diff.package}@${diff.version}`)
   return { ...diff, url: tarball }
 }
-
-module.exports = { getNewPluginsUrls }

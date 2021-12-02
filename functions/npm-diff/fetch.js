@@ -1,9 +1,9 @@
-const { env } = require('process')
+import { env } from 'process'
 
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
 // Make an HTTP request with a JSON request/response
-const fetchJson = async (url, errorPrefix, { headers, body, ...options } = {}) => {
+export const fetchJson = async (url, errorPrefix, { headers, body, ...options } = {}) => {
   const response = await fetch(url, {
     ...options,
     body: JSON.stringify({ body }),
@@ -21,7 +21,7 @@ const fetchJson = async (url, errorPrefix, { headers, body, ...options } = {}) =
 }
 
 // Make a regular HTTP request
-const fetchText = async (url, errorPrefix, options) => {
+export const fetchText = async (url, errorPrefix, options) => {
   const response = await fetch(url, options)
   const text = await response.text()
   if (!response.ok) {
@@ -29,5 +29,3 @@ const fetchText = async (url, errorPrefix, options) => {
   }
   return text
 }
-
-module.exports = { fetchJson, fetchText }

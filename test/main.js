@@ -1,6 +1,4 @@
 /* eslint-disable max-lines */
-import { URL } from 'url'
-
 import test from 'ava'
 import got from 'got'
 import isPlainObj from 'is-plain-obj'
