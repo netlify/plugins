@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.1.0](https://www.github.com/netlify/plugins/compare/v6.0.1...v6.1.0) (2021-12-13)
+
+
+### Features
+
+* bump Inline Critical CSS to v2.0.0 ([#530](https://www.github.com/netlify/plugins/issues/530)) ([62dac30](https://www.github.com/netlify/plugins/commit/62dac3082d7bd10b67fe73f0161c1c97e4b6e1cf))
+
 ### [6.0.1](https://www.github.com/netlify/plugins/compare/v6.0.0...v6.0.1) (2021-12-02)
 
 
