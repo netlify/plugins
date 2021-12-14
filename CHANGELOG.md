@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.2.0](https://www.github.com/netlify/plugins/compare/v6.1.0...v6.2.0) (2021-12-14)
+
+
+### Features
+
+* upgrade Next plugin to 4.0.0 ([#531](https://www.github.com/netlify/plugins/issues/531)) ([a745da0](https://www.github.com/netlify/plugins/commit/a745da0ef923237ebf4d0025dcc2fd682358902f))
+
 ## [6.1.0](https://www.github.com/netlify/plugins/compare/v6.0.1...v6.1.0) (2021-12-13)
 
 
