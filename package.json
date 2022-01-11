@@ -21,7 +21,7 @@
     "format:check:prettier": "cross-env-shell prettier --check $npm_package_config_prettier",
     "format:fix:prettier": "cross-env-shell prettier --write $npm_package_config_prettier",
     "test:dev": "ava",
-    "test:ci": "nyc -r lcovonly -r text -r json ava"
+    "test:ci": "c8 -r lcovonly -r text -r json ava"
   },
   "config": {
     "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{functions,test,.github}/**/*.{cjs,mjs,js,md,html}\" \"*.{cjs,mjs,js,md,html}\" \".*.{cjs,mjs,js,md,html}\"",
@@ -42,13 +42,12 @@
   "devDependencies": {
     "@netlify/eslint-config-node": "^4.1.0",
     "ava": "^3.13.0",
+    "c8": "^7.11.0",
     "diff": "^5.0.0",
     "got": "^11.8.0",
-    "husky": "^4.2.5",
     "is-plain-obj": "^4.0.0",
     "node-fetch": "^2.6.1",
     "normalize-node-version": "^11.0.0",
-    "nyc": "^15.1.0",
     "pacote": "^12.0.0",
     "semver": "^7.0.0",
     "upper-case-first": "^2.0.2"
