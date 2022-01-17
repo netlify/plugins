@@ -1,5 +1,17 @@
 # Changelog
 
+## [6.3.0](https://github.com/netlify/plugins/compare/v6.2.1...v6.3.0) (2022-01-17)
+
+
+### Features
+
+* update to Next 4.2.0 ([#618](https://github.com/netlify/plugins/issues/618)) ([f187143](https://github.com/netlify/plugins/commit/f187143e1d0e646295b654df0275748ceca623fa))
+
+
+### Bug Fixes
+
+* husky binary not found ([#615](https://github.com/netlify/plugins/issues/615)) ([617c6c6](https://github.com/netlify/plugins/commit/617c6c63134bb6b68e1e78475150e29c69d7024a))
+
 ### [6.2.1](https://github.com/netlify/plugins/compare/v6.2.0...v6.2.1) (2022-01-11)
 
 
