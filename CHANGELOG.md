@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.3.1](https://github.com/netlify/plugins/compare/v6.3.0...v6.3.1) (2022-01-21)
+
+
+### Bug Fixes
+
+* bump `netlify-plugin-debug-cache` to `1.0.4` ([#622](https://github.com/netlify/plugins/issues/622)) ([5af9d1d](https://github.com/netlify/plugins/commit/5af9d1d2fcb0790c5e986179a79c133143f349bb))
+
 ## [6.3.0](https://github.com/netlify/plugins/compare/v6.2.1...v6.3.0) (2022-01-17)
 
 
