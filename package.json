@@ -42,7 +42,7 @@
     "got": "^11.8.0",
     "husky": "^7.0.4",
     "is-plain-obj": "^4.0.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "normalize-node-version": "^11.0.0",
     "pacote": "^12.0.0",
     "semver": "^7.0.0",
