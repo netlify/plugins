@@ -337,7 +337,7 @@
       },
       {
         "version": "1.0.10",
-        "nodeVersion": "<12.0.0"
+        "nodeVersion": "<12.20.0"
       }
     ]
   },
