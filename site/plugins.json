@@ -609,5 +609,13 @@
     "package": "netlify-plugin-build-logger",
     "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
     "version": "1.0.3"
+  },
+  {
+    "author": "CommandBar",
+    "description": "CommandBar plugin for sites deployed to Netlify",
+    "name": "CommandBar",
+    "package": "@commandbar/netlify-plugin-commandbar",
+    "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
+    "version": "0.0.2"
   }
 ]
