@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.5.0](https://github.com/netlify/plugins/compare/v6.4.1...v6.5.0) (2022-02-02)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.2.3 ([#637](https://github.com/netlify/plugins/issues/637)) ([ccdf279](https://github.com/netlify/plugins/commit/ccdf279fd5442dc66dffa60d34591d96a0ff9ebf))
+* upgrade skip nx plugin to 0.0.5 ([#635](https://github.com/netlify/plugins/issues/635)) ([63d91d3](https://github.com/netlify/plugins/commit/63d91d3fed000a10cb5f72fff12bbb8073e8eaf8))
+
 ### [6.4.1](https://github.com/netlify/plugins/compare/v6.4.0...v6.4.1) (2022-01-31)
 
 
