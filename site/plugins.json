@@ -503,7 +503,19 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "1.0.3"
+    "version": "2.0.2",
+    "compatibility": [
+      {
+        "version": "2.0.2",
+        "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
+      },
+      {
+        "version": "1.0.3",
+        "siteDependencies": {
+          "gatsby": "<4.0.0"
+        }
+      }
+    ]
   },
   {
     "author": "netlify",
