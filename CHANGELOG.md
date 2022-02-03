@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.6.0](https://github.com/netlify/plugins/compare/v6.5.0...v6.6.0) (2022-02-03)
+
+
+### Features
+
+* upgrade Gatsby plugin to v2 ([#644](https://github.com/netlify/plugins/issues/644)) ([6d70393](https://github.com/netlify/plugins/commit/6d703935a466e809f0f8302ada92fa1b41e340fc))
+
 ## [6.5.0](https://github.com/netlify/plugins/compare/v6.4.1...v6.5.0) (2022-02-02)
 
 
