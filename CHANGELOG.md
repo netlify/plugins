@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.9.0](https://github.com/netlify/plugins/compare/v6.8.0...v6.9.0) (2022-02-07)
+
+
+### Features
+
+* add New Relic plugin ([#646](https://github.com/netlify/plugins/issues/646)) ([cd090a1](https://github.com/netlify/plugins/commit/cd090a14927bfcbf9119f69cb5745e401db438e9))
+* update plugin @netlify/plugin-nextjs to version 4.2.5 ([#654](https://github.com/netlify/plugins/issues/654)) ([bd24eb7](https://github.com/netlify/plugins/commit/bd24eb7dcc6759f3daf84dae37cc10b71a579fd5))
+
 ## [6.8.0](https://github.com/netlify/plugins/compare/v6.7.0...v6.8.0) (2022-02-07)
 
 
