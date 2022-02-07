@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.8.0](https://github.com/netlify/plugins/compare/v6.7.0...v6.8.0) (2022-02-07)
+
+
+### Features
+
+* update plugin netlify-plugin-is-website-vulnerable to version 2.0.2 ([#650](https://github.com/netlify/plugins/issues/650)) ([6b91dde](https://github.com/netlify/plugins/commit/6b91dde9cf294859fb168588577a95a22a9bda6e))
+
 ## [6.7.0](https://github.com/netlify/plugins/compare/v6.6.0...v6.7.0) (2022-02-04)
 
 
