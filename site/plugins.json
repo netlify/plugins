@@ -636,6 +636,6 @@
     "name": "CommandBar",
     "package": "@commandbar/netlify-plugin-commandbar",
     "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
-    "version": "0.0.3"
+    "version": "0.0.4"
   }
 ]
