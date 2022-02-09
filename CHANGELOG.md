@@ -1,5 +1,49 @@
 # Changelog
 
+## [6.9.0](https://github.com/netlify/plugins/compare/v6.8.0...v6.9.0) (2022-02-07)
+
+
+### Features
+
+* add New Relic plugin ([#646](https://github.com/netlify/plugins/issues/646)) ([cd090a1](https://github.com/netlify/plugins/commit/cd090a14927bfcbf9119f69cb5745e401db438e9))
+* update plugin @netlify/plugin-nextjs to version 4.2.5 ([#654](https://github.com/netlify/plugins/issues/654)) ([bd24eb7](https://github.com/netlify/plugins/commit/bd24eb7dcc6759f3daf84dae37cc10b71a579fd5))
+
+## [6.8.0](https://github.com/netlify/plugins/compare/v6.7.0...v6.8.0) (2022-02-07)
+
+
+### Features
+
+* update plugin netlify-plugin-is-website-vulnerable to version 2.0.2 ([#650](https://github.com/netlify/plugins/issues/650)) ([6b91dde](https://github.com/netlify/plugins/commit/6b91dde9cf294859fb168588577a95a22a9bda6e))
+
+## [6.7.0](https://github.com/netlify/plugins/compare/v6.6.0...v6.7.0) (2022-02-04)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.2.4 ([#641](https://github.com/netlify/plugins/issues/641)) ([a689a84](https://github.com/netlify/plugins/commit/a689a84a47a0b90c50f888dd5bc55f7b6133de76))
+
+## [6.6.0](https://github.com/netlify/plugins/compare/v6.5.0...v6.6.0) (2022-02-03)
+
+
+### Features
+
+* upgrade Gatsby plugin to v2 ([#644](https://github.com/netlify/plugins/issues/644)) ([6d70393](https://github.com/netlify/plugins/commit/6d703935a466e809f0f8302ada92fa1b41e340fc))
+
+## [6.5.0](https://github.com/netlify/plugins/compare/v6.4.1...v6.5.0) (2022-02-02)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.2.3 ([#637](https://github.com/netlify/plugins/issues/637)) ([ccdf279](https://github.com/netlify/plugins/commit/ccdf279fd5442dc66dffa60d34591d96a0ff9ebf))
+* upgrade skip nx plugin to 0.0.5 ([#635](https://github.com/netlify/plugins/issues/635)) ([63d91d3](https://github.com/netlify/plugins/commit/63d91d3fed000a10cb5f72fff12bbb8073e8eaf8))
+
+### [6.4.1](https://github.com/netlify/plugins/compare/v6.4.0...v6.4.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* update Next plugin to 4.2.2 ([#633](https://github.com/netlify/plugins/issues/633)) ([e7429d7](https://github.com/netlify/plugins/commit/e7429d70b14bb51d33d3495ab7dd9e7a1f7460bd))
+
 ## [6.4.0](https://github.com/netlify/plugins/compare/v6.3.2...v6.4.0) (2022-01-28)
 
 

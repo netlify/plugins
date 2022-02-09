@@ -330,10 +330,10 @@
     "name": "Is website vulnerable",
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "compatibility": [
       {
-        "version": "2.0.1"
+        "version": "2.0.2"
       },
       {
         "version": "1.0.10",
@@ -477,10 +477,10 @@
     "name": "Essential Next.js",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.2.1",
+    "version": "4.2.5",
     "compatibility": [
       {
-        "version": "4.2.1",
+        "version": "4.2.5",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
@@ -503,7 +503,19 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "1.0.3"
+    "version": "2.0.2",
+    "compatibility": [
+      {
+        "version": "2.0.2",
+        "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
+      },
+      {
+        "version": "1.0.3",
+        "siteDependencies": {
+          "gatsby": "<4.0.0"
+        }
+      }
+    ]
   },
   {
     "author": "netlify",
@@ -600,7 +612,7 @@
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.4"
+    "version": "0.0.5"
   },
   {
     "author": "Amar Parmar",
@@ -609,6 +621,14 @@
     "package": "netlify-plugin-build-logger",
     "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
     "version": "1.0.3"
+  },
+  {
+    "author": "aaronbassett",
+    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent.",
+    "name": "New Relic",
+    "package": "@newrelic/netlify-plugin",
+    "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
+    "version": "1.0.1"
   },
   {
     "author": "CommandBar",
