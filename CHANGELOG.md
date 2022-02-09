@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.10.1](https://github.com/netlify/plugins/compare/v6.10.0...v6.10.1) (2022-02-09)
+
+
+### Bug Fixes
+
+* upgrade netlify-plugin-commandbar version to `0.0.4` ([#657](https://github.com/netlify/plugins/issues/657)) ([6b84f14](https://github.com/netlify/plugins/commit/6b84f143e3d4b368367cf09d684da41d8fd52954))
+
 ## [6.10.0](https://github.com/netlify/plugins/compare/v6.9.0...v6.10.0) (2022-02-09)
 
 
