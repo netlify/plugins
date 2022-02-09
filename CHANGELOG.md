@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.10.0](https://github.com/netlify/plugins/compare/v6.9.0...v6.10.0) (2022-02-09)
+
+
+### Features
+
+* plugin Submission: CommandBar + Netlify ([#631](https://github.com/netlify/plugins/issues/631)) ([e3011c8](https://github.com/netlify/plugins/commit/e3011c8154cdde285a8400705265eaf2e2997484))
+
 ## [6.9.0](https://github.com/netlify/plugins/compare/v6.8.0...v6.9.0) (2022-02-07)
 
 
