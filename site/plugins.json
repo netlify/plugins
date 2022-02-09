@@ -629,5 +629,13 @@
     "package": "@newrelic/netlify-plugin",
     "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
     "version": "1.0.1"
+  },
+  {
+    "author": "CommandBar",
+    "description": "CommandBar plugin for sites deployed to Netlify",
+    "name": "CommandBar",
+    "package": "@commandbar/netlify-plugin-commandbar",
+    "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
+    "version": "0.0.3"
   }
 ]
