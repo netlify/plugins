@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.10.2](https://github.com/netlify/plugins/compare/v6.10.1...v6.10.2) (2022-02-11)
+
+
+### Bug Fixes
+
+* **plugins:** update Algolia crawler ([#659](https://github.com/netlify/plugins/issues/659)) ([41408b8](https://github.com/netlify/plugins/commit/41408b8c2962ad034e98c5117c7d5ae3a66bbfa4))
+
 ### [6.10.1](https://github.com/netlify/plugins/compare/v6.10.0...v6.10.1) (2022-02-09)
 
 
