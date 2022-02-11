@@ -469,7 +469,7 @@
     "name": "Algolia crawler",
     "package": "@algolia/netlify-plugin-crawler",
     "repo": "https://github.com/algolia/algoliasearch-netlify",
-    "version": "1.0.0"
+    "version": "1.0.14"
   },
   {
     "author": "netlify",
