@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.13.1](https://github.com/netlify/plugins/compare/v6.13.0...v6.13.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* update Gatsby plugin to 2.0.3 ([#669](https://github.com/netlify/plugins/issues/669)) ([5ea8d4d](https://github.com/netlify/plugins/commit/5ea8d4dddfc3a3b3089b4e0c64c0975df3f736ca))
+
 ## [6.13.0](https://github.com/netlify/plugins/compare/v6.12.0...v6.13.0) (2022-02-21)
 
 
