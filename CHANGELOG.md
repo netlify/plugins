@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.13.0](https://github.com/netlify/plugins/compare/v6.12.0...v6.13.0) (2022-02-21)
+
+
+### Features
+
+* upgrade Lighthouse plugin to `2.1.3` ([#626](https://github.com/netlify/plugins/issues/626)) ([e9041eb](https://github.com/netlify/plugins/commit/e9041eb8481e3ff05d4fefd76a6c8523544fa19a))
+
 ## [6.12.0](https://github.com/netlify/plugins/compare/v6.11.0...v6.12.0) (2022-02-18)
 
 
