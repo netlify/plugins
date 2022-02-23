@@ -314,7 +314,7 @@
     "name": "Sentry",
     "package": "@sentry/netlify-build-plugin",
     "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
-    "version": "1.1.0"
+    "version": "1.1.1"
   },
   {
     "author": "AshikNesin",
