@@ -637,5 +637,13 @@
     "package": "@commandbar/netlify-plugin-commandbar",
     "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
     "version": "0.0.4"
+  },
+  {
+    "author": "Colby Fayock",
+    "description": "Automatic image optimization with modern formats using Cloudinary",
+    "name": "Cloudinary",
+    "package": "netlify-plugin-cloudinary",
+    "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
+    "version": "1.0.0"
   }
 ]
