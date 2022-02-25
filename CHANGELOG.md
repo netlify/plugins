@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.14.0](https://github.com/netlify/plugins/compare/v6.13.1...v6.14.0) (2022-02-25)
+
+
+### Features
+
+* adding Cloudinary plugin ([#673](https://github.com/netlify/plugins/issues/673)) ([088613a](https://github.com/netlify/plugins/commit/088613a17936b7b3c7b29eaf8d4362066030a7d7))
+* update version of @sentry/netlify-build-plugin ([#671](https://github.com/netlify/plugins/issues/671)) ([edb9013](https://github.com/netlify/plugins/commit/edb901345204fdbc767779acec5754edcdc16f8a))
+
 ### [6.13.1](https://github.com/netlify/plugins/compare/v6.13.0...v6.13.1) (2022-02-21)
 
 
