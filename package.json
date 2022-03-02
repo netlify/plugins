@@ -53,6 +53,7 @@
   },
   "ava": {
     "timeout": "2m",
-    "verbose": true
+    "verbose": true,
+    "workerThreads": false
   }
 }
