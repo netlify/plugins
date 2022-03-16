@@ -387,7 +387,7 @@
     "name": "Submit sitemap",
     "package": "netlify-plugin-submit-sitemap",
     "repo": "https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap",
-    "version": "0.2.3"
+    "version": "0.3.0"
   },
   {
     "author": "netlify-labs",
