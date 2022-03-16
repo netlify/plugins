@@ -1,5 +1,13 @@
 # Changelog
 
+### [6.16.1](https://github.com/netlify/plugins/compare/v6.16.0...v6.16.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* **gatsby:** update Gatsby plugin to 2.1.3 ([#688](https://github.com/netlify/plugins/issues/688)) ([dfa6b3f](https://github.com/netlify/plugins/commit/dfa6b3ff1cba84b502813ddc2630afc1b4d6753e))
+* upgrade netlify-plugin-stepzen version to 1.0.4 ([#685](https://github.com/netlify/plugins/issues/685)) ([4d0f337](https://github.com/netlify/plugins/commit/4d0f3373b1254f0561f853e248194e646b2d98c2))
+
 ## [6.16.0](https://github.com/netlify/plugins/compare/v6.15.0...v6.16.0) (2022-03-03)
 
 
