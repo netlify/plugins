@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.17.0](https://github.com/netlify/plugins/compare/v6.16.1...v6.17.0) (2022-03-22)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 2.1.4 ([#692](https://github.com/netlify/plugins/issues/692)) ([3277bfb](https://github.com/netlify/plugins/commit/3277bfb46c45ba46217faedbc08b1e537e53f9ef))
+* update plugin @netlify/plugin-nextjs to version 4.2.8 ([#693](https://github.com/netlify/plugins/issues/693)) ([dd71639](https://github.com/netlify/plugins/commit/dd716394d41e030f0e37241dd3c44535bfcddcc3))
+* upgrade netlify-plugin-submit-sitemap to 0.3.0 ([#689](https://github.com/netlify/plugins/issues/689)) ([104a224](https://github.com/netlify/plugins/commit/104a224fa3f180aabddbe469a380c03d403d7813))
+
 ### [6.16.1](https://github.com/netlify/plugins/compare/v6.16.0...v6.16.1) (2022-03-16)
 
 
