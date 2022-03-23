@@ -644,6 +644,6 @@
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
-    "version": "1.0.0"
+    "version": "1.0.3"
   }
 ]
