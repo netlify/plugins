@@ -477,10 +477,10 @@
     "name": "Essential Next.js",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.3.1",
+    "version": "4.2.8",
     "compatibility": [
       {
-        "version": "4.3.1",
+        "version": "4.2.8",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
