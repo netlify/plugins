@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.18.1](https://github.com/netlify/plugins/compare/v6.18.0...v6.18.1) (2022-03-30)
+
+
+### Bug Fixes
+
+* downgrade Next to 4.2.8 ([#701](https://github.com/netlify/plugins/issues/701)) ([1b586d3](https://github.com/netlify/plugins/commit/1b586d39f024bca73b6235cbafe265a4d998d12d))
+
 ## [6.18.0](https://github.com/netlify/plugins/compare/v6.17.0...v6.18.0) (2022-03-29)
 
 
