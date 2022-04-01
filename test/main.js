@@ -110,14 +110,14 @@ pluginsList.forEach((plugin) => {
   }
 
   test(`Plugin compatibility are sorted from highest to lowest version and with different major versions in each entry: ${packageName}`, (t) => {
+    const filtered = compatibility.filter(
+      (compatField) => validVersion(compatField.version) !== null && compatField.featureFlag === undefined,
+    )
     t.true(
-      compatibility
-        .filter((compatField) => validVersion(compatField.version) !== null)
-        .every(
-          (compatField, index) =>
-            index === compatibility.length - 1 ||
-            isPreviousMajor(compatibility[index + 1].version, compatField.version),
-        ),
+      filtered.every(
+        (compatField, index) =>
+          index === filtered.length - 1 || isPreviousMajor(filtered[index + 1].version, compatField.version),
+      ),
     )
   })
 
