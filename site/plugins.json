@@ -480,6 +480,10 @@
     "version": "4.2.8",
     "compatibility": [
       {
+        "version": "4.3.1",
+        "featureFlag": "build_plugins_use_prerelease"
+      }, 
+      {
         "version": "4.2.8",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
