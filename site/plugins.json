@@ -503,7 +503,7 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "2.1.4",
+    "version": "3.0.0",
     "compatibility": [
       {
         "version": "2.1.4",
