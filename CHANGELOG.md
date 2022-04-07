@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.19.0](https://github.com/netlify/plugins/compare/v6.18.1...v6.19.0) (2022-04-07)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.0.0 ([#707](https://github.com/netlify/plugins/issues/707)) ([3eb6d99](https://github.com/netlify/plugins/commit/3eb6d99ff4d37ccd4288da5a2b69af57ac2907da))
+* update plugin @netlify/plugin-nextjs to version 4.3.2 ([#705](https://github.com/netlify/plugins/issues/705)) ([e28ad75](https://github.com/netlify/plugins/commit/e28ad75981dbac6954bb9afab3f30bb6b435fe39))
+
 ### [6.18.1](https://github.com/netlify/plugins/compare/v6.18.0...v6.18.1) (2022-03-30)
 
 
