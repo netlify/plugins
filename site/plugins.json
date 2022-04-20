@@ -1,4 +1,12 @@
 [
+   {
+    "author": "bencevans",
+    "description": "Install the Flutter SDK for Building and Deploying Flutter Web Apps",
+    "name": "Flutter SDK",
+    "package": "netlify-plugin-flutter",
+    "repo": "https://github.com/bencevans/netlify-plugin-flutter",
+    "version": "1.1.0"
+  },
   {
     "author": "nimbella",
     "description": "Nimbella plugin to extend Netlify Sites with stateful and portable serverless APIs.",
