@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.24.0](https://github.com/netlify/plugins/compare/v6.23.0...v6.24.0) (2022-05-05)
+
+
+### Features
+
+* add Very Good Security plugin ([#726](https://github.com/netlify/plugins/issues/726)) ([4391210](https://github.com/netlify/plugins/commit/4391210ad9cf0bb5c91d390c298c2dfe1a567f0b))
+
 ## [6.23.0](https://github.com/netlify/plugins/compare/v6.22.0...v6.23.0) (2022-05-03)
 
 
