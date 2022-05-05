@@ -645,5 +645,13 @@
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
     "version": "1.0.3"
+  },
+  {
+    "author": "Dima Marynych",
+    "description": "Securely collect and use sensitive data without having it ever touch your systems",
+    "name": "Very Good Security",
+    "package": "@vgs/netlify-plugin-vgs",
+    "repo": "https://github.com/verygoodsecurity/netlify-plugin-vgs",
+    "version": "0.0.2"
   }
 ]
