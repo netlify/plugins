@@ -653,5 +653,13 @@
     "package": "@vgs/netlify-plugin-vgs",
     "repo": "https://github.com/verygoodsecurity/netlify-plugin-vgs",
     "version": "0.0.2"
+  },
+  {
+    "author": "Rob Grant",
+    "description": "Automatically create and configure a TakeShape project for use with your Netlify site.",
+    "name": "TakeShape",
+    "package": "@takeshape/netlify-plugin-takeshape",
+    "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
+    "version": "1.0.0"
   }
 ]
