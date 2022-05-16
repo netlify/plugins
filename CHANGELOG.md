@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.25.0](https://github.com/netlify/plugins/compare/v6.24.0...v6.25.0) (2022-05-16)
+
+
+### Features
+
+* add TakeShape plugin ([#730](https://github.com/netlify/plugins/issues/730)) ([b7c3a90](https://github.com/netlify/plugins/commit/b7c3a905921da55340dd3b5fe243b27713f57798))
+
 ## [6.24.0](https://github.com/netlify/plugins/compare/v6.23.0...v6.24.0) (2022-05-05)
 
 
