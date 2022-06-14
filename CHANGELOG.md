@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.28.0](https://github.com/netlify/plugins/compare/v6.27.0...v6.28.0) (2022-06-14)
+
+
+### Features
+
+* downgrade next plugin because of bug ([#751](https://github.com/netlify/plugins/issues/751)) ([88a6eae](https://github.com/netlify/plugins/commit/88a6eae39e6a2b2fb2e637bfb2abaa8d3a09e422))
+* update plugin @netlify/plugin-nextjs to version 4.9.0 ([#749](https://github.com/netlify/plugins/issues/749)) ([41e8fff](https://github.com/netlify/plugins/commit/41e8fff11ea13c3d178ef3022e17f2e7c722a192))
+* update plugin @netlify/plugin-nextjs to version 4.9.1 ([#752](https://github.com/netlify/plugins/issues/752)) ([8babb1c](https://github.com/netlify/plugins/commit/8babb1c81f3176837a23627cd303373730295b5f))
+
 ## [6.27.0](https://github.com/netlify/plugins/compare/v6.26.0...v6.27.0) (2022-06-01)
 
 
