@@ -70,7 +70,8 @@
     "name": "Gatsby cache",
     "package": "netlify-plugin-gatsby-cache",
     "repo": "https://github.com/jlengstorf/netlify-plugin-gatsby-cache",
-    "version": "0.3.0"
+    "version": "0.3.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "edm00se",
