@@ -1,5 +1,20 @@
 # Changelog
 
+## [6.29.0](https://github.com/netlify/plugins/compare/v6.28.0...v6.29.0) (2022-06-24)
+
+
+### Features
+
+* add plugin netlify-plugin-flutter at version 1.1.0 ([#712](https://github.com/netlify/plugins/issues/712)) ([1c5e595](https://github.com/netlify/plugins/commit/1c5e5959ae8c8fa04f14e1001a0a070708b2c030))
+* update plugin @netlify/plugin-gatsby to version 3.2.3 ([#755](https://github.com/netlify/plugins/issues/755)) ([cb3eb67](https://github.com/netlify/plugins/commit/cb3eb67af65ef993a7d67e988c025a11418d91e5))
+* update plugin @netlify/plugin-nextjs to version 4.9.3 ([#757](https://github.com/netlify/plugins/issues/757)) ([de48694](https://github.com/netlify/plugins/commit/de486945157d3f219b23fdeb13178b133b7609cc))
+* upgrade netlify-plugin-submit-sitemap to 0.4.0 ([#747](https://github.com/netlify/plugins/issues/747)) ([49ab650](https://github.com/netlify/plugins/commit/49ab650df4d7efc0dc74a460b9fc6b5a930a6e2d))
+
+
+### Bug Fixes
+
+* deactivate the deprecated Gatsby Cache plugin ([#731](https://github.com/netlify/plugins/issues/731)) ([fb340d8](https://github.com/netlify/plugins/commit/fb340d8724040dc3943bbc0c39c7f3458a55cb3e))
+
 ## [6.28.0](https://github.com/netlify/plugins/compare/v6.27.0...v6.28.0) (2022-06-14)
 
 
