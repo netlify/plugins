@@ -621,7 +621,7 @@
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.5"
+    "version": "0.0.7"
   },
   {
     "author": "Amar Parmar",
