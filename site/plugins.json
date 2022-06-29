@@ -1,5 +1,5 @@
 [
-   {
+  {
     "author": "bencevans",
     "description": "Install the Flutter SDK for Building and Deploying Flutter Web Apps",
     "name": "Flutter SDK",
@@ -512,10 +512,10 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "3.2.3",
+    "version": "3.2.4",
     "compatibility": [
       {
-        "version": "3.2.3",
+        "version": "3.2.4",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
       {
