@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.30.0](https://github.com/netlify/plugins/compare/v6.29.0...v6.30.0) (2022-06-29)
+
+
+### Features
+
+* update netlify-plugin-nx-skip-build to v0.0.7n ([#760](https://github.com/netlify/plugins/issues/760)) ([e0c5675](https://github.com/netlify/plugins/commit/e0c567529118334c7ce1f3e4afdfef1429196b75))
+* update plugin @netlify/plugin-gatsby to version 3.2.4 ([#759](https://github.com/netlify/plugins/issues/759)) ([c678f46](https://github.com/netlify/plugins/commit/c678f464d3248cb5e6a30345c0145157cc404ed3))
+
 ## [6.29.0](https://github.com/netlify/plugins/compare/v6.28.0...v6.29.0) (2022-06-24)
 
 
