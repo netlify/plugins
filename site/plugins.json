@@ -407,7 +407,7 @@
     "version": "2.1.3",
     "compatibility": [
       {
-        "version": "2.1.3"
+        "version": "3.0.0", "featureFlag": "use_lighthouse_version_3"
       },
       {
         "version": "1.4.3",
