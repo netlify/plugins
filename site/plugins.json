@@ -406,7 +406,9 @@
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
     "version": "3.0.1",
     "compatibility": [
-      { "version": "3.0.1" },
+      {
+        "version": "3.0.1"
+      },
       {
         "version": "2.1.3",
         "nodeVersion": "<14.0.0"
@@ -488,10 +490,10 @@
     "name": "Essential Next.js",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.12.2",
+    "version": "4.13.0",
     "compatibility": [
       {
-        "version": "4.12.2",
+        "version": "4.13.0",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
