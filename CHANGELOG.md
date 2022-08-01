@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.36.0](https://github.com/netlify/plugins/compare/v6.35.0...v6.36.0) (2022-08-01)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.4.0 ([#788](https://github.com/netlify/plugins/issues/788)) ([a9e3706](https://github.com/netlify/plugins/commit/a9e370605f9c6ed1e92642f13de7dddebe424a9e))
+* update plugin @netlify/plugin-lighthouse to version 3.2.0 ([#794](https://github.com/netlify/plugins/issues/794)) ([5367bc6](https://github.com/netlify/plugins/commit/5367bc6276d67e934076049100d27b2a0b82ead3))
+
 ## [6.35.0](https://github.com/netlify/plugins/compare/v6.34.0...v6.35.0) (2022-07-18)
 
 
