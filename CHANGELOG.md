@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.37.0](https://github.com/netlify/plugins/compare/v6.36.0...v6.37.0) (2022-08-09)
+
+
+### Features
+
+* update plugin @netlify/plugin-lighthouse to version 3.2.1 ([#799](https://github.com/netlify/plugins/issues/799)) ([2ca1840](https://github.com/netlify/plugins/commit/2ca1840ee9cc420bd94399a5099056d08e82583d))
+
 ## [6.36.0](https://github.com/netlify/plugins/compare/v6.35.0...v6.36.0) (2022-08-01)
 
 
