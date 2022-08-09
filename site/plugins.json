@@ -404,10 +404,10 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "3.2.0",
+    "version": "3.2.1",
     "compatibility": [
       {
-        "version": "3.2.0"
+        "version": "3.2.1"
       },
       {
         "version": "2.1.3",
