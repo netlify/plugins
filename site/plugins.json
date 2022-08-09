@@ -108,11 +108,12 @@
   },
   {
     "author": "pizzafox",
-    "description": "Cache the .next build folder between builds",
+    "description": "This plugin is deprecated. The functionality is now built in",
     "name": "Next.js cache",
     "package": "netlify-plugin-cache-nextjs",
     "repo": "https://github.com/pizzafox/netlify-cache-nextjs",
-    "version": "1.4.0"
+    "version": "1.4.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "netlify-labs",
@@ -446,11 +447,12 @@
   },
   {
     "author": "rayriffy",
-    "description": "Netlify plugin that allows you to deploy dynamic NextJS path statically",
+    "description": "This plugin is deprecated. The functionality is now built in",
     "name": "Next dynamic routes",
     "package": "netlify-plugin-next-dynamic",
     "repo": "https://github.com/Brikl/opensource/tree/master/libs/netlify-plugin-next-dynamic",
-    "version": "1.0.9"
+    "version": "1.0.9",
+    "status": "DEACTIVATED"
   },
   {
     "author": "ample",
