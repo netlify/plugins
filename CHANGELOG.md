@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.39.0](https://github.com/netlify/plugins/compare/v6.38.0...v6.39.0) (2022-08-11)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.14.2 ([#802](https://github.com/netlify/plugins/issues/802)) ([0f7e5d6](https://github.com/netlify/plugins/commit/0f7e5d619d83e78c293b60082552910369231ac2))
+
 ## [6.38.0](https://github.com/netlify/plugins/compare/v6.37.0...v6.38.0) (2022-08-11)
 
 
