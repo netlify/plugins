@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.40.0](https://github.com/netlify/plugins/compare/v6.39.0...v6.40.0) (2022-08-19)
+
+
+### Features
+
+* add feature flagged version of Next runtime ([#807](https://github.com/netlify/plugins/issues/807)) ([a12d48f](https://github.com/netlify/plugins/commit/a12d48fc4b28f5ee345d1d68576a0c74fbe49290))
+* update plugin @netlify/plugin-gatsby to version 3.4.1 ([#796](https://github.com/netlify/plugins/issues/796)) ([29a6e45](https://github.com/netlify/plugins/commit/29a6e45d0a4f7de4d23358fb63ac210377f120b9))
+
 ## [6.39.0](https://github.com/netlify/plugins/compare/v6.38.0...v6.39.0) (2022-08-11)
 
 
