@@ -1,6 +1,6 @@
 {
   "name": "@netlify/plugins-list",
-  "version": "6.16.0",
+  "version": "6.40.0",
   "description": "List of Netlify plugins",
   "type": "module",
   "exports": "./index.js",
@@ -35,7 +35,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@netlify/eslint-config-node": "^5.1.6",
+    "@netlify/eslint-config-node": "^6.0.0",
     "ava": "^4.3.3",
     "c8": "^7.11.0",
     "diff": "^5.0.0",

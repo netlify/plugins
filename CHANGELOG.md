@@ -1,5 +1,228 @@
 # Changelog
 
+## [6.40.0](https://github.com/netlify/plugins/compare/v6.39.0...v6.40.0) (2022-08-19)
+
+
+### Features
+
+* add feature flagged version of Next runtime ([#807](https://github.com/netlify/plugins/issues/807)) ([a12d48f](https://github.com/netlify/plugins/commit/a12d48fc4b28f5ee345d1d68576a0c74fbe49290))
+* update plugin @netlify/plugin-gatsby to version 3.4.1 ([#796](https://github.com/netlify/plugins/issues/796)) ([29a6e45](https://github.com/netlify/plugins/commit/29a6e45d0a4f7de4d23358fb63ac210377f120b9))
+
+## [6.39.0](https://github.com/netlify/plugins/compare/v6.38.0...v6.39.0) (2022-08-11)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.14.2 ([#802](https://github.com/netlify/plugins/issues/802)) ([0f7e5d6](https://github.com/netlify/plugins/commit/0f7e5d619d83e78c293b60082552910369231ac2))
+
+## [6.38.0](https://github.com/netlify/plugins/compare/v6.37.0...v6.38.0) (2022-08-11)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.14.1 ([#797](https://github.com/netlify/plugins/issues/797)) ([039000d](https://github.com/netlify/plugins/commit/039000d1ef3fea6b32fcdadd69210810abcc0b02))
+
+
+### Bug Fixes
+
+* deprecate old Next.js plugins ([#798](https://github.com/netlify/plugins/issues/798)) ([e4c4236](https://github.com/netlify/plugins/commit/e4c4236b3dfdd7ce10cfdee1ba431963f499f92e))
+
+## [6.37.0](https://github.com/netlify/plugins/compare/v6.36.0...v6.37.0) (2022-08-09)
+
+
+### Features
+
+* update plugin @netlify/plugin-lighthouse to version 3.2.1 ([#799](https://github.com/netlify/plugins/issues/799)) ([2ca1840](https://github.com/netlify/plugins/commit/2ca1840ee9cc420bd94399a5099056d08e82583d))
+
+## [6.36.0](https://github.com/netlify/plugins/compare/v6.35.0...v6.36.0) (2022-08-01)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.4.0 ([#788](https://github.com/netlify/plugins/issues/788)) ([a9e3706](https://github.com/netlify/plugins/commit/a9e370605f9c6ed1e92642f13de7dddebe424a9e))
+* update plugin @netlify/plugin-lighthouse to version 3.2.0 ([#794](https://github.com/netlify/plugins/issues/794)) ([5367bc6](https://github.com/netlify/plugins/commit/5367bc6276d67e934076049100d27b2a0b82ead3))
+
+## [6.35.0](https://github.com/netlify/plugins/compare/v6.34.0...v6.35.0) (2022-07-18)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.3.1 ([#782](https://github.com/netlify/plugins/issues/782)) ([36dbe80](https://github.com/netlify/plugins/commit/36dbe80ab70cd968edbe850c954ce2ab9896af39))
+
+## [6.34.0](https://github.com/netlify/plugins/compare/v6.33.0...v6.34.0) (2022-07-13)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.3.0 ([#778](https://github.com/netlify/plugins/issues/778)) ([bfa355b](https://github.com/netlify/plugins/commit/bfa355bbb74b7c90415f5fb8272ea79fc17be1fe))
+* update plugin @netlify/plugin-nextjs to version 4.12.2 ([#777](https://github.com/netlify/plugins/issues/777)) ([9de11b3](https://github.com/netlify/plugins/commit/9de11b35a2cf8cd88d23c3580e8a6c1e14ce62c1))
+
+## [6.33.0](https://github.com/netlify/plugins/compare/v6.32.0...v6.33.0) (2022-07-13)
+
+
+### Features
+
+* update lighthouse plugin to v3.0.1 ([#767](https://github.com/netlify/plugins/issues/767)) ([1872806](https://github.com/netlify/plugins/commit/1872806ae876c3efa9c7b84f495d4677689a490f))
+
+## [6.32.0](https://github.com/netlify/plugins/compare/v6.31.0...v6.32.0) (2022-07-12)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.11.2 ([#773](https://github.com/netlify/plugins/issues/773)) ([3f2731c](https://github.com/netlify/plugins/commit/3f2731cc0a74ddf4a1dcad9825324a35596c2915))
+
+## [6.31.0](https://github.com/netlify/plugins/compare/v6.30.0...v6.31.0) (2022-07-12)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.11.1 ([#766](https://github.com/netlify/plugins/issues/766)) ([fbb6fe3](https://github.com/netlify/plugins/commit/fbb6fe357e30d9c0c296acfd0ec23101e1bd6859))
+
+## [6.30.0](https://github.com/netlify/plugins/compare/v6.29.0...v6.30.0) (2022-06-29)
+
+
+### Features
+
+* update netlify-plugin-nx-skip-build to v0.0.7n ([#760](https://github.com/netlify/plugins/issues/760)) ([e0c5675](https://github.com/netlify/plugins/commit/e0c567529118334c7ce1f3e4afdfef1429196b75))
+* update plugin @netlify/plugin-gatsby to version 3.2.4 ([#759](https://github.com/netlify/plugins/issues/759)) ([c678f46](https://github.com/netlify/plugins/commit/c678f464d3248cb5e6a30345c0145157cc404ed3))
+
+## [6.29.0](https://github.com/netlify/plugins/compare/v6.28.0...v6.29.0) (2022-06-24)
+
+
+### Features
+
+* add plugin netlify-plugin-flutter at version 1.1.0 ([#712](https://github.com/netlify/plugins/issues/712)) ([1c5e595](https://github.com/netlify/plugins/commit/1c5e5959ae8c8fa04f14e1001a0a070708b2c030))
+* update plugin @netlify/plugin-gatsby to version 3.2.3 ([#755](https://github.com/netlify/plugins/issues/755)) ([cb3eb67](https://github.com/netlify/plugins/commit/cb3eb67af65ef993a7d67e988c025a11418d91e5))
+* update plugin @netlify/plugin-nextjs to version 4.9.3 ([#757](https://github.com/netlify/plugins/issues/757)) ([de48694](https://github.com/netlify/plugins/commit/de486945157d3f219b23fdeb13178b133b7609cc))
+* upgrade netlify-plugin-submit-sitemap to 0.4.0 ([#747](https://github.com/netlify/plugins/issues/747)) ([49ab650](https://github.com/netlify/plugins/commit/49ab650df4d7efc0dc74a460b9fc6b5a930a6e2d))
+
+
+### Bug Fixes
+
+* deactivate the deprecated Gatsby Cache plugin ([#731](https://github.com/netlify/plugins/issues/731)) ([fb340d8](https://github.com/netlify/plugins/commit/fb340d8724040dc3943bbc0c39c7f3458a55cb3e))
+
+## [6.28.0](https://github.com/netlify/plugins/compare/v6.27.0...v6.28.0) (2022-06-14)
+
+
+### Features
+
+* downgrade next plugin because of bug ([#751](https://github.com/netlify/plugins/issues/751)) ([88a6eae](https://github.com/netlify/plugins/commit/88a6eae39e6a2b2fb2e637bfb2abaa8d3a09e422))
+* update plugin @netlify/plugin-nextjs to version 4.9.0 ([#749](https://github.com/netlify/plugins/issues/749)) ([41e8fff](https://github.com/netlify/plugins/commit/41e8fff11ea13c3d178ef3022e17f2e7c722a192))
+* update plugin @netlify/plugin-nextjs to version 4.9.1 ([#752](https://github.com/netlify/plugins/issues/752)) ([8babb1c](https://github.com/netlify/plugins/commit/8babb1c81f3176837a23627cd303373730295b5f))
+
+## [6.27.0](https://github.com/netlify/plugins/compare/v6.26.0...v6.27.0) (2022-06-01)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.2.1 ([#742](https://github.com/netlify/plugins/issues/742)) ([d6cc1e8](https://github.com/netlify/plugins/commit/d6cc1e8c362e2bc428c2bfc51f16e5916398d089))
+
+
+### Bug Fixes
+
+* rollback to earlier version ([#740](https://github.com/netlify/plugins/issues/740)) ([cae3b95](https://github.com/netlify/plugins/commit/cae3b9561665690f96e877a01c73c9605588f089))
+
+## [6.26.0](https://github.com/netlify/plugins/compare/v6.25.0...v6.26.0) (2022-05-26)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.1.0 ([#733](https://github.com/netlify/plugins/issues/733)) ([a744d94](https://github.com/netlify/plugins/commit/a744d9420c9ff697e5ccffa094c762d9fbfd8707))
+
+## [6.25.0](https://github.com/netlify/plugins/compare/v6.24.0...v6.25.0) (2022-05-16)
+
+
+### Features
+
+* add TakeShape plugin ([#730](https://github.com/netlify/plugins/issues/730)) ([b7c3a90](https://github.com/netlify/plugins/commit/b7c3a905921da55340dd3b5fe243b27713f57798))
+
+## [6.24.0](https://github.com/netlify/plugins/compare/v6.23.0...v6.24.0) (2022-05-05)
+
+
+### Features
+
+* add Very Good Security plugin ([#726](https://github.com/netlify/plugins/issues/726)) ([4391210](https://github.com/netlify/plugins/commit/4391210ad9cf0bb5c91d390c298c2dfe1a567f0b))
+
+## [6.23.0](https://github.com/netlify/plugins/compare/v6.22.0...v6.23.0) (2022-05-03)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.7.0 ([#724](https://github.com/netlify/plugins/issues/724)) ([3713e80](https://github.com/netlify/plugins/commit/3713e809f10b844c7500863bff9b2eb21faf8ad0))
+
+## [6.22.0](https://github.com/netlify/plugins/compare/v6.21.0...v6.22.0) (2022-04-29)
+
+
+### Features
+
+* update plugin @netlify/plugin-next-js to version 4.6.0 ([#720](https://github.com/netlify/plugins/issues/720)) ([58291b9](https://github.com/netlify/plugins/commit/58291b92c0a815481941a6a173c814a4eab42d7a))
+
+## [6.21.0](https://github.com/netlify/plugins/compare/v6.20.1...v6.21.0) (2022-04-27)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.5.0 ([#718](https://github.com/netlify/plugins/issues/718)) ([94fb40b](https://github.com/netlify/plugins/commit/94fb40b6d287b28162d117fc97d3c9510b2c1804))
+
+### [6.20.1](https://github.com/netlify/plugins/compare/v6.20.0...v6.20.1) (2022-04-26)
+
+
+### Bug Fixes
+
+* update Next plugin to 4.4.3 ([#715](https://github.com/netlify/plugins/issues/715)) ([8be4b71](https://github.com/netlify/plugins/commit/8be4b719d9f586cf16d8a7eaa26b39597a76c1f6))
+* update Next plugin to 4.4.4 ([#717](https://github.com/netlify/plugins/issues/717)) ([5b3476e](https://github.com/netlify/plugins/commit/5b3476e63e79d92eed1ad76e9bc22765ed383f33))
+
+## [6.20.0](https://github.com/netlify/plugins/compare/v6.19.0...v6.20.0) (2022-04-21)
+
+
+### Features
+
+* update Next plugin to 4.4.2 ([#713](https://github.com/netlify/plugins/issues/713)) ([9a2444b](https://github.com/netlify/plugins/commit/9a2444bdcd8f68a68a92a28e1e06889286ebed1d))
+
+## [6.19.0](https://github.com/netlify/plugins/compare/v6.18.1...v6.19.0) (2022-04-07)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.0.0 ([#707](https://github.com/netlify/plugins/issues/707)) ([3eb6d99](https://github.com/netlify/plugins/commit/3eb6d99ff4d37ccd4288da5a2b69af57ac2907da))
+* update plugin @netlify/plugin-nextjs to version 4.3.2 ([#705](https://github.com/netlify/plugins/issues/705)) ([e28ad75](https://github.com/netlify/plugins/commit/e28ad75981dbac6954bb9afab3f30bb6b435fe39))
+
+### [6.18.1](https://github.com/netlify/plugins/compare/v6.18.0...v6.18.1) (2022-03-30)
+
+
+### Bug Fixes
+
+* downgrade Next to 4.2.8 ([#701](https://github.com/netlify/plugins/issues/701)) ([1b586d3](https://github.com/netlify/plugins/commit/1b586d39f024bca73b6235cbafe265a4d998d12d))
+
+## [6.18.0](https://github.com/netlify/plugins/compare/v6.17.0...v6.18.0) (2022-03-29)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.3.0 ([#696](https://github.com/netlify/plugins/issues/696)) ([90f47c9](https://github.com/netlify/plugins/commit/90f47c9cf14a7d11661c9e61b7960049152dd97d))
+
+
+### Bug Fixes
+
+* update Next plugin to 4.3.1 ([#700](https://github.com/netlify/plugins/issues/700)) ([ae2b139](https://github.com/netlify/plugins/commit/ae2b139d906303f4c3414cb30b742f636bf7f455))
+
+## [6.17.0](https://github.com/netlify/plugins/compare/v6.16.1...v6.17.0) (2022-03-22)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 2.1.4 ([#692](https://github.com/netlify/plugins/issues/692)) ([3277bfb](https://github.com/netlify/plugins/commit/3277bfb46c45ba46217faedbc08b1e537e53f9ef))
+* update plugin @netlify/plugin-nextjs to version 4.2.8 ([#693](https://github.com/netlify/plugins/issues/693)) ([dd71639](https://github.com/netlify/plugins/commit/dd716394d41e030f0e37241dd3c44535bfcddcc3))
+* upgrade netlify-plugin-submit-sitemap to 0.3.0 ([#689](https://github.com/netlify/plugins/issues/689)) ([104a224](https://github.com/netlify/plugins/commit/104a224fa3f180aabddbe469a380c03d403d7813))
+
+### [6.16.1](https://github.com/netlify/plugins/compare/v6.16.0...v6.16.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* **gatsby:** update Gatsby plugin to 2.1.3 ([#688](https://github.com/netlify/plugins/issues/688)) ([dfa6b3f](https://github.com/netlify/plugins/commit/dfa6b3ff1cba84b502813ddc2630afc1b4d6753e))
+* upgrade netlify-plugin-stepzen version to 1.0.4 ([#685](https://github.com/netlify/plugins/issues/685)) ([4d0f337](https://github.com/netlify/plugins/commit/4d0f3373b1254f0561f853e248194e646b2d98c2))
+
 ## [6.16.0](https://github.com/netlify/plugins/compare/v6.15.0...v6.16.0) (2022-03-03)
 
 
