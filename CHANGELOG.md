@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.41.0](https://github.com/netlify/plugins/compare/v6.40.0...v6.41.0) (2022-08-25)
+
+
+### Features
+
+* remove feature flag ([#812](https://github.com/netlify/plugins/issues/812)) ([8d5e7ee](https://github.com/netlify/plugins/commit/8d5e7eeaa2f2c97adf2dcefbfa61b6ddda4a5b36))
+* update plugin @netlify/plugin-nextjs to version 4.18.0 ([#809](https://github.com/netlify/plugins/issues/809)) ([c255030](https://github.com/netlify/plugins/commit/c255030de8bf5bcac0b7ee6cba8fc72543a64dce))
+* update plugin @netlify/plugin-nextjs to version 4.18.1 ([#813](https://github.com/netlify/plugins/issues/813)) ([4c0a8be](https://github.com/netlify/plugins/commit/4c0a8becdd41a1f99bd7af10aff2eac1d4b18610))
+
 ## [6.40.0](https://github.com/netlify/plugins/compare/v6.39.0...v6.40.0) (2022-08-19)
 
 
