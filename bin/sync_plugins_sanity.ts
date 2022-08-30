@@ -79,13 +79,11 @@ const client = sanityClient(config)
 const query = `*[_type == "buildPlugin"] { title, description, authors, packageName, repoUrl, version, compatibility }`
 
 // TODO: Add a retry mechanism to handle network errors
-;(async () => {
-  try {
-    const sanityPluginLookup = await getSanityPluginLookup(client, query)
+try {
+  const sanityPluginLookup = await getSanityPluginLookup(client, query)
 
-    console.log(JSON.stringify(sanityPluginLookup, null, 2))
-  } catch (error) {
-    console.error(error)
-    throw new Error('Unable to retrieve plugins from CMS')
-  }
-})()
+  console.log(JSON.stringify(sanityPluginLookup, null, 2))
+} catch (error) {
+  console.error(error)
+  throw new Error('Unable to retrieve plugins from CMS')
+}
