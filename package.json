@@ -36,9 +36,11 @@
   "license": "MIT",
   "devDependencies": {
     "@netlify/eslint-config-node": "^6.0.0",
+    "@sanity/client": "^3.3.6",
     "ava": "^4.3.3",
     "c8": "^7.11.0",
     "diff": "^5.0.0",
+    "dotenv": "^16.0.1",
     "got": "^11.8.0",
     "husky": "^7.0.4",
     "is-plain-obj": "^4.0.0",
@@ -46,6 +48,7 @@
     "normalize-node-version": "^11.0.0",
     "pacote": "^13.0.0",
     "semver": "^7.0.0",
+    "tsx": "^3.9.0",
     "upper-case-first": "^2.0.2"
   },
   "engines": {
