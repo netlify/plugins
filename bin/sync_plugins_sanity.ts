@@ -23,9 +23,8 @@ type SanityFieldNameToPluginKeyLookup = typeof sanityFieldNameToPluginKeyLookup
 interface SanityBuildPluginEntity {
   authors: [
     {
-      _key: string
-      _ref: string
-      _type: 'reference'
+      _id: string
+      name: string | null
     },
   ]
   compatibility: null
@@ -76,7 +75,16 @@ const config = {
  */
 const client = sanityClient(config)
 
-const query = `*[_type == "buildPlugin"] { title, description, authors, packageName, repoUrl, version, compatibility }`
+const query = `*[_type == "buildPlugin"] {
+  title,
+  description,
+  authors,
+  authors[]->{_id, name},
+  packageName,
+  repoUrl,
+  version,
+  compatibility
+}`
 
 // TODO: Add a retry mechanism to handle network errors
 try {
@@ -87,3 +95,4 @@ try {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')
 }
+// })()
