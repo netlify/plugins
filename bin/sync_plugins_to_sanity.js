@@ -1,12 +1,18 @@
 // eslint-env node
+import { promises } from 'fs'
+
 import sanityClient from '@sanity/client'
 import dotenv from 'dotenv'
+
+// TODO: The plugins file that changed should be passed in as an argument
 
 /**
  * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
  */
 
-import { getSanityPluginLookup } from './utils.js'
+import { getPluginDiffsForSanity, getSanityPluginLookup } from './utils.js'
+
+const fs = promises
 
 // Using dotenv for local development. When its running in a GitHub action it will use the GitHub action's environment variables
 dotenv.config()
@@ -43,12 +49,18 @@ const query = `*[_type == "buildPlugin"] {
 
 // TODO: Add a retry mechanism to handle network errors
 try {
+  // TODO: Remove hardcoded path. This will be coming in as an argument
+  const filePath = '/Users/nicktaylor/dev/work/plugins/site/plugins.json'
+  const fileContents = await fs.readFile(filePath)
+  const plugins = JSON.parse(fileContents)
+
   /**
    * @type {SanityBuildPluginEntity[]}
    */
   const sanityPluginLookup = await getSanityPluginLookup(client.fetch(query, {}))
+  const pluginDiffs = getPluginDiffsForSanity(sanityPluginLookup, plugins)
 
-  console.log(JSON.stringify(sanityPluginLookup, null, 2))
+  console.log(JSON.stringify(pluginDiffs, null, 2))
 } catch (error) {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')
