@@ -2,6 +2,10 @@
 import sanityClient from '@sanity/client'
 import dotenv from 'dotenv'
 
+/**
+ * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
+ */
+
 import { getSanityPluginLookup } from './utils.js'
 
 // Using dotenv for local development. When its running in a GitHub action it will use the GitHub action's environment variables
@@ -22,7 +26,7 @@ const config = {
 }
 
 /**
- * @type: SanityClient
+ * @type {SanityClient}
  */
 const client = sanityClient(config)
 
@@ -39,6 +43,9 @@ const query = `*[_type == "buildPlugin"] {
 
 // TODO: Add a retry mechanism to handle network errors
 try {
+  /**
+   * @type {SanityBuildPluginEntity[]}
+   */
   const sanityPluginLookup = await getSanityPluginLookup(client.fetch(query, {}))
 
   console.log(JSON.stringify(sanityPluginLookup, null, 2))

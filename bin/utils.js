@@ -1,4 +1,8 @@
-// import type { SanityClient } from '@sanity/client'
+/**
+ * @typedef { import("../types").SanityBuildPluginEntity } SanityBuildPluginEntity
+ * @typedef { import("../types/plugins").SanityPluginLookup } SanityPluginLookup
+ * @typedef { import("../types/plugins").BuildPluginEntity } BuildPluginEntity
+ */
 
 const sanityFieldNameToPluginKeyLookup = {
   title: 'name',
@@ -12,33 +16,17 @@ const sanityFieldNameToPluginKeyLookup = {
   compatibility: 'compatibility',
 }
 
-// type SanityFieldNameToPluginKeyLookup = typeof sanityFieldNameToPluginKeyLookup
-
-// interface SanityBuildPluginEntity {
-//   authors: [
-//     {
-//       _id: string
-//       name: string | null
-//     },
-//   ]
-//   compatibility: null
-//   description: string
-//   packageName: string
-//   repoUrl: string
-//   title: string
-//   version: string
-// }
-
-// type SanityPluginLookup = Record<string, SanityBuildPluginEntity>
-
 /**
  * Retrieves a list of all the plugins stored in Sanity
  *
- * @param query {string} Query to execute
- * @returns {object} A list of all the plugins stored in Sanity
+ * @param query {Promise<SanityBuildPluginEntity[]>} Query to execute
+ * @returns A list of all the plugins stored in Sanity
  */
 export const getSanityPluginLookup = async (query) => {
   const plugins = await query
+  /**
+   * @type {SanityPluginLookup}
+   */
   const pluginLookup = plugins.reduce((sanitytPluginLookup, plugin) => {
     // eslint-disable-next-line no-param-reassign
     sanitytPluginLookup[plugin.packageName] = plugin
