@@ -8,6 +8,7 @@ import dotenv from 'dotenv'
 
 /**
  * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
+ * @typedef { import("@sanity/client").SanityClient } SanityClient
  */
 
 import { getPluginDiffsForSanity, getSanityPluginLookup } from './utils.js'
