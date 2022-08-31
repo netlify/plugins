@@ -3,12 +3,14 @@ on:
   push:
     branches: [main]
     tags: ['*']
+  # TODO: remove pull_request section once this is ready for production, i.e. when this is about to be merged into the repo
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
   sync-to-cms:
     runs-on: ubuntu-latest
     environment:
+      # TODO: Rename this to Production once this is ready for production, i.e. when this is about to be merged into the repo
       name: Sandbox
     steps:
       - name: Git checkout
