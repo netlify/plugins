@@ -1,11 +1,9 @@
 // eslint-env node
+/* eslint-disable n/prefer-global/process */
 import { promises } from 'fs'
 import path from 'path'
 
 import sanityClient from '@sanity/client'
-import dotenv from 'dotenv'
-
-// TODO: The plugins file that changed should be passed in as an argument
 
 /**
  * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
@@ -16,10 +14,14 @@ import { getPluginDiffsForSanity, getSanityPluginLookup } from './utils.js'
 
 const fs = promises
 
-// Using dotenv for local development. When its running in a GitHub action it will use the GitHub action's environment variables
-dotenv.config()
+if (process.env.NODE_ENV === 'development') {
+  // Using dotenv for local development.
+  console.log('running in development mode')
 
-// eslint-disable-next-line n/prefer-global/process
+  const dotenv = await import('dotenv')
+  dotenv.config()
+}
+
 const { GITHUB_WORKSPACE, SANITY_API_TOKEN, SANITY_PROJECT_ID, SANITY_DATASET } = process.env
 const [apiVersion] = new Date().toISOString().split('T')
 
@@ -51,7 +53,8 @@ const query = `*[_type == "buildPlugin"] {
 
 // TODO: Add a retry mechanism to handle network errors
 try {
-  // TODO: Remove hardcoded path. This will be coming in as an argument
+  // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
+  // e.g. GITHUB_WORKSPACE="/Users/some-dev/dev/plugins/" npx tsx bin/sync_plugins_to_sanity.js
   const pluginsFilePath = path.join(GITHUB_WORKSPACE, '/site/plugins.json')
   console.log(`Reading plugins file from ${pluginsFilePath}`)
   const fileContents = await fs.readFile(pluginsFilePath)
@@ -69,3 +72,5 @@ try {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')
 }
+
+/* eslint-enable n/prefer-global/process */
