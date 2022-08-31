@@ -8,11 +8,11 @@ import test from 'ava'
 
 import { getPluginDiffsForSanity, getSanityPluginLookup } from '../../bin/utils.js'
 
-test('should generate Sanity build plugin lookup', async (t) => {
+test('should generate Sanity build plugin lookup', (t) => {
   /**
-   * @type {Promise<SanityBuildPluginEntity[]>}
+   * @type {SanityBuildPluginEntity[]}
    */
-  const query = Promise.resolve([
+  const sanityBuildPlugins = [
     {
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
       compatibility: null,
@@ -40,7 +40,7 @@ test('should generate Sanity build plugin lookup', async (t) => {
       title: 'Debug cache',
       version: '1.0.4',
     },
-  ])
+  ]
   const expected = {
     'netlify-plugin-use-env-in-runtime': {
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
@@ -70,7 +70,7 @@ test('should generate Sanity build plugin lookup', async (t) => {
       version: '1.0.4',
     },
   }
-  const actual = await getSanityPluginLookup(query)
+  const actual = getSanityPluginLookup(sanityBuildPlugins)
   t.deepEqual(actual, expected)
 })
 

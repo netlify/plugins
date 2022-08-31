@@ -22,11 +22,10 @@ const sanityFieldNameToPluginKeyLookup = {
 /**
  * Retrieves a list of all the plugins stored in Sanity
  *
- * @param query {Promise<SanityBuildPluginEntity[]>} Query to execute
+ * @param plugins {SanityBuildPluginEntity[]} Query to execute
  * @returns A list of all the plugins stored in Sanity
  */
-export const getSanityPluginLookup = async (query) => {
-  const plugins = await query
+export const getSanityPluginLookup = (plugins) => {
   /**
    * @type {SanityPluginLookup}
    */

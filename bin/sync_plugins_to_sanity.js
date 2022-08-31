@@ -57,7 +57,8 @@ try {
   /**
    * @type {SanityBuildPluginEntity[]}
    */
-  const sanityPluginLookup = await getSanityPluginLookup(client.fetch(query, {}))
+  const sanityBuildPlugins = await client.fetch(query, {})
+  const sanityPluginLookup = await getSanityPluginLookup(sanityBuildPlugins)
   const pluginDiffs = getPluginDiffsForSanity(sanityPluginLookup, plugins)
 
   console.log(JSON.stringify(pluginDiffs, null, 2))
