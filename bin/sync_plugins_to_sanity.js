@@ -1,5 +1,6 @@
 // eslint-env node
 import { promises } from 'fs'
+import path from 'path'
 
 import sanityClient from '@sanity/client'
 import dotenv from 'dotenv'
@@ -19,7 +20,7 @@ const fs = promises
 dotenv.config()
 
 // eslint-disable-next-line n/prefer-global/process
-const { SANITY_API_TOKEN, SANITY_PROJECT_ID, SANITY_DATASET } = process.env
+const { GITHUB_WORKSPACE, SANITY_API_TOKEN, SANITY_PROJECT_ID, SANITY_DATASET } = process.env
 const [apiVersion] = new Date().toISOString().split('T')
 
 // TODO: projectId and dataset should be read from GH action secrets?
@@ -51,8 +52,9 @@ const query = `*[_type == "buildPlugin"] {
 // TODO: Add a retry mechanism to handle network errors
 try {
   // TODO: Remove hardcoded path. This will be coming in as an argument
-  const filePath = '/Users/nicktaylor/dev/work/plugins/site/plugins.json'
-  const fileContents = await fs.readFile(filePath)
+  const pluginsFilePath = path.join(GITHUB_WORKSPACE, '/site/plugins.json')
+  console.log(`Reading plugins file from ${pluginsFilePath}`)
+  const fileContents = await fs.readFile(pluginsFilePath)
   const plugins = JSON.parse(fileContents)
 
   /**
