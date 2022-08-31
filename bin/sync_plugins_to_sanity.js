@@ -66,4 +66,3 @@ try {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')
 }
-// })()
