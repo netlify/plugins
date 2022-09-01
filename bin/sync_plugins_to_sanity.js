@@ -68,7 +68,7 @@ try {
   const sanityPluginLookup = await getSanityPluginLookup(sanityBuildPlugins)
   const pluginDiffs = getPluginDiffsForSanity(sanityPluginLookup, plugins)
 
-  console.log(JSON.stringify(pluginDiffs, null, 2))
+  console.log(`Found ${pluginDiffs.length} plugin diffs`)
 } catch (error) {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')
