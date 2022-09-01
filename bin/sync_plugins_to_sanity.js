@@ -41,6 +41,7 @@ const config = {
 const client = sanityClient(config)
 
 const query = `*[_type == "buildPlugin"] {
+  _id,
   title,
   description,
   authors,

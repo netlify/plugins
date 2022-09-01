@@ -14,6 +14,7 @@ test('should generate Sanity build plugin lookup', (t) => {
    */
   const sanityBuildPlugins = [
     {
+      _id: '1',
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
       compatibility: null,
       description: 'Make some environment variables available only at build time in the runtime of your application.',
@@ -23,6 +24,7 @@ test('should generate Sanity build plugin lookup', (t) => {
       version: '1.2.1',
     },
     {
+      _id: '2',
       authors: [{ _id: '1dccdb09-71f8-482a-aa0f-9bae32df2e2a', name: 'Bharathvaj Ganesan' }],
       compatibility: null,
       description: 'Automatically notifies Airbrake of new site deploys.',
@@ -32,6 +34,7 @@ test('should generate Sanity build plugin lookup', (t) => {
       version: '1.0.2',
     },
     {
+      _id: '3',
       authors: [{ _id: 'eaf7029b-a72b-406f-a2cc-4b8b48fb50a3', name: null }],
       compatibility: null,
       description: 'Debug & verify the contents of your Netlify build cache',
@@ -43,6 +46,7 @@ test('should generate Sanity build plugin lookup', (t) => {
   ]
   const expected = {
     'netlify-plugin-use-env-in-runtime': {
+      _id: '1',
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
       compatibility: null,
       description: 'Make some environment variables available only at build time in the runtime of your application.',
@@ -52,6 +56,7 @@ test('should generate Sanity build plugin lookup', (t) => {
       version: '1.2.1',
     },
     '@bharathvaj/netlify-plugin-airbrake': {
+      _id: '2',
       authors: [{ _id: '1dccdb09-71f8-482a-aa0f-9bae32df2e2a', name: 'Bharathvaj Ganesan' }],
       compatibility: null,
       description: 'Automatically notifies Airbrake of new site deploys.',
@@ -61,6 +66,7 @@ test('should generate Sanity build plugin lookup', (t) => {
       version: '1.0.2',
     },
     'netlify-plugin-debug-cache': {
+      _id: '3',
       authors: [{ _id: 'eaf7029b-a72b-406f-a2cc-4b8b48fb50a3', name: null }],
       compatibility: null,
       description: 'Debug & verify the contents of your Netlify build cache',
@@ -77,6 +83,7 @@ test('should generate Sanity build plugin lookup', (t) => {
 test('should generate plugin diffs for Sanity', (t) => {
   const pluginLookup = {
     'netlify-plugin-use-env-in-runtime': {
+      _id: '1',
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
       compatibility: null,
       description: 'Make some environment variables available only at build time in the runtime of your application.',
@@ -86,6 +93,7 @@ test('should generate plugin diffs for Sanity', (t) => {
       version: '1.2.1',
     },
     '@bharathvaj/netlify-plugin-airbrake': {
+      _id: '2',
       authors: [{ _id: '1dccdb09-71f8-482a-aa0f-9bae32df2e2a', name: 'Bharathvaj Ganesan' }],
       compatibility: null,
       description: 'Automatically notifies Airbrake of new site deploys.',
@@ -95,6 +103,7 @@ test('should generate plugin diffs for Sanity', (t) => {
       version: '1.0.2',
     },
     'netlify-plugin-debug-cache': {
+      _id: '3',
       authors: [{ _id: 'eaf7029b-a72b-406f-a2cc-4b8b48fb50a3', name: 'Bobby MacDougall' }],
       compatibility: null,
       description: 'Debug & verify the contents of your Netlify build cache',
@@ -132,6 +141,7 @@ test('should generate plugin diffs for Sanity', (t) => {
   ]
   const expected = [
     {
+      _id: '1',
       author: 'Ben Lmsc',
       description: 'Make some environment variables available only at build time in the runtime of your application.',
       package: 'netlify-plugin-use-env-in-runtime',
@@ -140,6 +150,7 @@ test('should generate plugin diffs for Sanity', (t) => {
       version: '1.2.2',
     },
     {
+      _id: '3',
       author: 'Bobby MacDougall',
       description: 'Debug & verify the contents of your Netlify build cache',
       package: 'netlify-plugin-debug-cache',
@@ -156,6 +167,7 @@ test('should generate plugin diffs for Sanity', (t) => {
 test('should return no plugin diffs for Sanity if there are no changes', (t) => {
   const pluginLookup = {
     'netlify-plugin-use-env-in-runtime': {
+      _id: '1',
       authors: [{ _id: '03fb09e4-2f37-4242-a9f2-664daf4c7ff9', name: 'Ben Lmsc' }],
       compatibility: null,
       description: 'Make some environment variables available only at build time in the runtime of your application.',
@@ -165,6 +177,7 @@ test('should return no plugin diffs for Sanity if there are no changes', (t) => 
       version: '1.2.1',
     },
     '@bharathvaj/netlify-plugin-airbrake': {
+      _id: '2',
       authors: [{ _id: '1dccdb09-71f8-482a-aa0f-9bae32df2e2a', name: 'Bharathvaj Ganesan' }],
       compatibility: null,
       description: 'Automatically notifies Airbrake of new site deploys.',
@@ -174,6 +187,7 @@ test('should return no plugin diffs for Sanity if there are no changes', (t) => 
       version: '1.0.2',
     },
     'netlify-plugin-debug-cache': {
+      _id: '3',
       authors: [{ _id: 'eaf7029b-a72b-406f-a2cc-4b8b48fb50a3', name: 'Bobby MacDougall' }],
       compatibility: null,
       description: 'Debug & verify the contents of your Netlify build cache',

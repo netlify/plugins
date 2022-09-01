@@ -8,6 +8,7 @@
 import deepEqual from 'deep-equal'
 
 const sanityFieldNameToPluginKeyLookup = {
+  _id: '_id',
   title: 'name',
   description: 'description',
   // In sanity, the field is an array of authors, in plugins.json. it's one author
@@ -72,6 +73,11 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) =>
     if (!(plugin.package in pluginLookup)) {
       return false
     }
+
+    // adding the _id field to the plugin object so that we can use it to update the plugin in Sanity
+    // eslint-disable-next-line no-param-reassign, no-underscore-dangle
+    plugin._id = pluginLookup[plugin.package]._id
+
     const sanityPlugin = convertSanityPluginToPlugin(pluginLookup[plugin.package])
 
     return !deepEqual(plugin, sanityPlugin)
