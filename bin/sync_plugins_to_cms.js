@@ -1,6 +1,6 @@
 // eslint-env node
 /* eslint-disable n/prefer-global/process */
-import { promises } from 'fs'
+import { promises as fs } from 'fs'
 import path from 'path'
 
 // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
@@ -17,8 +17,6 @@ import sanityClient from '@sanity/client'
  */
 
 import { getPluginDiffsForSanity, getSanityPluginLookup } from './utils.js'
-
-const fs = promises
 
 if (process.env.NODE_ENV === 'development') {
   // Using dotenv for local development.
