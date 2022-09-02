@@ -115,7 +115,7 @@ try {
 
     const transaction = createUpdates(client.transaction(), client.patch, pluginDiffs)
 
-    client.mutate(transaction, { dryRun: false })
+    client.mutate(transaction)
     console.info('Plugins were updated in the CMS.')
   }
 } catch (error) {
