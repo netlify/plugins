@@ -59,9 +59,19 @@ export const getSanityPluginLookup = (plugins) => {
 const convertToSanityPlugin = (plugin) => {
   const formattedPlugin = Object.keys(plugin).reduce((pluginToFormat, key) => {
     // TODO: skipping authors for as they'd already be in Sanity and we're not displaying authors in the Integrations Hub for the time being.
-    if (key !== 'author') {
-      // eslint-disable-next-line no-param-reassign
-      pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
+    switch (key) {
+      case 'author':
+        break
+
+      case 'compatibility':
+        // eslint-disable-next-line no-param-reassign
+        pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] ? plugin[key].map(JSON.stringify) : null
+        break
+
+      default:
+        // eslint-disable-next-line no-param-reassign
+        pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
+        break
     }
 
     return pluginToFormat
@@ -80,10 +90,8 @@ const convertSanityPluginToPlugin = (plugin) => {
     // TODO: It appears for now at least, plugins.json only ever has one author.
     const fieldValue = key === `authors` ? plugin[key][0].name : plugin[key]
 
-    if (fieldValue !== null) {
-      // eslint-disable-next-line no-param-reassign
-      pluginToFormat[sanityFieldNameToPluginKeyLookup[key]] = fieldValue
-    }
+    // eslint-disable-next-line no-param-reassign
+    pluginToFormat[sanityFieldNameToPluginKeyLookup[key]] = fieldValue
 
     return pluginToFormat
   }, {})

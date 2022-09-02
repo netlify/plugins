@@ -49,7 +49,7 @@ const query = `*[_type == "buildPlugin"] {
   packageName,
   repoUrl,
   version,
-  compatibility
+  compatibility[]
 }`
 
 // TODO: Add a retry mechanism to handle network errors
