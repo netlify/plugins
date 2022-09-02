@@ -15,4 +15,22 @@ export interface SanityBuildPluginEntity {
 
 export type SanityPluginLookup = Record<string, SanityBuildPluginEntity>
 
-export type BuildPluginEntity = {}
+export type Compatibility =
+  | {
+      version: string
+      migrationGuide: strings
+    }
+  | {
+      version: string
+      nodeVersion: string
+    }
+
+export type BuildPluginEntity = {
+  author: string
+  description: string
+  name: string
+  package: string
+  repo: string
+  version: string
+  compatibility?: Compatibility[]
+}
