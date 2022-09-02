@@ -136,4 +136,7 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) =>
 
       return !deepEqual(plugin, sanityPlugin)
     })
-    .map(convertToSanityPlugin)
+    .map((plugin) => {
+      console.info('Plugin diff found:', plugin.package)
+      return convertToSanityPlugin(plugin)
+    })
