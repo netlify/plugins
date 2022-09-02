@@ -12,7 +12,7 @@ const sanityFieldNameToPluginKeyLookup = {
   title: 'name',
   description: 'description',
   // In sanity, the field is an array of authors, in plugins.json. it's one author
-  authors: 'author',
+  // authors: 'author',
   packageName: 'package',
   repoUrl: 'repo',
   version: 'version',
@@ -57,25 +57,31 @@ export const getSanityPluginLookup = (plugins) => {
  * @returns {SanityBuildPluginEntity}
  */
 const convertToSanityPlugin = (plugin) => {
-  const formattedPlugin = Object.keys(plugin).reduce((pluginToFormat, key) => {
-    // TODO: skipping authors for as they'd already be in Sanity and we're not displaying authors in the Integrations Hub for the time being.
-    switch (key) {
-      case 'author':
-        break
+  const formattedPlugin = Object.keys(plugin).reduce(
+    (pluginToFormat, key) => {
+      // TODO: Skipping authors for now as they'd already be in Sanity and there in the plugins.json file it appears to be a github username, but in Sanity it's a person's name.
+      switch (key) {
+        case 'author':
+          break
 
-      case 'compatibility':
-        // eslint-disable-next-line no-param-reassign
-        pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] ? plugin[key].map(JSON.stringify) : null
-        break
+        case 'compatibility':
+          // In Sanity, the compatibility field is an array of strings, but in plugins.json it's an array of objects.
+          // eslint-disable-next-line no-param-reassign
+          pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] ? plugin[key].map(JSON.stringify) : null
+          break
 
-      default:
-        // eslint-disable-next-line no-param-reassign
-        pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
-        break
-    }
+        default:
+          // eslint-disable-next-line no-param-reassign
+          pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
+          break
+      }
 
-    return pluginToFormat
-  }, {})
+      return pluginToFormat
+      // initializing with compatibility as null because in Sanity it will be null, but in plugins.json the compatibility property won't be null
+      // It won't exist.
+    },
+    { compatibility: null },
+  )
 
   return formattedPlugin
 }
@@ -92,11 +98,12 @@ const convertSanityPluginToPlugin = (plugin) => {
     // TODO: It appears for now at least, plugins.json only ever has one author.
     switch (key) {
       case 'authors':
-        fieldValue = plugin[key][0].name
         break
       case 'compatibility':
         if (plugin[key]) {
-          fieldValue = plugin[key]
+          // TODO: This is stored as an array of strings in Sanity at the moment, but there is no validation on the Sanity end as it's a string.
+          // For another iteration, we could store the compatibility field as an array of objects instead and avoid JSON.parse failing potentially.
+          fieldValue = plugin[key].map(JSON.parse)
         }
         break
       default:
@@ -133,8 +140,10 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) =>
       plugin._id = pluginLookup[plugin.package]._id
 
       const sanityPlugin = convertSanityPluginToPlugin(pluginLookup[plugin.package])
+      // eslint-disable-next-line no-unused-vars
+      const { author, ...pluginWithoutAuthor } = plugin
 
-      return !deepEqual(plugin, sanityPlugin)
+      return !deepEqual(pluginWithoutAuthor, sanityPlugin)
     })
     .map((plugin) => {
       console.info('Plugin diff found:', plugin.package)
