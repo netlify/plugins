@@ -18,7 +18,7 @@ export type SanityPluginLookup = Record<string, SanityBuildPluginEntity>
 export type Compatibility =
   | {
       version: string
-      migrationGuide: strings
+      migrationGuide: string
     }
   | {
       version: string
