@@ -11,6 +11,9 @@ import sanityClient from '@sanity/client'
 /**
  * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
  * @typedef { import("@sanity/client").SanityClient } SanityClient
+ * @typedef { import("@sanity/client").Transaction } Transaction
+ * @typedef { import("@sanity/client").Patch } Patch
+ * @typedef { import("../types/plugins").BuildPluginEntity } BuildPluginEntity
  */
 
 import { getPluginDiffsForSanity, getSanityPluginLookup } from './utils.js'
@@ -39,10 +42,11 @@ const config = {
 }
 
 /**
+ * Creates a transaction containing updates to to plugins for the CMS
  *
- * @param {*} transaction
- * @param {*} patch
- * @param {*} diffs
+ * @param {Transaction} transaction
+ * @param {Patch} patch
+ * @param {BuildPluginEntity[]} diffs
  * @returns
  */
 const createUpdates = (transaction, patch, diffs) =>
