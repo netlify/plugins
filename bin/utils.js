@@ -87,11 +87,26 @@ const convertToSanityPlugin = (plugin) => {
  */
 const convertSanityPluginToPlugin = (plugin) => {
   const formattedPlugin = Object.keys(plugin).reduce((pluginToFormat, key) => {
-    // TODO: It appears for now at least, plugins.json only ever has one author.
-    const fieldValue = key === `authors` ? plugin[key][0].name : plugin[key]
+    let fieldValue
 
-    // eslint-disable-next-line no-param-reassign
-    pluginToFormat[sanityFieldNameToPluginKeyLookup[key]] = fieldValue
+    // TODO: It appears for now at least, plugins.json only ever has one author.
+    switch (key) {
+      case 'authors':
+        fieldValue = plugin[key][0].name
+        break
+      case 'compatibility':
+        if (plugin[key]) {
+          fieldValue = plugin[key]
+        }
+        break
+      default:
+        fieldValue = plugin[key]
+    }
+
+    if (fieldValue) {
+      // eslint-disable-next-line no-param-reassign
+      pluginToFormat[sanityFieldNameToPluginKeyLookup[key]] = fieldValue
+    }
 
     return pluginToFormat
   }, {})

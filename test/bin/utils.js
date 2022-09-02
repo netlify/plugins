@@ -117,6 +117,7 @@ test('should generate plugin diffs for Sanity', (t) => {
     {
       author: 'Ben Lmsc',
       description: 'Make some environment variables available only at build time in the runtime of your application.',
+      compatibility: [],
       package: 'netlify-plugin-use-env-in-runtime',
       repo: 'https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime',
       name: 'Use Env in Runtime',
@@ -133,6 +134,7 @@ test('should generate plugin diffs for Sanity', (t) => {
     {
       author: 'Bobby MacDougall',
       description: 'Debug & verify the contents of your Netlify build cache',
+      compatibility: [],
       package: 'netlify-plugin-debug-cache',
       repo: 'https://github.com/netlify-labs/netlify-plugin-debug-cache',
       name: 'Debug Cache',
@@ -145,6 +147,7 @@ test('should generate plugin diffs for Sanity', (t) => {
     {
       _id: '1',
       description: 'Make some environment variables available only at build time in the runtime of your application.',
+      compatibility: [],
       packageName: 'netlify-plugin-use-env-in-runtime',
       repoUrl: 'https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime',
       title: 'Use Env in Runtime',
@@ -153,6 +156,7 @@ test('should generate plugin diffs for Sanity', (t) => {
     {
       _id: '3',
       description: 'Debug & verify the contents of your Netlify build cache',
+      compatibility: [],
       packageName: 'netlify-plugin-debug-cache',
       repoUrl: 'https://github.com/netlify-labs/netlify-plugin-debug-cache',
       title: 'Debug Cache',
