@@ -3,6 +3,9 @@
 import { promises } from 'fs'
 import path from 'path'
 
+// when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
+// e.g. GITHUB_WORKSPACE="/Users/some-dev/dev/plugins/" npx tsx bin/sync_plugins_to_sanity.js
+
 import sanityClient from '@sanity/client'
 
 /**
@@ -36,6 +39,39 @@ const config = {
 }
 
 /**
+ *
+ * @param {*} transaction
+ * @param {*} patch
+ * @param {*} diffs
+ * @returns
+ */
+const createUpdates = (transaction, patch, diffs) =>
+  diffs.reduce((tx, plugin) => {
+    const { _id, ...changes } = plugin
+    const fieldUpdates = {}
+    const fieldRemovals = []
+
+    for (const [key, value] of Object.entries(changes)) {
+      // any property that is null needs to be unset instead of being set to null
+      if (value === null) {
+        fieldRemovals.push(key)
+      } else {
+        fieldUpdates[key] = value
+      }
+    }
+
+    const update = patch(_id).set(fieldUpdates)
+
+    if (fieldRemovals.length !== 0) {
+      update.unset(fieldRemovals)
+    }
+
+    tx.patch(update)
+
+    return tx
+  }, transaction)
+
+/**
  * @type {SanityClient}
  */
 const client = sanityClient(config)
@@ -54,14 +90,11 @@ const query = `*[_type == "buildPlugin"] {
 
 // TODO: Add a retry mechanism to handle network errors
 try {
-  // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
-  // e.g. GITHUB_WORKSPACE="/Users/some-dev/dev/plugins/" npx tsx bin/sync_plugins_to_sanity.js
   const pluginsFilePath = path.join(GITHUB_WORKSPACE, '/site/plugins.json')
-  console.log(`Reading existing plugins in repository from ${pluginsFilePath}`)
   const fileContents = await fs.readFile(pluginsFilePath)
   const plugins = JSON.parse(fileContents)
 
-  console.info('Detecting plugin diffs.')
+  console.info('Detecting plugin changes...')
 
   /**
    * @type {SanityBuildPluginEntity[]}
@@ -70,31 +103,20 @@ try {
   const sanityPluginLookup = await getSanityPluginLookup(sanityBuildPlugins)
   const pluginDiffs = getPluginDiffsForSanity(sanityPluginLookup, plugins)
 
-  console.info(`Found ${pluginDiffs.length} plugin diffs`)
+  if (pluginDiffs.length === 0) {
+    console.info('No plugin changes found.')
+  } else {
+    console.info(`Found ${pluginDiffs.length} plugins with changes`)
+    console.info('Updating plugins...')
 
-  /**
-   *
-   * @param {BuildPluginEntity} pluginDiffs
-   * @returns
-   */
-  const createUpdates = (transaction, patch, diffs) =>
-    diffs.reduce((tx, plugin) => {
-      const { _id, ...pluginUpdates } = plugin
-      const update = patch(_id).set(pluginUpdates)
+    const transaction = createUpdates(client.transaction(), client.patch, pluginDiffs)
 
-      tx.patch(update)
-
-      return tx
-    }, transaction)
-
-  console.info('Updating plugins...')
-  const transaction = createUpdates(client.transaction(), client.patch, pluginDiffs)
-
-  client.mutate(transaction, { dryRun: false })
-  console.info('Plugins were updated in the CMS.')
+    client.mutate(transaction, { dryRun: false })
+    console.info('Plugins were updated in the CMS.')
+  }
 } catch (error) {
   console.error(error)
-  throw new Error('Unable to retrieve plugins from CMS')
+  throw new Error('Unable to synchronize plugins to the CMS')
 }
 
 /* eslint-enable n/prefer-global/process */
