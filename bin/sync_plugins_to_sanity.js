@@ -57,9 +57,11 @@ try {
   // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
   // e.g. GITHUB_WORKSPACE="/Users/some-dev/dev/plugins/" npx tsx bin/sync_plugins_to_sanity.js
   const pluginsFilePath = path.join(GITHUB_WORKSPACE, '/site/plugins.json')
-  console.log(`Reading plugins file from ${pluginsFilePath}`)
+  console.log(`Reading existing plugins in repository from ${pluginsFilePath}`)
   const fileContents = await fs.readFile(pluginsFilePath)
   const plugins = JSON.parse(fileContents)
+
+  console.info('Detecting plugin diffs.')
 
   /**
    * @type {SanityBuildPluginEntity[]}
@@ -68,7 +70,28 @@ try {
   const sanityPluginLookup = await getSanityPluginLookup(sanityBuildPlugins)
   const pluginDiffs = getPluginDiffsForSanity(sanityPluginLookup, plugins)
 
-  console.log(`Found ${pluginDiffs.length} plugin diffs`)
+  console.info(`Found ${pluginDiffs.length} plugin diffs`)
+
+  /**
+   *
+   * @param {BuildPluginEntity} pluginDiffs
+   * @returns
+   */
+  const createUpdates = (transaction, patch, diffs) =>
+    diffs.reduce((tx, plugin) => {
+      const { _id, ...pluginUpdates } = plugin
+      const update = patch(_id).set(pluginUpdates)
+
+      tx.patch(update)
+
+      return tx
+    }, transaction)
+
+  console.info('Updating plugins...')
+  const transaction = createUpdates(client.transaction(), client.patch, pluginDiffs)
+
+  client.mutate(transaction, { dryRun: false })
+  console.info('Plugins were updated in the CMS.')
 } catch (error) {
   console.error(error)
   throw new Error('Unable to retrieve plugins from CMS')

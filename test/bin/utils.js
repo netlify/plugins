@@ -139,23 +139,23 @@ test('should generate plugin diffs for Sanity', (t) => {
       version: '1.0.4',
     },
   ]
+
+  // authors are not currently in here because for v1, we're not updating authors.
   const expected = [
     {
       _id: '1',
-      author: 'Ben Lmsc',
       description: 'Make some environment variables available only at build time in the runtime of your application.',
-      package: 'netlify-plugin-use-env-in-runtime',
-      repo: 'https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime',
-      name: 'Use Env in Runtime',
+      packageName: 'netlify-plugin-use-env-in-runtime',
+      repoUrl: 'https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime',
+      title: 'Use Env in Runtime',
       version: '1.2.2',
     },
     {
       _id: '3',
-      author: 'Bobby MacDougall',
       description: 'Debug & verify the contents of your Netlify build cache',
-      package: 'netlify-plugin-debug-cache',
-      repo: 'https://github.com/netlify-labs/netlify-plugin-debug-cache',
-      name: 'Debug Cache',
+      packageName: 'netlify-plugin-debug-cache',
+      repoUrl: 'https://github.com/netlify-labs/netlify-plugin-debug-cache',
+      title: 'Debug Cache',
       version: '1.0.4',
     },
   ]
