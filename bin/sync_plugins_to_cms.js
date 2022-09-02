@@ -31,7 +31,6 @@ if (process.env.NODE_ENV === 'development') {
 const { GITHUB_WORKSPACE, SANITY_API_TOKEN, SANITY_PROJECT_ID, SANITY_DATASET } = process.env
 const [apiVersion] = new Date().toISOString().split('T')
 
-// TODO: projectId and dataset should be read from GH action secrets?
 const config = {
   projectId: SANITY_PROJECT_ID,
   dataset: SANITY_DATASET,
@@ -42,7 +41,7 @@ const config = {
 }
 
 /**
- * Creates a transaction containing updates to to plugins for the CMS
+ * Creates a transaction containing updates to plugins for the CMS
  *
  * @param {Transaction} transaction
  * @param {Patch} patch
