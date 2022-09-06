@@ -676,5 +676,13 @@
     "package": "@takeshape/netlify-plugin-takeshape",
     "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
     "version": "1.0.0"
+  },
+  {
+    "author": "netlify",
+    "name": "Netlify Build plugin to test per-function file configuration",
+    "description": "Netlify Build plugin to test per-function file configuration",
+    "repo": "git+https://github.com/netlify/netlify-plugin-functions-bundling-config.git",
+    "version": "1.1.1",
+    "package": "@netlify/netlify-plugin-functions-bundling-config"
   }
 ]
