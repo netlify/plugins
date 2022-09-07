@@ -676,5 +676,13 @@
     "package": "@takeshape/netlify-plugin-takeshape",
     "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
     "version": "1.0.0"
+  },
+  {
+    "author": "Hung Viet Nguyen",
+    "description": "Persist the Playwright executables between Netlify builds.",
+    "name": "Playwright cache",
+    "package": "netlify-plugin-playwright-cache",
+    "repo": "https://github.com/nvh95/netlify-plugin-playwright-cache",
+    "version": "0.0.1"
   }
 ]
