@@ -676,5 +676,20 @@
     "package": "@takeshape/netlify-plugin-takeshape",
     "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
     "version": "1.0.0"
+  },
+  {
+    "author": "Sean Roberts",
+    "description": "Feature Package Pilot",
+    "name": "Feature Package Pilot",
+    "package": "@netlify/feature-package-pilot",
+    "repo": "https://github.com/netlify/feature-package-pilot",
+    "version": "0.1.2",
+    "compatibility": [
+      {
+        "version": "0.1.2",
+        "featureFlag": "feature_package_pilot"
+      }
+    ],
+    "displayPreferences": ["manual-dispaly"]
   }
 ]
