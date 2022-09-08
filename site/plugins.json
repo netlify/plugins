@@ -492,10 +492,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.21.1",
+    "version": "4.21.3",
     "compatibility": [
       {
-        "version": "4.21.1",
+        "version": "4.21.3",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
@@ -518,10 +518,10 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "3.4.1",
+    "version": "3.4.5",
     "compatibility": [
       {
-        "version": "3.4.1",
+        "version": "3.4.5",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
       {
@@ -684,5 +684,14 @@
     "package": "netlify-plugin-playwright-cache",
     "repo": "https://github.com/nvh95/netlify-plugin-playwright-cache",
     "version": "0.0.1"
+  },
+  {
+    "author": "Sean Roberts",
+    "description": "Feature Package Pilot",
+    "name": "Feature Package Pilot",
+    "package": "@netlify/feature-package-pilot",
+    "repo": "https://github.com/netlify/plugins",
+    "version": "0.1.2",
+    "status": "DEACTIVATED"
   }
 ]
