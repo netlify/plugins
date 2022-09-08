@@ -678,6 +678,14 @@
     "version": "1.0.0"
   },
   {
+    "author": "Hung Viet Nguyen",
+    "description": "Persist the Playwright executables between Netlify builds.",
+    "name": "Playwright cache",
+    "package": "netlify-plugin-playwright-cache",
+    "repo": "https://github.com/nvh95/netlify-plugin-playwright-cache",
+    "version": "0.0.1"
+  },
+  {
     "author": "Sean Roberts",
     "description": "Feature Package Pilot",
     "name": "Feature Package Pilot",
