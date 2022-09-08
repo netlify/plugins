@@ -1,5 +1,18 @@
 # Changelog
 
+## [6.42.0](https://github.com/netlify/plugins/compare/v6.41.0...v6.42.0) (2022-09-08)
+
+
+### Features
+
+* add `netlify-plugin-playwright-cache` ([#826](https://github.com/netlify/plugins/issues/826)) ([513868e](https://github.com/netlify/plugins/commit/513868e85e01824f413deb45635d535468f8f240))
+* testing display preferences for plugins ([#827](https://github.com/netlify/plugins/issues/827)) ([d99afc8](https://github.com/netlify/plugins/commit/d99afc8b8a903405a6969436fe87e9778b878072))
+* update plugin @netlify/next-runtime to version 4.19.0 ([#816](https://github.com/netlify/plugins/issues/816)) ([3177567](https://github.com/netlify/plugins/commit/317756722beec458d4b988398a2ef08d787cda0d))
+* update plugin @netlify/plugin-gatsby to version 3.4.5 ([#822](https://github.com/netlify/plugins/issues/822)) ([72f7752](https://github.com/netlify/plugins/commit/72f77528729c4e489eac54d55154fa964225bbb0))
+* update plugin @netlify/plugin-nextjs to version 4.20.0 ([#818](https://github.com/netlify/plugins/issues/818)) ([a3d2e46](https://github.com/netlify/plugins/commit/a3d2e468a5fbde49cb36ee7daa123823cbc5f87e))
+* update plugin @netlify/plugin-nextjs to version 4.21.3 ([#828](https://github.com/netlify/plugins/issues/828)) ([592bdd1](https://github.com/netlify/plugins/commit/592bdd1dac005dd0fa37f1bfb10475c58b9b6a44))
+* upgrade next runtime version ([#821](https://github.com/netlify/plugins/issues/821)) ([62ba5fa](https://github.com/netlify/plugins/commit/62ba5faf2f8d2e35da6e1ddca2884a8eb38d7bd1))
+
 ## [6.41.0](https://github.com/netlify/plugins/compare/v6.40.0...v6.41.0) (2022-08-25)
 
 
