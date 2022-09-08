@@ -684,7 +684,6 @@
     "package": "@netlify/feature-package-pilot",
     "repo": "https://github.com/netlify/plugins",
     "version": "0.1.2",
-    "status": "DEACTIVATED",
-    "displayPreferences": ["manual-display"]
+    "status": "DEACTIVATED"
   }
 ]
