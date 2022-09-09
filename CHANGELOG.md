@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.43.0](https://github.com/netlify/plugins/compare/v6.42.0...v6.43.0) (2022-09-09)
+
+
+### Features
+
+* update plugin @netlify/plugin-lighthouse to version 3.3.0 ([#831](https://github.com/netlify/plugins/issues/831)) ([7bf1621](https://github.com/netlify/plugins/commit/7bf1621ab6b0870e5e147e26307294e35e8714d0))
+* update plugin @netlify/plugin-nextjs to version 4.22.0 ([#830](https://github.com/netlify/plugins/issues/830)) ([33dbab4](https://github.com/netlify/plugins/commit/33dbab4b86026079b74be5116e93a6727fb50e64))
+
 ## [6.42.0](https://github.com/netlify/plugins/compare/v6.41.0...v6.42.0) (2022-09-08)
 
 
