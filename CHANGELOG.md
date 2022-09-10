@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.44.0](https://github.com/netlify/plugins/compare/v6.43.0...v6.44.0) (2022-09-10)
+
+
+### Features
+
+* update plugin @netlify/plugin-gatsby to version 3.4.6 ([#835](https://github.com/netlify/plugins/issues/835)) ([fbfc065](https://github.com/netlify/plugins/commit/fbfc0653ab6471a1b78a829ad5d098168bee74e3))
+
 ## [6.43.0](https://github.com/netlify/plugins/compare/v6.42.0...v6.43.0) (2022-09-09)
 
 
