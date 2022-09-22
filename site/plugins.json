@@ -693,5 +693,13 @@
     "repo": "https://github.com/netlify/plugins",
     "version": "0.1.2",
     "status": "DEACTIVATED"
+  },
+  {
+    "author": "Inngest",
+    "description": "Automatically deploy Inngest functions.",
+    "name": "Inngest",
+    "package": "netlify-plugin-inngest",
+    "repo": "https://github.com/inngest/netlify-plugin-inngest",
+    "version": "1.0.0"
   }
 ]
