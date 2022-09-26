@@ -693,5 +693,13 @@
     "repo": "https://github.com/netlify/plugins",
     "version": "0.1.2",
     "status": "DEACTIVATED"
+  },
+  {
+    "author": "21YunBox",
+    "description": "Deploy Your Site To in-China CDN.",
+    "name": "21YunBox: Accelerate Your Site in China Legitimately",
+    "package": "@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn",
+    "repo": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-your-site-to-china-edge",
+    "version": "1.0.0"
   }
 ]
