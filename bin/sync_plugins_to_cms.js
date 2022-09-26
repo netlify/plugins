@@ -3,10 +3,11 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 
+import sanityClient from '@sanity/client'
+import { uuid } from '@sanity/uuid'
+
 // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
 // e.g. GITHUB_WORKSPACE="$(pwd)" npx tsx bin/sync_plugins_to_cms.js
-
-import sanityClient from '@sanity/client'
 
 /**
  * @typedef { import("../types/plugins").SanityBuildPluginEntity } SanityBuildPluginEntity
@@ -93,7 +94,22 @@ const query = `*[_type == "buildPlugin"] {
 try {
   const pluginsFilePath = path.join(GITHUB_WORKSPACE, '/site/plugins.json')
   const fileContents = await fs.readFile(pluginsFilePath)
-  const plugins = JSON.parse(fileContents)
+  const plugins = JSON.parse(fileContents).map((plugin) => {
+    // Ensure if a compatibility field exists, that it has all the necessary fields to sync with Sanity
+    if (plugin.compatibility) {
+      // eslint-disable-next-line no-param-reassign
+      plugin.compatibility = plugin.compatibility.map((compatibilityItem) => {
+        const updatedCompatibilityItem = {
+          _key: uuid(),
+          ...compatibilityItem,
+        }
+
+        return updatedCompatibilityItem
+      })
+    }
+
+    return plugin
+  })
 
   console.info('Detecting plugin changes...')
 
