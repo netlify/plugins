@@ -9,12 +9,7 @@ import deepEqual from 'deep-equal'
 
 const sanityFieldNameToPluginKeyLookup = {
   _id: '_id',
-  title: 'name',
-  description: 'description',
-  // In sanity, the field is an array of authors, in plugins.json. it's one author
-  // authors: 'author',
   packageName: 'package',
-  repoUrl: 'repo',
   version: 'version',
   // an object that can be null
   compatibility: 'compatibility',
