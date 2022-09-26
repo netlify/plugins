@@ -72,12 +72,13 @@ const convertToSanityPlugin = (plugin) => {
 
         default:
           // We only want to sync the version and compatibility fields for now.
+          // _id is used to identify which documents in Sanity need to be updated.
           break
       }
 
       return pluginToFormat
-      // initializing with compatibility as null because in Sanity it will be null, but in plugins.json the compatibility property won't be null
-      // It won't exist.
+      // initializing with compatibility as null because in Sanity it will be null, but in plugins.json the compatibility
+      // property won't be null. It won't exist.
     },
     { compatibility: null },
   )

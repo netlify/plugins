@@ -78,6 +78,7 @@ const createUpdates = (transaction, patch, diffs) =>
  */
 const client = sanityClient(config)
 
+// These are the only fields to synch for the moment.
 const query = `*[_type == "buildPlugin"] {
   _id,
   packageName,
@@ -95,6 +96,8 @@ try {
       // eslint-disable-next-line no-param-reassign
       plugin.compatibility = plugin.compatibility.map((compatibilityItem) => {
         const updatedCompatibilityItem = {
+          // A _key property is required by Sanity so each array item can be identified in a collaborative way
+          // See https://www.sanity.io/docs/array-type#92296c6c45ea
           _key: uuid(),
           ...compatibilityItem,
         }
