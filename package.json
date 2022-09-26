@@ -37,6 +37,7 @@
   "devDependencies": {
     "@netlify/eslint-config-node": "^6.0.0",
     "@sanity/client": "^3.3.6",
+    "@sanity/uuid": "^3.0.1",
     "ava": "^4.3.3",
     "c8": "^7.11.0",
     "deep-equal": "^2.0.5",
