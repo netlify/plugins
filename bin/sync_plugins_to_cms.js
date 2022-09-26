@@ -4,7 +4,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 // when testing this script locally, add a path in your .env for GITHUB_WORKSPACE or pass it in
-// e.g. GITHUB_WORKSPACE="/Users/some-dev/dev/plugins/" npx tsx bin/sync_plugins_to_cms.js
+// e.g. GITHUB_WORKSPACE="$(pwd)" npx tsx bin/sync_plugins_to_cms.js
 
 import sanityClient from '@sanity/client'
 
