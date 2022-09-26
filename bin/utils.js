@@ -67,7 +67,7 @@ const convertToSanityPlugin = (plugin) => {
         case 'compatibility':
           // In Sanity, the compatibility field is an array of strings, but in plugins.json it's an array of objects.
           // eslint-disable-next-line no-param-reassign
-          pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] ? plugin[key].map(JSON.stringify) : null
+          pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] || null
           break
 
         default:
