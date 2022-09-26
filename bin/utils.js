@@ -59,20 +59,24 @@ export const getSanityPluginLookup = (plugins) => {
 const convertToSanityPlugin = (plugin) => {
   const formattedPlugin = Object.keys(plugin).reduce(
     (pluginToFormat, key) => {
-      // TODO: Skipping authors for now as they'd already be in Sanity and there in the plugins.json file it appears to be a github username, but in Sanity it's a person's name.
       switch (key) {
-        case 'author':
+        // _id field was added from Sanity so there is a unique identifier for each plugin when pushing things back to Sanity.
+        case '_id':
+          // eslint-disable-next-line no-param-reassign
+          pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
           break
-
         case 'compatibility':
-          // In Sanity, the compatibility field is an array of strings, but in plugins.json it's an array of objects.
           // eslint-disable-next-line no-param-reassign
           pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key] || null
           break
 
-        default:
+        case 'version':
           // eslint-disable-next-line no-param-reassign
           pluginToFormat[pluginKeyToSanityFieldNameLookup[key]] = plugin[key]
+          break
+
+        default:
+          // We only want to sync the version and compatibility fields for now.
           break
       }
 
@@ -92,31 +96,13 @@ const convertToSanityPlugin = (plugin) => {
  * @returns
  */
 const convertSanityPluginToPlugin = (plugin) => {
-  const formattedPlugin = Object.keys(plugin).reduce((pluginToFormat, key) => {
-    let fieldValue
-
-    // TODO: It appears for now at least, plugins.json only ever has one author.
-    switch (key) {
-      case 'authors':
-        break
-      case 'compatibility':
-        if (plugin[key]) {
-          // TODO: This is stored as an array of strings in Sanity at the moment, but there is no validation on the Sanity end as it's a string.
-          // For another iteration, we could store the compatibility field as an array of objects instead and avoid JSON.parse failing potentially.
-          fieldValue = plugin[key].map(JSON.parse)
-        }
-        break
-      default:
-        fieldValue = plugin[key]
-    }
-
-    if (fieldValue) {
-      // eslint-disable-next-line no-param-reassign
-      pluginToFormat[sanityFieldNameToPluginKeyLookup[key]] = fieldValue
-    }
-
-    return pluginToFormat
-  }, {})
+  // These are the only fields we care about for now.
+  const formattedPlugin = {
+    // eslint-disable-next-line no-underscore-dangle
+    _id: plugin._id,
+    version: plugin.version,
+    compatibility: plugin.compatibility,
+  }
 
   return formattedPlugin
 }
@@ -128,10 +114,11 @@ const convertSanityPluginToPlugin = (plugin) => {
  * @param {BuildPluginEntity[]} plugins
  * @returns
  */
-export const getPluginDiffsForSanity = (pluginLookup, plugins) =>
-  plugins
+export const getPluginDiffsForSanity = (pluginLookup, plugins) => {
+  const diffs = plugins
     .filter((plugin) => {
       if (!(plugin.package in pluginLookup)) {
+        // The plugin does not Exist in Sanity, so we filter it out.
         return false
       }
 
@@ -139,13 +126,23 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) =>
       // eslint-disable-next-line no-param-reassign, no-underscore-dangle
       plugin._id = pluginLookup[plugin.package]._id
 
-      const sanityPlugin = convertSanityPluginToPlugin(pluginLookup[plugin.package])
-      // eslint-disable-next-line no-unused-vars
-      const { author, ...pluginWithoutAuthor } = plugin
+      // These are the only fields we care about for now.
+      const minimalPlugin = {
+        // eslint-disable-next-line no-underscore-dangle
+        _id: plugin._id,
+        version: plugin.version,
+        // In Sanity it's null, in plugins.json it's undefined
+        compatibility: plugin.compatibility || null,
+      }
 
-      return !deepEqual(pluginWithoutAuthor, sanityPlugin)
+      const sanityPlugin = convertSanityPluginToPlugin(pluginLookup[plugin.package])
+
+      return !deepEqual(minimalPlugin, sanityPlugin)
     })
     .map((plugin) => {
       console.info('Plugin diff found:', plugin.package)
       return convertToSanityPlugin(plugin)
     })
+
+  return diffs
+}
