@@ -7,6 +7,17 @@
 // TODO: remove this an use assert.deepEqual once we support only node engines > 18
 import deepEqual from 'deep-equal'
 
+const sanitizeCompatibility = (compatibility) =>
+  compatibility
+    ? compatibility.map((compatibilityItem) => {
+        // _keys will alwyas be different and they're not the data we care about comparing.
+        // eslint-disable-next-line no-unused-vars
+        const { _key, ...resetOfItem } = compatibilityItem
+
+        return resetOfItem
+      })
+    : null
+
 const sanityFieldNameToPluginKeyLookup = {
   _id: '_id',
   packageName: 'package',
@@ -97,7 +108,7 @@ const convertSanityPluginToPlugin = (plugin) => {
     // eslint-disable-next-line no-underscore-dangle
     _id: plugin._id,
     version: plugin.version,
-    compatibility: plugin.compatibility,
+    compatibility: sanitizeCompatibility(plugin.compatibility),
   }
 
   return formattedPlugin
@@ -128,7 +139,7 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) => {
         _id: plugin._id,
         version: plugin.version,
         // In Sanity it's null, in plugins.json it's undefined
-        compatibility: plugin.compatibility || null,
+        compatibility: sanitizeCompatibility(plugin.compatibility),
       }
 
       const sanityPlugin = convertSanityPluginToPlugin(pluginLookup[plugin.package])
