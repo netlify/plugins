@@ -9,9 +9,6 @@ on:
 jobs:
   sync-to-cms:
     runs-on: ubuntu-latest
-    environment:
-      # TODO: Rename this to Production once this is ready for production, i.e. when this is about to be merged into the repo
-      name: Sandbox
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
