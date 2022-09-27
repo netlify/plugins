@@ -81,9 +81,11 @@ test('should generate plugin diffs for Sanity', (t) => {
     {
       compatibility: [
         {
+          _key: 'dfsfg3443sdfgdfgd',
           version: '2.0.0',
         },
         {
+          _key: 'dfsfg3443sdfgdfg2',
           version: '1.3.0',
           nodeVersion: '<12.0.0',
         },
@@ -108,9 +110,11 @@ test('should generate plugin diffs for Sanity', (t) => {
       _id: '1',
       compatibility: [
         {
+          _key: 'dfsfg3443sdfgdfgd',
           version: '2.0.0',
         },
         {
+          _key: 'dfsfg3443sdfgdfg2',
           version: '1.3.0',
           nodeVersion: '<12.0.0',
         },
