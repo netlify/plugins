@@ -5,6 +5,7 @@ on:
       - closed
 jobs:
   sync-to-cms:
+    # Only run if the merged PR wasn't an automated PR for synching from the cms to the repo
     if: github.event.pull_request.merged && !contains(github.event.pull_request.labels.*.name, 'cms_sync')
     runs-on: ubuntu-latest
     steps:
