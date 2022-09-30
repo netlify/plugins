@@ -16,5 +16,7 @@ git add site/plugins.json
 if [[ -n "$(git status --porcelain)" ]]; then
   git commit -m $PR_TITLE
   git push origin $BRANCH_NAME
-  gh pr create --title $PR_TITLE --body "This is an automated PR to sync the CMS to the repo" --label "cms_sync" --label "automerge"
+  # TODO: Uncomment the line below and delete the one below it once we're happy that this is working well in the test environment
+  # gh pr create --title $PR_TITLE --body "This is an automated PR to sync the CMS to the repo" --label "cms_sync" --label "automerge"
+  gh pr create --title $PR_TITLE --body "DO NOT MERGE, TESTING SYNC: This is an automated PR to sync the CMS to the repo" --label "cms_sync"
 fi
