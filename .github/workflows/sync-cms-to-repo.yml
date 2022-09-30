@@ -1,6 +1,7 @@
 name: Sync CMS to Plugins Repository
 on:
   repository_dispatch:
+    # sync_cms_to_repo is a bespoke type created for use with the CMS Webhook
     types: [sync_cms_to_repo]
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
