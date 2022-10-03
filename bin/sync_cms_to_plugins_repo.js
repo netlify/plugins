@@ -11,6 +11,6 @@ console.log('Checking for CMS updates...')
 console.log('Changes to synchronize', changes)
 console.log('Synchronizing changes to plugins repo...')
 const updatedPlugins = updatePlugins(changes, plugins)
-fs.writeFile('site/plugins.json', JSON.stringify(updatedPlugins, null, 2))
+fs.writeFile('site/plugins.json', `${JSON.stringify(updatedPlugins, null, 2)}\n`)
 
 console.log('Done synching CMS updates to plugins repo.')
