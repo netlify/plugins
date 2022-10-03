@@ -1,5 +1,10 @@
 name: Sync CMS to Plugins Repository
-on: [repository_dispatch]
+on:
+  repository_dispatch:
+    # sync_cms_to_repo is a bespoke type created for use with the CMS Webhook
+    types: [sync_cms_to_repo]
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   sync-to-repo:
     runs-on: ubuntu-latest
@@ -19,4 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CMS_CHANGES: ${{ toJson(github.event.client_payload) }}
 
-        run: node bin/sync_cms_to_plugins_repo.js
+        run: bin/sync_cms_to_repo.sh

@@ -46,6 +46,7 @@
     "normalize-node-version": "^11.0.0",
     "pacote": "^13.0.0",
     "semver": "^7.0.0",
+    "tsx": "^3.9.0",
     "upper-case-first": "^2.0.2"
   },
   "engines": {
