@@ -92,19 +92,10 @@
   {
     "author": "applitools",
     "description": "Require visual changes on production to be manually approved before going live!",
-    "name": "Visual diff (Applitools)",
+    "name": "Visual Diff (Applitools)",
     "package": "netlify-plugin-visual-diff",
     "repo": "https://github.com/applitools/netlify-plugin-visual-diff",
-    "version": "2.0.0",
-    "compatibility": [
-      {
-        "version": "2.0.0"
-      },
-      {
-        "version": "1.3.0",
-        "nodeVersion": "<12.0.0"
-      }
-    ]
+    "version": "2.0.0"
   },
   {
     "author": "pizzafox",
@@ -613,8 +604,12 @@
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
     "version": "0.3.3",
     "compatibility": [
-      { "version": "0.3.3" },
-      { "version": "0.2.5" }
+      {
+        "version": "0.3.3"
+      },
+      {
+        "version": "0.2.5"
+      }
     ]
   },
   {
