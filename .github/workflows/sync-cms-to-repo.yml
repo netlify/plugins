@@ -19,6 +19,10 @@ jobs:
           check-latest: true
       - name: Install dependencies
         run: npm install
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Sync CMS to repo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
