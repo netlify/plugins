@@ -613,8 +613,12 @@
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
     "version": "0.3.3",
     "compatibility": [
-      { "version": "0.3.3" },
-      { "version": "0.2.5" }
+      {
+        "version": "0.3.3"
+      },
+      {
+        "version": "0.2.5"
+      }
     ]
   },
   {
@@ -697,5 +701,6 @@
     "repo": "https://github.com/netlify/plugins",
     "version": "0.1.2",
     "status": "DEACTIVATED"
-  }
+  },
+  {}
 ]
