@@ -7,13 +7,13 @@ git switch $BRANCH_NAME
 echo "Syncing CMS to plugins"
 npx tsx bin/sync_cms_to_plugins_repo.js
 
-echo "Creating PR \"$PR_TITLE\" for branch $BRANCH_NAME"
 
 # This is the only file we want to commit
 git add site/plugins.json
 
 # See if we have any changes. We should.
 if [[ -n "$(git status --porcelain)" ]]; then
+  echo "Creating PR \"$PR_TITLE\" for branch $BRANCH_NAME"
   git commit -m "$PR_TITLE"
   git push origin $BRANCH_NAME
   # TODO: Uncomment the line below and delete the one below it once we're happy that this is working well in the test environment
