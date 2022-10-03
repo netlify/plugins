@@ -607,11 +607,15 @@
   },
   {
     "author": "Arnaud Ligny",
-    "description": "Persist the Cecil cache between Netlify builds.",
+    "description": "Persist the Cecil's cache between Netlify builds.",
     "name": "Cecil cache",
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
-    "version": "0.2.5"
+    "version": "0.3.3",
+    "compatibility": [
+      { "version": "0.3.3" },
+      { "version": "0.2.5" }
+    ]
   },
   {
     "author": "Ben Lmsc",
