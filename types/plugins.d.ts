@@ -11,6 +11,7 @@ export interface SanityBuildPluginEntity {
   repoUrl: string
   title: string
   version: string
+  status: 'active' | 'deactivated'
 }
 
 export type SanityPluginLookup = Record<string, SanityBuildPluginEntity>
@@ -33,4 +34,5 @@ export type BuildPluginEntity = {
   repo: string
   version: string
   compatibility?: Compatibility[]
+  status?: 'DEACTIVATED'
 }
