@@ -671,8 +671,8 @@
   },
   {
     "author": "Colby Fayock",
-    "description": "Automatic image optimization with modern formats using Cloudinary",
-    "name": "Cloudinary",
+    "description": "Automatically optimize your Netlify site images and deliver them in modern formats with Cloudinary.",
+    "name": "Cloudinary Build Plugin",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
     "version": "1.0.3"
@@ -717,5 +717,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
