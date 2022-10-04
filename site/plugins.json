@@ -716,6 +716,6 @@
     "name": "Deploy to Formspree",
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
-    "version": "1.0.0"
+    "version": "1.0.1"
   }  
 ]
