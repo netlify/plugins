@@ -36,9 +36,13 @@
   "license": "MIT",
   "devDependencies": {
     "@netlify/eslint-config-node": "^6.0.0",
+    "@sanity/client": "^3.3.6",
+    "@sanity/uuid": "^3.0.1",
     "ava": "^4.3.3",
     "c8": "^7.11.0",
+    "deep-equal": "^2.0.5",
     "diff": "^5.0.0",
+    "dotenv": "^16.0.1",
     "got": "^11.8.0",
     "husky": "^8.0.0",
     "is-plain-obj": "^4.0.0",
