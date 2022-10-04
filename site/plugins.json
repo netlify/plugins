@@ -158,6 +158,14 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "Snaplet",
+    "description": "Create preview databases for your Netlify preview deployments",
+    "name": "Preview Databases",
+    "package": "@snaplet/netlify-preview-database-plugin",
+    "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
+    "version": "1.0.2"
+  },
+  {
     "author": "sw-yx",
     "description": "Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web!",
     "name": "No more 404",
@@ -405,10 +413,10 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "3.4.1",
+    "version": "3.7.1",
     "compatibility": [
       {
-        "version": "3.4.1"
+        "version": "3.7.1"
       },
       {
         "version": "2.1.3",
@@ -492,10 +500,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.22.0",
+    "version": "4.24.0",
     "compatibility": [
       {
-        "version": "4.22.0",
+        "version": "4.24.0",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
@@ -607,11 +615,19 @@
   },
   {
     "author": "Arnaud Ligny",
-    "description": "Persist the Cecil cache between Netlify builds.",
+    "description": "Persist the Cecil's cache between Netlify builds.",
     "name": "Cecil cache",
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
-    "version": "0.2.5"
+    "version": "0.3.3",
+    "compatibility": [
+      {
+        "version": "0.3.3"
+      },
+      {
+        "version": "0.2.5"
+      }
+    ]
   },
   {
     "author": "Ben Lmsc",
@@ -701,5 +717,13 @@
     "package": "netlify-plugin-inngest",
     "repo": "https://github.com/inngest/netlify-plugin-inngest",
     "version": "1.0.0"
-  }
+  },
+  {
+    "author": "Formspree",
+    "description": "Automaticly deploy forms to Formspree via the Formspree CLI",
+    "name": "Deploy to Formspree",
+    "package": "netlify-plugin-formspree",
+    "repo": "https://github.com/formspree/netlify-plugin-formspree",
+    "version": "0.0.3"
+  }  
 ]
