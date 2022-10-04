@@ -40,7 +40,7 @@
     "c8": "^7.11.0",
     "diff": "^5.0.0",
     "got": "^11.8.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "is-plain-obj": "^4.0.0",
     "node-fetch": "^3.1.1",
     "normalize-node-version": "^11.0.0",
