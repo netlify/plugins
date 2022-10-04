@@ -158,6 +158,14 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "Snaplet",
+    "description": "Create preview databases for your Netlify preview deployments",
+    "name": "Preview Databases",
+    "package": "@snaplet/netlify-preview-database-plugin",
+    "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
+    "version": "1.0.2"
+  },
+  {
     "author": "sw-yx",
     "description": "Check that you preserve your own internal URL structure between builds, accounting for Netlify Redirects. Don't break the web!",
     "name": "No more 404",
