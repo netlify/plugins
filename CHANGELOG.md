@@ -1,5 +1,17 @@
 # Changelog
 
+## [6.48.0](https://github.com/netlify/plugins/compare/v6.47.0...v6.48.0) (2022-10-05)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.24.2 ([#887](https://github.com/netlify/plugins/issues/887)) ([3b88d6e](https://github.com/netlify/plugins/commit/3b88d6e6fa29e7937d56afd8d692d9eefea907e8))
+
+
+### Bug Fixes
+
+* corrected sync issue from CMS that included _key in compatibility array items ([#885](https://github.com/netlify/plugins/issues/885)) ([888c24b](https://github.com/netlify/plugins/commit/888c24b21bbed7d0e4c03dd1d6e18efca5ce3dcd))
+
 ## [6.47.0](https://github.com/netlify/plugins/compare/v6.46.0...v6.47.0) (2022-10-05)
 
 
