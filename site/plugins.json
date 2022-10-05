@@ -344,18 +344,20 @@
   },
   {
     "author": "erezrokah",
-    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries",
-    "name": "Is website vulnerable",
+    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries.",
+    "name": "Is Website Vulnerable",
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
     "version": "2.0.3",
     "compatibility": [
       {
+        "_key": "a3321fbd-e9f6-4fa8-a219-1ace4b8f4b80",
         "version": "2.0.3"
       },
       {
-        "version": "1.0.10",
-        "nodeVersion": "<12.20.0"
+        "_key": "9e3bd0f9-d2a9-4f62-a4b5-314dbfbceec2",
+        "nodeVersion": "<12.20.0",
+        "version": "1.0.10"
       }
     ]
   },
@@ -717,5 +719,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
