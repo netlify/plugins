@@ -204,9 +204,9 @@ const stripNullifiedFields = (plugin) => {
  */
 export const updatePlugins = (changes, plugins) => {
   const { compatibility, ...restOfChanges } = changes
-  const updatedCompatibility = compatibility?.map((compatibility) => {
+  const updatedCompatibility = compatibility?.map((compatibilityItem) => {
     // eslint-disable-next-line no-unused-vars
-    const { _key, ...rest } = compatibility
+    const { _key, ...rest } = compatibilityItem
 
     return rest
   })
