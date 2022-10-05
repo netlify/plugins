@@ -260,18 +260,20 @@
   {
     "author": "Tom-Bonnike",
     "description": "Automatically extract and inline the critical CSS of your pages in order to render content to the user as fast as possible.",
-    "name": "Inline critical CSS",
+    "name": "Inline Critical CSS",
     "package": "netlify-plugin-inline-critical-css",
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css",
     "version": "2.0.0",
     "compatibility": [
       {
-        "version": "2.0.0",
-        "migrationGuide": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css/blob/master/CHANGELOG.md#200"
+        "_key": "1e31c16e-63c1-43af-9db0-02e3302caff1",
+        "migrationGuide": "https://github.com/Tom-Bonnike/netlify-plugin-inline-critical-css/blob/master/CHANGELOG.md#200",
+        "version": "2.0.0"
       },
       {
-        "version": "1.2.0",
-        "nodeVersion": "^11 || ^13"
+        "_key": "c7e5b03b-c55d-4ad8-960c-2b495e413fd3",
+        "nodeVersion": "^11 || ^13",
+        "version": "1.2.0"
       }
     ]
   },
