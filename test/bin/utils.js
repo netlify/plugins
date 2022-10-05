@@ -177,13 +177,23 @@ test('should return no plugin diffs for Sanity if there are no changes', (t) => 
 
 test('should update a plugin', (t) => {
   const changes = {
-    compatibility: null,
     description: 'Require visual changes on production to be manually approved before going live!',
     packageName: 'netlify-plugin-visual-diff',
     repoUrl: 'https://github.com/applitools/netlify-plugin-visual-diff',
     status: 'active',
     title: 'Visual diff (Applitools)',
     version: '5.0.0',
+    compatibility: [
+      {
+        _key: 'dfsfg3443sdfgdfgd',
+        version: '3.0.0',
+      },
+      {
+        _key: 'dfsfg3443sdfgdfgd',
+        version: '1.3.0',
+        nodeVersion: '<12.0.0',
+      },
+    ],
   }
 
   const plugins = [
@@ -231,6 +241,15 @@ test('should update a plugin', (t) => {
       package: 'netlify-plugin-visual-diff',
       repo: 'https://github.com/applitools/netlify-plugin-visual-diff',
       version: '5.0.0',
+      compatibility: [
+        {
+          version: '3.0.0',
+        },
+        {
+          version: '1.3.0',
+          nodeVersion: '<12.0.0',
+        },
+      ],
     },
     {
       author: 'pizzafox',
