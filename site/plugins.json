@@ -526,10 +526,10 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "3.4.7",
+    "version": "3.4.8",
     "compatibility": [
       {
-        "version": "3.4.7",
+        "version": "3.4.8",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
       {
@@ -717,5 +717,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
