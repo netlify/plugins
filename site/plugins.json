@@ -615,16 +615,18 @@
   },
   {
     "author": "Arnaud Ligny",
-    "description": "Persist the Cecil's cache between Netlify builds.",
+    "description": "Persist the Cecil cache between Netlify builds.",
     "name": "Cecil cache",
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
     "version": "0.3.3",
     "compatibility": [
       {
+        "_key": "1dd23a58-1288-430b-927a-c6f10976fcd1",
         "version": "0.3.3"
       },
       {
+        "_key": "e783f881-4e57-44e4-8a8c-3dfb5bbe4145",
         "version": "0.2.5"
       }
     ]
@@ -717,5 +719,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
