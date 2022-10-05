@@ -210,17 +210,19 @@
   },
   {
     "author": "bahmutov",
-    "description": "Runs Cypress end-to-end tests after Netlify builds the site",
+    "description": "Runs Cypress end-to-end tests after Netlify builds the site.",
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
     "version": "2.2.0",
     "compatibility": [
       {
-        "version": "2.2.0",
-        "migrationGuide": "https://github.com/cypress-io/netlify-plugin-cypress/releases/tag/v2.0.0"
+        "_key": "7de4fed9-a873-48e5-983a-78862572ec53",
+        "migrationGuide": "https://github.com/cypress-io/netlify-plugin-cypress/releases/tag/v2.0.0",
+        "version": "2.2.0"
       },
       {
+        "_key": "8dd5a0c0-d4ac-4b53-82c6-80b80599925d",
         "version": "1.11.1"
       }
     ]
@@ -717,5 +719,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
