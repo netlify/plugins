@@ -126,7 +126,7 @@
   {
     "author": "daviddarnes",
     "description": "Generates posts, pages, tag pages and author pages from a Ghost publication as markdown files, using the Ghost Content API.",
-    "name": "Ghost markdown",
+    "name": "Ghost Markdown",
     "package": "netlify-plugin-ghost-markdown",
     "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown",
     "version": "3.1.0"
@@ -717,5 +717,5 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "0.0.3"
-  }  
+  }
 ]
