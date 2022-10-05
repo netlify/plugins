@@ -203,7 +203,16 @@ const stripNullifiedFields = (plugin) => {
  * return {BuildPluginEntity[]} The updated list of plugins
  */
 export const updatePlugins = (changes, plugins) => {
-  const pluginChanges = convertCmsChangesToRepoPlugin(changes)
+  const { compatibility, ...restOfChanges } = changes
+  const updatedCompatibility = compatibility?.map((compatibilityItem) => {
+    // eslint-disable-next-line no-unused-vars
+    const { _key, ...rest } = compatibilityItem
+
+    return rest
+  })
+
+  const sanitizedChanges = { ...restOfChanges, compatibility: updatedCompatibility }
+  const pluginChanges = convertCmsChangesToRepoPlugin(sanitizedChanges)
 
   let pluginToUpdate = plugins.find((plugin) => plugin.package === pluginChanges.package)
 
