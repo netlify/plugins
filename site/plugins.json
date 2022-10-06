@@ -500,10 +500,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.24.2",
+    "version": "4.24.3",
     "compatibility": [
       {
-        "version": "4.24.2",
+        "version": "4.24.3",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
