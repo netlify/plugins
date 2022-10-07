@@ -717,5 +717,13 @@
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "1.0.1"
+  },
+  {
+    "author": "Lewis Thorley",
+    "description": "Makes emails easy on Netlify.",
+    "name": "Netlify Emails",
+    "package": "@netlify/plugin-emails",
+    "repo": "https://github.com/netlify/netlify-emails-plugin",
+    "version": "1.0.1-developer-preview.0"
   }
 ]
