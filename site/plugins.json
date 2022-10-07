@@ -723,7 +723,7 @@
     "description": "Makes emails easy on Netlify.",
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
-    "repo": "https://github.com/netlify/netlify-emails-plugin",
+    "repo": "https://github.com/netlify/plugins",
     "version": "1.0.1-developer-preview.0"
   }
 ]
