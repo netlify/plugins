@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.49.1](https://github.com/netlify/plugins/compare/v6.49.0...v6.49.1) (2022-10-07)
+
+
+### Bug Fixes
+
+* update netlify-plugin-formspree version ([#873](https://github.com/netlify/plugins/issues/873)) ([ac8d416](https://github.com/netlify/plugins/commit/ac8d4166cfffd7c608262d86a7770a98f35d8c34))
+
 ## [6.49.0](https://github.com/netlify/plugins/compare/v6.48.0...v6.49.0) (2022-10-06)
 
 
