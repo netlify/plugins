@@ -48,7 +48,7 @@
     "is-plain-obj": "^4.0.0",
     "node-fetch": "^3.1.1",
     "normalize-node-version": "^12.0.0",
-    "pacote": "^13.0.0",
+    "pacote": "^14.0.0",
     "semver": "^7.0.0",
     "tsx": "^3.9.0",
     "upper-case-first": "^2.0.2"
