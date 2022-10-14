@@ -724,6 +724,6 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.1-mainpreview"
+    "version": "0.0.1-uselib"
   }
 ]
