@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.50.0](https://github.com/netlify/plugins/compare/v6.49.1...v6.50.0) (2022-10-17)
+
+
+### Features
+
+* add emails plugin ([#895](https://github.com/netlify/plugins/issues/895)) ([c83d595](https://github.com/netlify/plugins/commit/c83d595aeeeb27d5be6e5d880f316f79ce20af91))
+* update plugin @netlify/plugin-lighthouse to version 4.0.0 ([#892](https://github.com/netlify/plugins/issues/892)) ([aeb41c8](https://github.com/netlify/plugins/commit/aeb41c8a4563541015b81d3213f2d03022c8ab3d))
+* update plugin @netlify/plugin-lighthouse to version 4.0.1 ([#899](https://github.com/netlify/plugins/issues/899)) ([53da108](https://github.com/netlify/plugins/commit/53da108b0fbce2f9e3967c1868e9e9d0441e6cb4))
+* update plugin @netlify/plugin-nextjs to version 4.25.0 ([#908](https://github.com/netlify/plugins/issues/908)) ([8de6de3](https://github.com/netlify/plugins/commit/8de6de3c900b512ee5142606c26029ca046c5299))
+* update plugin @netlify/plugin-nextjs to version 4.27.0 ([#934](https://github.com/netlify/plugins/issues/934)) ([88e2578](https://github.com/netlify/plugins/commit/88e25780beacbba415577dacb132a46a5d6d8e5e))
+
 ## [6.49.1](https://github.com/netlify/plugins/compare/v6.49.0...v6.49.1) (2022-10-07)
 
 
