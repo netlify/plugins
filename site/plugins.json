@@ -159,8 +159,8 @@
   },
   {
     "author": "Snaplet",
-    "description": "Create preview databases for your Netlify preview deployments",
-    "name": "Preview Databases",
+    "description": "Bootstrap preview databases with your deploy previews on Netlify without affecting production. ",
+    "name": "Snaplet",
     "package": "@snaplet/netlify-preview-database-plugin",
     "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
     "version": "1.0.2"
