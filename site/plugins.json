@@ -658,7 +658,7 @@
     "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent to monitor your sites.",
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
-    "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
+    "repo": "https://github.com/newrelic-experimental/netlify-plugin",
     "version": "1.0.1"
   },
   {
