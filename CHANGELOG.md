@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.50.1](https://github.com/netlify/plugins/compare/v6.50.0...v6.50.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* update Next plugin to 4.27.1 ([#938](https://github.com/netlify/plugins/issues/938)) ([cdeea70](https://github.com/netlify/plugins/commit/cdeea70600215db026a007aa70c7d7080adfeb8e))
+
 ## [6.50.0](https://github.com/netlify/plugins/compare/v6.49.1...v6.50.0) (2022-10-17)
 
 
