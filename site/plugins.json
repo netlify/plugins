@@ -328,7 +328,7 @@
   },
   {
     "author": "getsentry",
-    "description": "The Sentry Netlify build plugin automatically notifies Sentry of new releases being deployed to your site",
+    "description": "The Sentry Build Plugin on Netlify helps you quickly identify how code errors and performance issues impact your users.",
     "name": "Sentry",
     "package": "@sentry/netlify-build-plugin",
     "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
@@ -655,7 +655,7 @@
   },
   {
     "author": "aaronbassett",
-    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent.",
+    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent to monitor your sites.",
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
     "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
@@ -671,7 +671,7 @@
   },
   {
     "author": "Colby Fayock",
-    "description": "Automatic image optimization with modern formats using Cloudinary",
+    "description": "Automatically optimize your Netlify site images and deliver them in modern formats with Cloudinary.",
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
