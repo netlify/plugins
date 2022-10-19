@@ -1,5 +1,17 @@
 # Changelog
 
+## [6.51.0](https://github.com/netlify/plugins/compare/v6.50.2...v6.51.0) (2022-10-19)
+
+
+### Features
+
+* support env vars in plugin definitions ([#946](https://github.com/netlify/plugins/issues/946)) ([1bb676f](https://github.com/netlify/plugins/commit/1bb676fcca83594131fe041dea1944da4acdf27a))
+
+
+### Bug Fixes
+
+* update Next plugin to 4.27.2 ([#947](https://github.com/netlify/plugins/issues/947)) ([ff2f23e](https://github.com/netlify/plugins/commit/ff2f23e2c02ed59ca4f3748ca8484e9c63cd59f9))
+
 ## [6.50.2](https://github.com/netlify/plugins/compare/v6.50.1...v6.50.2) (2022-10-19)
 
 
