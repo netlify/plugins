@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.50.2](https://github.com/netlify/plugins/compare/v6.50.1...v6.50.2) (2022-10-19)
+
+
+### Bug Fixes
+
+* roll back Next to 4.26.0 ([#943](https://github.com/netlify/plugins/issues/943)) ([4880c6a](https://github.com/netlify/plugins/commit/4880c6a6071213c1076e55d486b4a8a5966c3a8b))
+
 ## [6.50.1](https://github.com/netlify/plugins/compare/v6.50.0...v6.50.1) (2022-10-18)
 
 
