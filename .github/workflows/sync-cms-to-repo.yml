@@ -17,6 +17,10 @@ jobs:
           check-latest: true
       - name: Install dependencies
         run: npm install
+      - name: Setup git config
+        run: |
+          git config user.name 'token-generator-app[bot]'
+          git config user.email '82042599+token-generator-app[bot]@users.noreply.github.com'
       - name: Generate GitHub token
         uses: navikt/github-app-token-generator@v1.1.1
         id: get-token
