@@ -746,6 +746,6 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.13"
+    "version": "0.0.14"
   }
 ]
