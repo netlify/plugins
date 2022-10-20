@@ -328,11 +328,25 @@
   },
   {
     "author": "getsentry",
-    "description": "The Sentry Build Plugin on Netlify helps you quickly identify how code errors and performance issues impact your users.",
+    "description": "The Sentry integration on Netlify helps you quickly identify how code errors and performance issues impact your users. ",
     "name": "Sentry",
     "package": "@sentry/netlify-build-plugin",
     "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "variables": [
+      {
+        "name": "SENTRY_AUTH_TOKEN",
+        "description": "Authentication token for Sentry"
+      },
+      {
+        "name": "SENTRY_ORG",
+        "description": "The slug of the organization name in Sentry"
+      },
+      {
+        "name": "SENTRY_PROJECT",
+        "description": "The slug of the project name in Sentry"
+      }
+    ]
   },
   {
     "author": "AshikNesin",
