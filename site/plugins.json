@@ -328,11 +328,25 @@
   },
   {
     "author": "getsentry",
-    "description": "The Sentry Netlify build plugin automatically notifies Sentry of new releases being deployed to your site",
+    "description": "The Sentry integration on Netlify helps you quickly identify how code errors and performance issues impact your users. ",
     "name": "Sentry",
     "package": "@sentry/netlify-build-plugin",
     "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "variables": [
+      {
+        "name": "SENTRY_AUTH_TOKEN",
+        "description": "Authentication token for Sentry"
+      },
+      {
+        "name": "SENTRY_ORG",
+        "description": "The slug of the organization name in Sentry"
+      },
+      {
+        "name": "SENTRY_PROJECT",
+        "description": "The slug of the project name in Sentry"
+      }
+    ]
   },
   {
     "author": "AshikNesin",
@@ -500,13 +514,17 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.24.3",
+    "version": "4.27.3",
     "compatibility": [
       {
         "version": "5.0.0",
         "siteDependencies": {
           "nodeVersion": ">=14.0.0"
         }
+      },
+      {
+        "version": "4.27.3",
+        "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
         "version": "3.9.2",
@@ -657,7 +675,7 @@
   },
   {
     "author": "aaronbassett",
-    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent.",
+    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent to monitor your sites.",
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
     "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
@@ -673,7 +691,7 @@
   },
   {
     "author": "Colby Fayock",
-    "description": "Automatic image optimization with modern formats using Cloudinary",
+    "description": "Automatically optimize your Netlify site images and deliver them in modern formats with Cloudinary.",
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
@@ -713,6 +731,14 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "Inngest",
+    "description": "Automatically deploy Inngest functions.",
+    "name": "Inngest",
+    "package": "netlify-plugin-inngest",
+    "repo": "https://github.com/inngest/netlify-plugin-inngest",
+    "version": "1.0.0"
+  },
+  {
     "author": "Formspree",
     "description": "Automaticly deploy forms to Formspree via the Formspree CLI",
     "name": "Deploy to Formspree",
@@ -726,6 +752,6 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "1.0.1-developer-preview.0"
+    "version": "0.0.17"
   }
 ]
