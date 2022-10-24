@@ -517,6 +517,12 @@
     "version": "4.27.3",
     "compatibility": [
       {
+        "version": "5.0.0",
+        "siteDependencies": {
+          "nodeVersion": ">=14.0.0"
+        }
+      },
+      {
         "version": "4.27.3",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
