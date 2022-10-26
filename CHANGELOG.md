@@ -1,5 +1,20 @@
 # Changelog
 
+## [6.52.0](https://github.com/netlify/plugins/compare/v6.51.0...v6.52.0) (2022-10-26)
+
+
+### Features
+
+* add feature-flagged version of Next runtime ([#966](https://github.com/netlify/plugins/issues/966)) ([31070f9](https://github.com/netlify/plugins/commit/31070f9dc837deffc6d9fd5c83eb0591e7412c9a))
+* update plugin @netlify/plugin-nextjs to version 4.27.3 ([#951](https://github.com/netlify/plugins/issues/951)) ([fb6f311](https://github.com/netlify/plugins/commit/fb6f3116c1601f94a658cf1fc2e430ae017b9c43))
+
+
+### Bug Fixes
+
+* add token-generator-bot to git signature ([#955](https://github.com/netlify/plugins/issues/955)) ([c3a4a71](https://github.com/netlify/plugins/commit/c3a4a7190403ebbf75ce3c8405059fa18b618a13))
+* add variables to build step test ([#957](https://github.com/netlify/plugins/issues/957)) ([b8483fd](https://github.com/netlify/plugins/commit/b8483fd3dd04d7a1bc405873209caa4b536efdff))
+* use generated token for sanity to github plugin sync ([#954](https://github.com/netlify/plugins/issues/954)) ([f17ac02](https://github.com/netlify/plugins/commit/f17ac0208acc2998f4358b1d1111d426eb287a11))
+
 ## [6.51.0](https://github.com/netlify/plugins/compare/v6.50.2...v6.51.0) (2022-10-19)
 
 
