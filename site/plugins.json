@@ -433,12 +433,12 @@
         "version": "4.0.2"
       },
       {
-        "version": "2.1.3",
-        "nodeVersion": "<14.0.0"
+        "nodeVersion": "<14.0.0",
+        "version": "2.1.3"
       },
       {
-        "version": "1.4.3",
-        "nodeVersion": "<12.13.0"
+        "nodeVersion": "<12.13.0",
+        "version": "1.4.3"
       }
     ]
   },
