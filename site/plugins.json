@@ -518,10 +518,6 @@
     "compatibility": [
       {
         "version": "4.28.2",
-        "featureFlag": "build_plugins_use_prerelease"
-      },
-      {
-        "version": "4.27.3",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
