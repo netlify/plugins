@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.53.0](https://github.com/netlify/plugins/compare/v6.52.0...v6.53.0) (2022-10-28)
+
+
+### Features
+
+* update plugin @netlify/plugin-lighthouse to version 4.0.2 ([#970](https://github.com/netlify/plugins/issues/970)) ([ba50238](https://github.com/netlify/plugins/commit/ba50238074e760708371502d644df373040d0e64))
+* update plugin @netlify/plugin-nextjs to version 4.28.2 ([#968](https://github.com/netlify/plugins/issues/968)) ([1bf1116](https://github.com/netlify/plugins/commit/1bf111602a3e05d38a69bcb4f9d37073f5fba5ea))
+* update plugin @netlify/plugin-nextjs to version 4.28.3 ([#972](https://github.com/netlify/plugins/issues/972)) ([4fac250](https://github.com/netlify/plugins/commit/4fac250c8e5f9a6982108847e3076e4c073e1bad))
+
 ## [6.52.0](https://github.com/netlify/plugins/compare/v6.51.0...v6.52.0) (2022-10-26)
 
 
