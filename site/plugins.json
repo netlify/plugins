@@ -605,11 +605,21 @@
   },
   {
     "author": "Ghost Inspector",
-    "description": "Run Ghost Inspector automated browser tests on your Netlify deploys",
+    "description": "Run Ghost Inspector automated browser tests on your Netlify deploys.",
     "name": "Ghost Inspector",
     "package": "netlify-plugin-ghost-inspector",
     "repo": "https://github.com/ghost-inspector/netlify-plugin",
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "variables": [
+      {
+        "name": "GHOST_INSPECTOR_API_KEY",
+        "description": "Ghost Inspector API Key, which can be found in your account settings (https://app.ghostinspector.com/account)"
+      },
+      {
+        "name": "GHOST_INSPECTOR_SUITE",
+        "description": "Ghost Inspector suite ID. To find your suite ID, navigate to the suite you want to use and copy the ID in the URL (after /suites/)."
+      }
+    ]
   },
   {
     "author": "StepZen <stepzen-team@stepzen.com>",
