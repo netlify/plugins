@@ -653,11 +653,21 @@
   },
   {
     "author": "Fahad Allibdi",
-    "description": "Skip not affected apps in a nx monorepo",
+    "description": "Skip not affected apps in a nx monorepo.",
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
-    "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.7"
+    "repo": "https://www.npmjs.com/package/netlify-plugin-nx-skip-build",
+    "version": "0.0.7",
+    "variables": [
+      {
+        "name": "PROJECT_NAME",
+        "description": "NX Application name"
+      },
+      {
+        "name": "NX_FORCE_DEPLOYMENT",
+        "description": "If set to `true` allows force deployment when you need to redeploy your site and skip any plugin logic."
+      }
+    ]
   },
   {
     "author": "Amar Parmar",
