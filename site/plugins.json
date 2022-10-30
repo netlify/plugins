@@ -490,7 +490,17 @@
     "name": "DebugBear web performance",
     "package": "netlify-build-plugin-debugbear",
     "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
-    "version": "1.0.6"
+    "version": "1.0.6",
+    "variables": [
+      {
+        "name": "DEBUGBEAR_API_KEY",
+        "description": "API key for your DebugBear project (https://www.debugbear.com/docs/getting-started-api-cli)"
+      },
+      {
+        "name": "DEBUGBEAR_PAGE_IDS",
+        "description": "Comma-separated list of page IDs for pages that should be tested after each deployment ("
+      }
+    ]
   },
   {
     "author": "lirantal",
