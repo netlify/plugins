@@ -672,8 +672,30 @@
     "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent to monitor your sites.",
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
-    "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
-    "version": "1.0.1"
+    "repo": "https://github.com/newrelic-experimental/netlify-plugin",
+    "version": "1.0.1",
+    "variables": [
+      {
+        "name": "NEWRELIC_ACCOUNT_ID",
+        "description": "Your New Relic Account ID (https://docs.newrelic.com/docs/accounts/accounts-billing/account-structure/account-id/)"
+      },
+      {
+        "name": " NEWRELIC_INGEST_LICENSE_KEY",
+        "description": "A New Relic ingest license key (https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/#ingest-license-key)"
+      },
+      {
+        "name": "NEWRELIC_BROWSER_LICENSE_KEY",
+        "description": "A New Relic browser ingest license key (https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/#ingest-browser-key)"
+      },
+      {
+        "name": "NEWRELIC_APP_ID",
+        "description": "Your New Relic Browser App ID (https://docs.newrelic.com/docs/apis/rest-api-v2/get-started/get-app-other-ids-new-relic-one/#browser)"
+      },
+      {
+        "name": "ENABLE_BROWSER_MONITORING",
+        "description": "Set this to true"
+      }
+    ]
   },
   {
     "author": "CommandBar",
