@@ -679,11 +679,25 @@
   },
   {
     "author": "StepZen <stepzen-team@stepzen.com>",
-    "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build",
+    "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build.",
     "name": "StepZen",
     "package": "netlify-plugin-stepzen",
     "repo": "https://github.com/steprz/netlify-plugin-stepzen",
-    "version": "1.0.4"
+    "version": "1.0.4",
+    "variables": [
+      {
+        "name": "STEPZEN_ACCOUNT",
+        "description": "Specifies the name of your StepZen account. This can be found on the My Account page on StepZen.com."
+      },
+      {
+        "name": "STEPZEN_ADMIN_KEY",
+        "description": "Specifies the admin API Key that enables access to deploy APIs on your account on StepZen. This can be found on the My Account page on StepZen.com."
+      },
+      {
+        "name": "STEPZEN_NAME",
+        "description": "Specifies the endpoint name for your API. This will determine the URL that your endpoint will deployed to."
+      }
+    ]
   },
   {
     "author": "bharathvaj-ganesan",
