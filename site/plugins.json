@@ -411,7 +411,13 @@
     "name": "Dareboost",
     "package": "netlify-build-plugin-dareboost",
     "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
-    "version": "1.2.1"
+    "version": "1.2.1",
+    "variables": [
+      {
+        "name": "DAREBOOST_API_TOKEN",
+        "description": "Dareboost API Token"
+      }
+    ]
   },
   {
     "author": "bencao",
