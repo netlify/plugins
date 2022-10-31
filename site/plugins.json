@@ -839,7 +839,13 @@
     "name": "TakeShape",
     "package": "@takeshape/netlify-plugin-takeshape",
     "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "variables": [
+      {
+        "name": "TAKESHAPE_ACCESS_TOKEN",
+        "description": "Takeshape personal access token (https://app.takeshape.io/personal-access-tokens)."
+      }
+    ]
   },
   {
     "author": "Hung Viet Nguyen",
