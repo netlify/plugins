@@ -627,11 +627,21 @@
   },
   {
     "author": "bharathvaj-ganesan",
-    "description": "Automatically notifies Airbrake of new site deploys",
+    "description": "Automatically notifies Airbrake of new site deploys.",
     "name": "Airbrake",
     "package": "@bharathvaj/netlify-plugin-airbrake",
     "repo": "https://github.com/bharathvaj-ganesan/netlify-plugin-airbrake",
-    "version": "1.0.2"
+    "version": "1.0.2",
+    "variables": [
+      {
+        "name": "AIRBRAKE_PROJECT_ID",
+        "description": "Project Id"
+      },
+      {
+        "name": "AIRBRAKE_PROJECT_KEY",
+        "description": "Project Key"
+      }
+    ]
   },
   {
     "author": "Arnaud Ligny",
