@@ -44,11 +44,21 @@
   },
   {
     "author": "tkadlec",
-    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing.",
     "name": "Speedcurve",
     "package": "netlify-build-plugin-speedcurve",
-    "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve",
-    "version": "2.0.0"
+    "repo": "https://github.com/andydavies/netlify-build-plugin-speedcurve",
+    "version": "2.0.0",
+    "variables": [
+      {
+        "name": "SPEEDCURVE_SITE_ID",
+        "description": "ID for the site you want to test (under Settings > Sites)"
+      },
+      {
+        "name": "SPEEDCURVE_API_KEY",
+        "description": "Your SpeedCurve API Key (Admin > Teams)"
+      }
+    ]
   },
   {
     "author": "munter",
