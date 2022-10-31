@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.53.1](https://github.com/netlify/plugins/compare/v6.53.0...v6.53.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* add packageName to variable tests ([#995](https://github.com/netlify/plugins/issues/995)) ([4bfc5d1](https://github.com/netlify/plugins/commit/4bfc5d1f6bd16bcef62e9538f78dab623067407e))
+
 ## [6.53.0](https://github.com/netlify/plugins/compare/v6.52.0...v6.53.0) (2022-10-28)
 
 
