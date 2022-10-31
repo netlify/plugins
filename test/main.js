@@ -97,7 +97,7 @@ pluginsList.forEach((plugin) => {
   })
 
   if (variables) {
-    test('Plugin variables should be an array of objects with name and description', (t) => {
+    test(`Plugin variables should be an array of objects with name and description: ${packageName}`, (t) => {
       t.true(Array.isArray(variables))
       variables.forEach((variable) => {
         t.true(isPlainObj(variable))
