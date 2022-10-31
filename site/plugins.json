@@ -701,11 +701,25 @@
   },
   {
     "author": "Amar Parmar",
-    "description": "Send build events to a logging service",
+    "description": "Send build events to a logging service.",
     "name": "Build Logger",
     "package": "netlify-plugin-build-logger",
-    "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
-    "version": "1.0.3"
+    "repo": "https://github.com/amar-p6/netlify-build-logger-plugin",
+    "version": "1.0.3",
+    "variables": [
+      {
+        "name": "DATADOG_API_KEY",
+        "description": "Datadog API key"
+      },
+      {
+        "name": "ENVIRONMENT",
+        "description": "Takes any string (dev, staging, etc.)"
+      },
+      {
+        "name": "LOGGER_TYPE",
+        "description": "Either console or datadog"
+      }
+    ]
   },
   {
     "author": "aaronbassett",
