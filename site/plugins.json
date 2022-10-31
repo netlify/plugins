@@ -731,11 +731,17 @@
   },
   {
     "author": "CommandBar",
-    "description": "CommandBar plugin for sites deployed to Netlify",
+    "description": "CommandBar plugin for websites deployed to Netlify.",
     "name": "CommandBar",
     "package": "@commandbar/netlify-plugin-commandbar",
     "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
-    "version": "0.0.4"
+    "version": "0.0.4",
+    "variables": [
+      {
+        "name": "COMMANDBAR_ORG_ID",
+        "description": "Your CommandBar organization id"
+      }
+    ]
   },
   {
     "author": "Colby Fayock",
