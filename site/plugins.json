@@ -243,11 +243,17 @@
   },
   {
     "author": "cannikin",
-    "description": "Replaces the database provider in Prisma's schema.prisma at build time",
-    "name": "Prisma provider",
+    "description": "Replaces the database provider in Prisma's schema.prisma at build time.",
+    "name": "Prisma Provider",
     "package": "netlify-plugin-prisma-provider",
     "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider",
-    "version": "0.3.0"
+    "version": "0.3.0",
+    "variables": [
+      {
+        "name": "DATABASE_PROVIDER",
+        "description": "The name of the ENV variable that contains the provider name."
+      }
+    ]
   },
   {
     "author": "cball",
