@@ -536,11 +536,17 @@
   },
   {
     "author": "lirantal",
-    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries",
-    "name": "Snyk security",
+    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries.",
+    "name": "Snyk Security",
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "variables": [
+      {
+        "name": "SNYK_TOKEN",
+        "description": "Snyk token, can be obtained via Snyk CLI: `snyk config get api`"
+      }
+    ]
   },
   {
     "author": "algolia",
