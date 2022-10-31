@@ -508,11 +508,25 @@
   },
   {
     "author": "algolia",
-    "description": "Automatically crawls your site and generates an Algolia Search index",
-    "name": "Algolia crawler",
+    "description": "Automatically crawls your website and generates an Algolia Search index.",
+    "name": "Algolia Crawler",
     "package": "@algolia/netlify-plugin-crawler",
     "repo": "https://github.com/algolia/algoliasearch-netlify",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "variables": [
+      {
+        "name": " ALGOLIA_BASE_URL",
+        "description": "URL to target, should be “https://crawler.algolia.com/”"
+      },
+      {
+        "name": "ALGOLIA_API_KEY",
+        "description": "API Key to authenticate the call to the crawler."
+      },
+      {
+        "name": "ALGOLIA_DISABLED",
+        "description": "Set to true to turn off the plugin without removing it."
+      }
+    ]
   },
   {
     "author": "netlify",
