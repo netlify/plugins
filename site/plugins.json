@@ -743,7 +743,13 @@
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "variables": [
+      {
+        "name": "CLOUDINARY_CLOUD_NAME",
+        "description": "Cloudinary Cloud Name"
+      }
+    ]
   },
   {
     "author": "Dima Marynych",
