@@ -366,11 +366,21 @@
   },
   {
     "author": "AshikNesin",
-    "description": "Send real time notification to your devices on build success/error via Pushover.net",
-    "name": "Pushover notification",
+    "description": "Send real time notification to your devices on build success/error via Pushover.net.",
+    "name": "Pushover Notification",
     "package": "netlify-plugin-pushover",
     "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "variables": [
+      {
+        "name": "PUSHOVER_USER_KEY",
+        "description": "User key from Pushover"
+      },
+      {
+        "name": "PUSHOVER_API_TOKEN",
+        "description": "API token from Pushover (https://pushover.net/api)"
+      }
+    ]
   },
   {
     "author": "erezrokah",
