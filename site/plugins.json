@@ -17,11 +17,21 @@
   },
   {
     "author": "chrism2671",
-    "description": "Clear Cloudflare cache when build completes",
+    "description": "Clear Cloudflare cache when build completes.",
     "name": "Cloudflare cache purge",
     "package": "netlify-purge-cloudflare-on-deploy",
     "repo": "https://github.com/chrism2671/netlify-purge-cloudflare-on-deploy",
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "variables": [
+      {
+        "name": "CLOUDFLARE_ZONE_ID",
+        "description": "Cloudflare Zone ID"
+      },
+      {
+        "name": "CLOUDFLARE_API_TOKEN",
+        "description": "In Cloudflare, navigate to My Profile --> API Tokens"
+      }
+    ]
   },
   {
     "author": "lukeocodes",
