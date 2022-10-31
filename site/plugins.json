@@ -326,10 +326,16 @@
   {
     "author": "pagewatch",
     "description": "Check your site for layout errors, spelling mistakes, broken links and performance issues on every build.",
-    "name": "PageWatch audit",
+    "name": "PageWatch Audit",
     "package": "netlify-plugin-pagewatch",
     "repo": "https://github.com/pagewatchdev/netlify-plugin-pagewatch",
-    "version": "1.0.4"
+    "version": "1.0.4",
+    "variables": [
+      {
+        "name": "PAGEWATCH_SITE_KEY",
+        "description": "PageWatch Api Key (https://docs.pagewatch.dev/guide/api.html)"
+      }
+    ]
   },
   {
     "author": "philhawksworth",
