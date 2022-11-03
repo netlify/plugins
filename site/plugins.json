@@ -938,7 +938,7 @@
   },
   {
     "author": "Inngest",
-    "description": "Automatically deploy Inngest functions.",
+    "description": "Automatically deploy Inngest functions to Netlify’s platform. ",
     "name": "Inngest",
     "package": "netlify-plugin-inngest",
     "repo": "https://github.com/inngest/netlify-plugin-inngest",
