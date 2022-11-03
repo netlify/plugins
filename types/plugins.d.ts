@@ -5,7 +5,7 @@ export interface SanityBuildPluginEntity {
       name: string | null
     },
   ]
-  compatibility: null
+  compatibility?: Compatibility[]
   description: string
   packageName: string
   repoUrl: string

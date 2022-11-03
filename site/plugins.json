@@ -17,11 +17,21 @@
   },
   {
     "author": "chrism2671",
-    "description": "Clear Cloudflare cache when build completes",
+    "description": "Clear Cloudflare cache when build completes.",
     "name": "Cloudflare cache purge",
     "package": "netlify-purge-cloudflare-on-deploy",
     "repo": "https://github.com/chrism2671/netlify-purge-cloudflare-on-deploy",
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "variables": [
+      {
+        "name": "CLOUDFLARE_ZONE_ID",
+        "description": "Cloudflare Zone ID"
+      },
+      {
+        "name": "CLOUDFLARE_API_TOKEN",
+        "description": "In Cloudflare, navigate to My Profile --> API Tokens"
+      }
+    ]
   },
   {
     "author": "lukeocodes",
@@ -34,11 +44,21 @@
   },
   {
     "author": "tkadlec",
-    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing",
+    "description": "After a successful build, tell SpeedCurve you've deployed and trigger a round of testing.",
     "name": "Speedcurve",
     "package": "netlify-build-plugin-speedcurve",
-    "repo": "https://github.com/tkadlec/netlify-build-plugin-speedcurve",
-    "version": "2.0.0"
+    "repo": "https://github.com/andydavies/netlify-build-plugin-speedcurve",
+    "version": "2.0.0",
+    "variables": [
+      {
+        "name": "SPEEDCURVE_SITE_ID",
+        "description": "ID for the site you want to test (under Settings > Sites)"
+      },
+      {
+        "name": "SPEEDCURVE_API_KEY",
+        "description": "Your SpeedCurve API Key (Admin > Teams)"
+      }
+    ]
   },
   {
     "author": "munter",
@@ -92,7 +112,7 @@
   {
     "author": "applitools",
     "description": "Require visual changes on production to be manually approved before going live!",
-    "name": "Visual diff (Applitools)",
+    "name": "Visual Diff (Applitools)",
     "package": "netlify-plugin-visual-diff",
     "repo": "https://github.com/applitools/netlify-plugin-visual-diff",
     "version": "2.0.0",
@@ -101,8 +121,14 @@
         "version": "2.0.0"
       },
       {
-        "version": "1.3.0",
-        "nodeVersion": "<12.0.0"
+        "nodeVersion": "<12.0.0",
+        "version": "1.3.0"
+      }
+    ],
+    "variables": [
+      {
+        "name": "APPLITOOLS_API_KEY",
+        "description": "Applitools API key from https://eyes.applitools.com/"
       }
     ]
   },
@@ -126,7 +152,7 @@
   {
     "author": "daviddarnes",
     "description": "Generates posts, pages, tag pages and author pages from a Ghost publication as markdown files, using the Ghost Content API.",
-    "name": "Ghost markdown",
+    "name": "Ghost Markdown",
     "package": "netlify-plugin-ghost-markdown",
     "repo": "https://github.com/daviddarnes/netlify-plugin-ghost-markdown",
     "version": "3.1.0"
@@ -159,11 +185,11 @@
   },
   {
     "author": "Snaplet",
-    "description": "Create preview databases for your Netlify preview deployments",
-    "name": "Preview Databases",
+    "description": "Bootstrap preview databases with your deploy previews on Netlify without affecting production. ",
+    "name": "Snaplet",
     "package": "@snaplet/netlify-preview-database-plugin",
     "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
-    "version": "1.0.2"
+    "version": "2.0.0"
   },
   {
     "author": "sw-yx",
@@ -210,28 +236,40 @@
   },
   {
     "author": "bahmutov",
-    "description": "Runs Cypress end-to-end tests after Netlify builds the site",
+    "description": "Runs Cypress end-to-end tests after Netlify builds the site.",
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
     "version": "2.2.0",
     "compatibility": [
       {
-        "version": "2.2.0",
-        "migrationGuide": "https://github.com/cypress-io/netlify-plugin-cypress/releases/tag/v2.0.0"
+        "migrationGuide": "https://github.com/cypress-io/netlify-plugin-cypress/releases/tag/v2.0.0",
+        "version": "2.2.0"
       },
       {
         "version": "1.11.1"
+      }
+    ],
+    "variables": [
+      {
+        "name": "CYPRESS_CACHE_FOLDER",
+        "description": "Where to cache Cypress binary."
       }
     ]
   },
   {
     "author": "cannikin",
-    "description": "Replaces the database provider in Prisma's schema.prisma at build time",
-    "name": "Prisma provider",
+    "description": "Replaces the database provider in Prisma's schema.prisma at build time.",
+    "name": "Prisma Provider",
     "package": "netlify-plugin-prisma-provider",
     "repo": "https://github.com/redwoodjs/netlify-plugin-prisma-provider",
-    "version": "0.3.0"
+    "version": "0.3.0",
+    "variables": [
+      {
+        "name": "DATABASE_PROVIDER",
+        "description": "The name of the ENV variable that contains the provider name."
+      }
+    ]
   },
   {
     "author": "cball",
@@ -304,10 +342,16 @@
   {
     "author": "pagewatch",
     "description": "Check your site for layout errors, spelling mistakes, broken links and performance issues on every build.",
-    "name": "PageWatch audit",
+    "name": "PageWatch Audit",
     "package": "netlify-plugin-pagewatch",
     "repo": "https://github.com/pagewatchdev/netlify-plugin-pagewatch",
-    "version": "1.0.4"
+    "version": "1.0.4",
+    "variables": [
+      {
+        "name": "PAGEWATCH_SITE_KEY",
+        "description": "PageWatch Api Key (https://docs.pagewatch.dev/guide/api.html)"
+      }
+    ]
   },
   {
     "author": "philhawksworth",
@@ -328,24 +372,48 @@
   },
   {
     "author": "getsentry",
-    "description": "The Sentry Netlify build plugin automatically notifies Sentry of new releases being deployed to your site",
+    "description": "The Sentry integration on Netlify helps you quickly identify how code errors and performance issues impact your users. ",
     "name": "Sentry",
     "package": "@sentry/netlify-build-plugin",
     "repo": "https://github.com/getsentry/sentry-netlify-build-plugin",
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "variables": [
+      {
+        "name": "SENTRY_AUTH_TOKEN",
+        "description": "Authentication token for Sentry"
+      },
+      {
+        "name": "SENTRY_ORG",
+        "description": "The slug of the organization name in Sentry"
+      },
+      {
+        "name": "SENTRY_PROJECT",
+        "description": "The slug of the project name in Sentry"
+      }
+    ]
   },
   {
     "author": "AshikNesin",
-    "description": "Send real time notification to your devices on build success/error via Pushover.net",
-    "name": "Pushover notification",
+    "description": "Send real time notification to your devices on build success/error via Pushover.net.",
+    "name": "Pushover Notification",
     "package": "netlify-plugin-pushover",
     "repo": "https://github.com/AshikNesin/netlify-plugin-pushover",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "variables": [
+      {
+        "name": "PUSHOVER_USER_KEY",
+        "description": "User key from Pushover"
+      },
+      {
+        "name": "PUSHOVER_API_TOKEN",
+        "description": "API token from Pushover (https://pushover.net/api)"
+      }
+    ]
   },
   {
     "author": "erezrokah",
-    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries",
-    "name": "Is website vulnerable",
+    "description": "A Netlify plugin that uses Snyk to test for security vulnerabilities in a website's JavaScript libraries.",
+    "name": "Is Website Vulnerable",
     "package": "netlify-plugin-is-website-vulnerable",
     "repo": "https://github.com/erezrokah/netlify-plugin-is-website-vulnerable",
     "version": "2.0.3",
@@ -381,7 +449,13 @@
     "name": "Dareboost",
     "package": "netlify-build-plugin-dareboost",
     "repo": "https://github.com/borisschapira/netlify-build-plugin-dareboost",
-    "version": "1.2.1"
+    "version": "1.2.1",
+    "variables": [
+      {
+        "name": "DAREBOOST_API_TOKEN",
+        "description": "Dareboost API Token"
+      }
+    ]
   },
   {
     "author": "bencao",
@@ -409,29 +483,29 @@
   },
   {
     "author": "netlify-labs",
-    "description": "Automatically run a Lighthouse audit on your site after every build",
+    "description": "Automatically run a Lighthouse audit on your website after every build.",
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
-    "repo": "https://github.com/netlify-labs/netlify-plugin-lighthouse",
-    "version": "3.7.1",
+    "repo": "https://github.com/netlify/netlify-plugin-lighthouse",
+    "version": "4.0.2",
     "compatibility": [
       {
-        "version": "3.7.1"
+        "version": "4.0.2"
       },
       {
-        "version": "2.1.3",
-        "nodeVersion": "<14.0.0"
+        "nodeVersion": "<14.0.0",
+        "version": "2.1.3"
       },
       {
-        "version": "1.4.3",
-        "nodeVersion": "<12.13.0"
+        "nodeVersion": "<12.13.0",
+        "version": "1.4.3"
       }
     ]
   },
   {
     "author": "oliverroick",
-    "description": "Validate HTML generated by your build",
-    "name": "HTML validate",
+    "description": "Validate HTML generated by your build.",
+    "name": "HTML Validate",
     "package": "netlify-plugin-html-validate",
     "repo": "https://github.com/oliverroick/netlify-plugin-html-validate",
     "version": "1.0.0",
@@ -476,23 +550,53 @@
     "name": "DebugBear web performance",
     "package": "netlify-build-plugin-debugbear",
     "repo": "https://github.com/DebugBear/netlify-build-plugin-debugbear",
-    "version": "1.0.6"
+    "version": "1.0.6",
+    "variables": [
+      {
+        "name": "DEBUGBEAR_API_KEY",
+        "description": "API key for your DebugBear project (https://www.debugbear.com/docs/getting-started-api-cli)"
+      },
+      {
+        "name": "DEBUGBEAR_PAGE_IDS",
+        "description": "Comma-separated list of page IDs for pages that should be tested after each deployment ("
+      }
+    ]
   },
   {
     "author": "lirantal",
-    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries",
-    "name": "Snyk security",
+    "description": "A Snyk Netlify plugin to find and monitor new security vulnerabilities in JavaScript libraries.",
+    "name": "Snyk Security",
     "package": "netlify-plugin-snyk",
     "repo": "https://github.com/snyk-labs/netlify-plugin-snyk",
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "variables": [
+      {
+        "name": "SNYK_TOKEN",
+        "description": "Snyk token, can be obtained via Snyk CLI: `snyk config get api`"
+      }
+    ]
   },
   {
     "author": "algolia",
-    "description": "Automatically crawls your site and generates an Algolia Search index",
-    "name": "Algolia crawler",
+    "description": "Automatically crawls your website and generates an Algolia Search index.",
+    "name": "Algolia Crawler",
     "package": "@algolia/netlify-plugin-crawler",
     "repo": "https://github.com/algolia/algoliasearch-netlify",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "variables": [
+      {
+        "name": " ALGOLIA_BASE_URL",
+        "description": "URL to target, should be “https://crawler.algolia.com/”"
+      },
+      {
+        "name": "ALGOLIA_API_KEY",
+        "description": "API Key to authenticate the call to the crawler."
+      },
+      {
+        "name": "ALGOLIA_DISABLED",
+        "description": "Set to true to turn off the plugin without removing it."
+      }
+    ]
   },
   {
     "author": "netlify",
@@ -500,10 +604,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.24.0",
+    "version": "4.28.4",
     "compatibility": [
       {
-        "version": "4.24.0",
+        "version": "4.28.4",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
@@ -591,31 +695,65 @@
   },
   {
     "author": "Ghost Inspector",
-    "description": "Run Ghost Inspector automated browser tests on your Netlify deploys",
+    "description": "Run Ghost Inspector automated browser tests on your Netlify deploys.",
     "name": "Ghost Inspector",
     "package": "netlify-plugin-ghost-inspector",
     "repo": "https://github.com/ghost-inspector/netlify-plugin",
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "variables": [
+      {
+        "name": "GHOST_INSPECTOR_API_KEY",
+        "description": "Ghost Inspector API Key, which can be found in your account settings (https://app.ghostinspector.com/account)"
+      },
+      {
+        "name": "GHOST_INSPECTOR_SUITE",
+        "description": "Ghost Inspector suite ID. To find your suite ID, navigate to the suite you want to use and copy the ID in the URL (after /suites/)."
+      }
+    ]
   },
   {
     "author": "StepZen <stepzen-team@stepzen.com>",
-    "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build",
+    "description": "Deploy a StepZen (http://stepzen.com) GraphQL API with any Netlify build.",
     "name": "StepZen",
     "package": "netlify-plugin-stepzen",
     "repo": "https://github.com/steprz/netlify-plugin-stepzen",
-    "version": "1.0.4"
+    "version": "1.0.4",
+    "variables": [
+      {
+        "name": "STEPZEN_ACCOUNT",
+        "description": "Specifies the name of your StepZen account. This can be found on the My Account page on StepZen.com."
+      },
+      {
+        "name": "STEPZEN_ADMIN_KEY",
+        "description": "Specifies the admin API Key that enables access to deploy APIs on your account on StepZen. This can be found on the My Account page on StepZen.com."
+      },
+      {
+        "name": "STEPZEN_NAME",
+        "description": "Specifies the endpoint name for your API. This will determine the URL that your endpoint will deployed to."
+      }
+    ]
   },
   {
     "author": "bharathvaj-ganesan",
-    "description": "Automatically notifies Airbrake of new site deploys",
+    "description": "Automatically notifies Airbrake of new site deploys.",
     "name": "Airbrake",
     "package": "@bharathvaj/netlify-plugin-airbrake",
     "repo": "https://github.com/bharathvaj-ganesan/netlify-plugin-airbrake",
-    "version": "1.0.2"
+    "version": "1.0.2",
+    "variables": [
+      {
+        "name": "AIRBRAKE_PROJECT_ID",
+        "description": "Project Id"
+      },
+      {
+        "name": "AIRBRAKE_PROJECT_KEY",
+        "description": "Project Key"
+      }
+    ]
   },
   {
     "author": "Arnaud Ligny",
-    "description": "Persist the Cecil's cache between Netlify builds.",
+    "description": "Persist the Cecil cache between Netlify builds.",
     "name": "Cecil cache",
     "package": "netlify-plugin-cecil-cache",
     "repo": "https://github.com/Cecilapp/netlify-plugin-cecil-cache",
@@ -631,59 +769,141 @@
   },
   {
     "author": "Ben Lmsc",
-    "description": "Make some environment variables available only at build time in the runtime of your application.",
+    "description": "Make some environment variables available only at build time in the runtime of your app.",
     "name": "Use Env in Runtime",
     "package": "netlify-plugin-use-env-in-runtime",
     "repo": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime",
-    "version": "1.2.1"
+    "version": "1.2.1",
+    "variables": [
+      {
+        "name": "NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_PREFIX",
+        "description": "The prefix we want to add to our environment variables."
+      },
+      {
+        "name": "NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_DEF",
+        "description": "The names of the variables you want to use. Accept two naming schemes: 1. use an array of strings: [\"VAR_1\", \"VAR_2\"] 2. use a string with a comma or semicolon to separate the names: \"VAR_1; VAR_2; VAR_3\" or \"VAR_1, VAR_2, VAR_3\""
+      }
+    ]
   },
   {
     "author": "Fahad Allibdi",
-    "description": "Skip not affected apps in a nx monorepo",
+    "description": "Skip not affected apps in a nx monorepo.",
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
-    "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.7"
+    "repo": "https://www.npmjs.com/package/netlify-plugin-nx-skip-build",
+    "version": "0.0.7",
+    "variables": [
+      {
+        "name": "PROJECT_NAME",
+        "description": "NX Application name"
+      },
+      {
+        "name": "NX_FORCE_DEPLOYMENT",
+        "description": "If set to `true` allows force deployment when you need to redeploy your site and skip any plugin logic."
+      }
+    ]
   },
   {
     "author": "Amar Parmar",
-    "description": "Send build events to a logging service",
+    "description": "Send build events to a logging service.",
     "name": "Build Logger",
     "package": "netlify-plugin-build-logger",
-    "repo": "https://github.com/amar-p6/netlify-build-logger-plugin.git",
-    "version": "1.0.3"
+    "repo": "https://github.com/amar-p6/netlify-build-logger-plugin",
+    "version": "1.0.3",
+    "variables": [
+      {
+        "name": "DATADOG_API_KEY",
+        "description": "Datadog API key"
+      },
+      {
+        "name": "ENVIRONMENT",
+        "description": "Takes any string (dev, staging, etc.)"
+      },
+      {
+        "name": "LOGGER_TYPE",
+        "description": "Either console or datadog"
+      }
+    ]
   },
   {
     "author": "aaronbassett",
-    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent.",
+    "description": "Automatically notifies New Relic of Netlify build events and installs the New Relic browser agent to monitor your sites.",
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
-    "repo": "https://github.com/newrelic-experimental/netlify-plugin/",
-    "version": "1.0.1"
+    "repo": "https://github.com/newrelic-experimental/netlify-plugin",
+    "version": "1.0.1",
+    "variables": [
+      {
+        "name": "NEWRELIC_ACCOUNT_ID",
+        "description": "Your New Relic Account ID (https://docs.newrelic.com/docs/accounts/accounts-billing/account-structure/account-id/)"
+      },
+      {
+        "name": " NEWRELIC_INGEST_LICENSE_KEY",
+        "description": "A New Relic ingest license key (https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/#ingest-license-key)"
+      },
+      {
+        "name": "NEWRELIC_BROWSER_LICENSE_KEY",
+        "description": "A New Relic browser ingest license key (https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/#ingest-browser-key)"
+      },
+      {
+        "name": "NEWRELIC_APP_ID",
+        "description": "Your New Relic Browser App ID (https://docs.newrelic.com/docs/apis/rest-api-v2/get-started/get-app-other-ids-new-relic-one/#browser)"
+      },
+      {
+        "name": "ENABLE_BROWSER_MONITORING",
+        "description": "Set this to true"
+      }
+    ]
   },
   {
     "author": "CommandBar",
-    "description": "CommandBar plugin for sites deployed to Netlify",
+    "description": "CommandBar plugin for websites deployed to Netlify.",
     "name": "CommandBar",
     "package": "@commandbar/netlify-plugin-commandbar",
     "repo": "https://github.com/tryfoobar/netlify-plugin-commandbar",
-    "version": "0.0.4"
+    "version": "0.0.4",
+    "variables": [
+      {
+        "name": "COMMANDBAR_ORG_ID",
+        "description": "Your CommandBar organization id"
+      }
+    ]
   },
   {
     "author": "Colby Fayock",
-    "description": "Automatic image optimization with modern formats using Cloudinary",
+    "description": "Automatically optimize your Netlify site images and deliver them in modern formats with Cloudinary.",
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "variables": [
+      {
+        "name": "CLOUDINARY_CLOUD_NAME",
+        "description": "Cloudinary Cloud Name"
+      }
+    ]
   },
   {
     "author": "Dima Marynych",
-    "description": "Securely collect and use sensitive data without having it ever touch your systems",
+    "description": "Securely collect and use sensitive data without having it ever touch your systems.",
     "name": "Very Good Security",
     "package": "@vgs/netlify-plugin-vgs",
     "repo": "https://github.com/verygoodsecurity/netlify-plugin-vgs",
-    "version": "0.0.2"
+    "version": "0.0.2",
+    "variables": [
+      {
+        "name": "VGS_CLIENT_ID",
+        "description": "Client ID (https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
+      },
+      {
+        "name": "VGS_CLIENT_SECRET",
+        "description": "VGS client secret (https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
+      },
+      {
+        "name": "VGS_VAULT_ID",
+        "description": "ID of your vault (https://dashboard.verygoodsecurity.com/)"
+      }
+    ]
   },
   {
     "author": "Rob Grant",
@@ -691,7 +911,13 @@
     "name": "TakeShape",
     "package": "@takeshape/netlify-plugin-takeshape",
     "repo": "https://github.com/takeshape/netlify-plugin-takeshape",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "variables": [
+      {
+        "name": "TAKESHAPE_ACCESS_TOKEN",
+        "description": "Takeshape personal access token (https://app.takeshape.io/personal-access-tokens)."
+      }
+    ]
   },
   {
     "author": "Hung Viet Nguyen",
@@ -711,11 +937,27 @@
     "status": "DEACTIVATED"
   },
   {
+    "author": "Inngest",
+    "description": "Automatically deploy Inngest functions.",
+    "name": "Inngest",
+    "package": "netlify-plugin-inngest",
+    "repo": "https://github.com/inngest/netlify-plugin-inngest",
+    "version": "1.0.0"
+  },
+  {
     "author": "Formspree",
     "description": "Automaticly deploy forms to Formspree via the Formspree CLI",
     "name": "Deploy to Formspree",
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
-    "version": "0.0.3"
+    "version": "1.0.1"
+  },
+  {
+    "author": "Lewis Thorley",
+    "description": "Makes emails easy on Netlify.",
+    "name": "Netlify Emails",
+    "package": "@netlify/plugin-emails",
+    "repo": "https://github.com/netlify/plugins",
+    "version": "0.0.20"
   }
 ]

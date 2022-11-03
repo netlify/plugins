@@ -161,11 +161,26 @@ export const getPluginDiffsForSanity = (pluginLookup, plugins) => {
  * @returns {BuildPluginEntity}
  */
 const convertCmsChangesToRepoPlugin = (plugin) => {
-  const { compatibility, description, packageName, status: rawStatus, repoUrl: repo, title: name, version } = plugin
+  const {
+    compatibility,
+    description,
+    packageName,
+    status: rawStatus,
+    repoUrl: repo,
+    title: name,
+    version,
+    metadata,
+  } = plugin
   /**
    * @type {BuildPluginEntity['status']}
    */
   const status = rawStatus === 'deactivated' ? rawStatus.toUpperCase() : undefined
+
+  const variables =
+    metadata?.variables.map(({ name: varName, description: varDescription }) => ({
+      name: varName,
+      description: varDescription,
+    })) || []
 
   return {
     name,
@@ -175,6 +190,7 @@ const convertCmsChangesToRepoPlugin = (plugin) => {
     version,
     status,
     compatibility,
+    variables,
   }
 }
 
@@ -191,6 +207,11 @@ const stripNullifiedFields = (plugin) => {
     delete plugin.compatibility
   }
 
+  if (!plugin.variables || plugin.variables.length === 0) {
+    // eslint-disable-next-line no-param-reassign
+    delete plugin.variables
+  }
+
   return plugin
 }
 
@@ -203,7 +224,16 @@ const stripNullifiedFields = (plugin) => {
  * return {BuildPluginEntity[]} The updated list of plugins
  */
 export const updatePlugins = (changes, plugins) => {
-  const pluginChanges = convertCmsChangesToRepoPlugin(changes)
+  const { compatibility, ...restOfChanges } = changes
+  const updatedCompatibility = compatibility?.map((compatibilityItem) => {
+    // eslint-disable-next-line no-unused-vars
+    const { _key, ...rest } = compatibilityItem
+
+    return rest
+  })
+
+  const sanitizedChanges = { ...restOfChanges, compatibility: updatedCompatibility }
+  const pluginChanges = convertCmsChangesToRepoPlugin(sanitizedChanges)
 
   let pluginToUpdate = plugins.find((plugin) => plugin.package === pluginChanges.package)
 

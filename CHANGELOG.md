@@ -1,5 +1,122 @@
 # Changelog
 
+## [6.54.0](https://github.com/netlify/plugins/compare/v6.53.1...v6.54.0) (2022-11-02)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.28.4 ([#1002](https://github.com/netlify/plugins/issues/1002)) ([9692838](https://github.com/netlify/plugins/commit/9692838c6cc3b506c3b11ab54ebc29a1b4ce2921))
+
+## [6.53.1](https://github.com/netlify/plugins/compare/v6.53.0...v6.53.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* add packageName to variable tests ([#995](https://github.com/netlify/plugins/issues/995)) ([4bfc5d1](https://github.com/netlify/plugins/commit/4bfc5d1f6bd16bcef62e9538f78dab623067407e))
+
+## [6.53.0](https://github.com/netlify/plugins/compare/v6.52.0...v6.53.0) (2022-10-28)
+
+
+### Features
+
+* update plugin @netlify/plugin-lighthouse to version 4.0.2 ([#970](https://github.com/netlify/plugins/issues/970)) ([ba50238](https://github.com/netlify/plugins/commit/ba50238074e760708371502d644df373040d0e64))
+* update plugin @netlify/plugin-nextjs to version 4.28.2 ([#968](https://github.com/netlify/plugins/issues/968)) ([1bf1116](https://github.com/netlify/plugins/commit/1bf111602a3e05d38a69bcb4f9d37073f5fba5ea))
+* update plugin @netlify/plugin-nextjs to version 4.28.3 ([#972](https://github.com/netlify/plugins/issues/972)) ([4fac250](https://github.com/netlify/plugins/commit/4fac250c8e5f9a6982108847e3076e4c073e1bad))
+
+## [6.52.0](https://github.com/netlify/plugins/compare/v6.51.0...v6.52.0) (2022-10-26)
+
+
+### Features
+
+* add feature-flagged version of Next runtime ([#966](https://github.com/netlify/plugins/issues/966)) ([31070f9](https://github.com/netlify/plugins/commit/31070f9dc837deffc6d9fd5c83eb0591e7412c9a))
+* update plugin @netlify/plugin-nextjs to version 4.27.3 ([#951](https://github.com/netlify/plugins/issues/951)) ([fb6f311](https://github.com/netlify/plugins/commit/fb6f3116c1601f94a658cf1fc2e430ae017b9c43))
+
+
+### Bug Fixes
+
+* add token-generator-bot to git signature ([#955](https://github.com/netlify/plugins/issues/955)) ([c3a4a71](https://github.com/netlify/plugins/commit/c3a4a7190403ebbf75ce3c8405059fa18b618a13))
+* add variables to build step test ([#957](https://github.com/netlify/plugins/issues/957)) ([b8483fd](https://github.com/netlify/plugins/commit/b8483fd3dd04d7a1bc405873209caa4b536efdff))
+* use generated token for sanity to github plugin sync ([#954](https://github.com/netlify/plugins/issues/954)) ([f17ac02](https://github.com/netlify/plugins/commit/f17ac0208acc2998f4358b1d1111d426eb287a11))
+
+## [6.51.0](https://github.com/netlify/plugins/compare/v6.50.2...v6.51.0) (2022-10-19)
+
+
+### Features
+
+* support env vars in plugin definitions ([#946](https://github.com/netlify/plugins/issues/946)) ([1bb676f](https://github.com/netlify/plugins/commit/1bb676fcca83594131fe041dea1944da4acdf27a))
+
+
+### Bug Fixes
+
+* update Next plugin to 4.27.2 ([#947](https://github.com/netlify/plugins/issues/947)) ([ff2f23e](https://github.com/netlify/plugins/commit/ff2f23e2c02ed59ca4f3748ca8484e9c63cd59f9))
+
+## [6.50.2](https://github.com/netlify/plugins/compare/v6.50.1...v6.50.2) (2022-10-19)
+
+
+### Bug Fixes
+
+* roll back Next to 4.26.0 ([#943](https://github.com/netlify/plugins/issues/943)) ([4880c6a](https://github.com/netlify/plugins/commit/4880c6a6071213c1076e55d486b4a8a5966c3a8b))
+
+## [6.50.1](https://github.com/netlify/plugins/compare/v6.50.0...v6.50.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* update Next plugin to 4.27.1 ([#938](https://github.com/netlify/plugins/issues/938)) ([cdeea70](https://github.com/netlify/plugins/commit/cdeea70600215db026a007aa70c7d7080adfeb8e))
+
+## [6.50.0](https://github.com/netlify/plugins/compare/v6.49.1...v6.50.0) (2022-10-17)
+
+
+### Features
+
+* add emails plugin ([#895](https://github.com/netlify/plugins/issues/895)) ([c83d595](https://github.com/netlify/plugins/commit/c83d595aeeeb27d5be6e5d880f316f79ce20af91))
+* update plugin @netlify/plugin-lighthouse to version 4.0.0 ([#892](https://github.com/netlify/plugins/issues/892)) ([aeb41c8](https://github.com/netlify/plugins/commit/aeb41c8a4563541015b81d3213f2d03022c8ab3d))
+* update plugin @netlify/plugin-lighthouse to version 4.0.1 ([#899](https://github.com/netlify/plugins/issues/899)) ([53da108](https://github.com/netlify/plugins/commit/53da108b0fbce2f9e3967c1868e9e9d0441e6cb4))
+* update plugin @netlify/plugin-nextjs to version 4.25.0 ([#908](https://github.com/netlify/plugins/issues/908)) ([8de6de3](https://github.com/netlify/plugins/commit/8de6de3c900b512ee5142606c26029ca046c5299))
+* update plugin @netlify/plugin-nextjs to version 4.27.0 ([#934](https://github.com/netlify/plugins/issues/934)) ([88e2578](https://github.com/netlify/plugins/commit/88e25780beacbba415577dacb132a46a5d6d8e5e))
+
+## [6.49.1](https://github.com/netlify/plugins/compare/v6.49.0...v6.49.1) (2022-10-07)
+
+
+### Bug Fixes
+
+* update netlify-plugin-formspree version ([#873](https://github.com/netlify/plugins/issues/873)) ([ac8d416](https://github.com/netlify/plugins/commit/ac8d4166cfffd7c608262d86a7770a98f35d8c34))
+
+## [6.49.0](https://github.com/netlify/plugins/compare/v6.48.0...v6.49.0) (2022-10-06)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.24.3 ([#889](https://github.com/netlify/plugins/issues/889)) ([cc05897](https://github.com/netlify/plugins/commit/cc05897362769bb8596b8bbe67c312f57c3d8c8d))
+
+## [6.48.0](https://github.com/netlify/plugins/compare/v6.47.0...v6.48.0) (2022-10-05)
+
+
+### Features
+
+* update plugin @netlify/plugin-nextjs to version 4.24.2 ([#887](https://github.com/netlify/plugins/issues/887)) ([3b88d6e](https://github.com/netlify/plugins/commit/3b88d6e6fa29e7937d56afd8d692d9eefea907e8))
+
+
+### Bug Fixes
+
+* corrected sync issue from CMS that included _key in compatibility array items ([#885](https://github.com/netlify/plugins/issues/885)) ([888c24b](https://github.com/netlify/plugins/commit/888c24b21bbed7d0e4c03dd1d6e18efca5ce3dcd))
+
+## [6.47.0](https://github.com/netlify/plugins/compare/v6.46.0...v6.47.0) (2022-10-05)
+
+
+### Features
+
+* added synchronization from CMS to repo ([#849](https://github.com/netlify/plugins/issues/849)) ([8872a09](https://github.com/netlify/plugins/commit/8872a097f59d9c502ef05856ba275ea0f672423e))
+* plugin synchronization from repository to CMS ([#820](https://github.com/netlify/plugins/issues/820)) ([39f8af1](https://github.com/netlify/plugins/commit/39f8af1b75ff0b83b019286d256dc352deba0250))
+* update plugin @netlify/plugin-lighthouse to version 3.5.0 ([#850](https://github.com/netlify/plugins/issues/850)) ([f4b4f47](https://github.com/netlify/plugins/commit/f4b4f47f5f0434bd932c1ff3cbdad3fc11ddf163))
+* update plugin @netlify/plugin-lighthouse to version 3.6.0 ([#851](https://github.com/netlify/plugins/issues/851)) ([7450749](https://github.com/netlify/plugins/commit/7450749a3b48f31dc3d2d661384d490818abd02c))
+* update plugin @netlify/plugin-lighthouse to version 3.7.0 ([#853](https://github.com/netlify/plugins/issues/853)) ([58e7564](https://github.com/netlify/plugins/commit/58e7564d775f7ed5b517237f0a46d425778b0d09))
+* update plugin @netlify/plugin-lighthouse to version 3.7.1 ([#869](https://github.com/netlify/plugins/issues/869)) ([19857e9](https://github.com/netlify/plugins/commit/19857e920c07ff8584b5b970aed17b8913ba4b6a))
+* update plugin @netlify/plugin-nextjs to version 4.23.2 ([#845](https://github.com/netlify/plugins/issues/845)) ([0881aa9](https://github.com/netlify/plugins/commit/0881aa9f0e0205123d95086c1ecaa75c34bb6cea))
+* update plugin @netlify/plugin-nextjs to version 4.23.3 ([#847](https://github.com/netlify/plugins/issues/847)) ([11b73ce](https://github.com/netlify/plugins/commit/11b73ce360e62ef31a0f3b15e6ab603d02d47d31))
+* update plugin @netlify/plugin-nextjs to version 4.24.0 ([#866](https://github.com/netlify/plugins/issues/866)) ([b231f4e](https://github.com/netlify/plugins/commit/b231f4ed32ad49ab3ca09aed38df0d99b7117b04))
+* update version of Cecil cache ([#854](https://github.com/netlify/plugins/issues/854)) ([12557d8](https://github.com/netlify/plugins/commit/12557d875ea143a04a8d454429f1bef50d998db6))
+
 ## [6.46.0](https://github.com/netlify/plugins/compare/v6.45.0...v6.46.0) (2022-09-21)
 
 

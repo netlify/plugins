@@ -177,13 +177,23 @@ test('should return no plugin diffs for Sanity if there are no changes', (t) => 
 
 test('should update a plugin', (t) => {
   const changes = {
-    compatibility: null,
     description: 'Require visual changes on production to be manually approved before going live!',
     packageName: 'netlify-plugin-visual-diff',
     repoUrl: 'https://github.com/applitools/netlify-plugin-visual-diff',
     status: 'active',
     title: 'Visual diff (Applitools)',
     version: '5.0.0',
+    compatibility: [
+      {
+        _key: 'dfsfg3443sdfgdfgd',
+        version: '3.0.0',
+      },
+      {
+        _key: 'dfsfg3443sdfgdfgd',
+        version: '1.3.0',
+        nodeVersion: '<12.0.0',
+      },
+    ],
   }
 
   const plugins = [
@@ -231,6 +241,15 @@ test('should update a plugin', (t) => {
       package: 'netlify-plugin-visual-diff',
       repo: 'https://github.com/applitools/netlify-plugin-visual-diff',
       version: '5.0.0',
+      compatibility: [
+        {
+          version: '3.0.0',
+        },
+        {
+          version: '1.3.0',
+          nodeVersion: '<12.0.0',
+        },
+      ],
     },
     {
       author: 'pizzafox',
@@ -370,6 +389,89 @@ test('should update compatibility', (t) => {
         },
         {
           version: '1.3.0',
+        },
+      ],
+      description: 'Require visual changes on production to be manually approved before going live!',
+      name: 'Visual diff (Applitools)',
+      package: 'netlify-plugin-visual-diff',
+      repo: 'https://github.com/applitools/netlify-plugin-visual-diff',
+      version: '5.0.0',
+    },
+    {
+      author: 'pizzafox',
+      description: 'This plugin is deprecated. The functionality is now built in',
+      name: 'Next.js cache',
+      package: 'netlify-plugin-cache-nextjs',
+      repo: 'https://github.com/pizzafox/netlify-cache-nextjs',
+      version: '1.4.0',
+      status: 'DEACTIVATED',
+    },
+    {
+      author: 'netlify-labs',
+      description: 'Automatically generate a sitemap for your site on PostBuild in Netlify',
+      name: 'Sitemap',
+      package: '@netlify/plugin-sitemap',
+      repo: 'https://github.com/netlify-labs/netlify-plugin-sitemap',
+      version: '0.8.1',
+    },
+  ]
+
+  t.deepEqual(actual, expected)
+})
+
+test('should update metadata variables', (t) => {
+  const changes = {
+    metadata: {
+      variables: [
+        {
+          name: 'FOO',
+          description: 'A foo variable',
+        },
+      ],
+    },
+    description: 'Require visual changes on production to be manually approved before going live!',
+    netlifyVerified: false,
+    packageName: 'netlify-plugin-visual-diff',
+    repoUrl: 'https://github.com/applitools/netlify-plugin-visual-diff',
+    status: 'active',
+    title: 'Visual diff (Applitools)',
+    version: '5.0.0',
+  }
+  const plugins = [
+    {
+      author: 'applitools',
+      description: 'Require visual changes on production to be manually approved before going live!',
+      name: 'Visual diff (Applitools)',
+      package: 'netlify-plugin-visual-diff',
+      repo: 'https://github.com/applitools/netlify-plugin-visual-diff',
+      version: '5.0.0',
+    },
+    {
+      author: 'pizzafox',
+      description: 'This plugin is deprecated. The functionality is now built in',
+      name: 'Next.js cache',
+      package: 'netlify-plugin-cache-nextjs',
+      repo: 'https://github.com/pizzafox/netlify-cache-nextjs',
+      version: '1.4.0',
+      status: 'DEACTIVATED',
+    },
+    {
+      author: 'netlify-labs',
+      description: 'Automatically generate a sitemap for your site on PostBuild in Netlify',
+      name: 'Sitemap',
+      package: '@netlify/plugin-sitemap',
+      repo: 'https://github.com/netlify-labs/netlify-plugin-sitemap',
+      version: '0.8.1',
+    },
+  ]
+  const actual = updatePlugins(changes, plugins)
+  const expected = [
+    {
+      author: 'applitools',
+      variables: [
+        {
+          name: 'FOO',
+          description: 'A foo variable',
         },
       ],
       description: 'Require visual changes on production to be manually approved before going live!',
