@@ -959,5 +959,12 @@
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
     "version": "0.0.20"
+  },
+  {
+    "name": "ChiselStrike",
+    "package": "@chiselstrike/netlify-plugin",
+    "description": "Sync Netlify sites and ChiselStrike builds from code in the same Git repository.",
+    "repo": "https://github.com/chiselstrike/netlify-plugin",
+    "version": "0.1.0"
   }
 ]
