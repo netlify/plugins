@@ -554,7 +554,7 @@
     "variables": [
       {
         "name": "DEBUGBEAR_API_KEY",
-        "description": "API key for your DebugBear project (https://www.debugbear.com/docs/getting-started-api-cli)"
+        "description": "[API key](https://www.debugbear.com/docs/getting-started-api-cli) for your DebugBear project"
       },
       {
         "name": "DEBUGBEAR_PAGE_IDS",
