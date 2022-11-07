@@ -558,7 +558,7 @@
       },
       {
         "name": "DEBUGBEAR_PAGE_IDS",
-        "description": "Comma-separated list of page IDs for pages that should be tested after each deployment ("
+        "description": "Comma-separated list of [page IDs](https://www.debugbear.com/docs/getting-started-api-cli#) for pages that should be tested after each deployment"
       }
     ]
   },
