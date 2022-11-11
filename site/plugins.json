@@ -603,11 +603,15 @@
     "description": "Build and deploy Next.js applications with server-side rendering. No extra configuration required.",
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
-    "repo": "https://github.com/netlify/netlify-plugin-nextjs",
-    "version": "4.28.7",
+    "repo": "https://github.com/netlify/next-runtime",
+    "version": "4.28.6",
     "compatibility": [
       {
         "version": "4.28.7",
+        "featureFlag": "build_plugins_use_prerelease"
+      },
+      {
+        "version": "4.28.6",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
