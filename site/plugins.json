@@ -962,7 +962,7 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.22"
+    "version": "0.0.23"
   },
   {
     "name": "ChiselStrike",
