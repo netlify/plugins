@@ -607,7 +607,7 @@
     "version": "4.28.6",
     "compatibility": [
       {
-        "version": "4.28.7",
+        "version": "4.29.1",
         "featureFlag": "build_plugins_use_prerelease"
       },
       {
