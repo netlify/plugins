@@ -604,7 +604,7 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
-    "version": "4.29.1",
+    "version": "4.28.6",
     "compatibility": [
       {
         "version": "4.29.1",
