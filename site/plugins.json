@@ -950,8 +950,8 @@
   },
   {
     "author": "Formspree",
-    "description": "Automaticly deploy forms to Formspree via the Formspree CLI",
-    "name": "Deploy to Formspree",
+    "description": "Deploy React forms with formspree.json",
+    "name": "Formspree",
     "package": "netlify-plugin-formspree",
     "repo": "https://github.com/formspree/netlify-plugin-formspree",
     "version": "1.0.1"
