@@ -7,7 +7,7 @@ git switch -c $BRANCH_NAME
 sudo apt-get install jq
 
 # Loop through each package, install from npm and copy the workflow-ui.json from root of the package if it exists
-cat site/plugins.json | jq ".[].package" | while read PACKAGE
+cat site/plugins.json | jq ".[] | select(.workflow == true) | .package" | while read PACKAGE
 do
   echo "Installing $PACKAGE"
   # remove the quotes from the package name
