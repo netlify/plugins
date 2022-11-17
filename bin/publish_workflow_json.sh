@@ -13,7 +13,7 @@ do
   npm install $PACKAGE
   if [ -f "node_modules/$PACKAGE/workflow-ui.json" ]; then
     echo "Copying workflow-ui.json from $PACKAGE"
-    cp node_modules/$PACKAGE/workflow-ui.json site/workflow-ui/$PACKAGE.json
+    cp node_modules/$PACKAGE/workflow-ui.json site/$PACKAGE/workflow-ui.json
   fi
 done
 
