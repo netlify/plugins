@@ -1,5 +1,4 @@
-PLUGIN=$1
-PR_TITLE="chore: publish workflow-ui for $PLUGIN"
+PR_TITLE="chore: publish workflow-ui files"
 BRANCH_NAME="publish_workflow_ui_$(date +%s)"
 
 git switch -c $BRANCH_NAME
@@ -7,10 +6,8 @@ git switch -c $BRANCH_NAME
 # install jq
 sudo apt-get install jq
 
-PACKAGES=cat site/plugins.json | jq ".[].package"
-
 # Loop through each package, install from npm and copy the workflow-ui.json from root of the package if it exists
-for PACKAGE in $PACKAGES
+cat site/plugins.json | jq ".[].package" | while read PACKAGE
 do
   echo "Installing $PACKAGE"
   npm install $PACKAGE
