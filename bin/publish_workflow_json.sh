@@ -4,14 +4,24 @@ BRANCH_NAME="publish_workflow_ui_$(date +%s)"
 
 git switch -c $BRANCH_NAME
 
-# Get the latest version of the plugin
-npm install $PLUGIN
+# install jq
+sudo apt-get install jq
 
-# Copy the workflow-ui.json from the root of the installed plugin directory
-cp node_modules/$PLUGIN/workflow-ui.json site/$PLUGIN/workflow-ui.json
+PACKAGES=cat site/plugins.json | jq ".[].package"
 
-# This is the only file we want to commit
-git add site/$PLUGIN/workflow-ui.json
+# Loop through each package, install from npm and copy the workflow-ui.json from root of the package if it exists
+for PACKAGE in $PACKAGES
+do
+  echo "Installing $PACKAGE"
+  npm install $PACKAGE
+  if [ -f "node_modules/$PACKAGE/workflow-ui.json" ]; then
+    echo "Copying workflow-ui.json from $PACKAGE"
+    cp node_modules/$PACKAGE/workflow-ui.json site/workflow-ui/$PACKAGE.json
+  fi
+done
+
+# Add all files to git in the site directory
+git add site
 
 # See if we have any changes. We should.
 if [[ -n "$(git status --porcelain)" ]]; then
