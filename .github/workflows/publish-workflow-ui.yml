@@ -2,9 +2,9 @@ name: Publish Workflow UI
 on:
   push:
     branches:
-      - "main"
+      - main
     paths:
-      - "site/plugins.json"
+      - site/plugins.json
 jobs:
   sync-to-repo:
     runs-on: ubuntu-latest
