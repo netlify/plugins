@@ -10,6 +10,8 @@ sudo apt-get install jq
 cat site/plugins.json | jq ".[].package" | while read PACKAGE
 do
   echo "Installing $PACKAGE"
+  # remove the quotes from the package name
+  PACKAGE=$(echo $PACKAGE | tr -d '"')
   npm install $PACKAGE
   if [ -f "node_modules/$PACKAGE/workflow-ui.json" ]; then
     echo "Copying workflow-ui.json from $PACKAGE"
