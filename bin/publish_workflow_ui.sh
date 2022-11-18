@@ -9,14 +9,26 @@ sudo apt-get install jq
 # Loop through each package, install from npm and copy the workflow-ui.json from root of the package if it exists
 cat site/plugins.json | jq ".[] | select(.workflow == true) | .package" | while read PACKAGE
 do
-  echo "Installing $PACKAGE"
-  # remove the quotes from the package name
   PACKAGE=$(echo $PACKAGE | tr -d '"')
-  npm install $PACKAGE
-  if [ -f "node_modules/$PACKAGE/workflow-ui.json" ]; then
-    echo "Copying workflow-ui.json from $PACKAGE"
-    cp node_modules/$PACKAGE/workflow-ui.json site/$PACKAGE/workflow-ui.json
+  echo "Downloading workflow-ui for $PACKAGE"
+  npm pack $PACKAGE
+  tar -xzf *.tgz
+
+  if [ -f package/workflow-ui.json ]; then
+    echo "Copying workflow-ui.json for $PACKAGE"
+    cp package/workflow-ui.json site/$PACKAGE/workflow-ui.json
+
+    cat site/$PACKAGE/workflow-ui.json | jq ".surfaces | .[] | .surfaceScripts | .[]" | while read SCRIPT
+    do
+      # strip quotes and leading ./ from script path
+      SCRIPT=$(echo $SCRIPT | tr -d '"' | sed 's/^\.\///')
+      echo "Copying $SCRIPT for $PACKAGE"
+      cp package/$SCRIPT site/$PACKAGE/$SCRIPT
+    done
   fi
+
+
+  rm -rf ./package
 done
 
 # Add all files to git in the site directory
