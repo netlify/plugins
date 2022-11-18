@@ -1,0 +1,35 @@
+name: Publish Workflow UI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - site/plugins.json
+jobs:
+  sync-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+      - name: Using Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '*'
+          cache: 'npm'
+          check-latest: true
+      - name: Install dependencies
+        run: npm install
+      - name: Setup git config
+        run: |
+          git config user.name 'token-generator-app[bot]'
+          git config user.email '82042599+token-generator-app[bot]@users.noreply.github.com'
+      - name: Generate GitHub token
+        uses: navikt/github-app-token-generator@v1.1.1
+        id: get-token
+        with:
+          private-key: ${{ secrets.TOKENS_PRIVATE_KEY }}
+          app-id: ${{ secrets.TOKENS_APP_ID }}
+      - name: Upload Workflow UI files
+        env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+        run: bin/publish_workflow_ui.sh
