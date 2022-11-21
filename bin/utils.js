@@ -170,6 +170,7 @@ const convertCmsChangesToRepoPlugin = (plugin) => {
     title: name,
     version,
     metadata,
+    docsUrl: docs,
   } = plugin
   /**
    * @type {BuildPluginEntity['status']}
@@ -191,6 +192,7 @@ const convertCmsChangesToRepoPlugin = (plugin) => {
     status,
     compatibility,
     variables,
+    docs,
   }
 }
 
@@ -210,6 +212,11 @@ const stripNullifiedFields = (plugin) => {
   if (!plugin.variables || plugin.variables.length === 0) {
     // eslint-disable-next-line no-param-reassign
     delete plugin.variables
+  }
+
+  if (!plugin.docs) {
+    // eslint-disable-next-line no-param-reassign
+    delete plugin.docs
   }
 
   return plugin

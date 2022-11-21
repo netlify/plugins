@@ -12,8 +12,8 @@ import { pluginsList, pluginsUrl } from '../index.js'
 const { manifest } = pacote
 const { valid: validVersion, validRange, lt: ltVersion, major, minor, patch, minVersion } = semver
 
-const STRING_ATTRIBUTES = ['author', 'description', 'name', 'package', 'repo', 'status', 'version']
-const OPTIONAL_ATTRIBUTES = new Set(['status', 'compatibility', 'variables', 'workflow'])
+const STRING_ATTRIBUTES = ['author', 'description', 'name', 'package', 'repo', 'status', 'version', 'docs']
+const OPTIONAL_ATTRIBUTES = new Set(['status', 'compatibility', 'variables', 'workflow', 'docs'])
 const ATTRIBUTES = new Set([...STRING_ATTRIBUTES, 'compatibility', 'variables', 'workflow'])
 const ENUMS = {
   status: ['DEACTIVATED', undefined],
