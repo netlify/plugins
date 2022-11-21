@@ -390,7 +390,8 @@
         "name": "SENTRY_PROJECT",
         "description": "The slug of the project name in Sentry"
       }
-    ]
+    ],
+    "docs": "https://github.com/getsentry/sentry-netlify-build-plugin#readme"
   },
   {
     "author": "AshikNesin",
