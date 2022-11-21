@@ -919,9 +919,10 @@
     "variables": [
       {
         "name": "TAKESHAPE_ACCESS_TOKEN",
-        "description": "Takeshape personal access token (https://app.takeshape.io/personal-access-tokens)."
+        "description": "Takeshape [personal access token](https://app.takeshape.io/personal-access-tokens)"
       }
-    ]
+    ],
+    "docs": "https://github.com/takeshape/netlify-plugin-takeshape#readme"
   },
   {
     "author": "Hung Viet Nguyen",
