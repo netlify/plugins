@@ -1,5 +1,22 @@
 # Changelog
 
+## [6.57.0](https://github.com/netlify/plugins/compare/v6.56.0...v6.57.0) (2022-11-21)
+
+
+### Features
+
+* add github action to publish workflow ui files ([#1027](https://github.com/netlify/plugins/issues/1027)) ([9eea77d](https://github.com/netlify/plugins/commit/9eea77d46aa33505259219a991abbaa14c4fa6be))
+* allow workflow ui to be published manually ([#1028](https://github.com/netlify/plugins/issues/1028)) ([d579c3a](https://github.com/netlify/plugins/commit/d579c3a69dd09fe9cbfe36451b9f6c4e31f65220))
+* copy workflow ui scripts from package ([#1029](https://github.com/netlify/plugins/issues/1029)) ([199867a](https://github.com/netlify/plugins/commit/199867af860e33a876932b84a979636bf2e71420))
+* update plugin @netlify/plugin-lighthouse to version 4.0.3 ([#1026](https://github.com/netlify/plugins/issues/1026)) ([6799f0d](https://github.com/netlify/plugins/commit/6799f0d856e2f1cb72f31a49a16dca5c670ef5a5))
+* update plugin @netlify/plugin-nextjs FF to version 4.29.2 ([#1032](https://github.com/netlify/plugins/issues/1032)) ([8c6d204](https://github.com/netlify/plugins/commit/8c6d204edceaa587c5fe007e011232d1364f1573))
+* update plugin @netlify/plugin-nextjs to version 4.29.1 behind FF ([#1019](https://github.com/netlify/plugins/issues/1019)) ([85fa7e3](https://github.com/netlify/plugins/commit/85fa7e329ea456d54fd612a2b5ac80119cfd28fa))
+
+
+### Bug Fixes
+
+* make the publish script executable ([#1030](https://github.com/netlify/plugins/issues/1030)) ([f27e22f](https://github.com/netlify/plugins/commit/f27e22f8e674b5557a4d67d28138c803a02450cf))
+
 ## [6.56.0](https://github.com/netlify/plugins/compare/v6.55.0...v6.56.0) (2022-11-11)
 
 
