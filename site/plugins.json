@@ -897,17 +897,18 @@
     "variables": [
       {
         "name": "VGS_CLIENT_ID",
-        "description": "Client ID (https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
+        "description": "Very Good Security's [client ID](https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
       },
       {
         "name": "VGS_CLIENT_SECRET",
-        "description": "VGS client secret (https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
+        "description": "Very Good Security's [client secret](https://www.verygoodsecurity.com/docs/development/vgs-git-flow/#1-provision-a-service-account)"
       },
       {
         "name": "VGS_VAULT_ID",
-        "description": "ID of your vault (https://dashboard.verygoodsecurity.com/)"
+        "description": "ID of [your vault](https://dashboard.verygoodsecurity.com/)"
       }
-    ]
+    ],
+    "docs": "https://github.com/verygoodsecurity/netlify-plugin-vgs#readme"
   },
   {
     "author": "Rob Grant",
