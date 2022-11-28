@@ -407,9 +407,10 @@
       },
       {
         "name": "PUSHOVER_API_TOKEN",
-        "description": "API token from Pushover (https://pushover.net/api)"
+        "description": "[API token](https://pushover.net/api) from Pushover "
       }
-    ]
+    ],
+    "docs": "https://github.com/AshikNesin/netlify-plugin-pushover#readme"
   },
   {
     "author": "erezrokah",
