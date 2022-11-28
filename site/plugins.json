@@ -254,9 +254,10 @@
     "variables": [
       {
         "name": "CYPRESS_CACHE_FOLDER",
-        "description": "Where to cache Cypress binary."
+        "description": "Where to cache Cypress binary"
       }
-    ]
+    ],
+    "docs": "https://github.com/cypress-io/netlify-plugin-cypress#readme"
   },
   {
     "author": "cannikin",
