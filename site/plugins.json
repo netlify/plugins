@@ -128,9 +128,10 @@
     "variables": [
       {
         "name": "APPLITOOLS_API_KEY",
-        "description": "Applitools API key from https://eyes.applitools.com/"
+        "description": "Applitools [API key](https://eyes.applitools.com/)"
       }
-    ]
+    ],
+    "docs": "https://github.com/applitools/netlify-plugin-visual-diff#readme"
   },
   {
     "author": "pizzafox",
