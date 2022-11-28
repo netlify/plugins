@@ -840,7 +840,7 @@
     "variables": [
       {
         "name": "NEWRELIC_ACCOUNT_ID",
-        "description": "Your New Relic Account ID (https://docs.newrelic.com/docs/accounts/accounts-billing/account-structure/account-id/)"
+        "description": "Your New Relic [Account ID](https://docs.newrelic.com/docs/accounts/accounts-billing/account-structure/account-id/)"
       },
       {
         "name": " NEWRELIC_INGEST_LICENSE_KEY",
@@ -858,7 +858,8 @@
         "name": "ENABLE_BROWSER_MONITORING",
         "description": "Set this to true"
       }
-    ]
+    ],
+    "docs": "https://github.com/newrelic-experimental/netlify-plugin#readme"
   },
   {
     "author": "CommandBar",
