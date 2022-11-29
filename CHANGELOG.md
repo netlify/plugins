@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.58.0](https://github.com/netlify/plugins/compare/v6.57.0...v6.58.0) (2022-11-29)
+
+
+### Features
+
+* add docs url to plugin model ([#1033](https://github.com/netlify/plugins/issues/1033)) ([edc174f](https://github.com/netlify/plugins/commit/edc174f49973ae5a745f2f751fc7b65fa0670bb9))
+
 ## [6.57.0](https://github.com/netlify/plugins/compare/v6.56.0...v6.57.0) (2022-11-21)
 
 
