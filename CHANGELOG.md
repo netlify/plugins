@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.58.1](https://github.com/netlify/plugins/compare/v6.58.0...v6.58.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* unflag Next.js 4.29.2 ([#1049](https://github.com/netlify/plugins/issues/1049)) ([63dc0d6](https://github.com/netlify/plugins/commit/63dc0d6cf8d0252236c224c069458b9fbe0d9a3c))
+
 ## [6.58.0](https://github.com/netlify/plugins/compare/v6.57.0...v6.58.0) (2022-11-29)
 
 
