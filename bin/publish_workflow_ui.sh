@@ -31,6 +31,8 @@ do
   rm -rf ./package
 done
 
+npx tsx bin/combined_workflow_files.ts
+
 # Add all files to git in the site directory
 git add site
 
