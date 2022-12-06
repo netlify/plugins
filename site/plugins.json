@@ -964,12 +964,12 @@
     "version": "1.0.1"
   },
   {
-    "author": "Lewis Thorley",
+    "author": "Netlify",
     "description": "Makes emails easy on Netlify.",
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.27"
+    "version": "0.0.28"
   },
   {
     "name": "ChiselStrike",
