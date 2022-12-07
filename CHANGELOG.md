@@ -1,5 +1,17 @@
 # Changelog
 
+## [6.59.0](https://github.com/netlify/plugins/compare/v6.58.1...v6.59.0) (2022-12-07)
+
+
+### Features
+
+* support nested workflow ui routes ([#1052](https://github.com/netlify/plugins/issues/1052)) ([560a0fc](https://github.com/netlify/plugins/commit/560a0fc159f0ce7e85da2debf3043831dc293e52))
+
+
+### Bug Fixes
+
+* update Next.js to 4.29.3 behind flag ([#1054](https://github.com/netlify/plugins/issues/1054)) ([307ffa3](https://github.com/netlify/plugins/commit/307ffa3a1c994af7c86c47e5adf810cb08b4a75b))
+
 ## [6.58.1](https://github.com/netlify/plugins/compare/v6.58.0...v6.58.1) (2022-12-05)
 
 
