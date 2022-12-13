@@ -1,6 +1,7 @@
-/* eslint-disable max-nested-callbacks */
+ 
 /* eslint-disable n/no-sync */
 import fs from 'fs'
+import path from 'path'
 
 interface Surface {
   surfaceName: string
@@ -13,21 +14,32 @@ interface Workflow {
   surfaces: Surface[]
 }
 
+const getFiles = async function* (dir: string): AsyncGenerator<string, void, void> {
+  const dirents = await fs.promises.readdir(dir, { withFileTypes: true });
+  for (const dirent of dirents) {
+    const res = path.resolve(dir, dirent.name);
+    if (dirent.isDirectory()) {
+      yield* getFiles(res);
+    } else {
+      yield res;
+    }
+  }
+}
+
 // read all workflow-ui.json files from `site/**/workflow-ui.json`
-const workflowFiles = fs
-  .readdirSync('site', { withFileTypes: true })
-  .filter((dir) => dir.isDirectory())
-  .flatMap(({ name }) =>
-    fs
-      .readdirSync(`site/${name}`)
-      .map((file) => `site/${name}/${file}`)
-      .filter((file) => file.endsWith('workflow-ui.json')),
-  )
+const workflowFiles = [];
+for await (const file of getFiles('site')) {
+  const normalizedFileName = file?.toLowerCase() || '';
+  if (normalizedFileName.endsWith('/workflow-ui.json')){
+    workflowFiles.push(file);
+  }
+}
 
 const workflows = workflowFiles.map((file) => {
   const content = fs.readFileSync(file)
   return JSON.parse(content.toString()) as Workflow
 })
+
 
 console.log(`processing ${workflows.length} workflows - ${workflows.map((workflow) => workflow.package).join(', ')}`)
 
@@ -54,9 +66,9 @@ Object.entries(surfaces).forEach(([surfaceName, surfaceWorkflows]) => {
   fs.writeFileSync(`${surfaceRoot}/index.json`, JSON.stringify(surfaceWorkflows, null, 2))
 
   surfaceWorkflows.forEach((surfaceWorkflow) => {
-    const normalisedPackage = surfaceWorkflow.package.replace(/\//g, '-')
+    const normalizedPackage = surfaceWorkflow.package.toLowerCase()
 
-    const surfacePackageRoot = `${surfaceRoot}/${normalisedPackage}`
+    const surfacePackageRoot = `${surfaceRoot}/${normalizedPackage}`
     if (!fs.existsSync(surfacePackageRoot)) {
       fs.mkdirSync(surfacePackageRoot, { recursive: true })
     }
