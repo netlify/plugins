@@ -20,7 +20,7 @@ do
     mkdir -p site/$PACKAGE
     cp package/workflow-ui.json site/$PACKAGE/workflow-ui.json
 
-    cat site/$PACKAGE/workflow-ui.json | jq ".surfaces | .[] | .surfaceScripts | .[]" | while read SCRIPT
+    cat site/$PACKAGE/workflow-ui.json | jq ".surfaces | .[] | .surfaceScripts | .[]?" | while read SCRIPT
     do
       # strip quotes and leading ./ from script path
       SCRIPT=$(echo $SCRIPT | tr -d '"' | sed 's/^\.\///')
