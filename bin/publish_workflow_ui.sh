@@ -27,6 +27,8 @@ do
       echo "Copying $SCRIPT for $PACKAGE"
       cp package/$SCRIPT site/$PACKAGE/$SCRIPT
     done
+
+    ls site/$PACKAGE
   fi
 
 
