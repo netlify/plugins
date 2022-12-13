@@ -1,11 +1,14 @@
 name: Publish Workflow UI
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
   push:
     branches:
       - main
+      - fpp/wui
     paths:
       - site/plugins.json
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   sync-to-repo:
     runs-on: ubuntu-latest
