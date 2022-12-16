@@ -6,3 +6,18 @@
   for = "/plugins.json"
   [headers.values]
   Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/workflow-ui/surfaces/:surface/"
+  to = "/surfaces/:surface/index.json"
+  status = 200
+
+[[redirects]]
+  from = "/workflow-ui/surfaces/:surface/*"
+  to = "/surfaces/:surface/:splat/index.json"
+  status = 200
+
+[[redirects]]
+  from = "/workflow-ui/package/:package/*"
+  to = "/:package/:splat"
+  status = 200
