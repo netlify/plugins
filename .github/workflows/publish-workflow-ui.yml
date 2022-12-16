@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - site/plugins.json
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   sync-to-repo:
     runs-on: ubuntu-latest
