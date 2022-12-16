@@ -948,8 +948,9 @@
     "name": "Feature Package Pilot",
     "package": "@netlify/feature-package-pilot",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.1.2",
-    "status": "DEACTIVATED"
+    "version": "0.1.7",
+    "status": "DEACTIVATED",
+    "workflow": true
   },
   {
     "author": "Inngest",
