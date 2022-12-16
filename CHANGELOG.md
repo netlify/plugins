@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.60.0](https://github.com/netlify/plugins/compare/v6.59.0...v6.60.0) (2022-12-16)
+
+
+### Features
+
+* update FPP with WFUI ([#1056](https://github.com/netlify/plugins/issues/1056)) ([3c4e327](https://github.com/netlify/plugins/commit/3c4e3271275a7af45c5c1f5a60b6f02d9c6287d2))
+
 ## [6.59.0](https://github.com/netlify/plugins/compare/v6.58.1...v6.59.0) (2022-12-07)
 
 
