@@ -1,0 +1,20 @@
+{
+  "package": "@netlify/feature-package-pilot",
+  "packageName": "",
+  "friendlyName": "WorkflowUI Pilot",
+  "surfaces": [
+    {
+      "surfaceName": "site-settings",
+      "surfaceScripts": "site-settings-script.js",
+      "routes": {
+        "/": [
+          {
+            "type": "text",
+            "style": "primary-heading",
+            "value": "Pilot Settings"
+          }
+        ]
+      }
+    }
+  ]
+}
