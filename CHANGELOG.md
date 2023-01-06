@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.62.0](https://github.com/netlify/plugins/compare/v6.61.0...v6.62.0) (2023-01-06)
+
+
+### Features
+
+* pilot to 1.1.11 ([#1082](https://github.com/netlify/plugins/issues/1082)) ([2ce9596](https://github.com/netlify/plugins/commit/2ce9596a47fdfbc2656be8b06a71b7d3a034cbc2))
+
 ## [6.61.0](https://github.com/netlify/plugins/compare/v6.60.0...v6.61.0) (2022-12-19)
 
 
