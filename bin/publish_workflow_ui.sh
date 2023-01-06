@@ -40,13 +40,13 @@ npx tsx bin/combined_workflow_files.ts
 # Add all files to git in the site directory
 git add site
 
-# See if we have any changes. We should.
-if [[ -n "$(git status --porcelain)" ]]; then
+# See if we have any changes. We should. We should only push on main branch
+if [[ -n "$(git status --porcelain)" ] && [GITHUB_REF_NAME == "main"] ]; then
   echo "Creating PR \"$PR_TITLE\" for branch $BRANCH_NAME"
   git commit -m "$PR_TITLE"
   git push origin $BRANCH_NAME
   gh pr create --title "$PR_TITLE" --body "This is an automated PR to publish workflow-ui" --label "workflow_ui" --label "automerge"
 else
   # Shouldn't end up here, but log that there was nothing to sync
-  echo "Looks like there was nothing to sync."
+  echo "Skipping PR."
 fi
