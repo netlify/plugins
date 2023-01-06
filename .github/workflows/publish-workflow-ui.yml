@@ -8,6 +8,8 @@ on:
       - site/plugins.json
   pull_request:
     types: [opened, synchronize, reopened]
+    branches:
+      - '!publish_workflow_ui_*'
 jobs:
   sync-to-repo:
     runs-on: ubuntu-latest
