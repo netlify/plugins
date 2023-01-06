@@ -41,7 +41,7 @@ npx tsx bin/combined_workflow_files.ts
 git add site
 
 # See if we have any changes. We should. We should only push on main branch
-if [[ -n "$(git status --porcelain)" ] && ["$GITHUB_REF_NAME" == "main"] ]; then
+if [[ -n "$(git status --porcelain)"  && "$GITHUB_REF_NAME" == "main" ]]; then
   echo "Creating PR \"$PR_TITLE\" for branch $BRANCH_NAME"
   git commit -m "$PR_TITLE"
   git push origin $BRANCH_NAME
