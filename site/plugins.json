@@ -980,7 +980,7 @@
         "version": "0.0.28"
       },
       {
-        "version": "0.4.3-preview",
+        "version": "0.4.4-preview",
         "featureFlag": "project_cursola"
       }
     ]
