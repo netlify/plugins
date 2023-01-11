@@ -974,16 +974,7 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.28",
-    "compatibility": [
-      {
-        "version": "1.0.0",
-        "featureFlag": "project_cursola"
-      },
-      {
-        "version": "0.0.28"
-      }
-    ]
+    "version": "1.0.0"
   },
   {
     "name": "ChiselStrike",
