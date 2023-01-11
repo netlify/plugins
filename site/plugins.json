@@ -977,7 +977,7 @@
     "version": "0.0.28",
     "compatibility": [
       {
-        "version": "0.4.4-preview",
+        "version": "1.0.0",
         "featureFlag": "project_cursola"
       },
       {
