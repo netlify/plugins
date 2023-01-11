@@ -1,5 +1,20 @@
 # Changelog
 
+## [6.62.0](https://github.com/netlify/plugins/compare/v6.61.0...v6.62.0) (2023-01-11)
+
+
+### Features
+
+* increase version of next.js behind feature flag ([#1094](https://github.com/netlify/plugins/issues/1094)) ([c335ada](https://github.com/netlify/plugins/commit/c335ada7eed39a04b1302b598d0042707f64664e))
+* pilot to 1.1.11 ([#1082](https://github.com/netlify/plugins/issues/1082)) ([2ce9596](https://github.com/netlify/plugins/commit/2ce9596a47fdfbc2656be8b06a71b7d3a034cbc2))
+* version 1.0.0 for emails ([#1098](https://github.com/netlify/plugins/issues/1098)) ([63548b2](https://github.com/netlify/plugins/commit/63548b25c65bd714a8bcc75bd4bd7f1ad41e4e32))
+
+
+### Bug Fixes
+
+* unflag Next.js Runtime 4.29.4 ([#1093](https://github.com/netlify/plugins/issues/1093)) ([6cfbd73](https://github.com/netlify/plugins/commit/6cfbd73d84547394d415b04693d5b6711a50a736))
+* update order of compatability for emails plugin ([#1097](https://github.com/netlify/plugins/issues/1097)) ([48b348b](https://github.com/netlify/plugins/commit/48b348b3f253704254ebea7b07677f70fef8a4ad))
+
 ## [6.62.0](https://github.com/netlify/plugins/compare/v6.61.0...v6.62.0) (2023-01-06)
 
 
