@@ -17,18 +17,21 @@ do
   if [ -f package/workflow-ui.json ]; then
     echo "Copying workflow-ui.json for $PACKAGE"
 
-    mkdir -p site/$PACKAGE
-    cp package/workflow-ui.json site/$PACKAGE/workflow-ui.json
+    PACKAGE_ID=$(cat package/workflow-ui.json | jq -r ".packageId // .package")
+    DEST="site/$PACKAGE_ID"
 
-    cat site/$PACKAGE/workflow-ui.json | jq ".surfaces | .[] | .surfaceScripts | .[]?" | while read SCRIPT
+    mkdir -p $DEST
+    cp package/workflow-ui.json $DEST/workflow-ui.json
+
+    cat $DEST/workflow-ui.json | jq ".surfaces | .[] | .surfaceScripts | .[]?" | while read SCRIPT
     do
       # strip quotes and leading ./ from script path
       SCRIPT=$(echo $SCRIPT | tr -d '"' | sed 's/^\.\///')
       echo "Copying $SCRIPT for $PACKAGE"
-      cp package/$SCRIPT site/$PACKAGE/$SCRIPT
+      cp package/$SCRIPT $DEST/$SCRIPT
     done
 
-    ls site/$PACKAGE
+    ls $DEST
   fi
 
 

@@ -11,6 +11,7 @@ interface Surface {
 
 interface Workflow {
   package: string
+  packageId?: string
   surfaces: Surface[]
 }
 
@@ -66,7 +67,7 @@ Object.entries(surfaces).forEach(([surfaceName, surfaceWorkflows]) => {
   fs.writeFileSync(`${surfaceRoot}/index.json`, JSON.stringify(surfaceWorkflows, null, 2))
 
   surfaceWorkflows.forEach((surfaceWorkflow) => {
-    const normalizedPackage = surfaceWorkflow.package.toLowerCase()
+    const normalizedPackage = (surfaceWorkflow.packageId || surfaceWorkflow.package).toLowerCase()
 
     const surfacePackageRoot = `${surfaceRoot}/${normalizedPackage}`
     if (!fs.existsSync(surfacePackageRoot)) {
