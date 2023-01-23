@@ -612,6 +612,10 @@
     "version": "4.30.0",
     "compatibility": [
       {
+        "version": "4.30.1",
+        "featureFlag": "build_plugins_use_prerelease"
+      },
+      {
         "version": "4.30.0",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
