@@ -492,10 +492,10 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify/netlify-plugin-lighthouse",
-    "version": "4.0.3",
+    "version": "4.0.5",
     "compatibility": [
       {
-        "version": "4.0.3"
+        "version": "4.0.5"
       },
       {
         "nodeVersion": "<14.0.0",
@@ -970,16 +970,7 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "0.0.28",
-    "compatibility": [
-      {
-        "version": "0.0.28"
-      },
-      {
-        "version": "0.4.4-preview",
-        "featureFlag": "project_cursola"
-      }
-    ]
+    "version": "1.0.0"
   },
   {
     "name": "ChiselStrike",
