@@ -648,7 +648,7 @@
       {
         "version": "1.0.3",
         "siteDependencies": {
-          "gatsby": "<4.0.0"
+          "gatsby": "<3.0.0"
         }
       }
     ]
