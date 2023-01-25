@@ -492,10 +492,10 @@
     "name": "Lighthouse",
     "package": "@netlify/plugin-lighthouse",
     "repo": "https://github.com/netlify/netlify-plugin-lighthouse",
-    "version": "4.0.6",
+    "version": "4.0.7",
     "compatibility": [
       {
-        "version": "4.0.6"
+        "version": "4.0.7"
       },
       {
         "nodeVersion": "<14.0.0",
