@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.63.0](https://github.com/netlify/plugins/compare/v6.62.0...v6.63.0) (2023-01-23)
+
+
+### Features
+
+* remove non-1.0.0 email plugin versions ([#1099](https://github.com/netlify/plugins/issues/1099)) ([06344ae](https://github.com/netlify/plugins/commit/06344aec60b48a685950c076e2ba78ed4fc1045d))
+* update plugin @netlify/plugin-lighthouse to version 4.0.4 ([#1101](https://github.com/netlify/plugins/issues/1101)) ([13764cd](https://github.com/netlify/plugins/commit/13764cd25e73bf662faa723fe542cc06c7d8de19))
+* update plugin @netlify/plugin-lighthouse to version 4.0.5 ([#1103](https://github.com/netlify/plugins/issues/1103)) ([1f09a3b](https://github.com/netlify/plugins/commit/1f09a3b88b0f23e3dfa69b414da2613b7098bde5))
+* update plugin @netlify/plugin-nextjs to version 4.30.0 ([#1096](https://github.com/netlify/plugins/issues/1096)) ([40009fb](https://github.com/netlify/plugins/commit/40009fbecfaebaf9ce89f22abf9c8f5e54d37f75))
+
+
+### Bug Fixes
+
+* update Next runtime ff to 4.30.1 ([#1108](https://github.com/netlify/plugins/issues/1108)) ([c11420a](https://github.com/netlify/plugins/commit/c11420a4210549bf84c426bb338adb4ad3ff05ea))
+* **workflow-ui:** use `packageId` for package paths when set ([#1102](https://github.com/netlify/plugins/issues/1102)) ([61c7476](https://github.com/netlify/plugins/commit/61c7476bc02d47e37db0aaeefe802a590a2f380b))
+
 ## [6.62.0](https://github.com/netlify/plugins/compare/v6.61.0...v6.62.0) (2023-01-11)
 
 
