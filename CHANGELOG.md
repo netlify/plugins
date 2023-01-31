@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.64.0](https://github.com/netlify/plugins/compare/v6.63.0...v6.64.0) (2023-01-31)
+
+
+### Features
+
+* latest version of gatsby plugin now requires v3 and up ([#1104](https://github.com/netlify/plugins/issues/1104)) ([1e230f3](https://github.com/netlify/plugins/commit/1e230f321b845d93de6d0a81def0662226768d7c))
+* update plugin @netlify/plugin-gatsby to version 3.5.1 ([#1110](https://github.com/netlify/plugins/issues/1110)) ([9687ad2](https://github.com/netlify/plugins/commit/9687ad28be6c32e41dc1c98a925de69c24d60225))
+* update plugin @netlify/plugin-lighthouse to version 4.0.6 ([#1111](https://github.com/netlify/plugins/issues/1111)) ([9c922ba](https://github.com/netlify/plugins/commit/9c922bab397b1da620e8eb5f965dc1ba7319fa2e))
+* update plugin @netlify/plugin-lighthouse to version 4.0.7 ([#1112](https://github.com/netlify/plugins/issues/1112)) ([f1038ca](https://github.com/netlify/plugins/commit/f1038ca5a2d68e2c895b8c9adc659943a1ee9a31))
+* update plugin @netlify/plugin-nextjs to version 4.30.1 ([#1107](https://github.com/netlify/plugins/issues/1107)) ([18f1e29](https://github.com/netlify/plugins/commit/18f1e293c1f79db0bacb8430a6ad2621998bd8fa))
+
 ## [6.63.0](https://github.com/netlify/plugins/compare/v6.62.0...v6.63.0) (2023-01-23)
 
 
