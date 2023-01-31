@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.65.0](https://github.com/netlify/plugins/compare/v6.64.0...v6.65.0) (2023-01-31)
+
+
+### Features
+
+* add feature flagged plugin @netlify/plugin-nextjs as version 4.30.3 ([#1115](https://github.com/netlify/plugins/issues/1115)) ([d4e6e73](https://github.com/netlify/plugins/commit/d4e6e732f101cf0cdd5a4b8f293bfcc497b46360))
+* updated the gatsby plugin to require v2 and up ([#1113](https://github.com/netlify/plugins/issues/1113)) ([03aa690](https://github.com/netlify/plugins/commit/03aa690acecdf2ca5c8471c5a9d77d456cda993b))
+
 ## [6.64.0](https://github.com/netlify/plugins/compare/v6.63.0...v6.64.0) (2023-01-31)
 
 
