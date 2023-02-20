@@ -13,7 +13,8 @@
     "name": "Nimbella",
     "package": "netlify-plugin-nimbella",
     "repo": "https://github.com/nimbella/netlify-plugin-nimbella",
-    "version": "2.1.0"
+    "version": "2.1.0",
+    "docs": "https://github.com/nimbella/netlify-plugin-nimbella#readme"
   },
   {
     "author": "chrism2671",
