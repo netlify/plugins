@@ -978,5 +978,13 @@
     "description": "Sync Netlify sites and ChiselStrike builds from code in the same Git repository.",
     "repo": "https://github.com/chiselstrike/netlify-plugin",
     "version": "0.1.0"
+  },
+  {
+    "name": "Netlify Bundle ENV",
+    "package": "netlify-plugin-bundle-env",
+    "description": "A Netlify Build Plugin to inject environment variables in Netlify Functions during Netlify Builds.",
+    "repo": "https://github.com/Hrishikesh-K/netlify-plugin-bundle-env",
+    "version": "0.2.2",
+    "docs": "https://github.com/Hrishikesh-K/netlify-plugin-bundle-env/blob/main/readme.md"
   }
 ]
