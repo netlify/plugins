@@ -638,6 +638,10 @@
     "version": "3.5.1",
     "compatibility": [
       {
+        "version": "3.5.2",
+        "featureFlag": "gatsby_plugin_prerelease"
+      },
+      {
         "version": "3.5.1",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
