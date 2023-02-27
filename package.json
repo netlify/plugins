@@ -36,7 +36,7 @@
   "license": "MIT",
   "devDependencies": {
     "@netlify/eslint-config-node": "^7.0.1",
-    "@sanity/client": "^3.3.6",
+    "@sanity/client": "^5.0.0",
     "@sanity/uuid": "^3.0.1",
     "ava": "^5.0.0",
     "c8": "^7.11.0",
