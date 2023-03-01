@@ -639,7 +639,7 @@
     "compatibility": [
       {
         "version": "3.5.2",
-        "featureFlag": "gatsby_plugin_prerelease",
+        "featureFlag": "build_plugins_use_prerelease",
         "siteDependencies": {
           "gatsby": ">=2.0.0"
         }
