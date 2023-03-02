@@ -1,5 +1,22 @@
 # Changelog
 
+## [6.66.0](https://github.com/netlify/plugins/compare/v6.65.0...v6.66.0) (2023-03-02)
+
+
+### Features
+
+* add contentful preview plugin ([#1136](https://github.com/netlify/plugins/issues/1136)) ([6458464](https://github.com/netlify/plugins/commit/645846414d2f7187d9ef8dfdcdba87573d3fa10e))
+* add feature flag to v 4.30.4 of next runtime ([#1121](https://github.com/netlify/plugins/issues/1121)) ([2f4186d](https://github.com/netlify/plugins/commit/2f4186df1a9120fbaba36addb65ed49cb954de3c))
+* adding featureflag version ([#1133](https://github.com/netlify/plugins/issues/1133)) ([95858e6](https://github.com/netlify/plugins/commit/95858e674997881d4faef60b4cfc72c1d435dbe6))
+* setting gatsby version for featureflag ([#1134](https://github.com/netlify/plugins/issues/1134)) ([f3b0a89](https://github.com/netlify/plugins/commit/f3b0a8904bda91e11025459b557e87593b6e97bb))
+* update plugin @netlify/plugin-nextjs to version 4.30.3 ([#1114](https://github.com/netlify/plugins/issues/1114)) ([0710521](https://github.com/netlify/plugins/commit/0710521f31ede5deb822947ee03c3bf920c58800))
+* update plugin @netlify/plugin-nextjs to version 4.30.4 ([#1120](https://github.com/netlify/plugins/issues/1120)) ([e0dcbd5](https://github.com/netlify/plugins/commit/e0dcbd5c1f9903c07cba8b1845dd70925d8c9c4a))
+
+
+### Bug Fixes
+
+* changed featureFlag ([#1135](https://github.com/netlify/plugins/issues/1135)) ([59bb4b1](https://github.com/netlify/plugins/commit/59bb4b19549bd6379f57cffa913eeef2fd39dcc3))
+
 ## [6.65.0](https://github.com/netlify/plugins/compare/v6.64.0...v6.65.0) (2023-01-31)
 
 
