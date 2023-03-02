@@ -993,5 +993,13 @@
     "repo": "https://github.com/Hrishikesh-K/netlify-plugin-bundle-env",
     "version": "0.2.2",
     "docs": "https://github.com/Hrishikesh-K/netlify-plugin-bundle-env/blob/main/readme.md"
+  },
+  {
+    "author": "Netlify",
+    "description": "Conditionally set your Contentful env vars depending on the environment",
+    "name": "Contentful Previews",
+    "package": "@netlify/plugin-contentful-buildtime",
+    "repo": "https://github.com/netlify/plugins",
+    "version": "0.0.3"
   }
 ]
