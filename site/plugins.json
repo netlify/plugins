@@ -612,7 +612,7 @@
     "version": "4.31.0",
     "compatibility": [
       {
-        "version": "4.32.0",
+        "version": "4.32.2",
         "featureFlag": "build_plugins_use_prerelease"
       },
       {
