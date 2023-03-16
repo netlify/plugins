@@ -1002,5 +1002,13 @@
     "package": "@netlify/plugin-contentful-buildtime",
     "repo": "https://github.com/netlify/plugins",
     "version": "0.0.3"
+  },
+  {
+    "name": "21YunBox",
+    "package": "@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn",
+    "description": "Deploy to China straight from your Netlify Dashboard",
+    "repo": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-your-site-to-china-edge",
+    "version": "1.0.7",
+    "docs": "https://www.21cloudbox.com/solution/netlify-solution-for-china.html"
   }
 ]
