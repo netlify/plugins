@@ -847,7 +847,7 @@
     "name": "New Relic",
     "package": "@newrelic/netlify-plugin",
     "repo": "https://github.com/newrelic-experimental/netlify-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "variables": [
       {
         "name": "NEWRELIC_ACCOUNT_ID",
