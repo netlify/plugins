@@ -1,5 +1,20 @@
 # Changelog
 
+## [6.67.0](https://github.com/netlify/plugins/compare/v6.66.0...v6.67.0) (2023-03-27)
+
+
+### Features
+
+* add feature flag for new version of next runtime ([#1147](https://github.com/netlify/plugins/issues/1147)) ([187bf01](https://github.com/netlify/plugins/commit/187bf01f6b71b43bb65a29bd017fe269e876ba1f))
+* add feature flag to v4.31.0 of next runtime ([#1139](https://github.com/netlify/plugins/issues/1139)) ([04809a0](https://github.com/netlify/plugins/commit/04809a0047c5b43cc1ce4ae21028bed782a948c5))
+* added Next.js runtime 4.33.0 behind a feature flag ([#1161](https://github.com/netlify/plugins/issues/1161)) ([88ed6c3](https://github.com/netlify/plugins/commit/88ed6c34b77b2b1f6f73c8c07cd7a6a4dbd05fd1))
+* remove feature flag for next runtime ([#1146](https://github.com/netlify/plugins/issues/1146)) ([edb5bf4](https://github.com/netlify/plugins/commit/edb5bf40a7484ee4522c2b1cf9e991a4bbbe295d))
+* remove prerelease feature flag, bump main to 3.6.0 for gatsby ([#1155](https://github.com/netlify/plugins/issues/1155)) ([ddbf1df](https://github.com/netlify/plugins/commit/ddbf1df6f3f62fe069f2036573a028795caa7b30))
+* removing feature flag,updated main to 3.5.2, and set min to v2 ([#1141](https://github.com/netlify/plugins/issues/1141)) ([f531551](https://github.com/netlify/plugins/commit/f531551ce5ebd81e3da14adba849a9e53cb8185e))
+* set next.js runtime 4.32.2 as stable version ([#1159](https://github.com/netlify/plugins/issues/1159)) ([c13a976](https://github.com/netlify/plugins/commit/c13a9760b0556a3214a2ca2df451dab5d5f85c83))
+* update next runtime to fix version ([#1150](https://github.com/netlify/plugins/issues/1150)) ([04c1937](https://github.com/netlify/plugins/commit/04c1937aa9f4517ead8160cd2c9ab6e038a700a4))
+* updating @netlify/plugin-gatsby with featureFlag for 3.6.0 ([#1145](https://github.com/netlify/plugins/issues/1145)) ([289c7e2](https://github.com/netlify/plugins/commit/289c7e2e53f020f3935333a6c6f205bcef48d722))
+
 ## [6.66.0](https://github.com/netlify/plugins/compare/v6.65.0...v6.66.0) (2023-03-02)
 
 
