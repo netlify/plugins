@@ -22,7 +22,7 @@ jobs:
           git config user.name 'token-generator-app[bot]'
           git config user.email '82042599+token-generator-app[bot]@users.noreply.github.com'
       - name: Generate GitHub token
-        uses: navikt/github-app-token-generator@v1.1.1
+        uses: navikt/github-app-token-generator@v1.2.0
         id: get-token
         with:
           private-key: ${{ secrets.TOKENS_PRIVATE_KEY }}
