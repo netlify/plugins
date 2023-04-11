@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.68.0](https://github.com/netlify/plugins/compare/v6.67.0...v6.68.0) (2023-04-11)
+
+
+### Features
+
+* added Next.js runtime 4.34.0 behind a feature flag ([#1166](https://github.com/netlify/plugins/issues/1166)) ([e9b62b6](https://github.com/netlify/plugins/commit/e9b62b6bffa53112c524579abbca27a11b909fa0))
+* set next.js runtime 4.33.0 as stable version ([#1163](https://github.com/netlify/plugins/issues/1163)) ([23099fa](https://github.com/netlify/plugins/commit/23099fa0e113675c51e7911ab5448120bd7959ef))
+
 ## [6.67.0](https://github.com/netlify/plugins/compare/v6.66.0...v6.67.0) (2023-03-27)
 
 
