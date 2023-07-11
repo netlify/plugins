@@ -612,7 +612,7 @@
     "version": "4.39.0",
     "compatibility": [
       {
-        "version": "4.38.1",
+        "version": "4.39.0",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
