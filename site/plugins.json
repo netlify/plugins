@@ -505,7 +505,8 @@
         "nodeVersion": "<12.13.0",
         "version": "1.4.3"
       }
-    ]
+    ],
+    "docs": "https://github.com/netlify/netlify-plugin-lighthouse#readme"
   },
   {
     "author": "oliverroick",
