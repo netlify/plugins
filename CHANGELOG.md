@@ -1,5 +1,37 @@
 # Changelog
 
+## [6.69.0](https://github.com/netlify/plugins/compare/v6.68.0...v6.69.0) (2023-08-01)
+
+
+### Features
+
+* add feature flagged v4.35.0 of next-runtime ([#1173](https://github.com/netlify/plugins/issues/1173)) ([17ca738](https://github.com/netlify/plugins/commit/17ca738a693f0e46354bc385935ae95a13e46fcb))
+* add feature flagged v4.36.0 of next-runtime ([#1178](https://github.com/netlify/plugins/issues/1178)) ([dc7fdec](https://github.com/netlify/plugins/commit/dc7fdeca62207c5fd35312a748a9c59abecc0f33))
+* add feature flagged v4.36.1 of next-runtime ([#1186](https://github.com/netlify/plugins/issues/1186)) ([20e6e4c](https://github.com/netlify/plugins/commit/20e6e4c893f84067b97fe7059ec411fbabec372f))
+* Add feature flagged v4.37.0 of next-runtime ([#1191](https://github.com/netlify/plugins/issues/1191)) ([8c537a7](https://github.com/netlify/plugins/commit/8c537a7bd995a67e78dd497fd03b7f490441fed6))
+* add Next.js runtime 4.39.0 behind a feature flag ([#1220](https://github.com/netlify/plugins/issues/1220)) ([805b5db](https://github.com/netlify/plugins/commit/805b5db2608d116833ccef709d0d7f0a2cfe2fcc))
+* add Next.js runtime 4.39.1 behind a feature flag ([#1227](https://github.com/netlify/plugins/issues/1227)) ([936a9f8](https://github.com/netlify/plugins/commit/936a9f89899d67fc83da991e629713c4d88236ee))
+* added Next.js runtime 4.37.4 behind a feature flag ([#1203](https://github.com/netlify/plugins/issues/1203)) ([d7796c3](https://github.com/netlify/plugins/commit/d7796c3318d971c30f6e8dc18020e216207342b1))
+* added Next.js runtime 4.38.0 behind a feature flag ([#1212](https://github.com/netlify/plugins/issues/1212)) ([4f3b40b](https://github.com/netlify/plugins/commit/4f3b40b96c04f7f278aa4cedd422996f4e18ea44))
+* adding feature flag for v4.37.2 ([#1196](https://github.com/netlify/plugins/issues/1196)) ([1a96138](https://github.com/netlify/plugins/commit/1a96138a45602861ba558840ca6f8dc3419fda66))
+* bump prerelease Next.js runtime to 4.38.1 ([#1213](https://github.com/netlify/plugins/issues/1213)) ([762a71e](https://github.com/netlify/plugins/commit/762a71e317378e7fb4cd65bf120321b6656dcab5))
+* set next.js runtime 4.37.2 as stable version ([#1202](https://github.com/netlify/plugins/issues/1202)) ([32888aa](https://github.com/netlify/plugins/commit/32888aa046dd62e3849bd4c067ba4999548ce8eb))
+* set next.js runtime 4.37.4 as stable version ([#1211](https://github.com/netlify/plugins/issues/1211)) ([bea648d](https://github.com/netlify/plugins/commit/bea648d6e746e936f02c1c3a373597c66699fade))
+* set next.js runtime 4.38.1 as stable v ([#1217](https://github.com/netlify/plugins/issues/1217)) ([d37ad70](https://github.com/netlify/plugins/commit/d37ad704696412e98e57fc5fe82a13728a14573a))
+* set next.js runtime 4.39.0 as stable version ([#1225](https://github.com/netlify/plugins/issues/1225)) ([fb6b598](https://github.com/netlify/plugins/commit/fb6b598dff8703c1f496a28ac4a30cb1bebba84a))
+* set next.js runtime 4.39.1 stable and 4.39.2 in prerelease ([#1236](https://github.com/netlify/plugins/issues/1236)) ([58885b9](https://github.com/netlify/plugins/commit/58885b96f061d7d7709a323f47f4a08ac8d6b468))
+* unflag version 4.34.0 of next-runtime ([#1171](https://github.com/netlify/plugins/issues/1171)) ([6082771](https://github.com/netlify/plugins/commit/6082771a6654864e04bb0181d1d7e9c3885d66a4))
+* unflag version 4.35.0 of next-runtime ([#1176](https://github.com/netlify/plugins/issues/1176)) ([f1f8d48](https://github.com/netlify/plugins/commit/f1f8d48e8784da07ff62adee4d6e32c05735e5e0))
+* unflag version 4.36.0 of next-runtime ([#1184](https://github.com/netlify/plugins/issues/1184)) ([17b89be](https://github.com/netlify/plugins/commit/17b89beef166fbce8eff1b4241381e26ec8e71af))
+* unflag version 4.36.1 of next-runtime ([#1189](https://github.com/netlify/plugins/issues/1189)) ([bab1877](https://github.com/netlify/plugins/commit/bab1877708c7b94a7ba7ace09ffe873217aab986))
+* update plugin @netlify/plugin-gatsby to version 3.6.1 ([#1167](https://github.com/netlify/plugins/issues/1167)) ([83dca8f](https://github.com/netlify/plugins/commit/83dca8fcb28bdb795103823f2fa74f57c1a50981))
+* update plugin @netlify/plugin-gatsby to version 3.6.2 ([#1174](https://github.com/netlify/plugins/issues/1174)) ([763218e](https://github.com/netlify/plugins/commit/763218ef34e862844457e04fdfbe32769c1ccdfc))
+* update plugin @netlify/plugin-gatsby to version 3.7.0 ([#1233](https://github.com/netlify/plugins/issues/1233)) ([ebf5e1d](https://github.com/netlify/plugins/commit/ebf5e1dffeb1167b64642dbfa02504489e60a3cd))
+* update plugin @netlify/plugin-lighthouse to version 4.1.0 ([#1168](https://github.com/netlify/plugins/issues/1168)) ([236189b](https://github.com/netlify/plugins/commit/236189b161e3cb7b671d18acfaf309e15bc2e504))
+* update plugin @netlify/plugin-lighthouse to version 4.1.1 ([#1175](https://github.com/netlify/plugins/issues/1175)) ([f2803a8](https://github.com/netlify/plugins/commit/f2803a826cbc5fa0f48f398861c191853ef29b31))
+* update plugin @netlify/plugin-lighthouse to version 5.0.0 ([#1228](https://github.com/netlify/plugins/issues/1228)) ([c622e00](https://github.com/netlify/plugins/commit/c622e00d4d98aa450f51a855c4f55233ec3e5f48))
+* Use 4.37.1 of next-runtime for prerelease ([#1193](https://github.com/netlify/plugins/issues/1193)) ([1384599](https://github.com/netlify/plugins/commit/1384599c4093224aa2b2d077fca3d68051b5f8ed))
+
 ## [6.68.0](https://github.com/netlify/plugins/compare/v6.67.0...v6.68.0) (2023-04-11)
 
 
