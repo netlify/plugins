@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.71.0](https://github.com/netlify/plugins/compare/v6.70.0...v6.71.0) (2023-08-07)
+
+
+### Features
+
+* bump next.js runtime prerelease version to 4.39.3 ([#1240](https://github.com/netlify/plugins/issues/1240)) ([61c7696](https://github.com/netlify/plugins/commit/61c7696f0e8d45e03be099cd12cdb44b7eacb2cc))
+
 ## [6.70.0](https://github.com/netlify/plugins/compare/v6.69.0...v6.70.0) (2023-08-07)
 
 
