@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.70.0](https://github.com/netlify/plugins/compare/v6.69.0...v6.70.0) (2023-08-07)
+
+
+### Features
+
+* bumped next.js runtime version ([#1238](https://github.com/netlify/plugins/issues/1238)) ([d6af36d](https://github.com/netlify/plugins/commit/d6af36d919ab17b79dd8bfe904d4857941593720))
+
 ## [6.69.0](https://github.com/netlify/plugins/compare/v6.68.0...v6.69.0) (2023-08-01)
 
 
