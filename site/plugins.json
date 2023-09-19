@@ -887,8 +887,8 @@
     "description": "Automatically optimize your Netlify site images and deliver them in modern formats with Cloudinary.",
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
-    "repo": "https://github.com/colbyfayock/netlify-plugin-cloudinary",
-    "version": "1.0.3",
+    "repo": "https://github.com/cloudinary-community/netlify-plugin-cloudinary",
+    "version": "1.10.1",
     "variables": [
       {
         "name": "CLOUDINARY_CLOUD_NAME",
