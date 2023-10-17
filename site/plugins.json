@@ -1005,10 +1005,10 @@
   },
   {
     "name": "Strapi",
-    "package": "@netlify/plugin-strapi",
+    "package": "strapi-plugin-netlify-deployments",
     "description": "Strapi v4 plugin to trigger, monitor, and cancel deployments on one or more Netlify sites",
     "repo": "https://github.com/jclusso/strapi-plugin-netlify-deployments#readme",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "docs": "https://market.strapi.io/plugins/strapi-plugin-netlify-deployments"
   }
 ]
