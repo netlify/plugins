@@ -655,7 +655,15 @@
   },
   {
     "author": "netlify",
-    "description": "Use Angular Universal on Netlify (in beta)",
+    "description": "Use Angular on Netlify",
+    "name": "Angular Runtime",
+    "package": "@netlify/angular-runtime",
+    "repo": "https://github.com/netlify/angular-runtime",
+    "version": "2.0.0"
+  },
+  {
+    "author": "netlify",
+    "description": "Use Angular Universal on Netlify (in beta). For v17+, use Angular Runtime.",
     "name": "Angular Universal",
     "package": "@netlify/plugin-angular-universal",
     "repo": "https://github.com/netlify/netlify-plugin-angular-universal",
