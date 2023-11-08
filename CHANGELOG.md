@@ -1,5 +1,27 @@
 # Changelog
 
+## [6.72.0](https://github.com/netlify/plugins/compare/v6.71.0...v6.72.0) (2023-11-08)
+
+
+### Features
+
+* add missing strapi plugin ([#1265](https://github.com/netlify/plugins/issues/1265)) ([9923b9a](https://github.com/netlify/plugins/commit/9923b9a1400c4ba01979522c6e0218477e449d11))
+* add new angular plugin ([#1270](https://github.com/netlify/plugins/issues/1270)) ([829b182](https://github.com/netlify/plugins/commit/829b182b0b3b4a479efb9ebe1085df877642e1ae))
+* added Next.js runtime 4.40.1 behind a feature flag ([#1252](https://github.com/netlify/plugins/issues/1252)) ([aec7781](https://github.com/netlify/plugins/commit/aec77816c124b87ad7b71005a3267f4c2faa388c))
+* added Next.js runtime 4.40.2 behind a feature flag ([#1260](https://github.com/netlify/plugins/issues/1260)) ([7f6b1bd](https://github.com/netlify/plugins/commit/7f6b1bd84ea1ecb7efca2fbb05ce72c264004342))
+* added Next.js runtime 4.41.1 behind a feature flag ([#1267](https://github.com/netlify/plugins/issues/1267)) ([8686e1b](https://github.com/netlify/plugins/commit/8686e1bcb4e58f7ddbcc2a5b39d42a5caf68f820))
+* set next-runtime prerelease version to 4.39.4 ([#1247](https://github.com/netlify/plugins/issues/1247)) ([24399f9](https://github.com/netlify/plugins/commit/24399f9b3223b9256476b983108ff4685a8d6bbd))
+* set next.js runtime 4.32.2 as stable version ([#1251](https://github.com/netlify/plugins/issues/1251)) ([a6379cf](https://github.com/netlify/plugins/commit/a6379cf7619130bf749daa98f689161a517b0f37))
+* set next.js runtime 4.39.3 as stable version ([#1245](https://github.com/netlify/plugins/issues/1245)) ([9fd9ead](https://github.com/netlify/plugins/commit/9fd9ead83cf7769fe83687a347de041bdacc67b9))
+* set next.js runtime 4.40.1 as stable version ([#1259](https://github.com/netlify/plugins/issues/1259)) ([219f760](https://github.com/netlify/plugins/commit/219f76065c02a5b34939ac3447726afd2b2551a2))
+* set next.js runtime 4.40.2 as stable version ([#1262](https://github.com/netlify/plugins/issues/1262)) ([c328d04](https://github.com/netlify/plugins/commit/c328d04df37ac882e131f5a6fe658ce71bd1f0b4))
+* update plugin @netlify/plugin-gatsby to version 3.7.2 ([#1261](https://github.com/netlify/plugins/issues/1261)) ([0cfe6fe](https://github.com/netlify/plugins/commit/0cfe6fee185b30af8285fece2bbdfb276b71955c))
+
+
+### Bug Fixes
+
+* update cloudinary github url ([#1254](https://github.com/netlify/plugins/issues/1254)) ([59f17ce](https://github.com/netlify/plugins/commit/59f17cec16ea29f0f9708bb47b23bd5d210c298a))
+
 ## [6.71.0](https://github.com/netlify/plugins/compare/v6.70.0...v6.71.0) (2023-08-07)
 
 
