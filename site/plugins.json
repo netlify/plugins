@@ -1022,5 +1022,12 @@
     "repo": "https://github.com/jclusso/strapi-plugin-netlify-deployments#readme",
     "version": "2.0.1",
     "docs": "https://market.strapi.io/plugins/strapi-plugin-netlify-deployments"
+  },
+  {
+    "name": "Run Next.js seamlessly on Netlify",
+    "description": "Run Next.js seamlessly on Netlify",
+    "repo": "git+https://github.com/netlify/next-runtime-minimal.git",
+    "version": "5.0.0-alpha.1",
+    "package": "@netlify/next-runtime"
   }
 ]
