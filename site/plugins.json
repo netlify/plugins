@@ -609,14 +609,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
-    "version": "4.41.1",
+    "version": "4.41.2",
     "compatibility": [
       {
         "version": "4.41.2",
-        "featureFlag": "build_plugins_use_prerelease"
-      },
-      {
-        "version": "4.41.1",
         "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
