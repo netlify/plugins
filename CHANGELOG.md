@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.73.0](https://github.com/netlify/plugins/compare/v6.72.0...v6.73.0) (2023-12-11)
+
+
+### Features
+
+* added Next.js runtime 4.41.3 behind a feature flag ([#1288](https://github.com/netlify/plugins/issues/1288)) ([d3fae17](https://github.com/netlify/plugins/commit/d3fae1796d9ae45a94ffb6714b4db6121c324fc7))
+* set next.js runtime 4.41.2 as stable version ([#1287](https://github.com/netlify/plugins/issues/1287)) ([fc56b74](https://github.com/netlify/plugins/commit/fc56b74f83a2340644e9d37061ed81cd4e7ec83a))
+* update plugin @netlify/plugin-gatsby to version 3.8.0 ([#1284](https://github.com/netlify/plugins/issues/1284)) ([f64fbab](https://github.com/netlify/plugins/commit/f64fbabe70d46c02b8e0fce30746ac6c26f28614))
+
 ## [6.72.0](https://github.com/netlify/plugins/compare/v6.71.0...v6.72.0) (2023-11-08)
 
 

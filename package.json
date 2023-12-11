@@ -1,6 +1,6 @@
 {
   "name": "@netlify/plugins-list",
-  "version": "6.72.0",
+  "version": "6.73.0",
   "description": "List of Netlify plugins",
   "type": "module",
   "exports": "./index.js",
