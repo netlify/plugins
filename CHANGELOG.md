@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.74.0](https://github.com/netlify/plugins/compare/v6.73.0...v6.74.0) (2023-12-13)
+
+
+### Features
+
+* update cloudinary version ([#1290](https://github.com/netlify/plugins/issues/1290)) ([faa63a4](https://github.com/netlify/plugins/commit/faa63a436888d2fc9200b8b4a34f99bbec14fe1f))
+
 ## [6.73.0](https://github.com/netlify/plugins/compare/v6.72.0...v6.73.0) (2023-12-11)
 
 
