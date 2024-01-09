@@ -612,6 +612,10 @@
     "version": "4.41.2",
     "compatibility": [
       {
+        "version": "5.0.0-beta.0",
+        "featureFlag": "project_ceruledge_ui"
+      },
+      {
         "version": "4.41.3",
         "featureFlag": "build_plugins_use_prerelease"
       },
