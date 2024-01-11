@@ -613,7 +613,12 @@
     "compatibility": [
       {
         "version": "5.0.0-beta.0",
-        "featureFlag": "project_ceruledge_ui"
+        "featureFlag": "project_ceruledge_ui",
+        "overridePinnedVersion": ">=4.0.0",
+        "nodeVersion": ">=18.0.0",
+        "siteDependencies": {
+          "next": ">=13.5.0"
+        }
       },
       {
         "version": "4.41.3",
