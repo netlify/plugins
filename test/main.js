@@ -25,6 +25,7 @@ const COMPATIBILITY_ATTRIBUTES = new Set([
   'featureFlag',
   'nodeVersion',
   'siteDependencies',
+  'overridePinnedVersion',
 ])
 
 // Compare two versions by their major versions.
