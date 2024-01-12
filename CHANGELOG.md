@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.75.0](https://github.com/netlify/plugins/compare/v6.74.0...v6.75.0) (2024-01-12)
+
+
+### Features
+
+* adapt the release constraints for next runtime 5.0.0-beta.0 ([#1295](https://github.com/netlify/plugins/issues/1295)) ([fc68fc3](https://github.com/netlify/plugins/commit/fc68fc34980529cf540f21947235553e3396fc04))
+* add new next runtime 5.0.0-beta behind a feature flag ([#1293](https://github.com/netlify/plugins/issues/1293)) ([8ccdbb6](https://github.com/netlify/plugins/commit/8ccdbb6fe5123bba5b2780e3561c6ab2fad71bd4))
+* update the beta of the next runtime ([#1296](https://github.com/netlify/plugins/issues/1296)) ([36780d5](https://github.com/netlify/plugins/commit/36780d565ea7fa61a69125b17bc616fdc790a4ce))
+
 ## [6.74.0](https://github.com/netlify/plugins/compare/v6.73.0...v6.74.0) (2023-12-13)
 
 
