@@ -906,7 +906,7 @@
     "name": "Cloudinary",
     "package": "netlify-plugin-cloudinary",
     "repo": "https://github.com/cloudinary-community/netlify-plugin-cloudinary",
-    "version": "1.16.0",
+    "version": "1.17.0",
     "variables": [
       {
         "name": "CLOUDINARY_CLOUD_NAME",
