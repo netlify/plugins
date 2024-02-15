@@ -915,14 +915,14 @@
     ],
     "compatibility": [
       {
-        "version": "1.17.0",
+        "version": "1.17.0"
       },
       {
         "nodeVersion": ">=16.0.0",
-        "version": "1.16.7"
+        "version": "1.16.0"
       },
       {
-        "nodeVersion": "<14.0.0",
+        "nodeVersion": ">=14.0.0",
         "version": "1.3.0"
       }
     ]
