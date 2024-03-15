@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.76.0](https://github.com/netlify/plugins/compare/v6.75.0...v6.76.0) (2024-03-15)
+
+
+### Features
+
+* set next.js minimal runtime to 5.0.0-rc.2 ([#1308](https://github.com/netlify/plugins/issues/1308)) ([c21512c](https://github.com/netlify/plugins/commit/c21512c61ed9a90c8fe5a3e61f2e3b25076c1e90))
+* set next.js minimal runtime to 5.0.0-rc.3 ([#1311](https://github.com/netlify/plugins/issues/1311)) ([943f95f](https://github.com/netlify/plugins/commit/943f95fabad4dd23fe41d51509046eda2135beba))
+* set next.js runtime 4.41.3 as stable version ([#1303](https://github.com/netlify/plugins/issues/1303)) ([245c519](https://github.com/netlify/plugins/commit/245c519b78d7c7f9d5a3a0bda8e459842fc8fd19))
+* update Next runtime to rc.5 ([#1313](https://github.com/netlify/plugins/issues/1313)) ([5e243ac](https://github.com/netlify/plugins/commit/5e243ac7cdafa696158bec7e3475434befcc172d))
+* update the beta of the next runtime ([#1297](https://github.com/netlify/plugins/issues/1297)) ([567169e](https://github.com/netlify/plugins/commit/567169e15bf115e6386c56453398898c35da82a5))
+
 ## [6.75.0](https://github.com/netlify/plugins/compare/v6.74.0...v6.75.0) (2024-01-12)
 
 
