@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.77.0](https://github.com/netlify/plugins/compare/v6.76.0...v6.77.0) (2024-03-20)
+
+
+### Features
+
+* update Next runtime to rc.6 ([#1314](https://github.com/netlify/plugins/issues/1314)) ([017365f](https://github.com/netlify/plugins/commit/017365f38e1eac7bc0a0051512cb607caef62d64))
+
 ## [6.76.0](https://github.com/netlify/plugins/compare/v6.75.0...v6.76.0) (2024-03-15)
 
 
