@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # Updates the list-v* git tag to version `plugins.json`.
       # Consumers must use the tag-specific deploy URL:
       #   list-v*--netlify-plugins.netlify.app/plugins.json
