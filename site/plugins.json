@@ -535,7 +535,8 @@
     "name": "PerfBeacon",
     "package": "netlify-build-plugin-perfbeacon",
     "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "status": "DEACTIVATED"
   },
   {
     "author": "rayriffy",
