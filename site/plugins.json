@@ -530,14 +530,6 @@
     ]
   },
   {
-    "author": "rozenmd",
-    "description": "Tell PerfBeacon to measure page speed after a successful build",
-    "name": "PerfBeacon",
-    "package": "netlify-build-plugin-perfbeacon",
-    "repo": "https://github.com/perfbeacon/netlify-build-plugin-perfbeacon",
-    "version": "1.0.3"
-  },
-  {
     "author": "rayriffy",
     "description": "This plugin is deprecated. The functionality is now built in",
     "name": "Next dynamic routes",
