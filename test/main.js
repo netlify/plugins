@@ -59,7 +59,7 @@ const getMajorVersion = function (version) {
 /* eslint-disable max-nested-callbacks */
 // eslint-disable-next-line max-lines-per-function, max-statements
 pluginsList.forEach((plugin) => {
-  const { package: packageName, repo, version, name, compatibility, variables, workflow } = plugin
+  const { package: packageName, repo, version, name, compatibility, variables, workflow, status } = plugin
 
   Object.entries(plugin).forEach(([attribute, value]) => {
     test(`Plugin attribute "${attribute}" should have a proper shape: ${packageName}`, (t) => {
@@ -85,9 +85,11 @@ pluginsList.forEach((plugin) => {
     await t.notThrowsAsync(manifest(`${packageName}@${version}`))
   })
 
-  test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
-    await t.notThrowsAsync(got(repo))
-  })
+  if (status !== 'DEACTIVATED') {
+    test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
+      await t.notThrowsAsync(got(repo))
+    })
+  }
 
   test(`Plugin name should not include 'plugin': ${packageName}`, (t) => {
     t.false(typeof name === 'string' && name.toLowerCase().includes('plugin'))
