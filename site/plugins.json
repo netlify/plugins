@@ -496,7 +496,7 @@
     "compatibility": [
       {
         "version": "6.0.0",
-         "overridePinnedVersion": ">=5.0.0"
+        "overridePinnedVersion": ">=5.0.0"
       },
       {
         "nodeVersion": "<18.14.0",
@@ -618,7 +618,7 @@
     "version": "4.41.3",
     "compatibility": [
       {
-        "version": "5.0.0-rc.8",
+        "version": "5.0.0",
         "featureFlag": "project_ceruledge_ui",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
