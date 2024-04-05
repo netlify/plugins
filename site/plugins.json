@@ -624,7 +624,8 @@
         "nodeVersion": ">=18.0.0",
         "siteDependencies": {
           "next": ">=13.5.0"
-        }
+        },
+        "migrationGuide": "https://ntl.fyi/next-plugin-migration"
       },
       {
         "version": "4.41.3",
