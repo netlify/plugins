@@ -618,7 +618,7 @@
     "version": "4.41.3",
     "compatibility": [
       {
-        "version": "5.1.1",
+        "version": "5.1.2",
         "featureFlag": "project_ceruledge_ui",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
