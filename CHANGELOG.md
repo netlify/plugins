@@ -1,5 +1,25 @@
 # Changelog
 
+## [6.78.0](https://github.com/netlify/plugins/compare/v6.77.0...v6.78.0) (2024-05-03)
+
+
+### Features
+
+* roll out Next runtime 5.2.0 behind flag ([#1330](https://github.com/netlify/plugins/issues/1330)) ([95fbdfb](https://github.com/netlify/plugins/commit/95fbdfbe84a8d3001f3a8897b05467ef4b2a23ed))
+* update Next runtime to 5.0.0 behind gradual rollout feature flag and opt-in ([#1321](https://github.com/netlify/plugins/issues/1321)) ([64a5e0e](https://github.com/netlify/plugins/commit/64a5e0edc80d1f4454ef7933bcc8d724a8ebd1a1))
+* update Next runtime to 5.1.0 behind gradual rollout feature flag and opt-in ([#1323](https://github.com/netlify/plugins/issues/1323)) ([45afd73](https://github.com/netlify/plugins/commit/45afd739d0bcf1b39e9d75cfa6ca747e4f9f899f))
+* update Next runtime to 5.1.1 behind gradual rollout feature flag and opt-in ([#1325](https://github.com/netlify/plugins/issues/1325)) ([033a5b9](https://github.com/netlify/plugins/commit/033a5b90e0f498e272af7b69c5cd8b64ddc931fc))
+* update Next runtime to 5.1.2 behind gradual rollout feature flag and opt-in ([#1326](https://github.com/netlify/plugins/issues/1326)) ([c3290f2](https://github.com/netlify/plugins/commit/c3290f2e584a58f00fd357d3c19b4dbb7506ca4c))
+* update Next runtime to rc.7 ([#1316](https://github.com/netlify/plugins/issues/1316)) ([674a6c6](https://github.com/netlify/plugins/commit/674a6c63006dec7dce77b1d0ffc1b7096e95439d))
+* update Next runtime to rc.8 ([#1318](https://github.com/netlify/plugins/issues/1318)) ([c7bf0b0](https://github.com/netlify/plugins/commit/c7bf0b05bfee2c8a40eb8af2bb1f830c5b57dbb9))
+* update plugin @netlify/plugin-gatsby to version 3.8.1 ([#1324](https://github.com/netlify/plugins/issues/1324)) ([8660152](https://github.com/netlify/plugins/commit/86601524a6b2e00b0dc172e8c756348fff0a0f2c))
+
+
+### Bug Fixes
+
+* deactivate Perfbeacon plugin ([#1319](https://github.com/netlify/plugins/issues/1319)) ([5f77033](https://github.com/netlify/plugins/commit/5f77033dc986587dc145eaa0f48973ea06726876))
+* update Next.js flagged version to 5.2.1 ([#1331](https://github.com/netlify/plugins/issues/1331)) ([479efa1](https://github.com/netlify/plugins/commit/479efa10f09fe0c9e372983f783b5b721a56b05d))
+
 ## [6.77.0](https://github.com/netlify/plugins/compare/v6.76.0...v6.77.0) (2024-03-20)
 
 
