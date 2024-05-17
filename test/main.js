@@ -59,7 +59,7 @@ const getMajorVersion = function (version) {
 /* eslint-disable max-nested-callbacks */
 // eslint-disable-next-line max-lines-per-function, max-statements
 pluginsList.forEach((plugin) => {
-  const { package: packageName, repo, version, name, compatibility, variables, workflow, status } = plugin
+  const { package: packageName, repo, version, name, compatibility, variables, status } = plugin
 
   Object.entries(plugin).forEach(([attribute, value]) => {
     test(`Plugin attribute "${attribute}" should have a proper shape: ${packageName}`, (t) => {
@@ -107,12 +107,6 @@ pluginsList.forEach((plugin) => {
         t.true(typeof variable.name === 'string')
         t.true(typeof variable.description === 'string')
       })
-    })
-  }
-
-  if (workflow !== undefined) {
-    test(`Plugin Workflow should be a boolean`, (t) => {
-      t.true(typeof workflow === 'boolean')
     })
   }
 
