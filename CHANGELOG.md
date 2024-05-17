@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.78.1](https://github.com/netlify/plugins/compare/v6.78.0...v6.78.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* update Angular runtime to 2.0.7 ([#1340](https://github.com/netlify/plugins/issues/1340)) ([e8100ba](https://github.com/netlify/plugins/commit/e8100badc8f9cc7a22807776f4742982ac4919ac))
+* update Next.js flagged version to 5.2.2 ([#1335](https://github.com/netlify/plugins/issues/1335)) ([0b53aa7](https://github.com/netlify/plugins/commit/0b53aa78282f7966f93d8ab9b3fdf12805ddb182))
+* **wfui cleanup:** cleanup workflow-ui workflows ([#1341](https://github.com/netlify/plugins/issues/1341)) ([6aad2d4](https://github.com/netlify/plugins/commit/6aad2d4332748c2f3fa7fed0daf42c5a4d671560))
+
 ## [6.78.0](https://github.com/netlify/plugins/compare/v6.77.0...v6.78.0) (2024-05-03)
 
 
