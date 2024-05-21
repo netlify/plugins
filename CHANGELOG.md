@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.79.0](https://github.com/netlify/plugins/compare/v6.78.1...v6.79.0) (2024-05-21)
+
+
+### Features
+
+* update flagged Next to 5.3.0 ([#1343](https://github.com/netlify/plugins/issues/1343)) ([c8d031c](https://github.com/netlify/plugins/commit/c8d031cf87f48f5fe7685f7eb5e9c34ca85f17a8))
+
 ## [6.78.1](https://github.com/netlify/plugins/compare/v6.78.0...v6.78.1) (2024-05-17)
 
 
