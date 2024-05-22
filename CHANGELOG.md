@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.80.0](https://github.com/netlify/plugins/compare/v6.79.0...v6.80.0) (2024-05-22)
+
+
+### Features
+
+* update Angular runtime to 2.1.0 ([#1345](https://github.com/netlify/plugins/issues/1345)) ([d351814](https://github.com/netlify/plugins/commit/d351814e0000204de9d30c0506a3ee75a81e45fb))
+
 ## [6.79.0](https://github.com/netlify/plugins/compare/v6.78.1...v6.79.0) (2024-05-21)
 
 
