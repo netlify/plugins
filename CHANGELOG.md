@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.80.1](https://github.com/netlify/plugins/compare/v6.80.0...v6.80.1) (2024-06-28)
+
+
+### Bug Fixes
+
+* bump @netlify/plugin-nextjs version ([#1348](https://github.com/netlify/plugins/issues/1348)) ([ed13c3f](https://github.com/netlify/plugins/commit/ed13c3fa07057d36b475126833eaf901fce738a5))
+* bump @netlify/plugin-nextjs version ([#1354](https://github.com/netlify/plugins/issues/1354)) ([98a8a29](https://github.com/netlify/plugins/commit/98a8a2949a4af4e1c3c8ffebd26512c49db5c3ee))
+* bump @netlify/plugin-nextjs version ([#1356](https://github.com/netlify/plugins/issues/1356)) ([c7d3266](https://github.com/netlify/plugins/commit/c7d3266f490fbdfc955841ac21c6faec06a11095))
+
 ## [6.80.0](https://github.com/netlify/plugins/compare/v6.79.0...v6.80.0) (2024-05-22)
 
 
