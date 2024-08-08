@@ -1,5 +1,22 @@
 # Changelog
 
+## [6.81.0](https://github.com/netlify/plugins/compare/v6.80.0...v6.81.0) (2024-08-08)
+
+
+### Features
+
+* add @netlify/plugin-nextjs@5.7.0-ipx.0 ([#1363](https://github.com/netlify/plugins/issues/1363)) ([dc9b311](https://github.com/netlify/plugins/commit/dc9b311711aeba8de4128fe7fe687b8a70d7271a))
+* bump @netlify/plugin-nextjs to 5.5.0 ([#1357](https://github.com/netlify/plugins/issues/1357)) ([64ca8cc](https://github.com/netlify/plugins/commit/64ca8cca591a453b4e512dfde0ffc3863a37ef7a))
+* bump @netlify/plugin-nextjs to 5.5.1 ([#1359](https://github.com/netlify/plugins/issues/1359)) ([b20c5ef](https://github.com/netlify/plugins/commit/b20c5ef80a9ad2874a49174296099fe0f338cb30))
+* bump next runtime to 5.6.0 ([#1362](https://github.com/netlify/plugins/issues/1362)) ([3c02432](https://github.com/netlify/plugins/commit/3c024329aa32f170aa82e55976d19f3d42d7d123))
+
+
+### Bug Fixes
+
+* bump @netlify/plugin-nextjs version ([#1348](https://github.com/netlify/plugins/issues/1348)) ([ed13c3f](https://github.com/netlify/plugins/commit/ed13c3fa07057d36b475126833eaf901fce738a5))
+* bump @netlify/plugin-nextjs version ([#1354](https://github.com/netlify/plugins/issues/1354)) ([98a8a29](https://github.com/netlify/plugins/commit/98a8a2949a4af4e1c3c8ffebd26512c49db5c3ee))
+* bump @netlify/plugin-nextjs version ([#1356](https://github.com/netlify/plugins/issues/1356)) ([c7d3266](https://github.com/netlify/plugins/commit/c7d3266f490fbdfc955841ac21c6faec06a11095))
+
 ## [6.80.0](https://github.com/netlify/plugins/compare/v6.79.0...v6.80.0) (2024-05-22)
 
 
