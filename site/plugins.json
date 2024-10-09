@@ -627,7 +627,7 @@
         }
       },
       {
-        "version": "5.7.3",
+        "version": "5.7.4",
         "featureFlag": "project_ceruledge_ui",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
