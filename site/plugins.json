@@ -615,10 +615,10 @@
     "name": "Next.js Runtime",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
-    "version": "5.8.1",
+    "version": "4.41.3",
     "compatibility": [
       {
-        "version": "5.8.1",
+        "version": "5.7.0-ipx.0",
         "featureFlag": "plugins-aerodactyl",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
@@ -627,7 +627,7 @@
         }
       },
       {
-        "version": "5.8.0",
+        "version": "5.8.1",
         "featureFlag": "project_ceruledge_ui",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
