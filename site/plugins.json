@@ -241,7 +241,7 @@
     "name": "Cypress",
     "package": "netlify-plugin-cypress",
     "repo": "https://github.com/cypress-io/netlify-plugin-cypress",
-    "version": "2.2.1",
+    "version": "2.2.0",
     "compatibility": [
       {
         "migrationGuide": "https://github.com/cypress-io/netlify-plugin-cypress/releases/tag/v2.0.0",
@@ -679,7 +679,7 @@
     "name": "Angular Runtime",
     "package": "@netlify/angular-runtime",
     "repo": "https://github.com/netlify/angular-runtime",
-    "version": "2.2.0"
+    "version": "2.2.1"
   },
   {
     "author": "netlify",
