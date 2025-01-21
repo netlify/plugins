@@ -659,10 +659,10 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "3.8.1",
+    "version": "3.8.2",
     "compatibility": [
       {
-        "version": "3.8.1",
+        "version": "3.8.2",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
       {
