@@ -612,7 +612,7 @@
   {
     "author": "netlify",
     "description": "Build and deploy Next.js applications with server-side rendering. No extra configuration required.",
-    "name": "Next.js Runtime",
+    "name": "Next.js ",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
     "version": "4.41.3",
@@ -627,7 +627,7 @@
         }
       },
       {
-        "version": "5.10.4",
+        "version": "5.10.5",
         "featureFlag": "project_ceruledge_ui",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
