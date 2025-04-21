@@ -1,0 +1,35 @@
+name: Sync CMS to Plugins Repository
+on:
+  repository_dispatch:
+    # sync_cms_to_repo is a bespoke type created for use with the CMS Webhook
+    types: [sync_cms_to_repo]
+jobs:
+  sync-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+      - name: Using Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '*'
+          cache: 'npm'
+          check-latest: true
+      - name: Install dependencies
+        run: npm install
+      - name: Setup git config
+        run: |
+          git config user.name 'token-generator-app[bot]'
+          git config user.email '82042599+token-generator-app[bot]@users.noreply.github.com'
+      - name: Generate GitHub token
+        uses: navikt/github-app-token-generator@v1.2.1
+        id: get-token
+        with:
+          private-key: ${{ secrets.TOKENS_PRIVATE_KEY }}
+          app-id: ${{ secrets.TOKENS_APP_ID }}
+      - name: Sync CMS to repo
+        env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+          CMS_CHANGES: ${{ toJson(github.event.client_payload) }}
+
+        run: bin/sync_cms_to_repo.sh

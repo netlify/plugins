@@ -12,9 +12,9 @@ import { pluginsList, pluginsUrl } from '../index.js'
 const { manifest } = pacote
 const { valid: validVersion, validRange, lt: ltVersion, major, minor, patch, minVersion } = semver
 
-const STRING_ATTRIBUTES = ['author', 'description', 'name', 'package', 'repo', 'status', 'version']
-const OPTIONAL_ATTRIBUTES = new Set(['status', 'compatibility'])
-const ATTRIBUTES = new Set([...STRING_ATTRIBUTES, 'compatibility'])
+const STRING_ATTRIBUTES = ['author', 'description', 'name', 'package', 'repo', 'status', 'version', 'docs']
+const OPTIONAL_ATTRIBUTES = new Set(['status', 'compatibility', 'variables', 'workflow', 'docs'])
+const ATTRIBUTES = new Set([...STRING_ATTRIBUTES, 'compatibility', 'variables', 'workflow'])
 const ENUMS = {
   status: ['DEACTIVATED', undefined],
 }
@@ -25,6 +25,7 @@ const COMPATIBILITY_ATTRIBUTES = new Set([
   'featureFlag',
   'nodeVersion',
   'siteDependencies',
+  'overridePinnedVersion',
 ])
 
 // Compare two versions by their major versions.
@@ -56,9 +57,9 @@ const getMajorVersion = function (version) {
 }
 
 /* eslint-disable max-nested-callbacks */
-// eslint-disable-next-line max-lines-per-function
+// eslint-disable-next-line max-lines-per-function, max-statements
 pluginsList.forEach((plugin) => {
-  const { package: packageName, repo, version, name, compatibility } = plugin
+  const { package: packageName, repo, version, name, compatibility, variables, status } = plugin
 
   Object.entries(plugin).forEach(([attribute, value]) => {
     test(`Plugin attribute "${attribute}" should have a proper shape: ${packageName}`, (t) => {
@@ -84,9 +85,11 @@ pluginsList.forEach((plugin) => {
     await t.notThrowsAsync(manifest(`${packageName}@${version}`))
   })
 
-  test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
-    await t.notThrowsAsync(got(repo))
-  })
+  if (status !== 'DEACTIVATED') {
+    test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
+      await t.notThrowsAsync(got(repo))
+    })
+  }
 
   test(`Plugin name should not include 'plugin': ${packageName}`, (t) => {
     t.false(typeof name === 'string' && name.toLowerCase().includes('plugin'))
@@ -95,6 +98,17 @@ pluginsList.forEach((plugin) => {
   test(`Plugin name should start with an uppercase letter: ${packageName}`, (t) => {
     t.true(typeof name === 'string' && name === upperCaseFirst(name))
   })
+
+  if (variables) {
+    test(`Plugin variables should be an array of objects with name and description: ${packageName}`, (t) => {
+      t.true(Array.isArray(variables))
+      variables.forEach((variable) => {
+        t.true(isPlainObj(variable))
+        t.true(typeof variable.name === 'string')
+        t.true(typeof variable.description === 'string')
+      })
+    })
+  }
 
   if (compatibility === undefined) {
     return

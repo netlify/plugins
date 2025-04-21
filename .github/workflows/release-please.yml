@@ -7,20 +7,20 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: navikt/github-app-token-generator@a9cd374e271b8aef573b8c16ac46c44fb89b02db
+      - uses: navikt/github-app-token-generator@a8ae52448279d468cfbca5cd899f2457f0b1f643
         id: get-token
         with:
           private-key: ${{ secrets.TOKENS_PRIVATE_KEY }}
           app-id: ${{ secrets.TOKENS_APP_ID }}
-      - uses: GoogleCloudPlatform/release-please-action@v3
+      - uses: GoogleCloudPlatform/release-please-action@v4
         id: release
         with:
           token: ${{ steps.get-token.outputs.token }}
           release-type: node
           package-name: '@netlify/plugins-list'
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '*'
           cache: 'npm'

@@ -1,0 +1,27 @@
+name: Sync Plugins to CMS
+on:
+  pull_request:
+    types:
+      - closed
+jobs:
+  sync-to-cms:
+    # Only run if the merged PR wasn't an automated PR for synching from the cms to the repo
+    if: github.event.pull_request.merged && !contains(github.event.pull_request.labels.*.name, 'cms_sync')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+      - name: Using Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '*'
+          cache: 'npm'
+          check-latest: true
+      - name: Install dependencies
+        run: npm install
+      - name: Sync plugins to CMS
+        env:
+          SANITY_API_TOKEN: ${{ secrets.SANITY_API_TOKEN }}
+          SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
+        run: npx tsx bin/sync_plugins_to_cms.js
