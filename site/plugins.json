@@ -191,7 +191,8 @@
     "name": "Snaplet",
     "package": "@snaplet/netlify-preview-database-plugin",
     "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "sw-yx",
