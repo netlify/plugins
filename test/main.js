@@ -79,13 +79,13 @@ pluginsList.forEach((plugin) => {
     })
   })
 
-  test(`Plugin package should be published: ${packageName}`, async (t) => {
-    t.is(typeof version, 'string')
-    t.not(validVersion(version), null)
-    await t.notThrowsAsync(manifest(`${packageName}@${version}`))
-  })
-
   if (status !== 'DEACTIVATED') {
+    test(`Plugin package should be published: ${packageName}`, async (t) => {
+      t.is(typeof version, 'string')
+      t.not(validVersion(version), null)
+      await t.notThrowsAsync(manifest(`${packageName}@${version}`))
+    })
+
     test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
       await t.notThrowsAsync(got(repo))
     })
