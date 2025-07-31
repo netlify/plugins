@@ -1008,7 +1008,8 @@
     "package": "@chiselstrike/netlify-plugin",
     "description": "Sync Netlify sites and ChiselStrike builds from code in the same Git repository.",
     "repo": "https://github.com/chiselstrike/netlify-plugin",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "status": "DEACTIVATED"
   },
   {
     "name": "Netlify Bundle ENV",
