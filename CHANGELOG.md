@@ -1,5 +1,55 @@
 # Changelog
 
+## [6.81.0](https://github.com/netlify/plugins/compare/v6.80.0...v6.81.0) (2025-10-15)
+
+
+### Features
+
+* add @netlify/plugin-nextjs@5.7.0-ipx.0 ([#1363](https://github.com/netlify/plugins/issues/1363)) ([dc9b311](https://github.com/netlify/plugins/commit/dc9b311711aeba8de4128fe7fe687b8a70d7271a))
+* bump @netlify/plugin-nextjs to 5.5.0 ([#1357](https://github.com/netlify/plugins/issues/1357)) ([64ca8cc](https://github.com/netlify/plugins/commit/64ca8cca591a453b4e512dfde0ffc3863a37ef7a))
+* bump @netlify/plugin-nextjs to 5.5.1 ([#1359](https://github.com/netlify/plugins/issues/1359)) ([b20c5ef](https://github.com/netlify/plugins/commit/b20c5ef80a9ad2874a49174296099fe0f338cb30))
+* bump next runtime to 5.6.0 ([#1362](https://github.com/netlify/plugins/issues/1362)) ([3c02432](https://github.com/netlify/plugins/commit/3c024329aa32f170aa82e55976d19f3d42d7d123))
+* bump next runtime to 5.7.0 ([#1364](https://github.com/netlify/plugins/issues/1364)) ([c3e9b46](https://github.com/netlify/plugins/commit/c3e9b46d45327623cb17df4a4eb8ab874972c4e4))
+* bump next runtime to 5.7.1 ([#1365](https://github.com/netlify/plugins/issues/1365)) ([fb0912a](https://github.com/netlify/plugins/commit/fb0912acbfd3bc5924c431afc6cbfac3c3dc3e92))
+* bump next runtime to 5.7.2 ([#1367](https://github.com/netlify/plugins/issues/1367)) ([ec4b14f](https://github.com/netlify/plugins/commit/ec4b14f3121040272ec5215bc466f4da8f6fd015))
+* bump next runtime to 5.7.3 ([#1369](https://github.com/netlify/plugins/issues/1369)) ([4c3074b](https://github.com/netlify/plugins/commit/4c3074b9c2796f10d9437e968204ad20345fb427))
+* bump next runtime to 5.7.4 ([#1370](https://github.com/netlify/plugins/issues/1370)) ([90bcb95](https://github.com/netlify/plugins/commit/90bcb954e40603e7760cdc2ec184a7f0c48d1d8a))
+* bump next runtime to 5.8.0 ([#1371](https://github.com/netlify/plugins/issues/1371)) ([c08a192](https://github.com/netlify/plugins/commit/c08a192ab6dfb62491d1ea5ecb001c360da5a9f0))
+* update plugin @netlify/angular-runtime to version 2.2.0 ([#1376](https://github.com/netlify/plugins/issues/1376)) ([77f097f](https://github.com/netlify/plugins/commit/77f097f65b3fee35bc66db51cc329eefbc1f12cf))
+* update plugin @netlify/angular-runtime to version 2.2.1 ([#1377](https://github.com/netlify/plugins/issues/1377)) ([8a760c5](https://github.com/netlify/plugins/commit/8a760c59c6dcef69cb76f0e7651c4662acf7b3a7))
+* update plugin @netlify/plugin-gatsby to version 3.8.2 ([#1384](https://github.com/netlify/plugins/issues/1384)) ([74592ba](https://github.com/netlify/plugins/commit/74592ba13c31380091def1698ccc96b622a5bbb8))
+* update plugin @netlify/plugin-gatsby to version 3.8.3 ([#1392](https://github.com/netlify/plugins/issues/1392)) ([83a592d](https://github.com/netlify/plugins/commit/83a592da78abd90b177da50ebad07a057a72c537))
+* update plugin @netlify/plugin-lighthouse to version 6.0.1 ([#1373](https://github.com/netlify/plugins/issues/1373)) ([e57d290](https://github.com/netlify/plugins/commit/e57d290b6cde739e15951efb558c7d89a9e7d728))
+* update plugin @netlify/plugin-nextjs to version 5.8.1 ([#1374](https://github.com/netlify/plugins/issues/1374)) ([f3d2f96](https://github.com/netlify/plugins/commit/f3d2f96d8a108f22f27159f49e7f4cb9ae9302a5))
+* update plugin @netlify/plugin-nextjs to version 5.9.0 ([#1380](https://github.com/netlify/plugins/issues/1380)) ([9fe2b88](https://github.com/netlify/plugins/commit/9fe2b8896d854b37af4686dac83787fffb85e73d))
+* update plugin @netlify/plugin-nextjs to version 5.9.1 ([#1381](https://github.com/netlify/plugins/issues/1381)) ([3d14b2f](https://github.com/netlify/plugins/commit/3d14b2f7738d4fd4b416e27a9e1977ca548f19d2))
+* update plugin @netlify/plugin-nextjs to version 5.9.2 ([#1382](https://github.com/netlify/plugins/issues/1382)) ([c7fa8fe](https://github.com/netlify/plugins/commit/c7fa8fee5e66657d8752de06b88012726992438a))
+* update plugin @netlify/plugin-nextjs to version 5.9.3 ([#1383](https://github.com/netlify/plugins/issues/1383)) ([e8ae8ea](https://github.com/netlify/plugins/commit/e8ae8ea84f74716884d6a6c6f89cfdf292d602cf))
+
+
+### Bug Fixes
+
+* bump @netlify/plugin-nextjs version ([#1348](https://github.com/netlify/plugins/issues/1348)) ([ed13c3f](https://github.com/netlify/plugins/commit/ed13c3fa07057d36b475126833eaf901fce738a5))
+* bump @netlify/plugin-nextjs version ([#1354](https://github.com/netlify/plugins/issues/1354)) ([98a8a29](https://github.com/netlify/plugins/commit/98a8a2949a4af4e1c3c8ffebd26512c49db5c3ee))
+* bump @netlify/plugin-nextjs version ([#1356](https://github.com/netlify/plugins/issues/1356)) ([c7d3266](https://github.com/netlify/plugins/commit/c7d3266f490fbdfc955841ac21c6faec06a11095))
+* bump angular-runtime to 2.4.0 ([#1415](https://github.com/netlify/plugins/issues/1415)) ([27c1d53](https://github.com/netlify/plugins/commit/27c1d53d487868f1fd68bd412f68d715812a4520))
+* bump next-runtime to 5.11.1 ([#1410](https://github.com/netlify/plugins/issues/1410)) ([0a03ac6](https://github.com/netlify/plugins/commit/0a03ac66b128a6f3e323c059796b3acf904aeb55))
+* bump next-runtime to 5.11.2 ([#1413](https://github.com/netlify/plugins/issues/1413)) ([3ebac7a](https://github.com/netlify/plugins/commit/3ebac7a428f2e2e01772c8dd43246ce1d704918b))
+* bump next-runtime to 5.11.5 ([#1425](https://github.com/netlify/plugins/issues/1425)) ([97a4c10](https://github.com/netlify/plugins/commit/97a4c10cd21392eaac9a7680ca876757634637f4))
+* bump next-runtime to 5.11.6 ([#1426](https://github.com/netlify/plugins/issues/1426)) ([dd6505a](https://github.com/netlify/plugins/commit/dd6505aade6a3082ff369e4a97c0b1e788efce0d))
+* bump next-runtime to 5.12.0 ([#1429](https://github.com/netlify/plugins/issues/1429)) ([0bf15c2](https://github.com/netlify/plugins/commit/0bf15c2ea6a05eda7502d02517174481da9a18f3))
+* bump next-runtime to 5.12.1 ([#1431](https://github.com/netlify/plugins/issues/1431)) ([8c630ed](https://github.com/netlify/plugins/commit/8c630ed584e7ce023ed0b6c389da46c2f137bd75))
+* bump next-runtime to 5.13.0 ([#1432](https://github.com/netlify/plugins/issues/1432)) ([9ec1ca5](https://github.com/netlify/plugins/commit/9ec1ca5d222b901ca9ede0242273a134d8bdb3cb))
+* bump next-runtime to 5.13.1 ([#1433](https://github.com/netlify/plugins/issues/1433)) ([53558ff](https://github.com/netlify/plugins/commit/53558ffa21c1d6b4e8d0bf857ee400c6e1b54cf0))
+* bump next-runtime to 5.13.2 ([#1434](https://github.com/netlify/plugins/issues/1434)) ([e18dbff](https://github.com/netlify/plugins/commit/e18dbff7ba07a9278c89563caaec77f4f793c0e4))
+* bump next-runtime to 5.13.3 ([#1435](https://github.com/netlify/plugins/issues/1435)) ([890ac66](https://github.com/netlify/plugins/commit/890ac661e9bbea1bd0469cfe4fec355f82e504b3))
+* bump next-runtime to 5.13.4 ([#1436](https://github.com/netlify/plugins/issues/1436)) ([9c65aa3](https://github.com/netlify/plugins/commit/9c65aa31d510da1c10ad06e707d7726ffe80b32b))
+* bump next-runtime to 5.13.5 ([#1437](https://github.com/netlify/plugins/issues/1437)) ([0b52bc1](https://github.com/netlify/plugins/commit/0b52bc1dc283728237d57b799ca5215e8dd3b24c))
+* bump next-runtime to 5.14.0 ([#1438](https://github.com/netlify/plugins/issues/1438)) ([875aafe](https://github.com/netlify/plugins/commit/875aafee95406b184b67d19ef9f6b19869e30e7f))
+* **deps:** update next plugin to 5.11.3 ([#1420](https://github.com/netlify/plugins/issues/1420)) ([5c84e6a](https://github.com/netlify/plugins/commit/5c84e6ac0b71837426d956cafd05b259df794c67))
+* remove fully rolled out feature flag ([#1414](https://github.com/netlify/plugins/issues/1414)) ([c3f7e3f](https://github.com/netlify/plugins/commit/c3f7e3f6b9839096152f8b86d3dd426165c308da))
+* update @netlify/plugin-gatsby to 3.8.4 ([#1419](https://github.com/netlify/plugins/issues/1419)) ([55c50dc](https://github.com/netlify/plugins/commit/55c50dc821f32c459aa645f8b04caae9eaab53f7))
+
 ## [6.80.0](https://github.com/netlify/plugins/compare/v6.79.0...v6.80.0) (2024-05-22)
 
 
