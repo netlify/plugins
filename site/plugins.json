@@ -13,7 +13,8 @@
     "name": "Nimbella",
     "package": "netlify-plugin-nimbella",
     "repo": "https://github.com/nimbella/netlify-plugin-nimbella",
-    "version": "2.1.0"
+    "version": "2.1.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "chrism2671",
@@ -190,7 +191,8 @@
     "name": "Snaplet",
     "package": "@snaplet/netlify-preview-database-plugin",
     "repo": "https://github.com/snaplet/netlify-preview-database-plugin",
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "status": "DEACTIVATED"
   },
   {
     "author": "sw-yx",
