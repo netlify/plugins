@@ -678,7 +678,7 @@
     "name": "Angular Runtime",
     "package": "@netlify/angular-runtime",
     "repo": "https://github.com/netlify/angular-runtime",
-    "version": "2.4.0"
+    "version": "3.0.1"
   },
   {
     "author": "netlify",
