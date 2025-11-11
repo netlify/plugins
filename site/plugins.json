@@ -615,7 +615,7 @@
     "name": "Next.js ",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
-    "version": "4.41.3",
+    "version": "5.14.5",
     "compatibility": [
       {
         "version": "5.7.0-ipx.0",
@@ -627,8 +627,7 @@
         }
       },
       {
-        "version": "5.10.6",
-        "featureFlag": "project_ceruledge_ui",
+        "version": "5.14.5",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
         "siteDependencies": {
@@ -659,10 +658,10 @@
     "name": "Essential Gatsby",
     "package": "@netlify/plugin-gatsby",
     "repo": "https://github.com/netlify/netlify-plugin-gatsby",
-    "version": "3.8.3",
+    "version": "3.8.4",
     "compatibility": [
       {
-        "version": "3.8.3",
+        "version": "3.8.4",
         "migrationGuide": "https://ntl.fyi/gatsby-plugin-migration"
       },
       {
@@ -679,7 +678,7 @@
     "name": "Angular Runtime",
     "package": "@netlify/angular-runtime",
     "repo": "https://github.com/netlify/angular-runtime",
-    "version": "2.3.1"
+    "version": "3.0.1"
   },
   {
     "author": "netlify",
@@ -830,7 +829,7 @@
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version":"0.0.8",
+    "version":"0.0.9",
     "variables": [
       {
         "name": "PROJECT_NAME",
@@ -1008,7 +1007,8 @@
     "package": "@chiselstrike/netlify-plugin",
     "description": "Sync Netlify sites and ChiselStrike builds from code in the same Git repository.",
     "repo": "https://github.com/chiselstrike/netlify-plugin",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "status": "DEACTIVATED"
   },
   {
     "name": "Netlify Bundle ENV",
