@@ -1045,7 +1045,7 @@
   },
   {
     "author": "Netlify",
-    "description": "Mitigates CVE-2025-55182 for affected Next.js versions.",
+    "description": "Blocks deploys for Next.js sites affected by CVE-2025-55182",
     "name": "CVE-2025-55182 Mitigation",
     "package": "@netlify/plugin-cve-2025-55182",
     "repo": "https://www.netlify.com/changelog/2025-12-03-react-security-vulnerability-response",
