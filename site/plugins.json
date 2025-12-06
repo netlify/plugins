@@ -1042,5 +1042,21 @@
     "repo": "https://github.com/jclusso/strapi-plugin-netlify-deployments#readme",
     "version": "2.0.1",
     "docs": "https://market.strapi.io/plugins/strapi-plugin-netlify-deployments"
+  },
+  {
+    "author": "Netlify",
+    "description": "Mitigates CVE-2025-55182 for affected Next.js versions.",
+    "name": "CVE-2025-55182 Mitigation",
+    "package": "@netlify/plugin-cve-2025-55182",
+    "repo": "https://www.netlify.com/changelog/2025-12-03-react-security-vulnerability-response",
+    "version": "1.0.0",
+    "compatibility": [
+      {
+        "version": "1.0.0",
+        "siteDependencies": {
+          "next": ">=15.0.0 <15.0.5 || >=15.1.0 <15.1.9 || >=15.2.0 <15.2.6 || >=15.3.0 <15.3.6 || >=15.4.0 <15.4.8 || >=15.5.0 <15.5.7 || >=16.0.0 <16.0.7"
+        }
+      }
+    ]
   }
 ]
