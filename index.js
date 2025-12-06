@@ -9,3 +9,5 @@ const PLUGINS_FILE = fileURLToPath(new URL('site/plugins.json', import.meta.url)
 // experimental flag
 export const pluginsList = JSON.parse(readFileSync(PLUGINS_FILE))
 export const pluginsUrl = 'https://deploy-preview-1450--netlify-plugins.netlify.app/plugins.json'
+
+console.log({ pluginsUrl })
