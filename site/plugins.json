@@ -615,7 +615,7 @@
     "name": "Next.js ",
     "package": "@netlify/plugin-nextjs",
     "repo": "https://github.com/netlify/next-runtime",
-    "version": "5.15.0",
+    "version": "5.15.2",
     "compatibility": [
       {
         "version": "5.7.0-ipx.0",
@@ -627,7 +627,7 @@
         }
       },
       {
-        "version": "5.15.0",
+        "version": "5.15.2",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
         "siteDependencies": {
