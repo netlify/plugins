@@ -1046,7 +1046,7 @@
   {
   "author": "Drishtant",
   "description": "Netlify Build Plugin to trigger and monitor TestRigor tests during your build process",
-  "name": "@drishtant/netlify-plugin-testrigor",
+  "name": "testRigor Runner",
   "package": "@drishtant/netlify-plugin-testrigor",
   "repo": "https://github.com/0Drishtant0/netlify-testrigor",
   "version": "1.0.1"
