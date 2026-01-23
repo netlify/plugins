@@ -1,6 +1,6 @@
 {
-  extends: ['github>netlify/renovate-config:esm'],
-  ignorePresets: [':prHourlyLimit2'],
-  semanticCommits: true,
-  dependencyDashboard: true
+  extends: ["github>netlify/renovate-config:esm"],
+  ignorePresets: [":prHourlyLimit2"],
+  semanticCommits: "enabled",
+  dependencyDashboard: true,
 }
