@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.81.0](https://github.com/netlify/plugins/compare/v6.80.0...v6.81.0) (2026-01-23)
+
+
+### Bug Fixes
+
+* bump next-runtime to 5.15.5 ([#1460](https://github.com/netlify/plugins/issues/1460))
+* bump next-runtime v4 to 4.41.5 ([#1459](https://github.com/netlify/plugins/issues/1459))
+* bump next-runtime to 5.15.4, 5.15.3, 5.15.2, 5.15.0 ([#1457](https://github.com/netlify/plugins/issues/1457), [#1456](https://github.com/netlify/plugins/issues/1456), [#1449](https://github.com/netlify/plugins/issues/1449), [#1452](https://github.com/netlify/plugins/issues/1452))
+* Update angular plugin to 3.0.1 ([#1445](https://github.com/netlify/plugins/issues/1445))
+* Multiple next-runtime updates from 5.10.x to 5.14.x
+
+
+This release updates the bundled plugins.json with current plugin versions,
+fixing an issue where plugin fetch failures would fall back to stale May 2024 data.
+See [FRB-2097](https://linear.app/netlify/issue/FRB-2097) for details.
+
 ## [6.80.0](https://github.com/netlify/plugins/compare/v6.79.0...v6.80.0) (2024-05-22)
 
 
