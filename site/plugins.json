@@ -1042,5 +1042,13 @@
     "repo": "https://github.com/jclusso/strapi-plugin-netlify-deployments#readme",
     "version": "2.0.1",
     "docs": "https://market.strapi.io/plugins/strapi-plugin-netlify-deployments"
-  }
+  },
+  {
+  "author": "Drishtant",
+  "description": "Netlify Build Plugin to trigger and monitor TestRigor tests during your build process",
+  "name": "testRigor Runner",
+  "package": "@drishtant/netlify-plugin-testrigor",
+  "repo": "https://github.com/0Drishtant0/netlify-testrigor",
+  "version": "1.0.1"
+}
 ]
