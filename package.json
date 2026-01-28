@@ -51,7 +51,7 @@
     "pacote": "^13.0.0",
     "semver": "^7.0.0",
     "tsx": "^3.9.0",
-    "upper-case-first": "^2.0.2"
+    "upper-case-first": "^3.0.0"
   },
   "engines": {
     "node": "^14.14.0 || >=16.0.0"
