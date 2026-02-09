@@ -829,7 +829,7 @@
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.7",
+    "version":"0.0.9",
     "variables": [
       {
         "name": "PROJECT_NAME",
@@ -840,7 +840,6 @@
         "description": "If set to `true` allows force deployment when you need to redeploy your site and skip any plugin logic"
       }
     ],
-    "docs": "https://github.com/f22hd/netlify-plugin-nx-skip-build#readme"
   },
   {
     "author": "Amar Parmar",
