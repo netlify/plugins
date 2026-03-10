@@ -9,6 +9,30 @@ import { upperCaseFirst } from 'upper-case-first'
 
 import { pluginsList, pluginsUrl } from '../index.js'
 
+const sleep = (ms) =>
+  new Promise((resolve) => {
+    setTimeout(resolve, ms)
+  })
+
+const BACKOFF_BASE = 5000
+const ONE_SECOND_IN_MS = 1000
+
+const fetchWithRetry = async (url, { retries = 3, backoff = BACKOFF_BASE } = {}) => {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      return await got(url)
+    } catch (error) {
+      // eslint-disable-next-line max-depth
+      if (error.response?.statusCode === 429 && attempt < retries) {
+        const retryAfter = Number(error.response.headers['retry-after']) * ONE_SECOND_IN_MS || backoff * (attempt + 1)
+        await sleep(retryAfter)
+        continue
+      }
+      throw error
+    }
+  }
+}
+
 const { manifest } = pacote
 const { valid: validVersion, validRange, lt: ltVersion, major, minor, patch, minVersion } = semver
 
@@ -87,7 +111,7 @@ pluginsList.forEach((plugin) => {
     })
 
     test(`Plugin repository URL should be valid: ${packageName}`, async (t) => {
-      await t.notThrowsAsync(got(repo))
+      await t.notThrowsAsync(fetchWithRetry(repo))
     })
   }
 
@@ -163,7 +187,7 @@ pluginsList.forEach((plugin) => {
 
       t.is(typeof migrationGuide, 'string')
       t.notThrows(() => new URL(migrationGuide))
-      await t.notThrowsAsync(got(migrationGuide))
+      await t.notThrowsAsync(fetchWithRetry(migrationGuide))
     })
 
     test(`Plugin compatibility[${index}].featureFlag is valid: ${packageName}`, (t) => {
