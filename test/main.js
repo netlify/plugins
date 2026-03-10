@@ -1,4 +1,6 @@
 /* eslint-disable max-lines */
+import process from 'node:process'
+
 import test from 'ava'
 import got from 'got'
 import isPlainObj from 'is-plain-obj'
@@ -18,9 +20,13 @@ const BACKOFF_BASE = 5000
 const ONE_SECOND_IN_MS = 1000
 
 const fetchWithRetry = async (url, { retries = 3, backoff = BACKOFF_BASE } = {}) => {
+  const headers = {}
+  if (process.env.GITHUB_TOKEN && url.includes('github.com')) {
+    headers.Authorization = `token ${process.env.GITHUB_TOKEN}`
+  }
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      return await got(url)
+      return await got(url, { headers })
     } catch (error) {
       // eslint-disable-next-line max-depth
       if (error.response?.statusCode === 429 && attempt < retries) {
