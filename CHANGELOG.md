@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.81.7](https://github.com/netlify/plugins/compare/v6.81.6...v6.81.7) (2026-06-01)
+
+
+### Bug Fixes
+
+* update default Angular Runtime version ([#1488](https://github.com/netlify/plugins/issues/1488)) ([b511e11](https://github.com/netlify/plugins/commit/b511e1141b8695e12d9998de075f49061a499762))
+
 ## [6.81.6](https://github.com/netlify/plugins/compare/v6.81.5...v6.81.6) (2026-05-08)
 
 
