@@ -1,5 +1,14 @@
 [
   {
+    "author":      "doga",
+    "description": "Check whether your website is entitled to use the advanced web browser capabilities that Qworum brings.",
+    "name":        "Qworum Frontend PaaS",
+    "package":     "@qworum/netlify-plugin-qworum",
+    "repo":        "https://github.com/doga/netlify-plugin-qworum",
+    "version":     "1.0.13",
+    "logo":        "https://github.com/doga/netlify-plugin-qworum/blob/master/Qworum-logo.svg"
+  },
+  {
     "author": "bencevans",
     "description": "Install the Flutter SDK for Building and Deploying Flutter Web Apps",
     "name": "Flutter SDK",
