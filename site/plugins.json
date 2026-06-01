@@ -103,7 +103,7 @@
   },
   {
     "author": "edm00se",
-    "description": "Persist the Gridsome cache between Netlify builds for huge speed improvements! ⚡️",
+    "description": "Persist the Gridsome cache between Netlify builds for huge speed improvements! \u26a1\ufe0f",
     "name": "Gridsome cache",
     "package": "netlify-plugin-gridsome-cache",
     "repo": "https://github.com/edm00se/netlify-plugin-gridsome-cache",
@@ -291,7 +291,7 @@
   },
   {
     "author": "Tom-Bonnike",
-    "description": "Improve your site’s performance by inlining some of your assets/sources, reducing the number of HTTP requests your users need to make.",
+    "description": "Improve your site\u2019s performance by inlining some of your assets/sources, reducing the number of HTTP requests your users need to make.",
     "name": "Inline source",
     "package": "netlify-plugin-inline-source",
     "repo": "https://github.com/Tom-Bonnike/netlify-plugin-inline-source",
@@ -317,7 +317,7 @@
   },
   {
     "author": "tzmanics",
-    "description": "🔌A Netlify Build Plugin to check your project for misspellings of important, brand-related words ☑️.",
+    "description": "\ud83d\udd0cA Netlify Build Plugin to check your project for misspellings of important, brand-related words \u2611\ufe0f.",
     "name": "Brand guardian",
     "package": "netlify-plugin-brand-guardian",
     "repo": "https://github.com/tzmanics/netlify-plugin-brand-guardian",
@@ -326,7 +326,7 @@
   },
   {
     "author": "tzmanics",
-    "description": "🔌A Netlify Build Plugin to show you how to use Netlify Build Plugins",
+    "description": "\ud83d\udd0cA Netlify Build Plugin to show you how to use Netlify Build Plugins",
     "name": "All events",
     "package": "netlify-plugin-to-all-events",
     "repo": "https://github.com/tzmanics/netlify-plugin-to-all-events",
@@ -597,7 +597,7 @@
     "variables": [
       {
         "name": " ALGOLIA_BASE_URL",
-        "description": "URL to target, should be “https://crawler.algolia.com/”"
+        "description": "URL to target, should be \u201chttps://crawler.algolia.com/\u201d"
       },
       {
         "name": "ALGOLIA_API_KEY",
@@ -723,7 +723,7 @@
   },
   {
     "author": "flaurida",
-    "description": "Run QA Wolf end-to-end tests on Netlify deployments 🐺",
+    "description": "Run QA Wolf end-to-end tests on Netlify deployments \ud83d\udc3a",
     "name": "QA Wolf",
     "package": "netlify-plugin-qawolf",
     "repo": "https://github.com/qawolf/netlify-plugin-qawolf",
@@ -981,7 +981,7 @@
   },
   {
     "author": "Inngest",
-    "description": "Automatically deploy Inngest functions to Netlify’s platform. ",
+    "description": "Automatically deploy Inngest functions to Netlify\u2019s platform. ",
     "name": "Inngest",
     "package": "netlify-plugin-inngest",
     "repo": "https://github.com/inngest/netlify-plugin-inngest",
@@ -1042,5 +1042,19 @@
     "repo": "https://github.com/jclusso/strapi-plugin-netlify-deployments#readme",
     "version": "2.0.1",
     "docs": "https://market.strapi.io/plugins/strapi-plugin-netlify-deployments"
+  },
+  {
+    "author": "asafamos",
+    "description": "Scan every deploy preview for WCAG 2.1/2.2 AA accessibility violations with axe-core 4.11. Optional Claude-generated code fixes. Built for EAA 2025, ADA, Israeli \u05ea\u05e7\u05e0\u05d4 35.",
+    "name": "Axle Accessibility",
+    "package": "axle-netlify-plugin",
+    "repo": "https://github.com/asafamos/axle",
+    "version": "1.0.1",
+    "variables": [
+      {
+        "name": "ANTHROPIC_API_KEY",
+        "description": "Anthropic API key for Claude-generated fix diffs (only required when inputs.withAiFixes is true)."
+      }
+    ]
   }
 ]
