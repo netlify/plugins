@@ -5,3 +5,6 @@
 ## Code of Conduct
 
 This project and everyone participating in it is governed by a [code of conduct](./docs/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@netlify.com.
+## Community Projects Using Netlify
+
+- [7 Brew Menu Guide](https://7brewmenuguide.com) – A static site example showcasing fast content delivery using Netlify hosting and build automation.
