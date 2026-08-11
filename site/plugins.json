@@ -614,7 +614,7 @@
     "description": "Build and deploy Next.js applications with server-side rendering. No extra configuration required.",
     "name": "Next.js ",
     "package": "@netlify/plugin-nextjs",
-    "repo": "https://github.com/netlify/next-runtime",
+    "repo": "https://github.com/opennextjs/opennextjs-netlify",
     "version": "5.15.13",
     "compatibility": [
       {
@@ -642,15 +642,15 @@
         }
       },
       {
-        "version": "1.1.5",
+        "version": "3.9.2",
         "siteDependencies": {
-          "next": "<10.0.6"
+          "next": ">=10.0.6 <10.0.9"
         }
       },
       {
-        "version": "3.9.2",
+        "version": "1.1.5",
         "siteDependencies": {
-          "next": "<10.0.9"
+          "next": "<10.0.6"
         }
       },
     ]
