@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.81.10](https://github.com/netlify/plugins/compare/v6.81.9...v6.81.10) (2026-08-11)
+
+
+### Bug Fixes
+
+* version gate for next-runtime ([#1498](https://github.com/netlify/plugins/issues/1498)) ([80caa49](https://github.com/netlify/plugins/commit/80caa49f39f398a325c38839d522f297287bf6fd))
+
 ## [6.81.9](https://github.com/netlify/plugins/compare/v6.81.8...v6.81.9) (2026-07-27)
 
 
