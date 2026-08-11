@@ -636,12 +636,9 @@
       },
       {
         "version": "4.41.6",
-        "migrationGuide": "https://ntl.fyi/next-plugin-migration"
-      },
-      {
-        "version": "3.9.2",
+        "migrationGuide": "https://ntl.fyi/next-plugin-migration",
         "siteDependencies": {
-          "next": "<10.0.9"
+          "next": "<13.5.0"
         }
       },
       {
@@ -649,7 +646,13 @@
         "siteDependencies": {
           "next": "<10.0.6"
         }
-      }
+      },
+      {
+        "version": "3.9.2",
+        "siteDependencies": {
+          "next": "<10.0.9"
+        }
+      },
     ]
   },
   {
