@@ -1004,7 +1004,7 @@
     "name": "Netlify Emails",
     "package": "@netlify/plugin-emails",
     "repo": "https://github.com/netlify/plugins",
-    "version": "1.1.1"
+    "version": "2.0.1"
   },
   {
     "name": "ChiselStrike",
