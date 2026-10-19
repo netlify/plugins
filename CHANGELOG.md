@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.81.13](https://github.com/netlify/plugins/compare/v6.81.12...v6.81.13) (2026-10-19)
+
+
+### Bug Fixes
+
+* bump next-runtime to 5.16.3 ([#1510](https://github.com/netlify/plugins/issues/1510)) ([8217bdc](https://github.com/netlify/plugins/commit/8217bdc7b48471a384020e96441376c0cacc49c4))
+
 ## [6.81.12](https://github.com/netlify/plugins/compare/v6.81.11...v6.81.12) (2026-10-05)
 
 
