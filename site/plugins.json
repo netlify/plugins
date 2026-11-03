@@ -832,11 +832,11 @@
     "name": "Skip nx",
     "package": "netlify-plugin-nx-skip-build",
     "repo": "https://github.com/f22hd/netlify-plugin-nx-skip-build",
-    "version": "0.0.7",
+    "version": "0.1.1",
     "variables": [
       {
         "name": "PROJECT_NAME",
-        "description": "NX Application name"
+        "description": "Optional. The nx project this site deploys; by default it is derived from the package or publish directory"
       },
       {
         "name": "NX_FORCE_DEPLOYMENT",
