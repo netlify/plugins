@@ -627,7 +627,7 @@
         }
       },
       {
-        "version": "5.16.8",
+        "version": "5.16.9",
         "overridePinnedVersion": ">=4.0.0",
         "nodeVersion": ">=18.0.0",
         "siteDependencies": {
